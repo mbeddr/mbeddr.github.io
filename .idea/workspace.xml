@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +45,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="873" column="14" selection-start="17054" selection-end="17054" vertical-scroll-proportion="1.4705882" vertical-offset="14364" max-vertical-offset="17712">
+            <state line="14" column="46" selection-start="303" selection-end="303" vertical-scroll-proportion="0.27450982" vertical-offset="0" max-vertical-offset="17712">
               <folding />
             </state>
           </provider>
@@ -326,6 +327,13 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2828" column="8" selection-start="61820" selection-end="61820" vertical-scroll-proportion="0.0" vertical-offset="47916" max-vertical-offset="88236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -345,16 +353,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2828" column="8" selection-start="61820" selection-end="61820" vertical-scroll-proportion="0.0" vertical-offset="47916" max-vertical-offset="88236">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/images/noise.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="873" column="14" selection-start="17054" selection-end="17054" vertical-scroll-proportion="1.4705882" vertical-offset="14364" max-vertical-offset="17712">
+        <state line="14" column="46" selection-start="303" selection-end="303" vertical-scroll-proportion="0.27450982" vertical-offset="0" max-vertical-offset="17712">
           <folding />
         </state>
       </provider>
