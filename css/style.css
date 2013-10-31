@@ -713,6 +713,7 @@ UNUSED.btn-the-bizzniss-4.active,UNUSED.btn-the-bizzniss-4:active {
 	display: inline-block;
 	margin: 0;
 	list-style: none;
+    vertical-align: top;
 }
 
 .footer-links li {
@@ -915,6 +916,10 @@ ul.list3 li {
 	color: #fff;
 	text-align: center;
 }
+
+
+
+
 
 #intro h1 {
 	text-transform: uppercase;
