@@ -15,6 +15,13 @@ body { /*	background: url(../images/pattern1.jpg) repeat #ffffff;*/
 	background: url('../images/noise.png') #0c3661;
 }
 
+.navbar .nav > li > a:hover {
+    background-color: transparent;
+    color: #FD6111;
+    text-decoration: none;
+}
+
+
 p {
 	font-size: 14px;
 }
@@ -149,7 +156,7 @@ strong {
 
 
 a {
-    color: #aa5b0b;
+    color: #FD6111;
     text-decoration: none;
 }
 
@@ -363,12 +370,12 @@ img.screenshot {
 
 a:hover .onhover-red {
 	text-decoration: none;
-	color: #A00;
+	color: #FD6111;
 }
 
 a.onhover-red {
 	text-decoration: none;
-	color: #333;
+	color: #FD6111;
 }
 
 ul.team_info {
@@ -861,7 +868,7 @@ UNUSED.btn-the-bizzniss-4.active,UNUSED.btn-the-bizzniss-4:active {
 
 #page-heading {
 	font-family: 'Vollkorn', serif;
-	color: #A00;
+	color: #FD6111;
 	text-align: center;
 }
 
