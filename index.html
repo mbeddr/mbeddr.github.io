@@ -124,7 +124,7 @@
 
             <p>Building reliable, well-tested and<br>
                 maintainable embedded software<br>
-            has never been easier. </p>
+                has never been easier. </p>
             <a href="download.html" class="btn_download"></a>
         </div>
         <div class="span6">
@@ -143,14 +143,18 @@
         <h1>What is mbeddr?</h1>
         &nbsp;
 
-        <p>mbeddr is a set of integrated and extensible languages for embedded software engineering, plus an IDE with refatorings, a debugger and verification tools.</p>
+        <p>mbeddr is a set of integrated and extensible languages for embedded software engineering, plus an IDE with
+            refatorings, a debugger and verification tools.</p>
 
-        <p>It covers all aspects of software engineering, including requirements and product line definition, implementation in C and C extensions such  as state machines physical units or interfaces and components, as well as testing, mocking, as well as formal verification. It integrates with integration servers.</p>
+        <p>It covers all aspects of software engineering, including requirements and product line definition,
+            implementation in C and C extensions such as state machines physical units or interfaces and components, as
+            well as testing, mocking, as well as formal verification. It integrates with integration servers.</p>
 
         <p>
             In addition, mbeddr is completely open and can be extended in (essentially) unlimited ways.
             In particular, as a consequence of mbeddr's reliance on the JetBrains MPS language workbench,
-            all existing languages can be extended with new language constructs, typing rules, constraints or generators.
+            all existing languages can be extended with new language constructs, typing rules, constraints or
+            generators.
             In addition, arbitrary new languages can be added and (optionally) integrated with the existing languages.
         </p>
 
@@ -266,14 +270,27 @@
 </div>
 
 
-
-
 <div id="intro">
     <div class="container">
-        <h1>How is mbeddr built?</h1>
+        <h1>How is mbeddr built, and why is it so extensible?</h1>
         &nbsp;
 
+        <p>
+            mbeddr builds on the JetBrains MPS language workbench, a tool that supports
+            the definition, composition and use of general purpose or domain-specific languages.
+            MPS uses a projectional editor, which means that, although a syntax may look
+            textual, it is <i>not</i> represented as a sequence of characters which are transformed
+            into an abstract syntax tree (AST) by a parser.
+            Instead, a user's editing actions lead <i>directly</i> to changes in the AST.
+            Projection rules render a concrete syntax from the AST. Consequently, MPS
+            supports non-textual notations such as tables, and it also supports
+            unconstrained language composition and extension -- no parser ambiguities can
+            ever result from combining languages. When users built their own extensions,
+            they can use the same language engineering facilities that the mbeddr team
+            is using to build the existing languages -- user extensions are <i>not</i>
+            second-class. There are very few practical limitations.
 
+        </p>
     </div>
 </div>
 
@@ -282,15 +299,128 @@
         <div class="row">
             <div class="span12">
                 <br/>
+
                 <h1>Architecture Overview</h1>
                 <br/>
+
+                <p style="text-align: left">
+                    mbeddr is structured into 5 layers, and addresses three different concerns (see below). The platform
+                    layer consists of the JetBrains MPS language workbench, which enables the overall approach. The core
+                    layer includes the base languages used in mbeddr; these are different for each of the three concerns.
+                    The default extensions layer consits of a set of predefined extensions of the core languages that
+                    can be used out-of-the-box to develop software. The user extension layer is empty, it is intended to
+                    be filled by users. The backend layer consists of existing tools compilation and analysis tools which
+                    mbeddr uses. A more detailed description of mbeddr can be found in the <a href="learn.html#papers">papers section</a>.
+                </p>
+
+                <br/>
+
+                <center>
+                    <img src="images/stack.gif"/>
+                </center>
+                &nbsp;<br>
+                &nbsp;<br>
             </div>
+        </div>
+
+        <div class="row">
+
+            <div class="span2"></div>
+
+            <div class="span4">
+                <h3>Implementation Concern</h3>
+                <br/>
+                <p style="text-align: left">
+                    The implementation concern addresses the
+                    development of applications based on C. On the core layer, mbeddr comes with
+                    an implementation of C99 in MPS. There are a few minor differences to C99, and the
+                    preprocessor is not exposed to the user; first-class concepts are provided for the legitimate uses
+                    of the preprocessor (including a module system). On the default extensions layer, the
+                    implementation concern comes with C extensions for decision tables, interfaces and components,
+                    state machines, physical units, testing as well as logging and tracing. The user extensions layer is by
+                    definition empty; users can easily extend the C core as well as any of the
+                    default extensions. State-of-the-art IDE support is available for all languages, including
+                    syntax highlighting, code completion, real-time type checks and refactorings.
+                    The implementation concern also ships with an extensible
+                    debugger that is able to debug on the level of the extensions, so the
+                    abstractions do not break down when debugging becomes necessary. At the
+                    backend layer, the implementation concern relies on a C compiler, a C
+                    debugger and tools for importing existing C code into mbeddr. By default,
+                    mbeddr uses the <i>gcc</i> compiler and the <i>gdb</i> debugger.
+                </p>
+
+            </div>
+            <div class="span4">
+
+                <h3>Analysis Concern</h3>
+                <br/>
+
+                <p style="text-align: left">
+                    The analysis concern provides static analyses (formal verification) for some of the
+                    default extensions provided by the implementation concern. The analyses themselves
+                    are performed by existing external tools. However, mbeddr integrates the tools
+                    tightly by (a) providing language abstractions to conveniently describe behavior
+                    that can be analyzed, (b) translating this description to the input of the
+                    analysis tool, (c) running the tool, and (d) lifting the output of the tool back
+                    to the original abstraction level, to make it easier to understand for the user.
+                    The integrated analyses are based on symbolic model checking, SMT solving and
+                    C-level model-checking. Specifically, the following analyses are
+                    available: State machines can be checked with a symbolic model checker. It verifies a set
+                    of default properties and optional user-defined properties. Decision tables
+                    can be checked for completeness and consistency. Feature model configurations are
+                    checked for consistency. Finally, interface contracts can be checked statically:
+                    interfaces can specify pre- and post-conditions as well as protocol state
+                    machines that specify the valid invocation order of interface operations.
+                    These contracts can be checked for each implementing component via
+                    a C-level model checker.
+                </p>
+
+
+            </div>
+
+            <div class="span4">
+
+                <h3>Process Concern</h3>
+                <br/>
+                <p style="text-align: left">
+                    The process concern includes facilities for integrating mbeddr into development processes. These
+                    facilities can be used with arbitrary mbeddr languages,
+                    such as all the default and user-defined C extensions.
+
+                    The <strong>requirements</strong> support provides a language for describing
+                    requirements. Traces can be attached to any program element expressed in any
+                    language. Arbitrary additional data, expressed in any
+                    language, can be added to a requirement.
+
+                    The <strong>product lines</strong> supports defining feature models and
+                    configurations. Feature models can be connected to other artifacts by means of presence conditions,
+                    While presence conditions are static and work for any
+                    language, there is also C-specific support to evaluate variability at runtime.
+
+                    The <strong>documentation</strong> language aspect supports writing prose documents as part of an mbeddr
+                    project, exportable as HTML or LaTeX. It supports close integration with program elements. They
+                    can be referenced (with real references that are renamed if the element itself is
+                    renamed) and program code can be embedded as text or as an image. The embedded
+                    code is updated whenever the document is regenerated.
+
+                    <strong>Visualization</strong> provides a facility to render diagrams. <strong>Reports and
+                    assessments</strong> are customizable queries over the code.
+
+                </p>
+
+
+
+            </div>
+
+            <div class="span1"></div>
 
 
         </div>
+
+
     </div>
 </div>
-
+</div>
 
 
 <div id="intro">
