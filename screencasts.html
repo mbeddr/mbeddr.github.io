@@ -114,7 +114,7 @@
 <div id="page">
     <div class="inner">
         <div class="container clearfix">
-            <h2>Mailing List/Forum</h2>
+            <h2>Overview</h2>
 
             <div class="container">
                 <div class="container">
@@ -122,106 +122,647 @@
                     <div class="span9">
 
                         <p>
-                            The <a href="http://groups.google.com/group/mbeddr-discuss">mbeddr-discuss</a> Google Group
-                            is used for public discussion and support around mbeddr. You can access it <a
-                                href="http://groups.google.com/group/mbeddr-discuss">via the web</a> or <a
-                                href="mailto:mbeddr-discuss@googlegroups.com">via email at
-                            mbeddr-discuss@googlegroups.com</a>.
+                            This page contains step-by-step instructions to run and work with mbeddr on your machine.
+                            They videos are not a complete replacement for the user guide. But they should help with the
+                            first steps. Here is an overview:
+
                         </p>
+
+                        <h3>Installation</h3>
+
+                        <p>
+                            &nbsp;&nbsp;<a href="#installMPS">Installing MPS</a> (3:06)<br/>
+                            &nbsp;&nbsp;<a href="#installmbeddr">Installing mbeddr</a> (6:00)<br/>
+                            &nbsp;&nbsp;<a href="#installTools">Installing Additional Tools</a> (3:48)<br/>
+                        </p>
+
+                        <h3>Getting Started</h3>
+
+                        <p>
+                            &nbsp;&nbsp;<a href="#ideOverview">An Overview over the MPS IDE</a> (6:06)<br/>
+                            &nbsp;&nbsp;<a href="#editing">Editing Code in MPS</a> (10:00)<br/>
+                            &nbsp;&nbsp;<a href="#helloWorld">The mbeddr Hello World</a> (10:43)<br/>
+                            &nbsp;&nbsp;<a href="#differencesToC">A few Differences to C99</a> (8:07)<br/>
+                            &nbsp;&nbsp;<a href="#debugging">Using the Debugger</a> (4:12)<br/>
+                            &nbsp;&nbsp;<a href="#versionControl">Working with Version Control (git)</a> (7:55)<br/>
+                            &nbsp;&nbsp;<a href="#cmdline">Command-Line Generation </a> (3:39)<br/>
+                            &nbsp;&nbsp;<a href="#headerImport">Importing Header Files</a> (7:45)<br/>
+                            &nbsp;&nbsp;<a href="#tutorial">Overview over the Tutorial</a> (4:07)<br/>
+                        </p>
+
+
+                        <h3>Feature Demos</h3>
+
+                        <p>
+                            &nbsp;&nbsp;<a href="#f-dectab">Decision Tables</a> (4:21)<br/>
+                            &nbsp;&nbsp;<a href="#units">Physical Units</a> (6:19)<br/>
+                            &nbsp;&nbsp;<a href="#statemachines">State Machines</a> (8:10)<br/>
+                            &nbsp;&nbsp;<a href="#components">Components</a> (12:35)<br/>
+                            &nbsp;&nbsp;<a href="#testing">Testing</a> (13:08)<br/>
+                            &nbsp;&nbsp;<a href="#req">Requirements, Tracing, Use Cases and Scenarios</a> (10:36)<br/>
+                            &nbsp;&nbsp;<a href="#ple">Product Line Variability</a> (8:18) <br/>
+                            &nbsp;&nbsp;Importing Legacy Code<br/>
+                        </p>
+
+                        <h3>Getting Started with the Extensions</h3>
+
+                        <p>tbd.</p>
+
+                        <h3>Developing New Extensions</h3>
+
+                        <p>tbd.</p>
 
                     </div>
                     <div class="span1">&nbsp;</div>
                 </div>
             </div>
+
+
 
 
             <hr/>
-            <h2>Professional/Commercial Support</h2>
+            <h2>Installation</h2>
 
             <div class="container">
                 <div class="container">
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="installMPS">Installing MPS</h3>
+
+                            <p>
+                                This video explains how to install <a href="http://jetbrains.com/mps">JetBrains MPS</a>,
+                                which acts as the platform on which mbeddr runs. Note that you also have to install Java
+                                to make MPS work. <font color="red">Note:</font> If you run MPS by double-clicking onto
+                                the MPS icon, then the <i>mps.vmoptions</i> file is ignored, and you should set the JVM
+                                memory options in the <i>info.plist</i>. If you start MPS by running <i>./mps.sh</i>,
+                                then the <i>mps.vmoptions</i> is used.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/q3dIR1hev_U"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="installmbeddr">Installing mbeddr</h3>
+
+                            <p>
+                                This video explains how to install mbeddr itself. Essentially you have to download the
+                                mbeddr MPS plugins <a href="http://mbeddr.wordpress.com/getit/">from the download
+                                page</a> and then copy the unzipped plugins into MPS' <i>plugins</i> folder.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/zbg93bA4IwU"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="installMPS">Installing Additional Tools</h3>
+
+                            <p>
+                                To be able to compile C files on Windows, you will have to install the gcc package from
+                                <a href="http://www.cygwin.com/">cygwin</a>. On the Mac you should install XCode,
+                                together with the optional command line tools. On Linux, gcc installed by default. To be
+                                able to use the visualizations, you must install <a href="http://www.graphviz.org/">graphviz</a>
+                                and put it on the path. Finally, to use the verifications, you must install <a
+                                    href="http://nusmv.fbk.eu/">NuSMV</a>, <a href="http://yices.csl.sri.com/">Yices
+                                1</a> and <a href="http://www.cprover.org/cbmc/">CBMC</a>. All of these are command-line
+                                tools and need to be available on the path. <font color="red">Note:</font> on windows,
+                                you have to set an environment variable <i>GRAPHVIZ_DOT</i> that points to graphviz' <i>dot.exe</i>
+                                file.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/jBPjMUj5t-Q"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="span1">&nbsp;</div>
+            </div>
+
+
+
+
+
+            <hr/>
+            <h2>Getting Started</h2>
+
+            <div class="container">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="ideOverview">Overview over the IDE</h3>
+
+                            <p>
+                                This video is a quick overview over the MPS IDE. It introduces tools, editors, solutions, languages and projects, as well as some of the other terminology used in MPS and mbeddr.
+
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/cJ4goWQxb1U"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="editing">Editing Code in MPS</h3>
+
+                            <p>
+                                This video helps you get started with editing code in MPS. MPS, after all, is a projectional editor, so some of the editing gestures are a bit different than in regular text editors.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/NenPFYK0TPM"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="helloWorld">The mbeddr Hello World</h3>
+
+                            <p>
+                                In this video we implement a simple hello world test case, build it, run it from the command line and run it from within MPS, which allows you to directly click on error messages and jump to the failing assert.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/4rDUx2EnHRM"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="differencesToC">A few Differences to regular C</h3>
+
+                            <p>
+                                In this video we discuss the few places where mebddr's version of C is different from C99. These places include header files and the preprocessor in general, array and pointer variable declarations as well as the handling of function pointers, function types and lambdas. <font color="red">Note:</font> mbeddr also has a native boolean type, which we forgot to mention in the video.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/YTvU3t1yHBk"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="debugging">Using the Debugger</h3>
+
+                            <p>
+                                This video briefly shows how to debug mbeddr code on the level of the extensions (exemplified by calling into a component instance).
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/t9J3GbRcuH4"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="versionControl">Working with Version Control</h3>
+
+                            <p>
+                                In this video we show how to work with mbeddr, MPS and a version control system. In particular, we demonstrate the git integration. As part of the demo we show how to merge conflicts in MPS, using the projected syntax of the underlying language in the three-way merge dialog.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/2QzGHHez2nc"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="cmdline">Command-Line Generation</h3>
+
+                            <p>
+                                In this video we show how to generate mbeddr code into C code for compilation, so you can integrate it with build servers or integration servers.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/hH8IroghBeM"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="headerImport">Importing Header Files</h3>
+
+                            <p>
+                                In this video we show how to import existing, textual header files so we can call into them from mbeddr code.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/gfZBenpdPYo"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span9">&nbsp;</div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span1">&nbsp;</div>
+                        <div class="span4">
+                            <h3 id="tutorial">Overview over the Tutorial</h3>
+
+                            <p>
+                                In this video we provide a quick overview over the tutorial. Subsequent videos will explain the tutorial in more detail.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                                <iframe allowfullscreen="true" src="http://www.youtube.com/embed/6c-zMtl1WNk"
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="span1">&nbsp;</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <hr/>
+            <h2>Feature Demos</h2>
+
+            <div class="container">
+            <div class="container">
+
+                <div class="row">
                     <div class="span1">&nbsp;</div>
-                    <div class="span9">
+                    <div class="span4">
+                        <h3 id="f-dectab">Decision Tables (Feature Demo)</h3>
 
                         <p>
-                            mbeddr is <a href="../getit">open source</a>. The documentation should get you started.
-                            However, if you need professional support, this can be provided by <a
-                                href="http://www.itemis.com/mbeddr">itemis</a>. Please contact <a
-                                href="mailto:mbeddr@itemis.de">mbeddr@itemis.de</a>.
+                            In this video we demonstrat decision tables, which are essentially a nicer syntax for nested <i>if</i> statements. We also demonstrate the completeness and consistency checking using the integrated SMT solver.
+
                         </p>
-
                     </div>
-                    <div class="span1">&nbsp;</div>
+                    <div class="span4">
+                        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/Pe34U9QuhXA"
+                                    frameborder="0"></iframe>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-
-        </div>
-
-
-    </div>
-
-    <div id="intro">
-        <div class="container">
-
-        </div>
-    </div>
-
-    <div id="extra">
-        <div class="inner">
-            <div class="container">
                 <div class="row">
-                    <div class="span6">
-                        <ul class="footer-links clearfix">
-                            <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-                            <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-                            <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-                            <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
-                        </ul>
-                        <ul class="footer-links clearfix">
-                            <li><a href="http://mbeddr.wordpress.com/benefits/">Key characteristics and benefits</a>.
-                            <li><a href="http://mbeddr.wordpress.com/further-reading/#overview">mbeddr key concepts</a>.
-                            <li><a href="http://mbeddr.wordpress.com/getit">Download</a>.
-                            <li><a href="http://mbeddr.wordpress.com/further-reading/#papers">Read our Papers</a>.
-                        </ul>
+                    <div class="span9">&nbsp;</div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span1">&nbsp;</div>
+                    <div class="span4">
+                        <h3 id="units">Physical Units (Feature Demo)</h3>
+
+                        <p>
+                            In this video we show the use of physical units, calculating with them, defining new ones and inserting conversions.
+                        </p>
                     </div>
-                    <div class="span6">
-                        <ul class="footer-links clearfix">
-                            <li><a href="http://mbeddr.wordpress.com/further-reading/#cs">Case Studies</a>.
-                            <li><a href="http://mbeddr.wordpress.com/screencasts">Watch Screencasts</a>.
-                            <li><a href="http://mbeddr.wordpress.com/getit">Extend mbeddr</a>.
-                            <li><a href="http://mbeddr.wordpress.com/blog/">Read the Blog</a>.
-                            <li><a href="http://mbeddr.wordpress.com/getit">Read the FAQ</a> or <a
-                                    href="http://mbeddr.wordpress.com/professional-services">contact the team</a>.
-                        </ul>
-                        <ul class="footer-links clearfix">
-                        </ul>
+                    <div class="span4">
+                        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/Jcby0mqk1pY"
+                                    frameborder="0"></iframe>
+                        </div>
                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="span9">&nbsp;</div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span1">&nbsp;</div>
+                    <div class="span4">
+                        <h3 id="statemachines">State Machines (Feature Demo)</h3>
+
+                        <p>
+                            In this video we show state machines, including integration with C, visualization and verification.
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/aJ8d7ISFat4"
+                                    frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="span9">&nbsp;</div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span1">&nbsp;</div>
+                    <div class="span4">
+                        <h3 id="components">Components (Feature Demo)</h3>
+
+                        <p>
+                            In this video we show state interfaces (client/server and sender/receiver), components, component instantiation, visualization and verification.
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/jGonrpPhxeM"
+                                    frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span9">&nbsp;</div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span1">&nbsp;</div>
+                    <div class="span4">
+                        <h3 id="testing">Testing (Feature Demo)</h3>
+
+                        <p>
+                            This video explores how mbeddr supports testing. It shows basic test cases, test helper functions, component mocks, interpreting test output, logging, reporting and a custom language that improves testability.
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/vKoLqs1hd6Q"
+                                    frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span9">&nbsp;</div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span1">&nbsp;</div>
+                    <div class="span4">
+                        <h3 id="req">Requirements, Tracing, Use Cases and Scenarios (Feature Demo)</h3>
+
+                        <p>
+                            This video shows how we handle requirements in mbeddr including: requirements collection, tracing from code to requirements, embedding business logic in requirements, as well as use cases and scenarios.
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/scvLpux7dMM"
+                                    frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span9">&nbsp;</div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span1">&nbsp;</div>
+                    <div class="span4">
+                        <h3 id="ple">Product Line Variability (Feature Demo)</h3>
+
+                        <p>
+                            This video shows mbeddr's approch to static (compile-time) and dynamic (runtime) product line variability.
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+                            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/-bgZpZPg1rM"
+                                    frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="span1">&nbsp;</div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div id="intro">
+    <div class="container">
+
+    </div>
+</div>
+
+<div id="extra">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <ul class="footer-links clearfix">
+                        <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+                        <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+                        <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+                        <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+                    </ul>
+                    <ul class="footer-links clearfix">
+                        <li><a href="http://mbeddr.wordpress.com/benefits/">Key characteristics and benefits</a>.
+                        <li><a href="http://mbeddr.wordpress.com/further-reading/#overview">mbeddr key concepts</a>.
+                        <li><a href="http://mbeddr.wordpress.com/getit">Download</a>.
+                        <li><a href="http://mbeddr.wordpress.com/further-reading/#papers">Read our Papers</a>.
+                    </ul>
+                </div>
+                <div class="span6">
+                    <ul class="footer-links clearfix">
+                        <li><a href="http://mbeddr.wordpress.com/further-reading/#cs">Case Studies</a>.
+                        <li><a href="http://mbeddr.wordpress.com/screencasts">Watch Screencasts</a>.
+                        <li><a href="http://mbeddr.wordpress.com/getit">Extend mbeddr</a>.
+                        <li><a href="http://mbeddr.wordpress.com/blog/">Read the Blog</a>.
+                        <li><a href="http://mbeddr.wordpress.com/getit">Read the FAQ</a> or <a
+                                href="http://mbeddr.wordpress.com/professional-services">contact the team</a>.
+                    </ul>
+                    <ul class="footer-links clearfix">
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Le javascript
-        ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
 
 
-    <!-- Include the plug-in -->
-    <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
+<!-- Include the plug-in -->
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
 </body>
 </html>

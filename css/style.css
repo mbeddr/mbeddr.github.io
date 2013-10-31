@@ -161,7 +161,7 @@ a {
 .image-slider h2 {
 	margin-top: 80px; /*specify 'margin-top' as per your your choice*/
 	font-family: 'Lato', sans-serif;
-	font-size: 42px;
+	font-size: 35px;
 	font-weight: 300;
 	color: #ffffff;
 	text-shadow: 0px 1px 1px #d4d4d4;
@@ -763,7 +763,8 @@ UNUSED.btn-the-bizzniss-4.active,UNUSED.btn-the-bizzniss-4:active {
 	left: 50%;
 	margin-left: -50%;
 	width: 100%;
-	z-index: 999;
+    z-index: 999;
+    padding-left: 100px;
 }
 
 .navbar .container {
