@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/learn.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -74,7 +72,7 @@
       <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="20" selection-start="13205" selection-end="13205" vertical-scroll-proportion="0.46804512" vertical-offset="4071" max-vertical-offset="6102">
+            <state line="315" column="10" selection-start="14914" selection-end="14914" vertical-scroll-proportion="10.657895" vertical-offset="0" max-vertical-offset="7002">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -315,7 +313,11 @@
       <created>1383211709141</created>
       <updated>1383211709141</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added the learn page.">
+      <created>1383212569391</created>
+      <updated>1383212569391</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -378,7 +380,8 @@
     <MESSAGE value="added the team page." />
     <MESSAGE value="added MPS page." />
     <MESSAGE value="added support page." />
-    <option name="LAST_COMMIT_MESSAGE" value="added support page." />
+    <MESSAGE value="added the learn page." />
+    <option name="LAST_COMMIT_MESSAGE" value="added the learn page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -502,7 +505,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="20" selection-start="13205" selection-end="13205" vertical-scroll-proportion="0.46804512" vertical-offset="4071" max-vertical-offset="6102">
+        <state line="315" column="10" selection-start="14914" selection-end="14914" vertical-scroll-proportion="10.657895" vertical-offset="0" max-vertical-offset="7002">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
