@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="fixed internal links and added papers and stuff.">
+    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="small changes.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -42,7 +42,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="934" column="29" selection-start="17967" selection-end="17967" vertical-scroll-proportion="0.19122256" vertical-offset="16690" max-vertical-offset="18180">
+            <state line="899" column="0" selection-start="17490" selection-end="17490" vertical-scroll-proportion="0.5481928" vertical-offset="15818" max-vertical-offset="18162">
               <folding />
             </state>
           </provider>
@@ -380,7 +380,11 @@
       <created>1383234220165</created>
       <updated>1383234220165</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="small changes.">
+      <created>1383235933759</created>
+      <updated>1383235933760</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -449,7 +453,8 @@
     <MESSAGE value="updated the menu in all files." />
     <MESSAGE value="screencasts page added." />
     <MESSAGE value="fixed internal links and added papers and stuff." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed internal links and added papers and stuff." />
+    <MESSAGE value="small changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -580,7 +585,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="934" column="29" selection-start="17967" selection-end="17967" vertical-scroll-proportion="0.19122256" vertical-offset="16690" max-vertical-offset="18180">
+        <state line="899" column="0" selection-start="17490" selection-end="17490" vertical-scroll-proportion="0.5481928" vertical-offset="15818" max-vertical-offset="18162">
           <folding />
         </state>
       </provider>
