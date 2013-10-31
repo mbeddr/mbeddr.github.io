@@ -1,404 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-	<meta charset="utf-8">
-	<title>Xtext - Language Development Made Easy!</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-		content="The website of Eclipse Xtext, an open-source framework for development of programming langauges and domain-specific languages">
-	<meta name="author" content="Sven Efftinge">
-	<!--  styles -->
-	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
-	<!-- Le fav and touch icons -->
-	
-	<link rel="shortcut icon" href="images/favicon.png">
-	
-	<link href="css/bootstrap.css" rel="stylesheet" type='text/css'>
-	<link href="css/bootstrap-responsive.css" rel="stylesheet" type='text/css'>
-	<link href="css/style.css" rel="stylesheet" type='text/css'>
-	<link href="css/shield-responsive.css" rel="stylesheet" type='text/css'>
-	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
-	<link href="css/prettyPhoto.css" rel="stylesheet" media="screen" type='text/css'>
-	<link href="google-code-prettify/prettify.css" type="text/css" rel="stylesheet"/>
-	<!--[if lt IE 9]>
-	<link href="css/iebugs.css" rel="stylesheet" type='text/css'>
-	<![endif]-->
-	<script src="js/twitter.js" type="text/javascript"></script>
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
-		<script type="text/javascript">
-	     $(document).ready(function() {
-			$('a[data-rel]').each(function() {
-				$(this).attr('rel', $(this).data('rel'));
-			});
-			
-			$("a[rel^='prettyPhoto']").prettyPhoto({
-				animation_speed: 'fast',
-				slideshow: 5000,
-				autoplay_slideshow: false,
-				opacity: 0.80,
-				show_title: true,
-				theme: 'ligh_square',
-				overlay_gallery: false,
-				social_tools: false
-			});
-			$('#nav-outline > li > a').live('click', function() {        
-				$(this).parent().find('ul').slideToggle();      
-			});
-			$('.has-popover').popover();
-			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-			po.src = 'https://apis.google.com/js/plusone.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	     });
-		</script>
-	<script type="text/javascript">
-		var _gaq = _gaq || [];	
-	  	_gaq.push([ '_setAccount', 'UA-2429174-3' ]);
-		_gaq.push([ '_trackPageview' ]);
-		(function() {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-					: 'http://www')
-					+ '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+    <meta charset="utf-8">
+    <title>Xtext - Language Development Made Easy!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="The website of Eclipse Xtext, an open-source framework for development of programming langauges and domain-specific languages">
+    <meta name="author" content="Sven Efftinge">
+    <!--  styles -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type='text/css'>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type='text/css'>
+    <link href="css/shield-responsive.css" rel="stylesheet" type='text/css'>
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    <link href="css/prettyPhoto.css" rel="stylesheet" media="screen" type='text/css'>
+    <link href="google-code-prettify/prettify.css" type="text/css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <link href="css/iebugs.css" rel="stylesheet" type='text/css'>
+    <![endif]-->
+    <script src="js/twitter.js" type="text/javascript"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[data-rel]').each(function () {
+                $(this).attr('rel', $(this).data('rel'));
+            });
+
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                animation_speed: 'fast',
+                slideshow: 5000,
+                autoplay_slideshow: false,
+                opacity: 0.80,
+                show_title: true,
+                theme: 'ligh_square',
+                overlay_gallery: false,
+                social_tools: false
+            });
+            $('#nav-outline > li > a').live('click', function () {
+                $(this).parent().find('ul').slideToggle();
+            });
+            $('.has-popover').popover();
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push([ '_setAccount', 'UA-2429174-3' ]);
+        _gaq.push([ '_trackPageview' ]);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+                    : 'http://www')
+                    + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
 <body>
-	<!-- Navbar -->
-	<div class="navbar navbar-fixed-top"
-		style="border-bottom: 1px solid #000;">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse"
-					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span>
-				</a> <a class="brand" href="index.html"></a>
-				<div class="nav-collapse collapse" style="height: 0px;">
-					<ul class="nav">
-						<li ><a href="news.html">News</a></li>
-						<li class="active"><a href="download.html">Download</a></li>
-						<li ><a href="benefits.html">7 Languages</a></li>
-						<li ><a href="documentation.html">Documentation</a></li>
-						<li ><a href="learn.html">Community</a></li>
-						<li ><a href="http://xtend-lang.org">Xtend</a></li>
-						<li ><a href="http://www.eclipse.org">Eclipse.org</a></li>
-					</ul>
-				</div>
-				<!--/.nav-collapse -->
-		        <div class="btn-group pull-right">
-		          <g:plusone href="http://www.xtext.org"></g:plusone>
-		        </div>
-	
-			</div>
-		</div>
-	</div>
-	<!-- Navbar End -->
-<div id="header_wrapper" class="container" >
+<!-- Navbar -->
+<div class="navbar navbar-fixed-top"
+     style="border-bottom: 1px solid #000;">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse"
+               data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span>
+            </a> <a class="brand" href="index.html"></a>
+
+            <div class="nav-collapse collapse" style="height: 0px;">
+                <ul class="nav">
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+            <div class="btn-group pull-right">
+                <g:plusone href="http://www.xtext.org"></g:plusone>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Navbar End -->
+<div id="header_wrapper" class="container">
 </div>
 <div id="page">
-	<div class="inner">
-		<div class="container clearfix">
-			<h2>Download Options</h2>
-			<hr>
-			<!--table one starts-->
-			<div class="span1">&nbsp;</div>
-		    <div class="span4">
-				<div class="pricing">
-				    <table>
-						<tfoot>
-						    <tr>
-								<td></td>
-						    </tr>
-						</tfoot>
-						<tbody>
-					    <tr>
-							<td class="focus">Update Sites <span>Use Update Manager in Eclipse</span></td>
-					    </tr>
-					    <tr>
-					    	<td style="text-align: center;">
-					    	<a
-					    	rel="popover"
-					    	data-content="This is an Eclipse update site URL, which you need to paste into the update manager within Eclipse!"
-					    	data-original-title="Right-click and 'Copy Link'"
-					    	href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"
-					    	class="has-popover btn btn-primary btn-large"
-					    	style="width: 70%;">Latest Release</a></td>
-					    </tr>
-					    <tr>
-							<td style="text-align: center;">
-							<a
-							  rel="popover"
-					    	data-content="This is an Eclipse update site URL, which you need to paste into the update manager within Eclipse!"
-					    	data-original-title="Right-click and 'Copy Link'"
-							  href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/milestones/"
-					    	class="has-popover btn btn-primary btn-large"
-					    	style="width: 70%;">Latest Milestone</a></td>
-					    </tr>
-					    <tr>
-							<td style="text-align: center;">
-							<a
-								rel="popover"
-					    	data-content="This is an Eclipse update site URL, which you need to paste into the update manager within Eclipse!"
-					    	data-original-title="Right-click and 'Copy Link'"
-								href="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/latest/"
-					    	class="has-popover btn btn-primary btn-large"
-					    	style="width: 70%;">Bleeding Edge!</a></td>
-					    </tr>
-					</tbody>
-				    </table>
-				</div>
-		    </div>
-		    <div class="span1">&nbsp;</div>
-		    <div class="span4">
-				<div class="pricing">
-				    <table>
-						<tfoot>
-						    <tr>
-								<td></td>
-						    </tr>
-						</tfoot>
-						<tbody>
-						    <tr>
-								<td class="focus">Full Eclipse <span>Just Download and Unzip</span></td>
-						    </tr>
-						    <tr>
-						    	<td style="text-align: center; white-space: nowrap;">
-						    	<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/tmf/xtext/downloads/distros/eclipse-dsl-kepler-R-macosx-cocoa-x86_64.tar.gz&r=1"
-						    	class="btn btn-primary btn-large" style="width: 45%;">OS X 64 Bit</a>&nbsp;
-						    	<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/tmf/xtext/downloads/distros/eclipse-dsl-kepler-R-macosx-cocoa.tar.gz&r=1"
-						    	class="btn btn-primary btn-large"
-						    	style="width:20%;">32 Bit</a></td>
-						    </tr>
-						    <tr>
-						    	<td style="text-align: center; white-space: nowrap;">
-						    	<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/tmf/xtext/downloads/distros/eclipse-dsl-kepler-R-linux-gtk-x86_64.tar.gz&r=1"
-						    	class="btn btn-primary btn-large"
-						    	style="width: 45%;">Linux 64 Bit</a>&nbsp;
-						    	<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/tmf/xtext/downloads/distros/eclipse-dsl-kepler-R-linux-gtk.tar.gz&r=1"
-						    	class="btn btn-primary btn-large"
-						    	style="width:20%;">32 Bit</a></td>
-						    </tr>
-						    <tr>
-						    	<td style="text-align: center; white-space: nowrap;">
-						    	<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/tmf/xtext/downloads/distros/eclipse-dsl-kepler-R-win32-x86_64.zip&r=1"
-						    	class="btn btn-primary btn-large"
-						    	style="width: 45%;">Windows 64 Bit</a>&nbsp;
-						    	<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/tmf/xtext/downloads/distros/eclipse-dsl-kepler-R-win32.zip&r=1"
-						    	class="btn btn-primary btn-large"
-						    	style="width:20%;">32 Bit</a></td>
-						    </tr>
-						</tbody>
-				    </table>
-				</div>
-		    </div>
-			<div class="span1">&nbsp;</div>
-		</div>
-		    <div class="container">
-						<div class="container">
-		<h2>Installation Instructions</h2>
-		<hr>
-		<div class="span1">&nbsp;</div>
-		  <div class="span9">
-		    <p>
-		      <strong>  Eclipse Xtext is implemented in Java, so you must have a
-		        <a href="http://www.oracle.com/technetwork/java/index.html">Java
-		        Runtime Environment</a> installed in order to proceed.
-		      </strong>
-		    </p>
-		    <p>
-		      There are two easy ways to get Xtext up and running. A pre-configured Eclipse distribution is available
-		      which has already all the necessary plug-ins installed. Alternatively, you can install Xtext into your
-		      existing Eclipse by means of the Eclipse update mechanism.
-		    </p>
-		    <!--  section -->
-		    <section id="InstallDistro" style="padding-top: 68px; margin-top: -68px;">
-		    <h2>  Install Pre-Configured Eclipse With Xtext
-		    </h2>
-		      <ol>
-		        <li>Download the distribution from above that matches your OS.</li>
-		        <li>Unzip the archive into the directory of your choice.
-						<strong>  Windows Users should choose a directory close to the root since the zip contains a
-						deeply nested folder structure. The maximum path length on windows may not exceed 256 characters.
-						</strong>
-		        </li>
-		        <li>Launch Eclipse and select the workspace location. A workspace location is the directory for your user data
-						    and project files.
-		        </li>
-		      </ol>
-		    </section>
-		    <!--  section -->
-		    <section style="padding-top: 68px; margin-top: -68px;">
-		    <h2>  Install Xtext From Update Site
-		    </h2>
-		    <p>
-		      If you have an Eclipse running :
-		    </p>
-		      <ul>
-		        <li>
-						    Choose
-						<strong>  Help -&gt; Install New Software...
-						</strong> from the menu bar and
-						<strong>  Add...
-						</strong> Insert one of the update site URLs from above.
-						    This site aggregates all the necessary and optional components and dependencies of Xtext.
-		        </li>
-		        <li>Select the <i>Xtext SDK</i> from the category <i>Xtext {version}</i> and
-		        complete the wizard by clicking the <i>Next</i> button until you can click <i>Finish</i>.
-		        </li>
-		        <li>
-						    After a quick download and a restart of Eclipse, Xtext is ready to use.
-		        </li>
-		      </ul>
-		    <p>
-		      Note: Xtext relies on the Antlr generator library. Unfortunately, we cannot provide this library on
-		      the official Eclipse release update sites. Instead, Xtext will try to download it on demand. To avoid
-		      this, you can manually install the feature
-		      <strong>  Xtext Antlr-2.0.0
-		      </strong> from the itemis update site
-		      (
-		      <a href="http://download.itemis.de/updates/">http://download.itemis.de/updates/</a>).
-		      The general installation procedures are not affected by this issue.
-		    </p>
-		    </section>
-		  </div>
-		<div class="span1">&nbsp;</div>
-		</div>
-		<div class="container">
-			<h2>FAQs</h2>
-			<hr />
-			<div class="span1">&nbsp;</div>
-			<div class="span9" id="faq">
-				<div class="accordion" id="accordion2">
-				    <div class="accordion-group">
-				      <div class="accordion-heading">
-				    	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#What_is_an_update_site_">
-				    	  What is an update site?
-				    	</a>
-				      </div>
-				      <div id="What_is_an_update_site_" class="accordion-body collapse">
-				    	<div class="accordion-inner">
-				    	  Eclipse comes with a built-in update manager, that understands so called update sites.
-				    	  When in Eclipse open the <i>"Help"</i> menu and click on <i>"Install new Software..."</i>.
-				    	</div>
-				      </div>
-				    </div>
-				    <div class="accordion-group">
-				      <div class="accordion-heading">
-				    	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#What_is_the_license_of_Xtext_">
-				    	  What is the license of Xtext?
-				    	</a>
-				      </div>
-				      <div id="What_is_the_license_of_Xtext_" class="accordion-body collapse">
-				    	<div class="accordion-inner">
-				    	  <p>Xtext is freely available under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License</a>.</p>
-				    	  <p>
-				    	  	The license allows to use Xtext for development and even for developing and selling commercial products based on Xtext.
-				    	  </p>
-				    	</div>
-				      </div>
-				    </div>
-				    <div class="accordion-group">
-				      <div class="accordion-heading">
-				    	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#If_Xtext_is_open_source__how_can_I_get_professional_support_">
-				    	  If Xtext is open-source, how can I get professional support?
-				    	</a>
-				      </div>
-				      <div id="If_Xtext_is_open_source__how_can_I_get_professional_support_" class="accordion-body collapse">
-				    	<div class="accordion-inner">
-				    	  <p>Software systems built from open source components requires manpower that understands the internal dependencies of
-				    	  these components and can quickly and efficiently eliminate problems, should an error occur. </p>
-				    	  <p><b>itemis</b> is the leading consulting company for Eclipse-based development tools and is the main
-				    	  supporter for the Xtext project. Xtext experts are available for consulting.</p>
-				    	  See <a target="_blank" href="http://xtext.itemis.com">xtext.itemis.com</a> for more details.
-				    	</div>
-				      </div>
-				    </div>
-				    <div class="accordion-group">
-				      <div class="accordion-heading">
-				    	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#Can_I_download_the_update_site_as_a_zip_">
-				    	  Can I download the update site as a zip?
-				    	</a>
-				      </div>
-				      <div id="Can_I_download_the_update_site_as_a_zip_" class="accordion-body collapse">
-				    	<div class="accordion-inner">
-				    	  <p>If you instead prefer a downloadable updatesite or an SDK zip,
-				    	  please have a look at the following site : <a href="http://www.eclipse.org/modeling/tmf/downloads/">http://www.eclipse.org/modeling/tmf/downloads/</a></p>
-				    	</div>
-				      </div>
-				    </div>
-				</div>
-	  		</div>
-			<div class="span1">&nbsp;</div>
-		</div>
-	</div>
+<div class="inner">
+<div class="container clearfix">
+<h2>General</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span1">&nbsp;</div>
+        <div class="span9">
+            <p>
+                <strong>How to get it:</strong> You can get the code in the following ways, all of them are
+                detailed below:
+            </p>
+            <ul>
+                <li>Using the <a href="#win">Windows Installer</a></li>
+                <li>As a <a href="#debian">Debian package</a></li>
+                <li>As a <a href="#distro">ZIP Distribution</a> with MPS plugins.</li>
+                <li>By cloning our <a href="#git">Github repository</a>.</li>
+            </ul>
+
+            <p>
+                <b>License and Status:</b> The code is released under the <a
+                    href="http://eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>. The code
+                below is an
+                <b>early access preview</b>. This means that incompatible changes are possible in the
+                future, even
+                though we try to avoid them (the C core has been stable for a while, some of the extensions
+                may change
+                slightly).
+            </p>
+
+            <p>
+                <b>Issue Tracker:</b> Please use <a href="https://github.com/mbeddr/mbeddr.core/issues">github's
+                issue
+                tracker</a> to report
+                <issues class=""></issues>
+            </p>
+
+            <p>
+                <b>Extending mbeddr:</b> The user guide (get it <a
+                    href="https://github.com/mbeddr/mbeddr.core/releases">here</a>) describes a set of
+                example
+                extensions. You may also want to look at the <a
+                    href="http://www.jetbrains.com/mps/documentation/index.html">MPS Documentation page</a>,
+                and in
+                particular, you should read (in this order) the <a
+                    href="http://code.google.com/p/mps-lwc11/wiki/GettingStarted">LWC11 MPS Tutorial</a> and
+                the paper
+                <a href="http://voelter.de/data/pub/Voelter-GTTSE-MPS.pdf">Language Modularization and
+                    Composition with
+                    MPS</a> (the <a href="http://www.jetbrains.com/mps/documentation/index.html">docs
+                page</a> also has
+                a total of 90 minutes worth of screencasts on this topic).
+            </p>
+
+            <p>
+                <b>Contribute:</b> As of now, only our project team are registered as committers. However,
+                you can
+                always clone the repository, make changes there and then send a pull request to us so we can
+                get at your
+                code. And of course, once you've contributed useful patches, we may make you a committer.
+            </p>
+
+
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+
+
 </div>
-	<div id="extra">
-		<div class="inner">
-			<div class="container">
-				<div class="row">
-					<div class="span6">
-						<h3 style="padding-top: 0px; margin-top: 0px;">Quick Links</h3>
-						<ul class="footer-links clearfix">
-							<li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-							<li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-							<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-							<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
-						</ul>
-						<ul class="footer-links clearfix">
-	      			<li><a href="http://www.eclipse.org">Eclipse Home</a></li>
-							<li><a href="http://marketplace.eclipse.org/">Market Place</a></li>
-							<li><a href="http://live.eclipse.org/">Eclipse Live</a></li>
-							<li><a href="http://www.planeteclipse.org/">Eclipse Planet</a></li>
-						</ul>
-					</div>
-					<div class="span6">
-						<h3 style="padding-top: 0px; margin-top: 0px;"><a href="https://twitter.com/xtext" style="color : white;">@Xtext</a> on Twitter</h3>
-						<a class="twitter-timeline" href="https://twitter.com/xtext" data-widget-id="346625441290928128"
-						data-chrome="noheader nofooter transparent"
-						data-theme="dark">Tweets by @xtext</a>
-						<script>
-						!function(d,s,id) { 
-							var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-							if(!d.getElementById(id)) { 
-							  js=d.createElement(s);
-							  js.id=id;
-							  js.src=p+"://platform.twitter.com/widgets.js";
-							  fjs.parentNode.insertBefore(js,fjs);
-							}
-						}(document,"script","twitter-wjs");</script>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Le javascript
-	    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	
-	<script src="js/bootstrap-transition.js"></script>
-	<script src="js/bootstrap-alert.js"></script>
-	<script src="js/bootstrap-modal.js"></script>
-	<script src="js/bootstrap-dropdown.js"></script>
-	<script src="js/bootstrap-scrollspy.js"></script>
-	<script src="js/bootstrap-tab.js"></script>
-	<script src="js/bootstrap-tooltip.js"></script>
-	<script src="js/bootstrap-popover.js"></script>
-	<script src="js/bootstrap-button.js"></script>
-	<script src="js/bootstrap-collapse.js"></script>
-	<script src="js/bootstrap-carousel.js"></script>
-	<script src="js/bootstrap-typeahead.js"></script>
-	
-	
-	<!-- Include the plug-in -->
-	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-	<script src="js/custom.js" type="text/javascript"></script>
+
+
+<hr/>
+<h2 id="win">Windows Installer</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span1">&nbsp;</div>
+        <div class="span9">
+
+            <div class="span9">
+                <p>
+                    The installer is the most convenient way of installing mbeddr on Windows. It installs MPS, mbeddr
+                    and all of its dependent tools (cygwin, compilers, verification tools, graphviz). The installer can
+                    be found as part of the releases on the <a href="https://github.com/mbeddr/mbeddr.core/releases">github
+                    releases page</a>.
+                </p>
+
+                <p>
+                    It is distributed as a ZIP file. Unzip it and run <i>mbeddr-installer.exe</i>. It will ask you to
+                    grant administrator permissions, and then it will install mbeddr and it's dependencies. After
+                    installation, restart your computer to make sure the changes to the PATH variable are active. The
+                    installer also deploys the mbeddr tutorial, in the subdirectory "tutorial". After opening it, you
+                    will likely get two errors. First, it complains about an undefined path variable <i>mbeddr.github.core.home</i>.
+                    Select Fix It, and delete the path variable. Second, it will complain about VCS root errors. Select
+                    Ignore, and the problem is solved. Both errors are a consequence of the fact that we take the
+                    tutorial from an environment that requires these two variables, it is currently not so simply to
+                    avoid the (easy to fix) errors in the deployed version.
+                </p>
+
+                <p>
+                    If you experience any problems with the installer please file an issue at our <a
+                        href="https://github.com/mbeddr/mbeddr.core/issues">github repository</a>. Beside a detailed
+                    description of the problem please also include the debug log of the installer. It is located in
+                    %TEMP%/mbeddr/.
+                </p>
+            </div>
+
+
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+
+<hr/>
+<h2 id="debian">Debian Package</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span1">&nbsp;</div>
+        <div class="span9">
+            <p>
+                Just like the Windows installer you can get the debian package from the github <a
+                    href="https://github.com/mbeddr/mbeddr.core/releases">release page</a>. In order to be able to
+                install the package you will also need to have JetBrains MPS installed via debian package. Since
+                there is not official debian package available we have also created a debian package for MPS. To
+                even more simplify the installation we provide packages for the other mebbdr dependencies. You can
+                find a detailed description how it enable it on your machine <a
+                    href="http://logv.ws/b/2013/10/04/jetbrains-mps-debian-package/"> here</a>. This will also help
+                you keeping everything up to date without any additional work because it uses the well know debian
+                package mechanisms.
+            </p>
+
+            <p>
+                If you experience any problems with the packages please fill us a issue a our <a
+                    href="https://github.com/mbeddr/mbeddr.core/issues/new">github repository</a> and label it with
+                <i> debian package </i>.
+            </p>
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+
+<hr/>
+<h2 id="distro">mbeddr MPS Plugin Distribution</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span1">&nbsp;</div>
+        <div class="span9">
+
+            <p>
+                This distribution only contains the MPS plugins that represent MPS. All external tools (compilers,
+                verification tools, graphviz) have to be installed manually. The process how to do this is detailed in
+                the user guide. Please see the <a href="https://github.com/mbeddr/mbeddr.core/releases">github releases
+                page</a> for the downloadable plugins.
+            </p>
+
+            <p>
+                Here is a very brief installation guide. If you feel unsure about it, take a look at the user guide
+                linked below. It contains a much more detailed installation guide. Also, the <a
+                    href="http://mbeddr.wordpress.com/screencasts/">Screencasts</a> page contains a few screencasts on
+                the installation.
+            </p>
+
+            <p>
+                Please make sure that none of your intall paths for any of the things below contains any spaces!
+            </p>
+
+            <ul>
+                <li>Get <a href="http://www.jetbrains.com/mps/download">Version 3.0 of MPS</a> from the JetBrains
+                    website; there are binaries for each major platform.
+                <li>On Windows: <a href="http://cygwin.com/install.html">install cygwin</a> and be sure to include the
+                    <i>gcc-core</i> and <i>make</i> packages. Put the cygwin <i>bin/</i> folder into you system's <i>PATH</i>
+                <li>On Mac: install XCode to get <i>gcc</i> and <i>make</i>.
+                <li>On Linux: <i>gcc</i> and <i>make</i> should be there by default.
+                <li>To be able to use the visualizations, you must install <a
+                        href="http://www.graphviz.org/">graphviz</a> and put it on the path.
+                <li>To use the verifications, you must install <a href="http://nusmv.fbk.eu/">NuSMV</a>, <a
+                        href="http://yices.csl.sri.com/">Yices 1</a> and <a href="http://www.cprover.org/cbmc/">CBMC</a>.
+                    All of these are command-line tools and need to be available on the path.
+                <li>Download the mbeddr binaries (from the top of this page), unzip the ZIP file into some directory.
+                <li>In the unzipped directory there is a folder <i>plugins</i> that contains a bunch of folders. Copy
+                    all these folders into the <i>plugins</i> directory under MPS.
+                <li>Restart MPS, you should be ready to go.
+                <li><b>Please read the user guide </b>(from the <a
+                        href="https://github.com/mbeddr/mbeddr.core/releases">download page</a>). We've put a lot of
+                    love and energy in it, and you will have a much easier time understanding and exploiting what we've
+                    done :-)
+            </ul>
+
+
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+
+<hr/>
+<h2 id="git">Public Github Repository</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span1">&nbsp;</div>
+        <div class="span9">
+
+            <p>
+                The code is open source and can be accessed via <a href="https://github.com/mbeddr">public github
+                repository</a>. PLease refer to the user guide how to set up an mbeddr system based on the github
+                checkout.
+            </p>
+
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+
+</div>
+
+
+</div>
+<div id="extra">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <h3 style="padding-top: 0px; margin-top: 0px;">Quick Links</h3>
+                    <ul class="footer-links clearfix">
+                        <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+                        <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+                        <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+                        <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+                    </ul>
+                    <ul class="footer-links clearfix">
+                        <li><a href="http://www.eclipse.org">Eclipse Home</a></li>
+                        <li><a href="http://marketplace.eclipse.org/">Market Place</a></li>
+                        <li><a href="http://live.eclipse.org/">Eclipse Live</a></li>
+                        <li><a href="http://www.planeteclipse.org/">Eclipse Planet</a></li>
+                    </ul>
+                </div>
+                <div class="span6">
+                    <h3 style="padding-top: 0px; margin-top: 0px;"><a href="https://twitter.com/xtext"
+                                                                      style="color : white;">@Xtext</a> on Twitter
+                    </h3>
+                    <a class="twitter-timeline" href="https://twitter.com/xtext" data-widget-id="346625441290928128"
+                       data-chrome="noheader nofooter transparent"
+                       data-theme="dark">Tweets by @xtext</a>
+                    <script>
+                        !function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+
+
+<!-- Include the plug-in -->
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
 </body>
 </html>
