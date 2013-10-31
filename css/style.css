@@ -42,6 +42,15 @@ img {
 	height: auto;
 }
 
+.navbar .nav > li > a {
+    float: none;
+    padding: 19px 10px 21px;
+    line-height: 19px;
+    color: #0c3661;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
 strong {
 	font-weight: bold;
 }
