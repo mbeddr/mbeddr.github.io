@@ -907,7 +907,7 @@ ul.list3 li {
 .navbar .brand {
 	position: relative;
 	top: 0;
-	margin-left: 0;
+	margin-left: 30px;
 	font-weight: 600;
 }
 
@@ -937,6 +937,7 @@ ul.list3 li {
 	font-weight: 400;
 	line-height: 1.3em;
 	font-style: normal;
+    font-size: 20px;
 	word-spacing: 1px;
 }
 
