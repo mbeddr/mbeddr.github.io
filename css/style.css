@@ -17,7 +17,7 @@ body { /*	background: url(../images/pattern1.jpg) repeat #ffffff;*/
 
 .navbar .nav > li > a:hover {
     background-color: transparent;
-    color: #FD6111;
+    color: #E78119;
     text-decoration: none;
 }
 
@@ -32,8 +32,8 @@ p {
 
 h2 {
 	font-family: 'Lato', serif;
-	font-weight: normal;
-	color: #0c3661;
+	font-weight: bold;
+	color: #104c89;
     padding-bottom: 20px;
 }
 
@@ -41,7 +41,7 @@ h2 small {
 	font-family: 'Lato', serif;
 	font-weight: normal;
 	font-size: 12px;
-	color: #0c3661;
+	color: #104c89;
 }
 
 img {
@@ -156,7 +156,7 @@ strong {
 
 
 a {
-    color: #FD6111;
+    color: #E78119;
     text-decoration: none;
 }
 
@@ -370,12 +370,12 @@ img.screenshot {
 
 a:hover .onhover-red {
 	text-decoration: none;
-	color: #FD6111;
+	color: #E78119;
 }
 
 a.onhover-red {
 	text-decoration: none;
-	color: #FD6111;
+	color: #E78119;
 }
 
 ul.team_info {
