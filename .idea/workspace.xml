@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -26,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="65" selection-start="7204" selection-end="7204" vertical-scroll-proportion="-4.754717" vertical-offset="2826" max-vertical-offset="8712">
+            <state line="214" column="28" selection-start="9495" selection-end="9495" vertical-scroll-proportion="0.7643208" vertical-offset="3385" max-vertical-offset="9108">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,13 +41,6 @@
                 <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature2_syntax_coloring.png" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/images/feature2_syntax_coloring.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -204,6 +196,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,7 +403,11 @@
       <created>1383317073195</created>
       <updated>1383317073195</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="the first three videos are added.">
+      <created>1383325937780</created>
+      <updated>1383325937780</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -453,7 +463,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="created pages; still original Xtext content in those pages." />
     <MESSAGE value="download page finished; removed menu from non-index pages to make it consistent; will add later." />
     <MESSAGE value="faq page added." />
     <MESSAGE value="added the team page." />
@@ -478,7 +487,8 @@
     <MESSAGE value="added video." />
     <MESSAGE value="small change." />
     <MESSAGE value="updated menu bar." />
-    <option name="LAST_COMMIT_MESSAGE" value="updated menu bar." />
+    <MESSAGE value="the first three videos are added." />
+    <option name="LAST_COMMIT_MESSAGE" value="the first three videos are added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -574,7 +584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="65" selection-start="7204" selection-end="7204" vertical-scroll-proportion="-4.754717" vertical-offset="2826" max-vertical-offset="8712">
+        <state line="214" column="28" selection-start="9495" selection-end="9495" vertical-scroll-proportion="0.7643208" vertical-offset="3385" max-vertical-offset="9108">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -587,11 +597,6 @@
             <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/feature2_syntax_coloring.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
   </component>
