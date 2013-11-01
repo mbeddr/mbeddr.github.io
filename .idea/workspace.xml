@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
+    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="small change.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/news.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/benefits.html" afterPath="$PROJECT_DIR$/benefits.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/download.html" afterPath="$PROJECT_DIR$/download.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mps.html" afterPath="$PROJECT_DIR$/mps.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screencasts.html" afterPath="$PROJECT_DIR$/screencasts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support.html" afterPath="$PROJECT_DIR$/support.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -26,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="268" column="48" selection-start="11717" selection-end="11717" vertical-scroll-proportion="0.33224222" vertical-offset="4621" max-vertical-offset="8784">
+            <state line="98" column="21" selection-start="4444" selection-end="4444" vertical-scroll-proportion="-8.490566" vertical-offset="1314" max-vertical-offset="8748">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,54 +54,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="benefits.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="benefits.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/benefits.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="51" selection-start="4660" selection-end="4660" vertical-scroll-proportion="-56.0" vertical-offset="360" max-vertical-offset="5400">
+            <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.7064364" vertical-offset="1314" max-vertical-offset="5364">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videoOverlay.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/videoOverlay.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="download.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/download.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-8.666667" vertical-offset="1530" max-vertical-offset="7218">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videoOverlayBig.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/videoOverlayBig.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/faq.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="21" selection-start="4444" selection-end="4444" vertical-scroll-proportion="-12.666667" vertical-offset="1422" max-vertical-offset="8658">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zoom.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/zoom.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-12.666667" vertical-offset="1422" max-vertical-offset="7110">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="red-glossy-www.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/red-glossy-www.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="mps.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mps.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="19" selection-start="4478" selection-end="4478" vertical-scroll-proportion="-12.0" vertical-offset="1440" max-vertical-offset="4230">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="red-glossy-web.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/red-glossy-web.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="screencasts.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screencasts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-17.333334" vertical-offset="1296" max-vertical-offset="13878">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="picons04.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icons/picons04.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="support.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/support.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="17" selection-start="4476" selection-end="4476" vertical-scroll-proportion="-13.333333" vertical-offset="1404" max-vertical-offset="4158">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/team.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="0" selection-start="4459" selection-end="4459" vertical-scroll-proportion="-18.0" vertical-offset="828" max-vertical-offset="5598">
+              <folding>
+                <element signature="e#1716#2695#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -122,16 +154,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/download.html" />
-        <option value="$PROJECT_DIR$/faq.html" />
-        <option value="$PROJECT_DIR$/mps.html" />
-        <option value="$PROJECT_DIR$/screencasts.html" />
-        <option value="$PROJECT_DIR$/support.html" />
-        <option value="$PROJECT_DIR$/team.html" />
-        <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/benefits.html" />
+        <option value="$PROJECT_DIR$/team.html" />
+        <option value="$PROJECT_DIR$/support.html" />
+        <option value="$PROJECT_DIR$/screencasts.html" />
+        <option value="$PROJECT_DIR$/mps.html" />
+        <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/faq.html" />
+        <option value="$PROJECT_DIR$/download.html" />
+        <option value="$PROJECT_DIR$/benefits.html" />
       </list>
     </option>
   </component>
@@ -366,7 +398,11 @@
       <created>1383313237769</created>
       <updated>1383313237769</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="small change.">
+      <created>1383315699520</created>
+      <updated>1383315699520</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -379,7 +415,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24840085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18081181" sideWeight="0.75159913" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18081181" sideWeight="0.75159913" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -446,39 +482,13 @@
     <MESSAGE value="deleted images we don't need. Still left some of the generic ones in there, might proof useful." />
     <MESSAGE value="commtented things in again." />
     <MESSAGE value="added video." />
-    <option name="LAST_COMMIT_MESSAGE" value="added video." />
+    <MESSAGE value="small change." />
+    <option name="LAST_COMMIT_MESSAGE" value="small change." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="613" selection-end="613" vertical-scroll-proportion="-11.076923" vertical-offset="378" max-vertical-offset="18288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/prettyPhoto/dark_rounded/btnNext.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/prettyPhoto/dark_rounded/btnPrevious.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/prettyPhoto/dark_rounded/loader.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/30min_editor.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/videoOverlay.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -514,16 +524,46 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/benefits.html">
+    <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="51" selection-start="4660" selection-end="4660" vertical-scroll-proportion="-56.0" vertical-offset="360" max-vertical-offset="5400">
+        <state line="98" column="0" selection-start="4459" selection-end="4459" vertical-scroll-proportion="-18.0" vertical-offset="828" max-vertical-offset="5598">
+          <folding>
+            <element signature="e#1716#2695#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="17" selection-start="4476" selection-end="4476" vertical-scroll-proportion="-13.333333" vertical-offset="1404" max-vertical-offset="4158">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screencasts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-17.333334" vertical-offset="1296" max-vertical-offset="13878">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="19" selection-start="4478" selection-end="4478" vertical-scroll-proportion="-12.0" vertical-offset="1440" max-vertical-offset="4230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-12.666667" vertical-offset="1422" max-vertical-offset="7110">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="48" selection-start="11717" selection-end="11717" vertical-scroll-proportion="0.33224222" vertical-offset="4621" max-vertical-offset="8784">
+        <state line="98" column="21" selection-start="4444" selection-end="4444" vertical-scroll-proportion="-8.490566" vertical-offset="1314" max-vertical-offset="8748">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -535,6 +575,27 @@
             <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="21" selection-start="4444" selection-end="4444" vertical-scroll-proportion="-12.666667" vertical-offset="1422" max-vertical-offset="8658">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-8.666667" vertical-offset="1530" max-vertical-offset="7218">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benefits.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.7064364" vertical-offset="1314" max-vertical-offset="5364">
+          <folding />
         </state>
       </provider>
     </entry>
