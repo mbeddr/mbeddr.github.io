@@ -203,7 +203,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2013/10/screen-shot-2013-10-21-at-10-56-24-am.png"><img src="http://mbeddr.files.wordpress.com/2013/10/screen-shot-2013-10-21-at-10-56-24-am.png?w=150" alt="Screen Shot 2013-10-21 at 10.56.24 AM" width="150" height="69" class="alignright size-thumbnail wp-image-1137" /></a>    </div>
+        <a href="images/blog/screen-shot-2013-10-21-at-10-56-24-am.png"><img src="images/blog/screen-shot-2013-10-21-at-10-56-24-am.png?w=150" alt="Screen Shot 2013-10-21 at 10.56.24 AM" width="150" height="69" class="alignright size-thumbnail wp-image-1137" /></a>    </div>
 </div>
 <br/>
 
@@ -264,45 +264,45 @@
 
         <h4 id="reportingstrategy_1">ReportingStrategy</h4>
         <p>The first thing we need is a <i>ReportingStrategy</i>.  To do so we create a new concept and name it <i>SerialReportingStrategy</i>:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/1.png" alt="reporting" width="750" /></p>
+        <p><img src="images/blog/1.png" alt="reporting" width="750" /></p>
 
         <p>The editor also looks straight forward, just a constant cell with the words <i>serial reporting</i> in it:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/2.png" alt="Screenshot of SerialReportingStrategy  editor" width="750" /></p>
+        <p><img src="images/blog/2.png" alt="Screenshot of SerialReportingStrategy  editor" width="750" /></p>
 
         <p>Now we can select this new strategy in the mbeddr build configuration:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/3.png" alt="Selection in build config" width="750" /></p>
+        <p><img src="images/blog/3.png" alt="Selection in build config" width="750" /></p>
 
         <p>So thats it for the visible part. We can select it but it doesn't really do anything, because there is no generator that generates the code to write the serial port. To change this we need to add a generator that reduces the concepts discussed above to C, in case <i>serial reporting</i> is selected. </p>
 
         <h4 id="generator">Generator</h4>
         <p>First we create a new Generator in MPS:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/4.png" alt="generator skeleton" width="750" /></p>
+        <p><img src="images/blog/4.png" alt="generator skeleton" width="750" /></p>
 
         <p>As you can see the <i>is applicable</i> rule checks if the selected reporting in the build configuration is the <i>SerialReportingStrategy</i>; otherwise this generator will not do anything (hoping that another generator will reduce the reporting concepts to C).  </p>
 
         <p>Let's start with the easiest thing the generator should handle: disabled messages! We create a reduction rule that only applies to messages that have the <i>active</i> flag set to <i>false</i> and then abandons the input:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/5.png" alt="abandon inactive message" width="750" /></p>
+        <p><img src="images/blog/5.png" alt="abandon inactive message" width="750" /></p>
 
         <p>The reporting architecture of mbeddr contains two core elements: a <i>MessageDefinition</i>  and a <i>MessageDefinitionTable</i> which combines multiple messages. Messages are always part of a message definition table. So we need to reduce the table first. The generator is also quite simple. It take a <i>MessageDefinitionTable</i> and calls the <i>$COPY_SRCL$</i> for its messages. Which loops over all of the massages and tries to reduce them in turn:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/6.png" alt="reduce message definition table" width="750" /></p>
+        <p><img src="images/blog/6.png" alt="reduce message definition table" width="750" /></p>
 
         <p>To get all the messages to reduce we use the <i>nonEmptyMessages</i> method of the <i>MessageDefinitionTable</i> behavior:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/7.png" alt="copy source list macro definition" width="750" /></p>
+        <p><img src="images/blog/7.png" alt="copy source list macro definition" width="750" /></p>
 
         <p>Next we need to reduce the message definition itself.
             We do two things in this reduction rule. First we generate a counter variable for the message. This variable can be used in tests to check how often a message occurred. In normal C code this variable is not relevant. And second we generate a <i>char*</i> variable that is initialized with the message text for later usage when the message is fired.<sup id="fnref:1"><a class="footnote-ref" href="1" rel="footnote">1</a></sup></p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/8.png" alt="message reduction" width="750" /></p>
+        <p><img src="images/blog/8.png" alt="message reduction" width="750" /></p>
 
         <p>The property macros for the names are quite simple, they just generate a unique name for each variable so that we can reference them later. The macro for the initializer of the <i>string</i> is a bit more interesting. It generates its value from the name of the message and the text but also appends a <i>\n</i> at the end for line ending.</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/9.png" alt="message text" width="750" /></p>
+        <p><img src="images/blog/9.png" alt="message text" width="750" /></p>
 
         <p>Now that we have the texts and the counters generated, we can start with the part that emits the code to post the message to the serial port. I our case we have a library that does all the details. All we need to do is call a function with a <i>char*</i> as a argument. The library is added via the make file, the corresponding header file is called <i>serial.h</i>.  So the next thing to do is reducing the <i>ReportStatements</i>, but in order to keep the generator clean we implemented two different reduction rules one for a message with parameters and one for messages without parameters. Later you will see why. Here is what the generator for messages without parameters looks like:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/10.png" alt="report reduction" width="750" /></p>
+        <p><img src="images/blog/10.png" alt="report reduction" width="750" /></p>
 
         <p>The <i>condition</i> checks if there are no arguments and it does not contain an <i>check</i> guard. The reduction rule then defines some dummy variable and a dummy function. Inside the function an <i>ArbitraryTextExpression</i> is used to insert some text which is not a expressed with mbeddr semantics.  In the inspector you see that it also specifies a header to include and a type.</p>
         <p>Both variables use reference macros, and the message counter is also guarded with an <i>if</i> in the generator to avoid emitting this code in the case the message is not counted. </p>
         <p>Next is the <i>ReportStatement</i> with properties. It requires some more work to be done because we can not use printf we have to use sprintf and store that result in a buffer before we can put it to the serial port:</p>
-        <p><img src="http://mbeddr.files.wordpress.com/2013/09/11.png" alt="report reduction" width="750" /></p>
+        <p><img src="images/blog/11.png" alt="report reduction" width="750" /></p>
 
         <p>The major difference here is that it first generates a buffer variable to use it with sprintf, then prints the message and after that loops over all properties of the message where it prints them to the buffer and finally writes them to the serial port.  The size of the buffer is also calculated in the reduction rule. It takes the maximum length of the property name and adds 24 to which is the maximum length of a 64 bit integer printed as a string plus the characters added to make it look pretty. There is downside of this hard coded number, it will cause long strings to be corrupted. </p>
 
@@ -356,7 +356,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            On our <a href="https://github.com/mbeddr/mbeddr.core/releases">github release page</a> we have just released a new version of the mbeddr MPS plugins. This is the first release based on MPS 3.0 (see <a href="http://mbeddr.wordpress.com/blog/">previous post on how to get it</a>.
+            On our <a href="https://github.com/mbeddr/mbeddr.core/releases">github release page</a> we have just released a new version of the mbeddr MPS plugins. This is the first release based on MPS 3.0 (see previous post on how to get it).
         </p>
 
         <p>
@@ -474,7 +474,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            Christoph Rosenberger, a student of <a href="http://www.ifs.hsr.ch/Peter-Sommerlad.5826.0.html">Peter Sommerlad's</a> at the <a href="http://www.ifs.hsr.ch/">Institute for Software at the Hochschule Rapperswil</a> has written a <a href="http://mbeddr.files.wordpress.com/2013/07/modelcheckingforstate-machineswithmbeddrandnusmv.pdf">rather detailed article</a> about model checking state machines with mbeddr. He discusses the theory of model checking, the implementation in NuSMV (the model checker used by mbeddr), as well as the user experience in mbeddr itself. Well worth a read!
+            Christoph Rosenberger, a student of <a href="http://www.ifs.hsr.ch/Peter-Sommerlad.5826.0.html">Peter Sommerlad's</a> at the <a href="http://www.ifs.hsr.ch/">Institute for Software at the Hochschule Rapperswil</a> has written a <a href="files/modelcheckingforstate-machineswithmbeddrandnusmv.pdf">rather detailed article</a> about model checking state machines with mbeddr. He discusses the theory of model checking, the implementation in NuSMV (the model checker used by mbeddr), as well as the user experience in mbeddr itself. Well worth a read!
         </p>
     </div>
     <div class="span4">
@@ -533,7 +533,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2013/06/screen-shot-2013-06-26-at-7-38-04-pm.png"><img src="http://mbeddr.files.wordpress.com/2013/06/screen-shot-2013-06-26-at-7-38-04-pm.png?w=300" alt="Screen Shot 2013-06-26 at 7.38.04 PM" width="400" class="aligncenter size-medium wp-image-1050" /></a>
+        <a href="images/blog/screen-shot-2013-06-26-at-7-38-04-pm.png"><img src="images/blog/screen-shot-2013-06-26-at-7-38-04-pm.png?w=300" alt="Screen Shot 2013-06-26 at 7.38.04 PM" width="400" class="aligncenter size-medium wp-image-1050" /></a>
     </div>
 </div>
 <br/>
@@ -568,7 +568,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            mbeddr is of course targeted at technical users, people who develop embedded software based on C and mbeddr's C extensions. However, there are also aspects of mbeddr that are aimed at non-technical people. In particular, the <a href="http://mbeddr.wordpress.com/2013/04/04/a-paper-on-requirement-in-mbeddr/">requirements management</a> support is clearly aimed at non-developers: all kinds of stakeholders who write requirements, or who add some formal business logic into requirements (mbeddr's requirements system is extensible in that way).
+            mbeddr is of course targeted at technical users, people who develop embedded software based on C and mbeddr's C extensions. However, there are also aspects of mbeddr that are aimed at non-technical people. In particular, the requirements management support is clearly aimed at non-developers: all kinds of stakeholders who write requirements, or who add some formal business logic into requirements (mbeddr's requirements system is extensible in that way).
         </p>
 
         <p>
@@ -592,13 +592,13 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2013/06/reqexample1.png"><img src="http://mbeddr.files.wordpress.com/2013/06/reqexample1.png?w=300" alt="reqExample1" width="300" height="210" class="aligncenter size-medium wp-image-1037" /></a>
+        <a href="images/blog/reqexample1.png"><img src="images/blog/reqexample1.png?w=300" alt="reqExample1" width="300" height="210" class="aligncenter size-medium wp-image-1037" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2013/06/reqexample2.png"><img src="http://mbeddr.files.wordpress.com/2013/06/reqexample2.png?w=300" alt="reqExample2" width="300" height="179" class="aligncenter size-medium wp-image-1038" /></a>
+        <a href="images/blog/reqexample2.png"><img src="images/blog/reqexample2.png?w=300" alt="reqExample2" width="300" height="179" class="aligncenter size-medium wp-image-1038" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2013/06/reqexample3.png"><img src="http://mbeddr.files.wordpress.com/2013/06/reqexample3.png?w=300" alt="reqExample3" width="300" height="207" class="aligncenter size-medium wp-image-1039" /></a>
+        <a href="images/blog/reqexample3.png"><img src="images/blog/reqexample3.png?w=300" alt="reqExample3" width="300" height="207" class="aligncenter size-medium wp-image-1039" /></a>
     </div>
 </div>
 <br/>
@@ -632,7 +632,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2013/06/screen-shot-2013-06-03-at-5-33-03-pm.png"><img src="http://mbeddr.files.wordpress.com/2013/06/screen-shot-2013-06-03-at-5-33-03-pm.png?w=300" alt="Screen Shot 2013-06-03 at 5.33.03 PM" width="300" height="193" class="aligncenter size-medium wp-image-1033" /></a>
+        <a href="images/blog/screen-shot-2013-06-03-at-5-33-03-pm.png"><img src="images/blog/screen-shot-2013-06-03-at-5-33-03-pm.png?w=300" alt="Screen Shot 2013-06-03 at 5.33.03 PM" width="300" height="193" class="aligncenter size-medium wp-image-1033" /></a>
     </div>
 </div>
 <br/>
@@ -685,7 +685,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We've uploaded a new paper about <a href="http://mbeddr.files.wordpress.com/2010/06/wsr2013_debuggers.pdf">Debugging</a>: Language workbenches significantly reduce the effort for building extensible languages. However, they do not facilitate programmers with built-in debugging support for language extensions. This paper presents an extensible debugger architecture that enables debugging of language extensions. This is established by defining mappings between the base language and the language extensions. We show an implementation of our approach for the mbeddr language workbench.
+            We've uploaded a new paper about <a href="files/wsr2013_debuggers.pdf">Debugging</a>: Language workbenches significantly reduce the effort for building extensible languages. However, they do not facilitate programmers with built-in debugging support for language extensions. This paper presents an extensible debugger architecture that enables debugging of language extensions. This is established by defining mappings between the base language and the language extensions. We show an implementation of our approach for the mbeddr language workbench.
         </p>
     </div>
     <div class="span4">
@@ -816,7 +816,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We just added a new paper to the <a href="http://mbeddr.wordpress.com/further-reading/">learn</a> page. It discusses <a href='http://mbeddr.files.wordpress.com/2010/06/voeltertomassetti-requirementsinmbeddr.pdf'>mbeddr's approach to requirements management</a></b>. We discuss requirements themselves, paritial formalization of requirements using DSLs embedded in requirements, CRC-card-like high-level architectures and tracing from implementation artifacts to requirements and other "trace targets".
+            We just added a new paper to the <a href="learn.html">learn</a> page. It discusses <a href='files/voeltertomassetti-requirementsinmbeddr.pdf'>mbeddr's approach to requirements management</a></b>. We discuss requirements themselves, paritial formalization of requirements using DSLs embedded in requirements, CRC-card-like high-level architectures and tracing from implementation artifacts to requirements and other "trace targets".
         </p>
 
         <p>
@@ -836,7 +836,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            Just before easter, we have released a new virtual box image with all of mbeddr on it. You can <a href="http://mbeddr.wordpress.com/getit/">get it from the download page</a>. Have fun, and happy easter!
+            Just before easter, we have released a new virtual box image with all of mbeddr on it. You can <a href="download.html">get it from the download page</a>. Have fun, and happy easter!
         </p>
     </div>
     <div class="span4">
@@ -854,7 +854,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We have just <a href="http://mbeddr.wordpress.com/getit/">published a new distribution</a>. It contains all kinds of bug fixes, of course. In addition, we have since merged the richtext/multiline support (discussed <a href="http://mbeddr.wordpress.com/2013/03/18/documentation-of-the-documentation-language/">here</a> and <a href="http://mbeddr.wordpress.com/2013/03/07/tech-preview-mixed-content-editing/">here</a>) to the master. So this distribution contains the improved comments as well as the documentation language.
+            We have just <a href="download.html">published a new distribution</a>. It contains all kinds of bug fixes, of course. In addition, we have since merged the richtext/multiline support to the master. So this distribution contains the improved comments as well as the documentation language.
         </p>
     </div>
     <div class="span4">
@@ -870,7 +870,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            <a href="http://mbeddr.wordpress.com/2013/03/07/tech-preview-mixed-content-editing/">A while ago</a> we reported on mixed content editing in MPS, and how we have built a documentation language that can mix prose text with actual program nodes. We have now merged this code onto the master branch; it is also used in our requirements management language as well as in our code comments. To explain how it works, we have also extended the user guide. The respective <a href="http://mbeddr.files.wordpress.com/2013/03/documentationdocumentation.pdf">part of the user guide can be downloaded</a> separately. Note that this document is of course written with the documentation language itself, so it is able to bootstrap itself. There are still a few <a href="https://github.com/slisson/mps-richtext/issues?state=open">bugs</a> which whitespace, line breaks and selection, but these will be fixed in due course.
+            A while ago we reported on mixed content editing in MPS, and how we have built a documentation language that can mix prose text with actual program nodes. We have now merged this code onto the master branch; it is also used in our requirements management language as well as in our code comments. To explain how it works, we have also extended the user guide. The respective <a href="files/documentationdocumentation.pdf">part of the user guide can be downloaded</a> separately. Note that this document is of course written with the documentation language itself, so it is able to bootstrap itself. There are still a few <a href="https://github.com/slisson/mps-richtext/issues?state=open">bugs</a> which whitespace, line breaks and selection, but these will be fixed in due course.
         </p>
 
         <p>
@@ -908,7 +908,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We recently got out paper <a href='http://mbeddr.files.wordpress.com/2010/06/nfm2013.pdf'>Using Language Engineering to Lift Languages and Analyses at the Domain Level</a> accepted at the <a href="http://ti.arc.nasa.gov/events/nfm-2013/">NASA Formal Methods Symposium 2013</a>. In the paper, we mainly discuss how we integrate the static checking of pre- and postconditions as well as protocol checking (based on C-level model checking) into mbeddr. <a href='http://mbeddr.files.wordpress.com/2010/06/nfm2013.pdf'>Download the paper here.</a>
+            We recently got out paper <a href='files/nfm2013.pdf'>Using Language Engineering to Lift Languages and Analyses at the Domain Level</a> accepted at the <a href="http://ti.arc.nasa.gov/events/nfm-2013/">NASA Formal Methods Symposium 2013</a>. In the paper, we mainly discuss how we integrate the static checking of pre- and postconditions as well as protocol checking (based on C-level model checking) into mbeddr. <a href='files/nfm2013.pdf'>Download the paper here.</a>
         </p>
     </div>
     <div class="span4">
@@ -965,10 +965,10 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2013/02/ew1.jpg"><img src="http://mbeddr.files.wordpress.com/2013/02/ew1.jpg?w=300" alt="ew1" width="150" class="alignright size-medium wp-image-837" /></a>
+        <a href="images/blog/ew1.jpg"><img src="images/blog//ew1.jpg?w=300" alt="ew1" width="150" class="alignright size-medium wp-image-837" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2013/02/ew2.jpg"><img src="http://mbeddr.files.wordpress.com/2013/02/ew2.jpg?w=300" alt="ew2" width="150" class="alignleft size-medium wp-image-838" /></a>
+        <a href="images/blog/ew2.jpg"><img src="images/blog//ew2.jpg?w=300" alt="ew2" width="150" class="alignleft size-medium wp-image-838" /></a>
     </div>
 </div>
 <br/>
@@ -983,7 +983,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We have just created a new way of trying out mbeddr: a completely preconfigured VirtualBox Ubuntu image that contains MPS, mbeddr, gcc, gdb, and all of the verification tools. It is a 3GB download, so you do trade pain-free installation for download time :-) Please see the redesigned <a href="http://mbeddr.wordpress.com/getit/">download page</a> for details.
+            We have just created a new way of trying out mbeddr: a completely preconfigured VirtualBox Ubuntu image that contains MPS, mbeddr, gcc, gdb, and all of the verification tools. It is a 3GB download, so you do trade pain-free installation for download time :-) Please see the redesigned <a href="download.html">download page</a> for details.
         </p>
     </div>
     <div class="span4">
@@ -999,7 +999,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We often hear that the documentation for MPS is bad, and so it is hard or impossible to learn MPS. Granted, MPS has a somewhat steeper learning curve than some other DSLs tools, but on the other hand it is also much more comprehensive than many others: for example, it supports declarative type systems, dataflow analysis, language composition and domain-specific debugging. And granted also, any documentation can always be better, and there is always some point at which you won't find a problem solved by reading docs. In this case you can always ask questions in the <a href="http://forum.jetbrains.com/forum/Meta-Programming-System">MPS forum</a> or the <a href="http://mbeddr.wordpress.com/professional-services/">mbeddr mailing list</a>.
+            We often hear that the documentation for MPS is bad, and so it is hard or impossible to learn MPS. Granted, MPS has a somewhat steeper learning curve than some other DSLs tools, but on the other hand it is also much more comprehensive than many others: for example, it supports declarative type systems, dataflow analysis, language composition and domain-specific debugging. And granted also, any documentation can always be better, and there is always some point at which you won't find a problem solved by reading docs. In this case you can always ask questions in the <a href="http://forum.jetbrains.com/forum/Meta-Programming-System">MPS forum</a> or the <a href="support.html">mbeddr mailing list</a>.
         </p>
 
         <p>
@@ -1015,7 +1015,7 @@
         </p>
 
         <p>
-            Next, we suggest you grab the <a href="http://mbeddr.wordpress.com/getit/">mbeddr user guide</a> and read the tutorials on language extension. It describes in quite some detail 10 different extensions to the C language in MPS.
+            Next, we suggest you grab the <a href="download.html">mbeddr user guide</a> and read the tutorials on language extension. It describes in quite some detail 10 different extensions to the C language in MPS.
         </p>
 
         <p>
@@ -1037,7 +1037,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            The <a href="http://mbeddr.wordpress.com/further-reading/">Learn</a> page has just been updated with <a href='http://mbeddr.files.wordpress.com/2013/02/mbeddr_casestudy_asic.pdf'>a new case study on ASIC Testing</a>. This case study describes how Daniel Stieger from <a href="http://modellwerkstatt.org">die modellwerkstatt</a> and Michael Gau from <a href="http://bachmann.info">Bachmann electronics</a> built a DSL and a C generator for testing ASICs.
+            The <a href="learn.html">Learn</a> page has just been updated with <a href='files/mbeddr_casestudy_asic.pdf'>a new case study on ASIC Testing</a>. This case study describes how Daniel Stieger from <a href="http://modellwerkstatt.org">die modellwerkstatt</a> and Michael Gau from <a href="http://bachmann.info">Bachmann electronics</a> built a DSL and a C generator for testing ASICs.
         </p>
     </div>
     <div class="span4">
@@ -1053,7 +1053,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            In preparation for the <a href="http://www.embedded-world.de/en/">Embedded World 2013</a> conference, where mbeddr will be featured on itemis and fortiss booths, we have started creating <a href="http://mbeddr.wordpress.com/screencasts/">a few screencasts</a>. Stay tuned, there will be more coming in the next few days.
+            In preparation for the <a href="http://www.embedded-world.de/en/">Embedded World 2013</a> conference, where mbeddr will be featured on itemis and fortiss booths, we have started creating <a href="screencasts.html">a few screencasts</a>. Stay tuned, there will be more coming in the next few days.
         </p>
     </div>
     <div class="span4">
@@ -1094,7 +1094,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            Our colleague <a href="http://www.federico-tomassetti.it">Federico Tomassetti</a> has spent the last few months working on a facility that can import existing textual C sources into mbeddr. The challenge, of course, is to handle the preprocessor correctly. Federico has done various studies of how the preprocessor is used (see, for example, <a href="http://mbeddr.files.wordpress.com/2010/06/tomassettiratiu-extractingvariabilityfromcandliftingittombeddr.pdf">this paper</a>). Based on these studies he has made significant progress with a preprocessor-aware importer. Today, Federico has recorded a screencast that shows the approach and the current status. The video is embedded below. For details you might also want to take a look at <a href="http://language-engineer.com/the-c-to-mbeddr-c-importer-a-first-look/">a related blog post</a>.
+            Our colleague <a href="http://www.federico-tomassetti.it">Federico Tomassetti</a> has spent the last few months working on a facility that can import existing textual C sources into mbeddr. The challenge, of course, is to handle the preprocessor correctly. Federico has done various studies of how the preprocessor is used (see, for example, <a href="files/tomassettiratiu-extractingvariabilityfromcandliftingittombeddr.pdf">this paper</a>). Based on these studies he has made significant progress with a preprocessor-aware importer. Today, Federico has recorded a screencast that shows the approach and the current status. The video is embedded below. For details you might also want to take a look at <a href="http://language-engineer.com/the-c-to-mbeddr-c-importer-a-first-look/">a related blog post</a>.
         </p>
     </div>
     <div class="span4">
@@ -1120,7 +1120,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2013/01/voelterde-image.png"><img src="http://mbeddr.files.wordpress.com/2013/01/voelterde-image.png?w=251" alt="voelterde-image" width="251" height="300" class="alignright size-medium wp-image-685" /></a>
+        <a href="images/blog/voelterde-image.png"><img src="images/blog/voelterde-image.png?w=251" alt="voelterde-image" width="251" height="300" class="alignright size-medium wp-image-685" /></a>
     </div>
 </div>
 <br/>
@@ -1213,7 +1213,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.wordpress.com/2012/12/21/recent-updates/hierarchical/" rel="attachment wp-att-630"><img src="http://mbeddr.files.wordpress.com/2012/12/hierarchical.png?w=300" alt="hierarchical" width="300" height="275" class="aligncenter size-medium wp-image-630" /></a>
+        <a href="images/blog/hierarchical.png" rel="attachment wp-att-630"><img src="images/blog/hierarchical.png?w=300" alt="hierarchical" width="300" height="275" class="aligncenter size-medium wp-image-630" /></a>
     </div>
 </div>
 <br/>
@@ -1313,7 +1313,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We have just uploaded another case study: <b><a href='http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_mindstorms.pdf'>Lego Mindstorms</a></b>. This case study is the original demo we built with mbeddr. Although a Lego Mindstorms robot seems like a joke, the case study uses the OSEK operating system and contains interesting C extensions for OSEK.
+            We have just uploaded another case study: <b><a href='files/mbeddr_casestudy_mindstorms.pdf'>Lego Mindstorms</a></b>. This case study is the original demo we built with mbeddr. Although a Lego Mindstorms robot seems like a joke, the case study uses the OSEK operating system and contains interesting C extensions for OSEK.
         </p>
     </div>
     <div class="span4">
@@ -1331,7 +1331,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            As we had mentioned in the previous post, we are in the process of building real-world applications with mbeddr. To document our experience and showcase what mbeddr can be used for, we will publish case studies (of various sizes and levels of detail) on the website (on the <a href="http://mbeddr.wordpress.com/further-reading/">Learn More</a> page). We start with the <a href="http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_smartmeter.pdf">Smart Meter case study</a> mentioned earlier. It has just been uploaded.
+            As we had mentioned in the previous post, we are in the process of building real-world applications with mbeddr. To document our experience and showcase what mbeddr can be used for, we will publish case studies (of various sizes and levels of detail) on the website (on the <a href="learn.html">Learn More</a> page). We start with the <a href="files/mbeddr_casestudy_smartmeter.pdf">Smart Meter case study</a> mentioned earlier. It has just been uploaded.
         </p>
     </div>
     <div class="span4">
@@ -1373,7 +1373,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            At the <a href="http://wwwdi.supelec.fr/modevva/">Modevva 2012</a> workshop the mbeddr team has won the Best Paper Award and the Best Presentation Award with our contribution <a href='http://mbeddr.files.wordpress.com/2010/06/modevva2012.pdf'>Implementing Modular Domain Specific Languages and Analyses</a>. The paper discusses how we exploit language engineering to efficiently develop formal analyses. Congrats especially to Zaur Molotnikov who did the actual presentation :-)
+            At the <a href="http://wwwdi.supelec.fr/modevva/">Modevva 2012</a> workshop the mbeddr team has won the Best Paper Award and the Best Presentation Award with our contribution <a href='files/modevva2012.pdf'>Implementing Modular Domain Specific Languages and Analyses</a>. The paper discusses how we exploit language engineering to efficiently develop formal analyses. Congrats especially to Zaur Molotnikov who did the actual presentation :-)
         </p>
     </div>
     <div class="span4">
@@ -1456,7 +1456,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/07/analyzeerroroutput2.png"><img src="http://mbeddr.files.wordpress.com/2012/07/analyzeerroroutput2.png?w=300" alt="" title="analyzeErrorOutput2" width="300" height="107" class="aligncenter size-medium wp-image-561" /></a>
+        <a href="images/blog/analyzeerroroutput2.png"><img src="images/blog/analyzeerroroutput2.png?w=300" alt="" title="analyzeErrorOutput2" width="300" height="107" class="aligncenter size-medium wp-image-561" /></a>
     </div>
 </div>
 <br/>
@@ -1623,10 +1623,10 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/03/screen-shot-2012-03-25-at-9-48-39-pm.png"><img src="http://mbeddr.files.wordpress.com/2012/03/screen-shot-2012-03-25-at-9-48-39-pm.png?w=300" alt="" title="Screen Shot 2012-03-25 at 9.48.39 PM" width="300" height="258" class="aligncenter size-medium wp-image-533" /></a>
+        <a href="images/blog/screen-shot-2012-03-25-at-9-48-39-pm.png"><img src="images/blog/screen-shot-2012-03-25-at-9-48-39-pm.png?w=300" alt="" title="Screen Shot 2012-03-25 at 9.48.39 PM" width="300" height="258" class="aligncenter size-medium wp-image-533" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/03/screen-shot-2012-03-25-at-9-47-20-pm.png"><img src="http://mbeddr.files.wordpress.com/2012/03/screen-shot-2012-03-25-at-9-47-20-pm.png?w=300" alt="" title="Screen Shot 2012-03-25 at 9.47.20 PM" width="300" height="272" class="aligncenter size-medium wp-image-534" /></a>
+        <a href="images/blog/screen-shot-2012-03-25-at-9-47-20-pm.png"><img src="images/blog/screen-shot-2012-03-25-at-9-47-20-pm.png?w=300" alt="" title="Screen Shot 2012-03-25 at 9.47.20 PM" width="300" height="272" class="aligncenter size-medium wp-image-534" /></a>
     </div>
 </div>
 <br/>
@@ -1653,7 +1653,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/03/screen-shot-2012-03-22-at-6-52-05-pm.png"><img src="http://mbeddr.files.wordpress.com/2012/03/screen-shot-2012-03-22-at-6-52-05-pm.png?w=300" alt="" title="Screen Shot 2012-03-22 at 6.52.05 PM" width="300" height="209" class="aligncenter size-medium wp-image-525" /></a>
+        <a href="images/blog/screen-shot-2012-03-22-at-6-52-05-pm.png"><img src="images/blog/screen-shot-2012-03-22-at-6-52-05-pm.png?w=300" alt="" title="Screen Shot 2012-03-22 at 6.52.05 PM" width="300" height="209" class="aligncenter size-medium wp-image-525" /></a>
     </div>
 </div>
 <br/>
@@ -1670,7 +1670,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/03/trace.png"><img src="http://mbeddr.files.wordpress.com/2012/03/trace.png?w=300" alt="" title="trace" width="300" height="90" class="aligncenter size-medium wp-image-517" /></a>
+        <a href="images/blog/trace.png"><img src="images/blog/trace.png?w=300" alt="" title="trace" width="300" height="90" class="aligncenter size-medium wp-image-517" /></a>
     </div>
 </div>
 <br/>
@@ -1685,7 +1685,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            The <a>Embedded World 2012</a> conference is over. As we had <a href="http://mbeddr.wordpress.com/2012/02/17/mbeddr-embedded-world/">mentioned before</a>, mbeddr was shown at the itemis booth as well as in a talk.
+            The <a>Embedded World 2012</a> conference is over. As we had mentioned before, mbeddr was shown at the itemis booth as well as in a talk.
         </p>
 
         <p>
@@ -1697,10 +1697,10 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/03/ew1.jpg"><img src="http://mbeddr.files.wordpress.com/2012/03/ew1.jpg?w=300" alt="" title="ew1" width="300" height="224" class="aligncenter size-medium wp-image-474" /></a>
+        <a href="images/blog/ew1.jpg"><img src="images/blog/ew1.jpg?w=300" alt="" title="ew1" width="300" height="224" class="aligncenter size-medium wp-image-474" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/03/ew2.jpg"><img src="http://mbeddr.files.wordpress.com/2012/03/ew2.jpg?w=300" alt="" title="ew2" width="300" height="225" class="aligncenter size-medium wp-image-475" /></a>
+        <a href="images/blog/ew2.jpg"><img src="images/blog/ew2.jpg?w=300" alt="" title="ew2" width="300" height="225" class="aligncenter size-medium wp-image-475" /></a>
     </div>
 </div>
 <br/>
@@ -1713,7 +1713,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We have blogged about the use of formal verification and analyses methods in mbeddr before. We have now published a relatively detailed technical report that explains the philosophy of formal analyses in mbeddr. Take a look the the <a href="http://mbeddr.wordpress.com/further-reading/">Learn More</a> page.
+            We have blogged about the use of formal verification and analyses methods in mbeddr before. We have now published a relatively detailed technical report that explains the philosophy of formal analyses in mbeddr. Take a look the the <a href="learn.html">Learn More</a> page.
         </p>
     </div>
     <div class="span4">
@@ -1755,13 +1755,13 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/02/linear.png"><img src="http://mbeddr.files.wordpress.com/2012/02/linear.png?w=300" alt="" title="linear" width="300" height="176" class="aligncenter size-medium wp-image-444" /></a>
+        <a href="images/blog/linear.png"><img src="images/blog/linear.png?w=300" alt="" title="linear" width="300" height="176" class="aligncenter size-medium wp-image-444" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/02/debugger1.png"><img src="http://mbeddr.files.wordpress.com/2012/02/debugger1.png?w=300" alt="" title="debugger" width="300" height="171" class="aligncenter size-medium wp-image-448" /></a>
+        <a href="images/blog/debugger1.png"><img src="images/blog/debugger1.png?w=300" alt="" title="debugger" width="300" height="171" class="aligncenter size-medium wp-image-448" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/02/builder.png"><img src="http://mbeddr.files.wordpress.com/2012/02/builder.png?w=300" alt="" title="builder" width="300" height="202" class="aligncenter size-medium wp-image-449" /></a>
+        <a href="images/blog/builder.png"><img src="images/blog/builder.png?w=300" alt="" title="builder" width="300" height="202" class="aligncenter size-medium wp-image-449" /></a>
     </div>
 </div>
 <br/>
@@ -1786,7 +1786,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/02/debugger.png"><img src="http://mbeddr.files.wordpress.com/2012/02/debugger.png?w=300" alt="" title="debugger" width="300" height="158" class="aligncenter size-medium wp-image-438" /></a>
+        <a href="images/blog/debugger.png"><img src="images/blog/debugger.png?w=300" alt="" title="debugger" width="300" height="158" class="aligncenter size-medium wp-image-438" /></a>
     </div>
 </div>
 <br/>
@@ -1801,7 +1801,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We have finally gotten around to publishing the core code on github. It contains C, the unit test extension, the build support as well as the debugger, the user guide and the extension guide.  We have also published or MPS utilities project, which contains MPS languages for outlines and graphs, as well as the graphviewer we discussed in the <a href="http://mbeddr.wordpress.com/2012/02/16/visualizations-for-models/">this post</a>. The repository is at
+            We have finally gotten around to publishing the core code on github. It contains C, the unit test extension, the build support as well as the debugger, the user guide and the extension guide.  We have also published or MPS utilities project, which contains MPS languages for outlines and graphs, as well as the graphviewer we discussed in a previous post. The repository is at
             &nbsp;<br />
             &nbsp;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://github.com/mbeddr">http://github.com/mbeddr</a>
@@ -1827,7 +1827,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/02/ew.jpg"><img src="http://mbeddr.files.wordpress.com/2012/02/ew.jpg" alt="" title="ew" width="177" height="138" class="alignright size-full wp-image-410" /></a>
+        <a href="images/blog/ew.jpg"><img src="images/blog/ew.jpg" alt="" title="ew" width="177" height="138" class="alignright size-full wp-image-410" /></a>
     </div>
 </div>
 <br/>
@@ -1854,7 +1854,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/02/graphviewer.png"><img src="http://mbeddr.files.wordpress.com/2012/02/graphviewer.png?w=300" alt="" title="graphviewer" width="300" height="149" class="aligncenter size-medium wp-image-389" /></a>
+        <a href="images/blog/graphviewer.png"><img src="images/blog/graphviewer.png?w=300" alt="" title="graphviewer" width="300" height="149" class="aligncenter size-medium wp-image-389" /></a>
     </div>
 </div>
 <br/>
@@ -1875,7 +1875,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/02/cpp.png"><img src="http://mbeddr.files.wordpress.com/2012/02/cpp.png?w=300" alt="" title="cpp" width="300" height="214" class="aligncenter size-medium wp-image-384" /></a>
+        <a href="images/blog/cpp.png"><img src="images/blog/cpp.png?w=300" alt="" title="cpp" width="300" height="214" class="aligncenter size-medium wp-image-384" /></a>
     </div>
 </div>
 <br/>
@@ -1890,10 +1890,6 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            <a href="http://mbeddr.files.wordpress.com/2012/01/robot.png"><img src="http://mbeddr.files.wordpress.com/2012/01/robot.png?w=149" alt="" title="robot" width="149" height="300" class="alignright size-medium wp-image-354" /></a>
-        </p>
-
-        <p>
             We have started building a comprehensive example using mbeddr C. We have selected <a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms</a> together with the <a href="http://lejos-osek.sourceforge.net/">nxtOSEK</a> operating system. <a href="http://en.wikipedia.org/wiki/OSEK">OSEK</a> is a real-world embedded operating system, so our example does have some real-world relevance.
         </p>
 
@@ -1906,6 +1902,7 @@
         </p>
     </div>
     <div class="span4">
+        <a href="images/blog/robot.png"><img src="images/blog/robot.png?w=149" alt="" title="robot" width="149" height="300" class="alignright size-medium wp-image-354" /></a>
     </div>
 </div>
 <br/>
@@ -1938,13 +1935,13 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/01/stub.png"><img src="http://mbeddr.files.wordpress.com/2012/01/stub.png" alt="" title="stub" width="439" height="439" class="aligncenter size-full wp-image-339" /></a>
+        <a href="images/blog/stub.png"><img src="images/blog/stub.png" alt="" title="stub" width="439" height="439" class="aligncenter size-full wp-image-339" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/01/mock.png"><img src="http://mbeddr.files.wordpress.com/2012/01/mock.png" alt="" title="mock" width="345" height="312" class="aligncenter size-full wp-image-347" /></a>
+        <a href="images/blog/mock.png"><img src="images/blog/mock.png" alt="" title="mock" width="345" height="312" class="aligncenter size-full wp-image-347" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/01/testcase.png"><img src="http://mbeddr.files.wordpress.com/2012/01/testcase.png" alt="" title="testcase" width="500" height="191" class="aligncenter size-full wp-image-341" /></a>
+        <a href="images/blog/testcase.png"><img src="images/blog/testcase.png" alt="" title="testcase" width="500" height="191" class="aligncenter size-full wp-image-341" /></a>
     </div>
 </div>
 <br/>
@@ -1957,7 +1954,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            In a <a href="http://mbeddr.wordpress.com/2011/08/16/first-cut-at-components/">previous post</a> we have talked about components and interfaces. We believe that components are an essential and widely applicable extension to C is the basis for meaningful reuse and variability management. In our approach, the same interface can be provided (implemented) by several different components, in different ways. Of course, the semantics implied by the interface should be realized consistently by all these components. To enforce this, an interface must specify more than just the signature of the operations.
+            In a previous post we have talked about components and interfaces. We believe that components are an essential and widely applicable extension to C is the basis for meaningful reuse and variability management. In our approach, the same interface can be provided (implemented) by several different components, in different ways. Of course, the semantics implied by the interface should be realized consistently by all these components. To enforce this, an interface must specify more than just the signature of the operations.
         </p>
 
         <p>
@@ -1981,13 +1978,13 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2012/01/calculator.png"><img src="http://mbeddr.files.wordpress.com/2012/01/calculator.png" alt="" title="calculator" width="500" height="342" class="aligncenter size-full wp-image-329" /></a>
+        <a href="images/blog/calculator.png"><img src="images/blog/calculator.png" alt="" title="calculator" width="500" height="342" class="aligncenter size-full wp-image-329" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/01/counter.png"><img src="http://mbeddr.files.wordpress.com/2012/01/counter.png" alt="" title="counter" width="500" height="140" class="aligncenter size-full wp-image-330" /></a>
+        <a href="images/blog/counter.png"><img src="images/blog/counter.png" alt="" title="counter" width="500" height="140" class="aligncenter size-full wp-image-330" /></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2012/01/filesys.png"><img src="http://mbeddr.files.wordpress.com/2012/01/filesys.png" alt="" title="filesys" width="500" height="229" class="aligncenter size-full wp-image-331" /></a>
+        <a href="images/blog/filesys.png"><img src="images/blog/filesys.png" alt="" title="filesys" width="500" height="229" class="aligncenter size-full wp-image-331" /></a>
     </div>
 </div>
 <br/>
@@ -2016,7 +2013,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            On the <a href="http://mbeddr.wordpress.com/getit">download page</a> we have now published some material on extending the mbeddr C language. This includes the <a href="http://www.voelter.de/mbeddr/mbeddr_extensionguide.pdf">mbeddr Extension Guide</a> and a couple of links to general MPS documentation.
+            On the <a href="download.html">download page</a> we have now published some material on extending the mbeddr C language. This includes the <a href="http://www.voelter.de/mbeddr/mbeddr_extensionguide.pdf">mbeddr Extension Guide</a> and a couple of links to general MPS documentation.
         </p>
     </div>
     <div class="span4">
@@ -2032,7 +2029,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            We have reached a significant milestone today: we have released a first snapshot of the mbeddr core code including a user guide and an example project. <a href="http://mbeddr.wordpress.com/getit/">Take a look at the Get it! page</a> to find out more. We hope you enjoy our little christmas present :-) We're looking forward to receiving feedback about what you think.
+            We have reached a significant milestone today: we have released a first snapshot of the mbeddr core code including a user guide and an example project. <a href="download.html">Take a look at the Get it! page</a> to find out more. We hope you enjoy our little christmas present :-) We're looking forward to receiving feedback about what you think.
         </p>
     </div>
     <div class="span4">
@@ -2104,7 +2101,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/11/modelchecking.png"><img src="http://mbeddr.files.wordpress.com/2011/11/modelchecking.png" alt="" title="modelchecking" width="500" height="345" class="aligncenter size-full wp-image-292" /></a>
+        <a href="images/blog/modelchecking.png"><img src="images/blog/modelchecking.png" alt="" title="modelchecking" width="500" height="345" class="aligncenter size-full wp-image-292" /></a>
     </div>
 </div>
 <br/>
@@ -2167,7 +2164,7 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/11/requirements.png"><img src="http://mbeddr.files.wordpress.com/2011/11/requirements.png" alt="" title="requirements" width="500" height="273" class="aligncenter size-full wp-image-265" /></a>
+        <a href="images/blog/requirements.png"><img src="images/blog/requirements.png" alt="" title="requirements" width="500" height="273" class="aligncenter size-full wp-image-265" /></a>
     </div>
 </div>
 <br/>
@@ -2239,8 +2236,8 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/10/errorrep.jpg"><img
-                src="http://mbeddr.files.wordpress.com/2011/10/errorrep.jpg" alt="" title="errorrep" width="427"
+        <a href="images/blog/errorrep.jpg"><img
+                src="images/blog/errorrep.jpg" alt="" title="errorrep" width="427"
                 height="268" class="aligncenter size-full wp-image-251"/></a>
     </div>
 </div>
@@ -2301,8 +2298,8 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/09/dectab.jpg"><img
-                src="http://mbeddr.files.wordpress.com/2011/09/dectab.jpg" alt="" title="dectab" width="482"
+        <a href="images/blog/dectab.jpg"><img
+                src="images/blog/dectab.jpg" alt="" title="dectab" width="482"
                 height="567" class="aligncenter size-full wp-image-233"/></a>
     </div>
 </div>
@@ -2396,8 +2393,8 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/08/comps.png"><img
-                src="http://mbeddr.files.wordpress.com/2011/08/comps.png" alt="" title="comps" width="400" height="446"
+        <a href="images/blog/comps.png"><img
+                src="images/blog/comps.png" alt="" title="comps" width="400" height="446"
                 class="aligncenter size-full wp-image-211"/></a>
     </div>
 </div>
@@ -2434,8 +2431,8 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/08/closures.png"><img
-                src="http://mbeddr.files.wordpress.com/2011/08/closures.png" alt="" title="closures" width="400"
+        <a href="images/blog/closures.png"><img
+                src="images/blog/closures.png" alt="" title="closures" width="400"
                 height="169" class="aligncenter size-full wp-image-205"/></a>
     </div>
 </div>
@@ -2466,8 +2463,8 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/08/functionreferences.png"><img
-                src="http://mbeddr.files.wordpress.com/2011/08/functionreferences.png" alt="" title="functionReferences"
+        <a href="images/blog/functionreferences.png"><img
+                src="images/blog/functionreferences.png" alt="" title="functionReferences"
                 width="400" height="632" class="aligncenter size-full wp-image-196"/></a>
     </div>
 </div>
@@ -2603,13 +2600,13 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/07/buildcfg.png"><img
-                src="http://mbeddr.files.wordpress.com/2011/07/buildcfg.png?w=300" alt="" title="buildcfg" width="200"
+        <a href="images/blog/buildcfg.png"><img
+                src="images/blog/buildcfg.png?w=300" alt="" title="buildcfg" width="200"
                 height="124" class="aligncenter size-medium wp-image-167"/></a>
         <br/>
         <br/>
-        <a href="http://mbeddr.files.wordpress.com/2011/07/test.png"><img
-                src="http://mbeddr.files.wordpress.com/2011/07/test.png?w=212" alt="" title="test" width="212"
+        <a href="images/blog/test.png"><img
+                src="images/blog/test.png?w=212" alt="" title="test" width="212"
                 height="300" class="aligncenter size-medium wp-image-171"/></a>
     </div>
 
@@ -2648,8 +2645,8 @@
         </p>
     </div>
     <div class="span4">
-        <a href="http://mbeddr.files.wordpress.com/2011/07/someccode1.png"><img
-                src="http://mbeddr.files.wordpress.com/2011/07/someccode1.png?w=300" alt="" title="someCCode"
+        <a href="images/blog/someccode1.png"><img
+                src="images/blog/someccode1.png?w=300" alt="" title="someCCode"
                 width="300" height="219" class="aligncenter size-medium wp-image-160"/></a>
     </div>
 
@@ -2685,7 +2682,7 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            At the bottom of the <a href="http://mbeddr.wordpress.com/mps/">MPS page</a> I have added a set of 8
+            At the bottom of the <a href="mps.html">MPS page</a> I have added a set of 8
             screencasts, 90 minutes in total, about language modularization and composition with MPS.
         </p>
     </div>
@@ -2780,8 +2777,8 @@
     <div class="span1">&nbsp;</div>
     <div class="span7">
         <p>
-            Check the <a href="http://mbeddr.wordpress.com/about/">Overview</a> and
-            <a href="http://mbeddr.wordpress.com/mps/">MPS</a> pages for more screencasts.
+            Check the <a href="index.html">Overview</a> and
+            <a href="mps.html">MPS</a> pages for more screencasts.
         </p>
     </div>
 </div>
@@ -2834,7 +2831,7 @@
                     <ul class="footer-links clearfix">
                         <li><a href="download.html">Download and Try.</a>.
                         <li><a href="download.html">Adapt and Extend.</a>.
-                        <li><a href="http://mbeddr.wordpress.com/blog/">Read the Blog</a>.
+                        <li><a href="news.html">Read the Blog</a>.
                         <li><a href="faq.html">Read the FAQ</a> or <a
                                 href="support.html">contact the team</a>.
                     </ul>
