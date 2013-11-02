@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.html" afterPath="$PROJECT_DIR$/news.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -559,7 +557,11 @@
       <created>1383424990811</created>
       <updated>1383424990811</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="added IDs to the block entries for referencing.">
+      <created>1383425541301</created>
+      <updated>1383425541301</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -615,7 +617,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="more tweaks." />
     <MESSAGE value="added the architecture overview" />
     <MESSAGE value="updated the orange." />
     <MESSAGE value="worked on the colors" />
@@ -640,7 +641,8 @@
     <MESSAGE value="working on the news page." />
     <MESSAGE value="finished copying over the news texts." />
     <MESSAGE value="fixed all links in the blog." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all links in the blog." />
+    <MESSAGE value="added IDs to the block entries for referencing." />
+    <option name="LAST_COMMIT_MESSAGE" value="added IDs to the block entries for referencing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
