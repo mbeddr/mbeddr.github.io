@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/feature_statemachine.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/feature_analysis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/feature_components.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/feature_ple.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mps.html" afterPath="$PROJECT_DIR$/mps.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support.html" afterPath="$PROJECT_DIR$/support.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -31,7 +34,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="296" column="0" selection-start="13839" selection-end="13839" vertical-scroll-proportion="0.5852535" vertical-offset="4820" max-vertical-offset="10692">
+            <state line="288" column="75" selection-start="13674" selection-end="13674" vertical-scroll-proportion="0.5437788" vertical-offset="4712" max-vertical-offset="10890">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -44,84 +47,17 @@
                 <element signature="n#style#0;n#p#0;n#div#5;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#6;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#7;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#8;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#9;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#10;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#11;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#12;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="benefits.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/benefits.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="65" selection-start="8015" selection-end="8015" vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="5364">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="download.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/download.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="7218">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/faq.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="21" selection-start="4444" selection-end="4444" vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="8658">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0" vertical-offset="1422" max-vertical-offset="7110">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mps.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mps.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="19" selection-start="4478" selection-end="4478" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="4230">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screencasts.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screencasts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="13878">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="support.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="17" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="4158">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/team.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="4459" selection-end="4459" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="6048">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -147,13 +83,13 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/team.html" />
-        <option value="$PROJECT_DIR$/support.html" />
         <option value="$PROJECT_DIR$/screencasts.html" />
-        <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/download.html" />
         <option value="$PROJECT_DIR$/benefits.html" />
+        <option value="$PROJECT_DIR$/support.html" />
+        <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -204,20 +140,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -572,23 +494,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/support.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="17" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="4158">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screencasts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="21" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="13878">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="19" selection-start="4478" selection-end="4478" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="4230">
           <folding />
         </state>
       </provider>
@@ -621,9 +529,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="0" selection-start="7022" selection-end="7022" vertical-scroll-proportion="-30.814816" vertical-offset="2354" max-vertical-offset="4608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="0" selection-start="7441" selection-end="7441" vertical-scroll-proportion="-30.814816" vertical-offset="2282" max-vertical-offset="4536">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="296" column="0" selection-start="13839" selection-end="13839" vertical-scroll-proportion="0.5852535" vertical-offset="4820" max-vertical-offset="10692">
+        <state line="288" column="75" selection-start="13674" selection-end="13674" vertical-scroll-proportion="0.5437788" vertical-offset="4712" max-vertical-offset="10890">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -636,6 +558,11 @@
             <element signature="n#style#0;n#p#0;n#div#5;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#6;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#7;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#8;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#9;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#10;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#11;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#12;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
