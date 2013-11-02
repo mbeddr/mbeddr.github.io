@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/benefits.html" afterPath="$PROJECT_DIR$/benefits.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/download.html" afterPath="$PROJECT_DIR$/download.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mps.html" afterPath="$PROJECT_DIR$/mps.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.html" afterPath="$PROJECT_DIR$/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screencasts.html" afterPath="$PROJECT_DIR$/screencasts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support.html" afterPath="$PROJECT_DIR$/support.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -72,7 +64,7 @@
       <file leaf-file-name="news.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2833" column="46" selection-start="157656" selection-end="157656" vertical-scroll-proportion="-565.2593" vertical-offset="35732" max-vertical-offset="51804">
+            <state line="117" column="4" selection-start="4824" selection-end="4824" vertical-scroll-proportion="-12.666667" vertical-offset="1764" max-vertical-offset="51804">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -104,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="faq.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="452" column="46" selection-start="19323" selection-end="19323" vertical-scroll-proportion="-6.0740743" vertical-offset="7972" max-vertical-offset="8964">
+            <state line="224" column="67" selection-start="9565" selection-end="9565" vertical-scroll-proportion="0.4048583" vertical-offset="3832" max-vertical-offset="8964">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -177,10 +169,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="294" column="46" selection-start="14556" selection-end="14556" vertical-scroll-proportion="0.3319838" vertical-offset="5128" max-vertical-offset="6084">
+            <state line="294" column="46" selection-start="14556" selection-end="14556" vertical-scroll-proportion="-6.0740743" vertical-offset="5128" max-vertical-offset="6084">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -209,16 +201,16 @@
       <list>
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/benefits.html" />
         <option value="$PROJECT_DIR$/download.html" />
-        <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/screencasts.html" />
         <option value="$PROJECT_DIR$/support.html" />
         <option value="$PROJECT_DIR$/team.html" />
+        <option value="$PROJECT_DIR$/news.html" />
+        <option value="$PROJECT_DIR$/faq.html" />
       </list>
     </option>
   </component>
@@ -563,7 +555,11 @@
       <created>1383423187073</created>
       <updated>1383423187073</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fixed all links in the blog.">
+      <created>1383424990811</created>
+      <updated>1383424990811</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -619,7 +615,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="updates titles and stuff." />
     <MESSAGE value="more tweaks." />
     <MESSAGE value="added the architecture overview" />
     <MESSAGE value="updated the orange." />
@@ -644,7 +639,8 @@
     <MESSAGE value="small fixes." />
     <MESSAGE value="working on the news page." />
     <MESSAGE value="finished copying over the news texts." />
-    <option name="LAST_COMMIT_MESSAGE" value="finished copying over the news texts." />
+    <MESSAGE value="fixed all links in the blog." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed all links in the blog." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -680,21 +676,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2833" column="46" selection-start="157656" selection-end="157656" vertical-scroll-proportion="-565.2593" vertical-offset="35732" max-vertical-offset="51804">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#6;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#30;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#36;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#37;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#98;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benefits.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="255" column="41" selection-start="12241" selection-end="12250" vertical-scroll-proportion="-6.0740743" vertical-offset="4426" max-vertical-offset="5400">
@@ -706,16 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="357" column="46" selection-start="16104" selection-end="16104" vertical-scroll-proportion="-6.0740743" vertical-offset="6262" max-vertical-offset="7254">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="452" column="46" selection-start="19323" selection-end="19323" vertical-scroll-proportion="-6.0740743" vertical-offset="7972" max-vertical-offset="8964">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,7 +777,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="294" column="46" selection-start="14556" selection-end="14556" vertical-scroll-proportion="0.3319838" vertical-offset="5128" max-vertical-offset="6084">
+        <state line="294" column="46" selection-start="14556" selection-end="14556" vertical-scroll-proportion="-6.0740743" vertical-offset="5128" max-vertical-offset="6084">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="4" selection-start="4824" selection-end="4824" vertical-scroll-proportion="-12.666667" vertical-offset="1764" max-vertical-offset="51804">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#6;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#30;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#36;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#37;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#98;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="67" selection-start="9565" selection-end="9565" vertical-scroll-proportion="0.4048583" vertical-offset="3832" max-vertical-offset="8964">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
