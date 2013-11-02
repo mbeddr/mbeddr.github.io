@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/feature_ple.png" afterPath="$PROJECT_DIR$/images/feature_ple.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,7 +30,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="529" column="46" selection-start="24614" selection-end="24614" vertical-scroll-proportion="0.6674365" vertical-offset="8944" max-vertical-offset="11628">
+            <state line="328" column="46" selection-start="15108" selection-end="15108" vertical-scroll-proportion="0.58429563" vertical-offset="5398" max-vertical-offset="11718">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -138,6 +139,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,7 +388,11 @@
       <created>1383406145376</created>
       <updated>1383406145376</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="better alignment of headings.">
+      <created>1383406264169</created>
+      <updated>1383406264169</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -429,7 +448,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added the benefits page." />
     <MESSAGE value="worked on the footer." />
     <MESSAGE value="updated the menu in all files." />
     <MESSAGE value="screencasts page added." />
@@ -454,7 +472,8 @@
     <MESSAGE value="added more videos." />
     <MESSAGE value="another video added." />
     <MESSAGE value="added a few newlines - better layout." />
-    <option name="LAST_COMMIT_MESSAGE" value="added a few newlines - better layout." />
+    <MESSAGE value="better alignment of headings." />
+    <option name="LAST_COMMIT_MESSAGE" value="better alignment of headings." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -555,7 +574,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="529" column="46" selection-start="24614" selection-end="24614" vertical-scroll-proportion="0.6674365" vertical-offset="8944" max-vertical-offset="11628">
+        <state line="328" column="46" selection-start="15108" selection-end="15108" vertical-scroll-proportion="0.58429563" vertical-offset="5398" max-vertical-offset="11718">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
