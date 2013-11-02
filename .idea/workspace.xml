@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="397" column="34" selection-start="15830" selection-end="15830" vertical-scroll-proportion="-0.51525426" vertical-offset="7450" max-vertical-offset="11916">
+            <state line="397" column="36" selection-start="15832" selection-end="15832" vertical-scroll-proportion="0.030508475" vertical-offset="7128" max-vertical-offset="11916">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -496,7 +495,11 @@
       <created>1383410718666</created>
       <updated>1383410718666</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="small fixes.">
+      <created>1383415505345</created>
+      <updated>1383415505345</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -552,7 +555,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="small changes." />
     <MESSAGE value="updated favicon." />
     <MESSAGE value="layout improvements." />
     <MESSAGE value="updates titles and stuff." />
@@ -577,7 +579,8 @@
     <MESSAGE value="more videos." />
     <MESSAGE value="updated the footer." />
     <MESSAGE value="reformatted the code." />
-    <option name="LAST_COMMIT_MESSAGE" value="reformatted the code." />
+    <MESSAGE value="small fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="small fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -702,7 +705,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="397" column="34" selection-start="15830" selection-end="15830" vertical-scroll-proportion="-0.51525426" vertical-offset="7450" max-vertical-offset="11916">
+        <state line="397" column="36" selection-start="15832" selection-end="15832" vertical-scroll-proportion="0.030508475" vertical-offset="7128" max-vertical-offset="11916">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
