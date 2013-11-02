@@ -390,11 +390,15 @@
       <created>1383406264169</created>
       <updated>1383406264169</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00038" summary="added PLE video.">
       <created>1383407677881</created>
       <updated>1383407677881</updated>
     </task>
     <option name="localTasksCounter" value="39" />
+=======
+    <option name="localTasksCounter" value="38" />
+>>>>>>> 1b4ed3cdf020567b958f29bd1675f80953164f97
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -450,6 +454,7 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="worked on the footer." />
     <MESSAGE value="updated the menu in all files." />
     <MESSAGE value="screencasts page added." />
     <MESSAGE value="fixed internal links and added papers and stuff." />
@@ -474,7 +479,6 @@
     <MESSAGE value="another video added." />
     <MESSAGE value="added a few newlines - better layout." />
     <MESSAGE value="better alignment of headings." />
-    <MESSAGE value="added PLE video." />
     <option name="LAST_COMMIT_MESSAGE" value="added PLE video." />
   </component>
   <component name="XDebuggerManager">
