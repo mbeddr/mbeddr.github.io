@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>mbeddr - engineering the future of embedded software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="The website of mbeddr, a set of integrated and extensible languages for embedded software engineering, plus an IDE with refatorings, a debugger and verification tools.">
+    <meta name="author" content="Markus Voelter">
+    <!--  styles -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+
+    <link rel="shortcut icon" href="images/favicon.gif">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type='text/css'>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type='text/css'>
+    <link href="css/shield-responsive.css" rel="stylesheet" type='text/css'>
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    <link href="css/prettyPhoto.css" rel="stylesheet" media="screen" type='text/css'>
+    <link href="google-code-prettify/prettify.css" type="text/css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <link href="css/iebugs.css" rel="stylesheet" type='text/css'>
+    <![endif]-->
+    <script src="js/twitter.js" type="text/javascript"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[data-rel]').each(function () {
+                $(this).attr('rel', $(this).data('rel'));
+            });
+
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                animation_speed: 'fast',
+                slideshow: 5000,
+                autoplay_slideshow: false,
+                opacity: 0.80,
+                show_title: true,
+                theme: 'ligh_square',
+                overlay_gallery: false,
+                social_tools: false
+            });
+            $('#nav-outline > li > a').live('click', function () {
+                $(this).parent().find('ul').slideToggle();
+            });
+            $('.has-popover').popover();
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push([ '_setAccount', 'UA-2429174-3' ]);
+        _gaq.push([ '_trackPageview' ]);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+                    : 'http://www')
+                    + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar navbar-fixed-top"
+     style="border-bottom: 1px solid #000;">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse"
+               data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span>
+            </a> <a class="brand" href="index.html"></a>
+
+            <div class="nav-collapse collapse" style="height: 0px;">
+                <ul class="nav">
+                    <li><a href="http://mbeddr.wordpress.com/blog">Blog</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="screencasts.html">Screencasts</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="mps.html">MPS</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+            <div class="btn-group pull-right">
+                <g:plusone href="http://mbeddr.com"></g:plusone>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Navbar End -->
+<div id="header_wrapper" class="container">
+</div>
+<div id="page">
+<div class="inner">
+<div class="container clearfix">
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>XXXXX (YYYYY)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            ZZZZZ
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>XXXXX (YYYYY)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            ZZZZZ
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>XXXXX (YYYYY)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            ZZZZZ
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>XXXXX (YYYYY)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            ZZZZZ
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>XXXXX (YYYYY)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            ZZZZZ
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>XXXXX (YYYYY)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            ZZZZZ
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>XXXXX (YYYYY)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            ZZZZZ
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>On the road to Open Source (01 Dec 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We are currently working on fixing the last (known) bugs and writing a user's guide (currently 30 pages). When we open source the core C language, we want to make sure users have a good shot at understanding what we did and how to use it.
+        </p>
+
+        <p>
+            So: nothing concrete yet, but I thought I'd let you know we're not doing nothing :-)
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Model Checking: A First Cut at Tool Integration (17 Nov 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            A major advantage of DSLs is that it is easier to apply formal verification techniques on their programs. As example, state machines can be formally analyzed in order to detect typical bugs such as: dead states, dead transitions, or non-determinism (when from a state, under certain circumstances, several transitions can be fired simultaneously). Additionally the users can define different custom checks by using an intuitive DSL. For performing analyses we use in the background the <a href="http://nusmv.fbk.eu/">NuSMV</a> model checker (a concise and readable introduction to model checking can be found in <a href="http://www.amazon.de/Systems-Software-Verification-Model-Checking-Techniques/dp/3642074782">this book</a>).
+        </p>
+
+        <p>
+            Our aim is to empower developers without any knowledge on mathematical logics to use formal analyses techniques. The workflow is simple and transparent to the user: once a state machine is marked as verifiable, the MPS checks wether it is written in a language subset that we can analyze. If yes, then the context menu then contains an action to run the model checker. The results of the model checker run are displayed nicely in a table:
+        </p>
+
+
+        <p>
+            For each of the predefined (or custom-defined) checks, the table states whether it succeeded or failed. If it failed, the table contains an example that shows how the check is violated. The table shows the example state sequence and the values of all variables. A user can click on the respective state to get it selected in the source.
+        </p>
+
+        <p>
+            The goal of integrating model checkers in mbeddr is to make model checking (almost) as easy as writing test cases. This way, we aim to convince more users of the idea that model checking (and formal verification in general) can be used in the daily work of embedded development.
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/11/modelchecking.png"><img src="http://mbeddr.files.wordpress.com/2011/11/modelchecking.png" alt="" title="modelchecking" width="500" height="345" class="aligncenter size-full wp-image-292" /></a>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>A Week of Coding (17 Nov 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            This week we had a team meeting at itemis in Stuttgart. We discussed how we'd proceed with implementing C extensions for Lear and Sick. We also cleaned up our code base, fixed bugs, tested, and started setting up a build server. We are well on our way for a mid-december release of an EAP version of the C base language for MPS. Stay tuned :-)
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Tutorial updated for MPS 2.0 (09 Nov 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Just a quick update: we migrated our MPS tutorial for MPS 2.0.
+            If you want to get started with MPS, please have a look at <a href="https://code.google.com/p/mps-lwc11/">the LWC11 example with MPS</a> At the same time we updated to a real VCS aka. git :-)
+            Have fun projecting. :-)
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Support for Requirements Traceability (04 Nov 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We have a first cut at supporting traceability into requirements. This consists of two parts.
+        </p>
+
+        <p>
+            Part one is a DSL for specifying requirements. A requirement has an ID, a summary, a prose text and any number of child requirements. A requirement also has a kind (e.g. functional or operational). The kind determines which additional specifications have to be provided. Any DSL can be "plugged into" the requirements framework to provide formally specified data to requirements. Requirements can also have constraints among each other. And of course, the requirements themselves, the kinds and the constraints can be extended by users of the system.
+        </p>
+
+        <p>
+            The second part of the system is traceability. A requirements trace annotation can be added to any other program element, expressed in any language. A trace points to one or more requirements and includes a trace kind (such as implements or tests).
+        </p>
+
+        <p>
+            Using this approach (and an importer from other requirements management tools we'll build in the future), flexible and extensible requirements traceability is supported for the mbeddr project.
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/11/requirements.png"><img src="http://mbeddr.files.wordpress.com/2011/11/requirements.png" alt="" title="requirements" width="500" height="273" class="aligncenter size-full wp-image-265" /></a>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>A custom Outline View (20 Oct 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Just like Eclipse, MPS supports views (they are called Tools in MPS). As an example of how to implement editor-synchronized additional tools, we have implemented an outline view. It shows the structure below the currently edited root up to a given level. This level, and the kinds of elements that are shown in this view, is determined by attaching annotations to the language concepts. If a concept has the <i>show in outline</i> annotation, will be shown in the view.
+        </p>
+
+        <p>
+            It is really nice to be able to attach any additional data to language definitions using concepts. Instead of coming up with an additional viewpoint model, this often small additional data can just be specified inline as part of the language concept definition itself.
+        </p>
+    </div>
+    <div class="span4">
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Make is now integrated into MPS Build (20 Oct 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We have integrated the <i>make</i> tool into the MPS build process. As part of the low-level code
+            generation, a Makefile is generated. Now this Makefile is executed directly from within MPS during the build
+            process MBEDDR C programs. This is useful in its own right, and it also taught us how to integrate
+            additional steps in the build process in general. So if other target platforms have additional build steps,
+            we now know how to integrate those as well. </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Error Reporting (15 Oct 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Reporting errors is surprisingly non-trivial in embedded systems. You can't simply printf stuff. There may
+            be no stdlib, and there may be no console :-) In many embedded systems there is no way of error logging,
+            everything must be tested thoroughly, so there are no errors left. Alternatively, there is usually some kind
+            of memory area, where log messages and error statuses are collected ("Fehlerspeicher"). So we came up with a
+            first cut at a simple error reporting approach. Here is some code:
+        </p>
+
+        <p>
+            We first define messages. These have IDs, an error test, a classification (ERROR, WARN, INFO) and, later, a
+            numerical code and additional log data. Reporting an error happens via the code shown in the function: a
+            message is references and reported, possibly only if a certain condition is met. Messages can be disabled,
+            in which case the report statements that report those disabled messages are not generated into the code ---
+            no reporting, no cost.
+        </p>
+
+        <p>
+            Depending on the target platform, the report statements are either transformed simply to a printf, or to
+            writing into some kind of error memory. Platform-dependent language concept translation is an important
+            ingredient to our approach, and illustrated, albeit with a simple example, by the error reporting feature.
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/10/errorrep.jpg"><img
+                src="http://mbeddr.files.wordpress.com/2011/10/errorrep.jpg" alt="" title="errorrep" width="427"
+                height="268" class="aligncenter size-full wp-image-251"/></a>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Refactoring Support (02 Oct 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            A good IDE provides useful refactoring support. Since we're planning to build a really good IDE for C, we
+            have started adding a couple of them. Here is the list that is currently supported:
+        </p>
+        <ul>
+            <li><i>Extract Into new Module</i>: one or more module contents (functions, variables, statemachines, etc)
+                can be selected and moved into a new module. The system prompts for the new module's name, creates it,
+                moves the contents there and then adds an import of the new module to the original module. The contents
+                in the new module are set to be <i>exported</i> if they are referenced from the original one.
+            <li><i>Move to Imported Module</i>: similar to the previous one, but this one does not create a new module.
+                Instead it moves the selected contents into one of the modules that are already imported.
+            <li><i>Introduce Variable</i>: an expression, maybe a sub-expression of another one, is selected. The
+                refactoring then prompts for a name, and proceeds to create a local variable with that name. The type of
+                the variable is the type of the selected expression and the init value is the expression itself. The
+                occurrence of the expression is replaced by a reference to the new variable.
+        </ul>
+
+        <p>
+            This is obviously a small list, but it was only three hours work. MPS provides a DSL/API for expressing
+            refactorings, and it is relatively straight forward to implement those. MPS also provides support for data
+            flow analysis. That's a topic we'll have to investigate soon, so we can build more sophisticated
+            refactorings.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Decision Tables (26 Sep 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            One thing that is nice about the projectional editor in MPS is that you cannot just use textual notations,
+            but also, for example, tables. We've built a little decision table. It uses a two-dimensional tabular
+            projection to render the two dimensions that are and'ed together. Below is an example and a test case.
+        </p>
+
+        <p>
+            We've also added a <i>gswitch</i> expression, it's a generified switch that can be used in expression
+            context. It can use any boolean expression in the <i>case</i>s and is translated to a bunch of
+            <i>if/else</i> statements wrapped in an inline function to put it into expression context. The decision
+            tables are translated to nested <i>gswitch</i> expressions.
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/09/dectab.jpg"><img
+                src="http://mbeddr.files.wordpress.com/2011/09/dectab.jpg" alt="" title="dectab" width="482"
+                height="567" class="aligncenter size-full wp-image-233"/></a>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>A first cut at statemachines (23 Sep 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We have got a fist cut of a state machine language. Our languages supports the declaration of in- and out
+            events, entry and exit actions for states, transitions between states with guard conditions and transition
+            actions. In-events are transmitted from the environment into the state machine while with out-events the
+            machine can notify its environment. Both event types have optional parameters. In addition, a state machine
+            can define local variables. Similar to components, state machines can be instantiated multiple times.
+        </p>
+
+        <p>
+            State machines are logically independent entities which can be embedded in different contexts. We have
+            already built an integration with ordinary modules as well as components, so state machines can be embedded
+            into modules and components. Dependent on their environment, they can bind their out events to either a
+            regular C function call, a call to an operation provided by a client-server interface or a message which is
+            sent through a message interface of a required port.
+        </p>
+
+        <p>
+            We also started with building an integration with the <a href="http://nusmv.fbk.eu/">NuSMV</a> model checker
+            which supports static verification of the correctness of a state machine. One very important feature here is
+            that a state machine can be verified independently from where it's embedded. This is possible because a
+            state machine's internal behavior only depends on the events and not on their bindings.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>A quick heads-up (21 Sep 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            So we are making progress :-) By the beginning of next week we should be "operator complete". The remaining
+            primitive types should by in by end of September. We have prototyped a first integration with a model
+            checker and implemented a first cut of a statemachine language. As it seems now, we will publish a first
+            Open Source version of the core C language during November 2011.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>FAQ added (01 Sep 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            So, people really do ask the same set of questions over and over again :-) So we've collected those
+            questions, and brief answers, <a href="http://mbeddr.com/faq/">on the new FAQ page</a>.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>First Cut at Components (16 Aug 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We have started implementing interfaces, components, ports, instances and connectors. At this point we can
+            work with connected atomic components (no composite components yet). Here is some example code:
+        </p>
+
+        <p>
+            Turns out, that in order to implement component instances which can each be connected to different other
+            components, we have to introduce a struct with functions pointers that keeps track of the wirings on a
+            per-instance bases. The function references we implemented recently did a marvelous job here :-)
+        </p>
+
+        <p>
+            Next up is the support for composite components.
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/08/comps.png"><img
+                src="http://mbeddr.files.wordpress.com/2011/08/comps.png" alt="" title="comps" width="400" height="446"
+                class="aligncenter size-full wp-image-211"/></a>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Now with Closures :-) (10 Aug 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Once we had function references and higher order functions, of course we thought about implementing
+            closures. The following screenshot shows the syntax we have chosen:
+        </p>
+
+        <p>
+            From the closures, we generate a function whose pointer we then pass to the higher order function. So we map
+            the closure mechanism to the function pointer stuff we did before. Also, we don't support references to
+            local variables from within closures. "Transporting" their values along with the closures would certainly be
+            possible, but would lead to quite some overhead. Since we're targetting embedded systems, we decided that
+            that's not a good idea.
+        </p>
+
+        <p>
+            Notice also that the parameters don't require the specification of a type. We use type inference to
+            automatically calculate the type from the context.
+        </p>
+
+        <p>
+            You know what's the coolest thing about the closures? It took just three hours to implement them. Syntax,
+            generator, type inference and all. MPS really is neat :-) </p>
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/08/closures.png"><img
+                src="http://mbeddr.files.wordpress.com/2011/08/closures.png" alt="" title="closures" width="400"
+                height="169" class="aligncenter size-full wp-image-205"/></a>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Function References and Higher Order Functions (4 Aug 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            C has always had support for higher-order functions using function pointers. Today we have added this
+            feature to our MPS-C implementation. We have cleaned the syntax up a bit (C's syntax is awful here!) to
+            resemble Scala's. Here is some example code:
+        </p>
+
+        <p>
+            Here is the cool thing: we spent just three hours to add this feature to C. This includes syntax, type
+            systems, quick fixes and the (relatively trivial) generator to C text. This clearly speaks to the power of
+            MPS!
+        </p>
+
+        <p>
+            This week we also added enums to C, created a state machine language prototype, as well as a prototype for
+            configurable counters. This is a lot of fun :-) </p>
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/08/functionreferences.png"><img
+                src="http://mbeddr.files.wordpress.com/2011/08/functionreferences.png" alt="" title="functionReferences"
+                width="400" height="632" class="aligncenter size-full wp-image-196"/></a>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Differences to regular C (30 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Here is a list of differences to regular C.
+        </p>
+        <ul>
+            <li>We don't support the preprocessor. Instead we will provide first class concepts for all the various use
+                cases of the C preprocessor. This avoids some of the chaos that can be created with the C preprocessor.
+            <li>While we generate header files, we don't expose them to the programmer in MPS. Instead, we have defined
+                modules as the top-level concept. Modules also acts as a kind of namespace. Module contents can be
+                exported, in which case, if that module is imported by another module, the exported contents can be used
+                by the importing module.
+            <li>We have introduced a specific Boolean datatype. Integers cannot be used as Boolean. in all of to call
+                legacy functions, the wrapper construct will be provided.
+            <li>In the switch statement, we don't use the annoying fall through semantics. Only one case within the
+                switch will ever be executed, since we automatically generate a break statement into the generated C
+                code.
+            <li>The language has direct support for test cases (as module contents)
+            <li>Array brackets must show up atter the type, not after the variable name
+            <li>The * for pointer types must show up after the type, not before the identifier (i.e. int x vs. int x)
+            <li>At this point a local variable declaration can only declare one variable
+        </ul>
+        <p>
+            There are various reasons for these differences. For some of them, we feel we are compensating weaknesses of
+            C (int vs boolean). For others, we exploit the capabilities of MPS and the generative approach (modules).
+            Yet others just make our lives as implementers more pleasant (arrays and pointers after type instead of
+            variable name).
+        </p>
+
+
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Pointers, Arrays, Globals (30 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We now have arrays, pointers and globals working. This pointer stuff is quite non-trivial in C, especially
+            regarding type checks. But all our tests work :-). We're making good progress.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Talk about the Project in Stuttgart on Sept. 20 (24 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            On Sept. 20 there will be a chance to learn about the project in some detail, during a talk Markus Voelter
+            will give in Stuttgart as part of the itemis talks series. Find details in <a
+                href="http://www.voelter.de/temp/Vortrag_Eingebettete_Systeme.pdf">this PDF</a>. It would be cool if a
+            couple of you guys would show up :-)
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Working with MPS and Git (24 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Some people are still skeptical regarding how to work with existing version control systems in the face of
+            MPS' XML storage. Do diffuse that skepticism, here is a little video of how we use git and MPS together. The
+            essential take-away is that MPS' projectional editor is used for doing diff and merge in case of conflicts.
+        </p>
+    </div>
+    <div class="span4">
+        <div class="flex-video" style="margin: 0 auto;text-align:center;">
+            <iframe allowfullscreen="true" src="http://www.youtube.com/embed/gc9oCAnUx7I"
+                    frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Simple Build tools and Unit Tests working (24 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We are making progress with our C implementation. We have implemented a make language so we can create
+            makefiles for GCC. On top of that, we have implemented a build configuration language where we simply
+            reference the modules that should go into an executable, and the corresponding makefile is generated.
+        </p>
+
+        <p>
+            We have a simple logging language which, because of the fact that we generate the code from the logging
+            statements, can be turned off without overhead and automatically inserts into the code the location of the
+            log statement, making it easy to understand the context of the log message.
+        </p>
+
+        <p>
+            We have also made progress with the unit testing support. We can now declare test cases with assert
+            statements and run them from within make. We can also build the programs and run the tests completely from
+            the command line. Here is a sample test case:
+        </p>
+
+        <p>
+            Finally, we have also implemented expression blocks, which allow you to use a block of statements where C
+            expects an expression. The generator reduces this to an additional function and a function call to that
+            function in place of the block expression. This is extremely useful for building generators. For example,
+            the facility used to call test cases is based on this mechanism.
+        </p>
+
+        <p>
+            So this was a very productive weekend :-)
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/07/buildcfg.png"><img
+                src="http://mbeddr.files.wordpress.com/2011/07/buildcfg.png?w=300" alt="" title="buildcfg" width="200"
+                height="124" class="aligncenter size-medium wp-image-167"/></a>
+        <br/>
+        <br/>
+        <a href="http://mbeddr.files.wordpress.com/2011/07/test.png"><img
+                src="http://mbeddr.files.wordpress.com/2011/07/test.png?w=212" alt="" title="test" width="212"
+                height="300" class="aligncenter size-medium wp-image-171"/></a>
+    </div>
+
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>First C Code working (17 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            As you may know, our project relies on the idea of extending the C programming language with domain specific
+            extensions. For that to work, we first have to make C available in MPS. While we had done this to some
+            extent in our proof of concept, we are now implementing C much more thoroughly. As you can see in the
+            screenshot below, some essential things are already working.
+        </p>
+
+        <p>
+            We have functions, local variables, basic expressions, a for statement, and other doing blocks. All of this
+            works with a text generator and a type system. We are doing this breadth first and not depth first, which
+            means that we're trying to try touch every aspect of C instead of implementing all available operators for
+            example. Once the basic structure is there, we can then fill in the holes.
+        </p>
+
+        <p>
+            One of the next steps will be support for unit testing, so we can directly start testing our type system and
+            code generators.
+        </p>
+
+        <p>
+            By the way: the core C language will be open sourced as soon as we have a reasonably complete
+            implementation.
+        </p>
+    </div>
+    <div class="span4">
+        <a href="http://mbeddr.files.wordpress.com/2011/07/someccode1.png"><img
+                src="http://mbeddr.files.wordpress.com/2011/07/someccode1.png?w=300" alt="" title="someCCode"
+                width="300" height="219" class="aligncenter size-medium wp-image-160"/></a>
+    </div>
+
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Kickoff Meeting (14 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Today we had our kickoff meeting at Fortiss in Munich. Almost all of the people who will participate in the
+            project were there. We discussed organizational things, but also concrete next steps. These next steps will
+            include the collection of the requirements from our validation partners, as well as concrete plans to start
+            the implementation of a more or less complete C in MPS. We also decided that the C implementation will be
+            completely open source, so you will be able to use it for your own purposes. We also discussed a little bit
+            how formal methods and model checking will play into the project, and I am very much looking forward to
+            seeing how this will turn out. It was a great meeting, and I am very much looking forward to this project.
+            I'm sure it's going to be a lot of fun. /Markus
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>MPS Screencasts added (11 Jul 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            At the bottom of the <a href="http://mbeddr.wordpress.com/mps/">MPS page</a> I have added a set of 8
+            screencasts, 90 minutes in total, about language modularization and composition with MPS.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Good News Confirmed (19 Jun 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            We now have the official word that our research project has been accepted. The kickoff will be on July 14.
+            We now have 10 person years in total to work on DSLs for embedded development, integration with formal
+            methods, and MPS. We will attempt to make this a very focused and open project, with possibilities for
+            collaboration for third parties. Stay tuned!
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Good News (06 Jun 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Rumors are, our research project has been accpeted. This means we will expand the team and put much much
+            more work into the project. Stay tuned :-)
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>Code available for Download (23 Jan 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            The MEL code is now available for <a
+                href="http://code.google.com/p/mpscmindstorms/downloads/detail?name=med-Jan232011.zip&amp;can=2&amp;q=">download</a>,
+            as opposed to checking it out from the SVN. Note that in order to run it you need the latest MPS (1.5.1).
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>MEL/C Hello World Tutorial (23 Jan 2011)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            A new <a
+                href="http://code.google.com/p/mpscmindstorms/downloads/detail?name=MELIntro2.pdf&amp;can=2&amp;q=">Hello
+            World Tutorial</a> is available for the modulare embedded DSL. It takes you through writing your own little
+            MEL program including functions, state machines and tasks.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>New MPS Tutorial (28 Jul 2010)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            A new <a href="http://code.google.com/p/mps-lwc11/wiki/GettingStarted">detailed MPS tutorial</a> is
+            available.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>More Screencasts added (11 Jun 2010)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            Check the <a href="http://mbeddr.wordpress.com/about/">Overview</a> and
+            <a href="http://mbeddr.wordpress.com/mps/">MPS</a> pages for more screencasts.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+<div class="row">
+    <div class="span1">&nbsp;</div>
+    <h2>mbeddr.com website created (09 Jun 2010)</h2>
+
+    <div class="span1">&nbsp;</div>
+    <div class="span7">
+        <p>
+            This is the first post on the mbeddr.com website. The purpose of the site is track and document the
+            embeddded software development tools we are currently building based on MPS.
+        </p>
+    </div>
+</div>
+<br/>
+
+
+</div>
+</div>
+</div>
+
+<div id="extra">
+    <div id="intro">
+        <div class="container">
+
+        </div>
+    </div>
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <ul class="footer-links clearfix">
+                        <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+                        <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+                        <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+                        <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+                    </ul>
+                    <ul class="footer-links clearfix">
+                        <li><a href="benefits.html">Key characteristics and benefits</a>.
+                        <li><a href="learn.html#overview">Read and Learn: Papers</a>.
+                        <li><a href="screencasts.html">Watch and Learn: Screencasts</a>.
+                        <li><a href="learn.html#cs">See how it's used: Case Studies.</a>.
+                    </ul>
+                </div>
+                <div class="span6">
+                    <ul class="footer-links clearfix">
+                        <li><a href="download.html">Download and Try.</a>.
+                        <li><a href="download.html">Adapt and Extend.</a>.
+                        <li><a href="http://mbeddr.wordpress.com/blog/">Read the Blog</a>.
+                        <li><a href="faq.html">Read the FAQ</a> or <a
+                                href="support.html">contact the team</a>.
+                    </ul>
+                </div>
+            </div>
+            <br/>
+        </div>
+    </div>
+    <div id="intro">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+
+
+<!-- Include the plug-in -->
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>
