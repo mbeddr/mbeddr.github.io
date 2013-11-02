@@ -110,301 +110,319 @@
 <div id="header_wrapper" class="container">
 </div>
 <div id="page">
-    <div id="team" class="container clearfix">
+<div id="team" class="container clearfix">
 
 
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="span7" id="faq">
+<div class="container">
+<h2>Frequently Asked Questions</h2>
 
+<div class="span7" id="faq">
 
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#why">
-                            Why are you doing this?
-                        </a>
-                    </div>
-                    <div id="why" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            We believe that, while C is a powerful and efficient language, it does not provide adequate support for defining higher level abstractions. We feel that language extension is the way to introduce abstractions relevant to embedded
-                            software development into C. Initial experience with mbeddr in a <a href="http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_smartmeter.pdf">real world project</a> confirms this belief.
-                        </div>
-                    </div>
-                </div>
 
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#extensions">
-                            What are some of the available extensions to C?
-                        </a>
-                    </div>
-                    <div id="extensions" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Examples include components (incl. interfaces with pre- and postconditions, ports and connectors), data types with physical units (as in 300 km/h) and state machines. Many smaller but very useful extensions, such as counters and decision tables are also supported.  Support for cross-cutting concerns such as requirements tracing and product line variability are available as well. Additional extensions will be inspired by our application partners SICK and BMW Car IT, and will specifically target use cases encountered in their domains.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#position">
-                            How do you position this in comparison with other approaches?
-                        </a>
-                    </div>
-                    <div id="position" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            We perceive the embedded development world as being made up of two camps. One camp uses bare-bones C to develop highly efficient, low level code. The other camp uses tools such as Matlab/Simulink, Ascet or similar tools to "model and synthsize" executable software. We position mbeddr in the middle between the two: you still primarily write code, but with meaningful, customizable abstractions.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#lib">
-                            Can't all this be done with libraries?
-                        </a>
-                    </div>
-                    <div id="lib" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Libraries don't support custom syntax, static error checking and efficient translation. Language extension can provide all of these. However, libraries of course still play an important role, we don't claim that language extension is the solution to all problems. Language extension also makes programs accessible for meaningful static analysis. Support for model checking or constraint solving is an important ingredient of the approach.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#macro">
-                            ... or with macros?
-                        </a>
-                    </div>
-                    <div id="macro" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Macros can provide some of the same efficiency (because they are translated statically). However, you cannot implement context-specific optimizations, and macros do not come with support for the type system and the IDE. Experience tells that using macros a lot turns your software into a maintenance nightmare.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#allOfC">
-                            Are you implementing all of C?
-                        </a>
-                    </div>
-                    <div id="allOfC" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            We are implementing essentially all of C, <a href="http://mbeddr.wordpress.com/2011/07/30/differences-to-regular-c/">here are some of the few differences</a>. There are various reasons for these differences. For some of them, we feel we are compensating weaknesses of C (int vs. boolean). For others, we exploit the capabilities of MPS and the generative approach (modules). Yet others just make our lives as implementers more pleasant (arrays and pointers after type instead of variable name). However, we are generating ANSI C99, so the generated code is compatible with existing target systems.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#cpp">
-                            What about C++?
-                        </a>
-                    </div>
-                    <div id="cpp" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            We have started implementing the basics of C++. The challenge with C++ is the type system for templates. We are not yet sure how far we will be going there; instead of using template meta programming, mbeddr users can use language extensions to achieve many of the same effects in a more elegant and robust way.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#compiler">
-                            Are you going to write your own compiler?
-                        </a>
-                    </div>
-                    <div id="compiler" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            No. MPS works by progressively reducing higher abstractions to lower abstractions, leading to ANSI C99 at the end of the chain. That C code can be compiled with  existing compilers. We use GCC currently, but others can be plugged in.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#debugging">
-                            Do you support debugging?
-                        </a>
-                    </div>
-                    <div id="debugging" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            We have a debugger working for C. We have proven its extensibility by building debuggers for components and state machines as well. Once completely finished, we will provide a integrated debugging approach for C and its domain-specific extensions.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#preproc">
-                            How can you build C without a preprocessor?
-                        </a>
-                    </div>
-                    <div id="preproc" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            The C preprocessor is (mis)used for a number of different things in C, including definition of constants, visibility management (header files) and expressing variants of programs. We provide first class support for these use cases in our language. For example, a module system with explicit visibility control is provided. For expressing code variants, we provide first class support for variant management, incl. static verification of correctness (see <a href="http://voelter.de/data/pub/DSM2010_VoelterMerkle-11-Final.pdf">this short paper</a>). Of course we generate C code that makes use of the preprocessor for some of these use cases, but we don't expose it to users.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#legacy">
-                            What about legacy code?
-                        </a>
-                    </div>
-                    <div id="legacy" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            An importer for header files is available. We are currently working on an importer for all of C that deals with preprocessor variability (#ifdef) correctly, as far as that is possible.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#os">
-                            Is it Open Source?
-                        </a>
-                    </div>
-                    <div id="os" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            mbeddr is open source; you can get it from <a href="http://mbeddr.wordpress.com/getit/">here</a>. It is licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License</a>.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#xtext">
-                            Why don't you use Xtext?
-                        </a>
-                    </div>
-                    <div id="xtext" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            While Xtext is a very good and widely used language workbench, it is also limited in many ways, particularly regarding language modularization and composition as well as non-textual notations. MPS is a much more productive environment for working with lots of modular languages.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#eclipse">
-                            How about Eclipse Support?
-                        </a>
-                    </div>
-                    <div id="eclipse" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            As of now, the system is built on MPS and MPS is not integrated with Eclipse. However, there is an EMF export for language meta models and programs. JetBrains has also agreed to provide an Eclipse-integrated version of MPS in 2013. Stay tuned for more news in this regard.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#textual">
-                            How about Graphical Notations?
-                        </a>
-                    </div>
-                    <div id="textual" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Currently all notations used by mbeddr are textual, tabular or symbolic because MPS does not yet support graphical notations. However, MPS will start providing support for graphical notations in 2013, and we will use them for state machines and components as soon as graphical notations become available. In the meantime, mbeddr already supports automatically-generated, read-only visualizations for various extensions based on graphviz, and a viewer that is directly integrated into MPS and provides drill-down support (double-click an element in the view, and the editor opens for this element).
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
-                           href="#primetime">
-                            Is mbeddr ready for prime time?
-                        </a>
-                    </div>
-                    <div id="primetime" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            A number of prototypical systems have been built, and a first commercial project is <a href="http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_smartmeter.pdf">currently being developed</a>. As of Jan 2013, we are also starting a larger case study with our project partner BMW Car IT. mbeddr is usable, scales well and is stable enough. Some usability challenges with MPS still remain, but they are scheduled to be fixed with version 3.0 (Q1 2013). In other words: yes, now is the time to seriously investigate mbeddr.
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
-            <div class="span1">&nbsp;</div>
-        </div>
-
-
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#why">
+            Why are you doing this?
+        </a>
     </div>
-    <br/><br/>
+    <div id="why" class="accordion-body collapse">
+        <div class="accordion-inner">
+            We believe that, while C is a powerful and efficient language, it does not provide adequate support for
+            defining higher level abstractions. We feel that language extension is the way to introduce abstractions
+            relevant to embedded
+            software development into C. Initial experience with mbeddr in a <a
+                href="http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_smartmeter.pdf">real world project</a>
+            confirms this belief.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#extensions">
+            What are some of the available extensions to C?
+        </a>
+    </div>
+    <div id="extensions" class="accordion-body collapse">
+        <div class="accordion-inner">
+            Examples include components (incl. interfaces with pre- and postconditions, ports and connectors), data
+            types with physical units (as in 300 km/h) and state machines. Many smaller but very useful extensions, such
+            as counters and decision tables are also supported. Support for cross-cutting concerns such as requirements
+            tracing and product line variability are available as well. Additional extensions will be inspired by our
+            application partners SICK and BMW Car IT, and will specifically target use cases encountered in their
+            domains.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#position">
+            How do you position this in comparison with other approaches?
+        </a>
+    </div>
+    <div id="position" class="accordion-body collapse">
+        <div class="accordion-inner">
+            We perceive the embedded development world as being made up of two camps. One camp uses bare-bones C to
+            develop highly efficient, low level code. The other camp uses tools such as Matlab/Simulink, Ascet or
+            similar tools to "model and synthsize" executable software. We position mbeddr in the middle between the
+            two: you still primarily write code, but with meaningful, customizable abstractions.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#lib">
+            Can't all this be done with libraries?
+        </a>
+    </div>
+    <div id="lib" class="accordion-body collapse">
+        <div class="accordion-inner">
+            Libraries don't support custom syntax, static error checking and efficient translation. Language extension
+            can provide all of these. However, libraries of course still play an important role, we don't claim that
+            language extension is the solution to all problems. Language extension also makes programs accessible for
+            meaningful static analysis. Support for model checking or constraint solving is an important ingredient of
+            the approach.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#macro">
+            ... or with macros?
+        </a>
+    </div>
+    <div id="macro" class="accordion-body collapse">
+        <div class="accordion-inner">
+            Macros can provide some of the same efficiency (because they are translated statically). However, you cannot
+            implement context-specific optimizations, and macros do not come with support for the type system and the
+            IDE. Experience tells that using macros a lot turns your software into a maintenance nightmare.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#allOfC">
+            Are you implementing all of C?
+        </a>
+    </div>
+    <div id="allOfC" class="accordion-body collapse">
+        <div class="accordion-inner">
+            We are implementing essentially all of C, <a
+                href="http://mbeddr.wordpress.com/2011/07/30/differences-to-regular-c/">here are some of the few
+            differences</a>. There are various reasons for these differences. For some of them, we feel we are
+            compensating weaknesses of C (int vs. boolean). For others, we exploit the capabilities of MPS and the
+            generative approach (modules). Yet others just make our lives as implementers more pleasant (arrays and
+            pointers after type instead of variable name). However, we are generating ANSI C99, so the generated code is
+            compatible with existing target systems.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#cpp">
+            What about C++?
+        </a>
+    </div>
+    <div id="cpp" class="accordion-body collapse">
+        <div class="accordion-inner">
+            We have started implementing the basics of C++. The challenge with C++ is the type system for templates. We
+            are not yet sure how far we will be going there; instead of using template meta programming, mbeddr users
+            can use language extensions to achieve many of the same effects in a more elegant and robust way.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#compiler">
+            Are you going to write your own compiler?
+        </a>
+    </div>
+    <div id="compiler" class="accordion-body collapse">
+        <div class="accordion-inner">
+            No. MPS works by progressively reducing higher abstractions to lower abstractions, leading to ANSI C99 at
+            the end of the chain. That C code can be compiled with existing compilers. We use GCC currently, but others
+            can be plugged in.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#debugging">
+            Do you support debugging?
+        </a>
+    </div>
+    <div id="debugging" class="accordion-body collapse">
+        <div class="accordion-inner">
+            We have a debugger working for C. We have proven its extensibility by building debuggers for components and
+            state machines as well. Once completely finished, we will provide a integrated debugging approach for C and
+            its domain-specific extensions.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#preproc">
+            How can you build C without a preprocessor?
+        </a>
+    </div>
+    <div id="preproc" class="accordion-body collapse">
+        <div class="accordion-inner">
+            The C preprocessor is (mis)used for a number of different things in C, including definition of constants,
+            visibility management (header files) and expressing variants of programs. We provide first class support for
+            these use cases in our language. For example, a module system with explicit visibility control is provided.
+            For expressing code variants, we provide first class support for variant management, incl. static
+            verification of correctness (see <a href="http://voelter.de/data/pub/DSM2010_VoelterMerkle-11-Final.pdf">this
+            short paper</a>). Of course we generate C code that makes use of the preprocessor for some of these use
+            cases, but we don't expose it to users.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#legacy">
+            What about legacy code?
+        </a>
+    </div>
+    <div id="legacy" class="accordion-body collapse">
+        <div class="accordion-inner">
+            An importer for header files is available. We are currently working on an importer for all of C that deals
+            with preprocessor variability (#ifdef) correctly, as far as that is possible.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#os">
+            Is it Open Source?
+        </a>
+    </div>
+    <div id="os" class="accordion-body collapse">
+        <div class="accordion-inner">
+            mbeddr is open source; you can get it from <a href="http://mbeddr.wordpress.com/getit/">here</a>. It is
+            licensed under the <a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License</a>.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#xtext">
+            Why don't you use Xtext?
+        </a>
+    </div>
+    <div id="xtext" class="accordion-body collapse">
+        <div class="accordion-inner">
+            While Xtext is a very good and widely used language workbench, it is also limited in many ways, particularly
+            regarding language modularization and composition as well as non-textual notations. MPS is a much more
+            productive environment for working with lots of modular languages.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#eclipse">
+            How about Eclipse Support?
+        </a>
+    </div>
+    <div id="eclipse" class="accordion-body collapse">
+        <div class="accordion-inner">
+            As of now, the system is built on MPS and MPS is not integrated with Eclipse. However, there is an EMF
+            export for language meta models and programs. JetBrains has also agreed to provide an Eclipse-integrated
+            version of MPS in 2013. Stay tuned for more news in this regard.
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#textual">
+            How about Graphical Notations?
+        </a>
+    </div>
+    <div id="textual" class="accordion-body collapse">
+        <div class="accordion-inner">
+            Currently all notations used by mbeddr are textual, tabular or symbolic because MPS does not yet support
+            graphical notations. However, MPS will start providing support for graphical notations in 2013, and we will
+            use them for state machines and components as soon as graphical notations become available. In the meantime,
+            mbeddr already supports automatically-generated, read-only visualizations for various extensions based on
+            graphviz, and a viewer that is directly integrated into MPS and provides drill-down support (double-click an
+            element in the view, and the editor opens for this element).
+        </div>
+    </div>
+</div>
+
+
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+           href="#primetime">
+            Is mbeddr ready for prime time?
+        </a>
+    </div>
+    <div id="primetime" class="accordion-body collapse">
+        <div class="accordion-inner">
+            A number of prototypical systems have been built, and a first commercial project is <a
+                href="http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_smartmeter.pdf">currently being
+            developed</a>. As of Jan 2013, we are also starting a larger case study with our project partner BMW Car IT.
+            mbeddr is usable, scales well and is stable enough. Some usability challenges with MPS still remain, but
+            they are scheduled to be fixed with version 3.0 (Q1 2013). In other words: yes, now is the time to seriously
+            investigate mbeddr.
+        </div>
+    </div>
+</div>
 
 
 </div>
 <div class="span1">&nbsp;</div>
+</div>
 
+
+</div>
+<br/><br/>
+
+
+</div>
+<div class="span1">&nbsp;</div>
 
 
 <div id="extra">

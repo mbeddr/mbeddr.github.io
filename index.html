@@ -142,7 +142,8 @@
         &nbsp;
 
         <p>mbeddr is a set of integrated and extensible languages for embedded software engineering, plus an IDE with
-            refatorings, a debugger and verification tools. It covers all aspects of software engineering, including requirements and product line definition,
+            refatorings, a debugger and verification tools. It covers all aspects of software engineering, including
+            requirements and product line definition,
             implementation in C and C extensions such as state machines physical units or interfaces and components, as
             well as testing, mocking, as well as formal verification. It integrates with integration servers.
             In addition, mbeddr is completely open and can be extended in (essentially) unlimited ways.
@@ -156,272 +157,267 @@
 </div>
 
 <div id="features">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <br/>
+<div class="container">
+<div class="row">
+<div class="span12">
+    <br/>
 
-                <br/>
-                <h1>A Selection Of Features Supported Out-of-the-Box</h1>
-                <br/>
-                <br/>
-            </div>
+    <br/>
 
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_plainC.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78355549" data-rel="prettyPhoto"
-                        title="Cleaned Up C99" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Cleaned Up C99</h4>
-
-                <p style="text-align: justify">
-                    mbeddr ships with a cleaned up version of C99. For
-                    example, the preprocessor is not supported and all its
-                    legitimate uses are supported by first-class concepts
-                    such as a robust module system. mbeddr also suports
-                    a native <i>boolean</i> type as well as lambdas.
-                </p>
-            </div>
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_logging.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78356462" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Reporting and Logging</h4>
-
-                <p style="text-align: justify">mbeddr contains rich frameworks for reporting program events
-                    and logging data. While they use <i>stderr</i> by default, both
-                    can be retargeted to arbitrary other systems including serial ports
-                    or error storage. Log statements can be selectively disabled with
-                    zero runtime footprint.</p>
-            </div>
+    <h1>A Selection Of Features Supported Out-of-the-Box</h1>
+    <br/>
+    <br/>
+</div>
 
 
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_testing.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78359909" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Testing</h4>
-
-                <p style="text-align: justify">mbeddr comes with language support for testing, where
-                    test cases are first class concepts, and they support a set of different
-                    <i>assert</i> statements. Tests can be grouped into suites and invoked,
-                    from the main function reporting the number
-                    of failures to the operating system via <i>main</i>'s return value.</p>
-            </div>
-
-            <div class="span12">
-                <br/>
-                <br/>
-            </div>
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_units.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78411489" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Physical Units</h4>
-
-                <p style="text-align: justify">mbeddr comes with an extension for phyiscal units.
-                    Types as well as literals can be annotated with units. The seven SI units are
-                    predefined, and users can define there own derived or convertible units.
-                    The type system computes with these units and reports errors in the IDE.
-                    Except for convertible units, there is zero runtime overhead, since the
-                    generated code has no representation of the units.
-                </p>
-            </div>
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_statemachine.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78412221" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>State Machines</h4>
-
-                <p style="text-align: justify">mbeddr supports state machines. State machines
-                    have events, variables, states and transitions with guards. They can be hierarchical
-                    and use junctions. State machines can be triggered from C code and themselves
-                    interact with C code in actions. State machines can be edited as text and tables,
-                    and van be visualized. Formal verification for state machines is available.
-                </p>
-            </div>
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_components.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78414498" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Interfaces and Components</h4>
-
-                <p style="text-align: justify">mbeddr supports interfaces with
-                    contracts (pre- and postconditions, protocol state machines). Components can
-                    provide or require interfaces. Contracts can be verified at runtime or statically.
-                    Components support mocks for testing. Translation to C
-                    can happen in various ways, some of them with very little overhead. Relationships
-                    between interfaces and components can be visualized.
-                </p>
-            </div>
-
-            <div class="span12">
-                <br/>
-                <br/>
-            </div>
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_req.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78415217" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Requirements, Tracing and Docs</h4>
-
-                <p style="text-align: justify">mbeddr supports a language for capturing requirements.
-                    The language looks document-like, but is highly structured. Arbitrary DSLs can be
-                    mixed with the requirements in various ways. Tracing from arbitrary design, architecture
-                    or implementation elements is supported. A documentation language helps with creating
-                    code-integrated documents, exportable as HTML or LaTeX.
-                </p>
-            </div>
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_ple.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78416925" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Product Line Variability</h4>
-
-                <p style="text-align: justify">mbeddr supports describing product line variability
-                    via feature models. Feature model configurations are checked for compliance with
-                    the constraints expressed in the feature model. Artifacts can be adapted to the
-                    variant statically (via presence conditions) and at runtime (via specialized
-                    switch statements). The presence conditions can be overlaid over programs
-                    expressed in any language.
-                </p>
-            </div>
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_verification.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Formal Verification</h4>
-
-                <p style="text-align: justify">mbeddr integrates several verification tools, among them
-                    symbolic model checking of state machines, model checking of C code for contract analysis
-                    as well as SMT solving for decision tables and feature models. mbeddr exploits the synergies
-                    between language extensions (that imply certain semantics) and the verification tools (whose
-                    input can be generated from these implied semantics).
-                </p>
-            </div>
-
-
-
-            <div class="span12">
-                <br/>
-                <br/>
-            </div>
-
-
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_debugging.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78402528" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Execution and Debugging</h4>
-
-                <p style="text-align: justify">
-                </p>
-            </div>
-
-
-
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_ideSupport.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78401971" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>IDE Support</h4>
-
-                <p style="text-align: justify">mbeddr provides state-of-the-art IDE support including syntax coloring,
-                    code completion, realtime type-system checks, quick fixes (intentions),
-                    refactorings, and automated synchronization between related parts of the
-                    code. These features are available for C, its extensions, the requirements
-                    and documentation languages and all languages users build. Version Control
-                    integration and debugging are discussed separately.</p>
-            </div>
-
-            <div class="span4">
-                <div class="thumb">
-                    <a href="#"><img class="screenshot"
-                                     src="images/feature_versionControl.png" alt="Image"/></a> <a
-                        href="http://vimeo.com/78402528" data-rel="prettyPhoto"
-                        title="Reporting and Logging" class="zoom zoom_icon"></a>
-                </div>
-                <br>
-                <h4>Version Control</h4>
-
-                <p style="text-align: justify">
-                    mbeddr stores its models in XML files, and thereby integrates with mainstream
-                    version control systems, among them SVN and git. To be able to see differences
-                    and merge conflicts, mbeddr/MPS supports a diff/merge view that uses the
-                    projectional editor, it works for any syntax. In addition, the IDE supports
-                    the vast majority of version control system operations, such as commit,
-                    update or reverting changes. A local history is available as well.
-                </p>
-            </div>
-
-
-            <div class="span12">
-                <br/>
-                <br/>
-            </div>
-
-        </div>
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_plainC.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78355549" data-rel="prettyPhoto"
+            title="Cleaned Up C99" class="zoom zoom_icon"></a>
     </div>
+    <br>
+    <h4>Cleaned Up C99</h4>
+
+    <p style="text-align: justify">
+        mbeddr ships with a cleaned up version of C99. For
+        example, the preprocessor is not supported and all its
+        legitimate uses are supported by first-class concepts
+        such as a robust module system. mbeddr also suports
+        a native <i>boolean</i> type as well as lambdas.
+    </p>
+</div>
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_logging.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78356462" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Reporting and Logging</h4>
+
+    <p style="text-align: justify">mbeddr contains rich frameworks for reporting program events
+        and logging data. While they use <i>stderr</i> by default, both
+        can be retargeted to arbitrary other systems including serial ports
+        or error storage. Log statements can be selectively disabled with
+        zero runtime footprint.</p>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_testing.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78359909" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Testing</h4>
+
+    <p style="text-align: justify">mbeddr comes with language support for testing, where
+        test cases are first class concepts, and they support a set of different
+        <i>assert</i> statements. Tests can be grouped into suites and invoked,
+        from the main function reporting the number
+        of failures to the operating system via <i>main</i>'s return value.</p>
+</div>
+
+<div class="span12">
+    <br/>
+    <br/>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_units.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78411489" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Physical Units</h4>
+
+    <p style="text-align: justify">mbeddr comes with an extension for phyiscal units.
+        Types as well as literals can be annotated with units. The seven SI units are
+        predefined, and users can define there own derived or convertible units.
+        The type system computes with these units and reports errors in the IDE.
+        Except for convertible units, there is zero runtime overhead, since the
+        generated code has no representation of the units.
+    </p>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_statemachine.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78412221" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>State Machines</h4>
+
+    <p style="text-align: justify">mbeddr supports state machines. State machines
+        have events, variables, states and transitions with guards. They can be hierarchical
+        and use junctions. State machines can be triggered from C code and themselves
+        interact with C code in actions. State machines can be edited as text and tables,
+        and van be visualized. Formal verification for state machines is available.
+    </p>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_components.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78414498" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Interfaces and Components</h4>
+
+    <p style="text-align: justify">mbeddr supports interfaces with
+        contracts (pre- and postconditions, protocol state machines). Components can
+        provide or require interfaces. Contracts can be verified at runtime or statically.
+        Components support mocks for testing. Translation to C
+        can happen in various ways, some of them with very little overhead. Relationships
+        between interfaces and components can be visualized.
+    </p>
+</div>
+
+<div class="span12">
+    <br/>
+    <br/>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_req.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78415217" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Requirements, Tracing and Docs</h4>
+
+    <p style="text-align: justify">mbeddr supports a language for capturing requirements.
+        The language looks document-like, but is highly structured. Arbitrary DSLs can be
+        mixed with the requirements in various ways. Tracing from arbitrary design, architecture
+        or implementation elements is supported. A documentation language helps with creating
+        code-integrated documents, exportable as HTML or LaTeX.
+    </p>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_ple.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78416925" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Product Line Variability</h4>
+
+    <p style="text-align: justify">mbeddr supports describing product line variability
+        via feature models. Feature model configurations are checked for compliance with
+        the constraints expressed in the feature model. Artifacts can be adapted to the
+        variant statically (via presence conditions) and at runtime (via specialized
+        switch statements). The presence conditions can be overlaid over programs
+        expressed in any language.
+    </p>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_verification.png" alt="Image"/></a> <a
+            href="http://vimeo.com/" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Formal Verification</h4>
+
+    <p style="text-align: justify">mbeddr integrates several verification tools, among them
+        symbolic model checking of state machines, model checking of C code for contract analysis
+        as well as SMT solving for decision tables and feature models. mbeddr exploits the synergies
+        between language extensions (that imply certain semantics) and the verification tools (whose
+        input can be generated from these implied semantics).
+    </p>
+</div>
+
+
+<div class="span12">
+    <br/>
+    <br/>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_debugging.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78402528" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Execution and Debugging</h4>
+
+    <p style="text-align: justify">
+    </p>
+</div>
+
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_ideSupport.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78401971" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>IDE Support</h4>
+
+    <p style="text-align: justify">mbeddr provides state-of-the-art IDE support including syntax coloring,
+        code completion, realtime type-system checks, quick fixes (intentions),
+        refactorings, and automated synchronization between related parts of the
+        code. These features are available for C, its extensions, the requirements
+        and documentation languages and all languages users build. Version Control
+        integration and debugging are discussed separately.</p>
+</div>
+
+<div class="span4">
+    <div class="thumb">
+        <a href="#"><img class="screenshot"
+                         src="images/feature_versionControl.png" alt="Image"/></a> <a
+            href="http://vimeo.com/78402528" data-rel="prettyPhoto"
+            title="Reporting and Logging" class="zoom zoom_icon"></a>
+    </div>
+    <br>
+    <h4>Version Control</h4>
+
+    <p style="text-align: justify">
+        mbeddr stores its models in XML files, and thereby integrates with mainstream
+        version control systems, among them SVN and git. To be able to see differences
+        and merge conflicts, mbeddr/MPS supports a diff/merge view that uses the
+        projectional editor, it works for any syntax. In addition, the IDE supports
+        the vast majority of version control system operations, such as commit,
+        update or reverting changes. A local history is available as well.
+    </p>
+</div>
+
+
+<div class="span12">
+    <br/>
+    <br/>
+</div>
+
+</div>
+</div>
 </div>
 
 <div id="intro">
@@ -455,17 +451,21 @@
                 <br/>
 
                 <br/>
+
                 <h1>mbeddr Architecture and Extensibility</h1>
                 <br/>
 
                 <p style="text-align: left">
                     mbeddr is structured into 5 layers, and addresses three different concerns (see below). The platform
                     layer consists of the JetBrains MPS language workbench, which enables the overall approach. The core
-                    layer includes the base languages used in mbeddr; these are different for each of the three concerns.
+                    layer includes the base languages used in mbeddr; these are different for each of the three
+                    concerns.
                     The default extensions layer consits of a set of predefined extensions of the core languages that
                     can be used out-of-the-box to develop software. The user extension layer is empty, it is intended to
-                    be filled by users. The backend layer consists of existing tools compilation and analysis tools which
-                    mbeddr uses. A more detailed description of mbeddr can be found in the <a href="learn.html#papers">papers section</a>.
+                    be filled by users. The backend layer consists of existing tools compilation and analysis tools
+                    which
+                    mbeddr uses. A more detailed description of mbeddr can be found in the <a href="learn.html#papers">papers
+                    section</a>.
                 </p>
 
                 <br/>
@@ -486,6 +486,7 @@
 
                 <h3 style="text-align: center">Implementation Concern</h3>
                 <br/>
+
                 <p style="text-align: justify">
                     The implementation concern addresses the
                     development of applications based on C. On the core layer, mbeddr comes with
@@ -493,7 +494,8 @@
                     preprocessor is not exposed to the user; first-class concepts are provided for the legitimate uses
                     of the preprocessor (including a module system). On the default extensions layer, the
                     implementation concern comes with C extensions for decision tables, interfaces and components,
-                    state machines, physical units, testing as well as logging and tracing. The user extensions layer is by
+                    state machines, physical units, testing as well as logging and tracing. The user extensions layer is
+                    by
                     definition empty; users can easily extend the C core as well as any of the
                     default extensions. State-of-the-art IDE support is available for all languages, including
                     syntax highlighting, code completion, real-time type checks and refactorings.
@@ -538,6 +540,7 @@
 
                 <h3 style="text-align: center">Process Concern</h3>
                 <br/>
+
                 <p style="text-align: justify">
                     The process concern includes facilities for integrating mbeddr into development processes. These
                     facilities can be used with arbitrary mbeddr languages,
@@ -553,7 +556,8 @@
                     While presence conditions are static and work for any
                     language, there is also C-specific support to evaluate variability at runtime.
 
-                    The <strong>documentation</strong> language aspect supports writing prose documents as part of an mbeddr
+                    The <strong>documentation</strong> language aspect supports writing prose documents as part of an
+                    mbeddr
                     project, exportable as HTML or LaTeX. It supports close integration with program elements. They
                     can be referenced (with real references that are renamed if the element itself is
                     renamed) and program code can be embedded as text or as an image. The embedded
@@ -563,7 +567,6 @@
                     assessments</strong> are customizable queries over the code.
 
                 </p>
-
 
 
             </div>
@@ -582,7 +585,6 @@
     </div>
 </div>
 </div>
-
 
 
 <div id="extra">
@@ -627,7 +629,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!-- Le javascript
