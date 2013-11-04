@@ -139,19 +139,37 @@
 <div id="intro">
     <div class="container">
         <h1 style="color: #E78119">What is mbeddr?</h1>
-        &nbsp;
+        <br/>
 
-        <p>mbeddr is a set of integrated and extensible languages for embedded software engineering, plus an IDE with
-            refatorings, a debugger and verification tools. It covers all aspects of software engineering, including
-            requirements and product line definition,
-            implementation in C and C extensions such as state machines physical units or interfaces and components, as
-            well as testing, mocking, as well as formal verification. It integrates with integration servers.
-            In addition, mbeddr is completely open and can be extended in (essentially) unlimited ways.
-            In particular, as a consequence of mbeddr's reliance on the JetBrains MPS language workbench,
-            all existing languages can be extended with new language constructs, typing rules, constraints or
-            generators. In addition, arbitrary new languages can be added and (optionally) integrated with the existing
-            languages.
-        </p>
+        <div class="row">
+
+            <div class="span4">
+                <p style="text-align: justify">
+                    mbeddr is a set of integrated and extensible languages for embedded
+                    software engineering. It supports implementation, testing, verification
+                    and process aspects. It integrates with integration servers.
+                </p>
+
+            </div>
+            <div class="span4">
+                <p style="text-align: justify">
+                    mbeddr has languages for requirements and product line definition,
+                    implementation in C and C extensions such as state machines physical units or interfaces and
+                    components, as
+                    well as testing, mocking, as well as formal verification.
+                </p>
+
+            </div>
+            <div class="span4">
+                <p style="text-align: justify">
+                    mbeddr comes with a state-of-the-art IDE including syntax coloring,
+                    code completion, realtime type checks, quick fixes,
+                    refactorings, automated synchronization between related parts of the code,
+                    version control integration and debugging.
+                </p>
+            </div>
+        </div>
+
 
     </div>
 </div>
@@ -420,29 +438,50 @@
 </div>
 </div>
 
+
 <div id="intro">
     <div class="container">
-        <h1 style="color: #E78119">Why is mbeddr so extensible?</h1>
-        &nbsp;
+        <h1 style="color: #E78119">How and why is mbeddr extensible?</h1>
+        <br/>
 
-        <p>
-            mbeddr builds on the JetBrains MPS language workbench, a tool that supports
-            the definition, composition and use of general purpose or domain-specific languages.
-            MPS uses a projectional editor, which means that, although a syntax may look
-            textual, it is <i>not</i> represented as a sequence of characters which are transformed
-            into an abstract syntax tree (AST) by a parser.
-            Instead, a user's editing actions lead <i>directly</i> to changes in the AST.
-            Projection rules render a concrete syntax from the AST. Consequently, MPS
-            supports non-textual notations such as tables, and it also supports
-            unconstrained language composition and extension -- no parser ambiguities can
-            ever result from combining languages. When users built their own extensions,
-            they can use the same language engineering facilities that the mbeddr team
-            is using to build the existing languages -- user extensions are <i>not</i>
-            second-class. There are very few practical limitations.
+        <div class="row">
 
-        </p>
+            <div class="span4">
+                <p style="text-align: justify">
+                    All existing languages can be extended with new language constructs, typing rules, constraints,
+                    generators or IDE functionality. In addition, arbitrary new languages can be added and (optionally)
+                    integrated with the existing languages. Extensions include the IDE and the debugger. New views,
+                    windows, menu items or buttons can be added as well.
+                </p>
+
+            </div>
+            <div class="span4">
+                <p style="text-align: justify">
+                    We believe that users should be able to extend a tool in any
+                    way they wish. They should not be limited by some "extension API".
+                    To achieve this, mbeddr builds on JetBrains MPS,
+                    a tool for efficiently building, extending and composing languages
+                    and their IDEs. Third parties can use the same language engineering
+                    facilities that the mbeddr team used to build the existing languages.
+                </p>
+
+            </div>
+            <div class="span4">
+                <p style="text-align: justify">
+                    MPS uses a projectional editor. Consequently, MPS
+                    supports non-textual notations such as tables, mathematical symbols
+                    and (soon) graphics. By avoiding parser ambiguities, MPS also supports
+                    essentially unconstrained language composition and extension. All of the
+                    30+ C language extensions provided by mbeddr are modular extensions,
+                    defined without modifying C itself.
+                </p>
+            </div>
+        </div>
+
+
     </div>
 </div>
+
 
 <div id="features">
     <div class="container">
