@@ -275,9 +275,11 @@
     </div>
     <div id="debugging" class="accordion-body collapse">
         <div class="accordion-inner">
-            We have a debugger working for C. We have proven its extensibility by building debuggers for components and
-            state machines as well. Once completely finished, we will provide a integrated debugging approach for C and
-            its domain-specific extensions.
+            mbeddr has a debugger. It supports all of C and most of the existing extensions. When debugging,
+            users step through the code on the level of the extensions, not the low-level implementation.
+            Like the mbeddr languages themselves, the debugger is extensible.
+            The debugger uses the Eclipse CDT Debug Bridge in the backend, so various target platform-specific
+            debuggers can be plugged in.
         </div>
     </div>
 </div>
@@ -313,8 +315,12 @@
     </div>
     <div id="legacy" class="accordion-body collapse">
         <div class="accordion-inner">
-            An importer for header files is available. We are currently working on an importer for all of C that deals
-            with preprocessor variability (#ifdef) correctly, as far as that is possible.
+            <p>
+                We have an importer for all of C. We are working on a debugger that maps <i>#ifdef</i>s
+                to product line variability. Unfortunately, the importer uses non-open source technology,
+                so the importer will not be open source. However, a trial version will become available
+                later in 2013.
+            </p>
         </div>
     </div>
 </div>
@@ -380,8 +386,8 @@
     <div id="textual" class="accordion-body collapse">
         <div class="accordion-inner">
             Currently all notations used by mbeddr are textual, tabular or symbolic because MPS does not yet support
-            graphical notations. However, MPS will start providing support for graphical notations in 2013, and we will
-            use them for state machines and components as soon as graphical notations become available. In the meantime,
+            graphical notations. However, MPS will start providing support for graphical notations in early 2014, and we will
+            use them for state machines and components as soon as they become available. In the meantime,
             mbeddr already supports automatically-generated, read-only visualizations for various extensions based on
             graphviz, and a viewer that is directly integrated into MPS and provides drill-down support (double-click an
             element in the view, and the editor opens for this element).
@@ -401,9 +407,9 @@
         <div class="accordion-inner">
             A number of prototypical systems have been built, and a first commercial project is <a
                 href="http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_smartmeter.pdf">currently being
-            developed</a>. As of Jan 2013, we are also starting a larger case study with our project partner BMW Car IT.
-            mbeddr is usable, scales well and is stable enough. Some usability challenges with MPS still remain, but
-            they are scheduled to be fixed with version 3.0 (Q1 2013). In other words: yes, now is the time to seriously
+            developed</a>. We are also working with a major tool vendor on a commercial development tool based on mbeddr.
+            mbeddr is usable, scales well and is stable enough. Some minor usability challenges with MPS still remain, but
+            these will be fixed until early 2014. In other words: yes, now is the time to seriously
             investigate mbeddr.
         </div>
     </div>
