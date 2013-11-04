@@ -132,7 +132,7 @@
             defining higher level abstractions. We feel that language extension is the way to introduce abstractions
             relevant to embedded
             software development into C. Initial experience with mbeddr in a <a
-                href="http://mbeddr.files.wordpress.com/2010/06/mbeddr_casestudy_smartmeter.pdf">real world project</a>
+                href="files/mbeddr_casestudy_smartmeter.pdf">real world project</a>
             confirms this belief.
         </div>
     </div>
@@ -151,8 +151,8 @@
             Examples include components (incl. interfaces with pre- and postconditions, ports and connectors), data
             types with physical units (as in 300 km/h) and state machines. Many smaller but very useful extensions, such
             as counters and decision tables are also supported. Support for cross-cutting concerns such as requirements
-            tracing and product line variability are available as well. Additional extensions will be inspired by our
-            application partners SICK and BMW Car IT, and will specifically target use cases encountered in their
+            tracing and product line variability are available as well. Additional extensions have been inspired by our
+            application partners SICK and BMW Car IT, and specifically target use cases encountered in their
             domains.
         </div>
     </div>
@@ -170,8 +170,11 @@
         <div class="accordion-inner">
             We perceive the embedded development world as being made up of two camps. One camp uses bare-bones C to
             develop highly efficient, low level code. The other camp uses tools such as Matlab/Simulink, Ascet or
-            similar tools to "model and synthsize" executable software. We position mbeddr in the middle between the
-            two: you still primarily write code, but with meaningful, customizable abstractions.
+            similar tools to "model and synthesize" executable software. We position mbeddr in the middle between the
+            two: you still primarily write code, but with meaningful, customizable abstractions. As a consequence of
+            tight syntactic, semantic and tool-wise integration between the various languages, tool integration becomes
+            a no-brainer. This makes mbeddr especially suitable for multi-paradigm programming/modeling, i.e. systems
+            that use more than one programming/modeling approach.
         </div>
     </div>
 </div>
@@ -370,7 +373,7 @@
         <div class="accordion-inner">
             As of now, the system is built on MPS and MPS is not integrated with Eclipse. However, there is an EMF
             export for language meta models and programs. JetBrains has also agreed to provide an Eclipse-integrated
-            version of MPS in 2013. Stay tuned for more news in this regard.
+            version of MPS if this becomes necessary for adoption of mbeddr.
         </div>
     </div>
 </div>

@@ -127,7 +127,7 @@
             -->
             <p>Boosting productivity and quality by<br/>
                using extensible DSLs, flexible notations<br/>
-               and integrated verification tool.
+               and integrated verification tools.
             </p>
 
 
@@ -158,25 +158,25 @@
             <div class="span4">
                 <p style="text-align: justify">
                     mbeddr is a set of integrated and extensible languages for embedded
-                    software engineering. It supports implementation, testing, verification
-                    and process aspects. It integrates with integration servers.
+                    software engineering, plus an IDE. It supports implementation, testing, verification
+                    and process aspects. It integrates with command-line build tools and integration servers,
+                    as well as file-based version control systems.
                 </p>
 
             </div>
             <div class="span4">
                 <p style="text-align: justify">
-                    mbeddr has languages for requirements and product line definition,
+                    mbeddr has support for requirements and product line definition, software documentation,
                     implementation in C and C extensions such as state machines physical units or interfaces and
-                    components, as
-                    well as testing, mocking, as well as formal verification.
+                    components, as well as testing, mocking, as well as formal verification.
                 </p>
 
             </div>
             <div class="span4">
                 <p style="text-align: justify">
                     mbeddr comes with a state-of-the-art IDE including syntax coloring,
-                    code completion, realtime type checks, quick fixes,
-                    refactorings, automated synchronization between related parts of the code,
+                    code completion, go to definition, realtime type checks, quick fixes,
+                    refactorings, customizable find-usages, automated synchronization between related parts of the code,
                     version control integration and debugging.
                 </p>
             </div>
@@ -283,7 +283,7 @@
         Types as well as literals can be annotated with units. The seven SI units are
         predefined, and users can define there own derived or convertible units.
         The type system computes with these units and reports errors in the IDE.
-        Except for convertible units, there is zero runtime overhead, since the
+        There is zero runtime overhead, since the
         generated code has no representation of the units.
     </p>
 </div>
@@ -303,9 +303,9 @@
         mbeddr natively supports state machines that have
         events, variables, states and transitions with guards. States have entry, exit and
         do actions, transitions can have actions as well. State machines can be hierarchical
-        and use junctions. State machines can be triggered from C code and themselves
+        and use epsilon transitions. State machines can be triggered from C code and themselves
         interact with C code in actions. State machines can be edited as text and tables,
-        and can be visualized. Formal verification for state machines is available.
+        and can be visualized. Verification is available via model checking.
     </p>
 </div>
 
@@ -323,7 +323,7 @@
     <p style="text-align: justify">
         Modularization is critical for building flexible, testable and maintainable software.
         To this end, mbeddr supports interfaces with
-        contracts (pre- and postconditions, protocol state machines). Components can
+        contracts (pre- and postconditions, protocol state machines). Similar to AUTOSAR, Components can
         provide or require interfaces. Contracts can be verified at runtime or statically.
         Components support mocks for testing. Translation to C
         can happen in various ways, some of them with very little overhead. Relationships
@@ -393,10 +393,10 @@
     <p style="text-align: justify">
         mbeddr's high-level DSLs lend themselves to verification.
         mbeddr integrates several verification tools, among them
-        symbolic model checking of state machines, model checking of C code for contract analysis
-        as well as SMT solving for decision tables and feature models. mbeddr exploits the synergies
-        between language extensions (that imply certain semantics) and the verification tools (whose
-        input can be generated from these implied semantics).
+        symbolic model checking of state machines, model checking/data flow analysis of C code for contract analysis
+        as well as SMT solving for decision tables and feature models. The input to
+        the verification tools is generated from mbeddr languages, and the result of
+        the verification is lifted back up to the extension level.
     </p>
 </div>
 
@@ -439,11 +439,10 @@
     <h4>IDE Support</h4>
 
     <p style="text-align: justify">mbeddr provides state-of-the-art IDE support including syntax coloring,
-        code completion, realtime type-system checks, quick fixes (intentions),
-        refactorings, and automated synchronization between related parts of the
+        code completion, go to definition, realtime type-system checks, quick fixes (intentions),
+        refactorings, customizable find-usages, and automated synchronization between related parts of the
         code. These features are available for C, its extensions, the requirements
-        and documentation languages and all languages users build. Version Control
-        integration and debugging are discussed separately.</p>
+        and documentation languages and all languages or extensions developed by users. </p>
 </div>
 
 <div class="span4">
@@ -489,7 +488,7 @@
                     All existing languages can be extended with new language constructs, typing rules, constraints,
                     generators or IDE functionality. In addition, arbitrary new languages can be added and (optionally)
                     integrated with the existing languages. Extensions include the IDE and the debugger. New views,
-                    windows, menu items or buttons can be added as well.
+                    windows, menu items or buttons - and in fact, arbitrary Java libraries - can be added as well.
                 </p>
 
             </div>

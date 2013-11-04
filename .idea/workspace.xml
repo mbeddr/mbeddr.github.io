@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/feature_debugging.png" afterPath="$PROJECT_DIR$/images/feature_debugging.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/download.html" afterPath="$PROJECT_DIR$/download.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,10 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="faq.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/faq.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="375" column="76" selection-start="16354" selection-end="16354" vertical-scroll-proportion="0.66056913" vertical-offset="6425" max-vertical-offset="9216">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="413" column="43" selection-start="15985" selection-end="15985" vertical-scroll-proportion="0.2553648" vertical-offset="7315" max-vertical-offset="13392">
+            <state line="162" column="66" selection-start="6459" selection-end="6459" vertical-scroll-proportion="24.245283" vertical-offset="4201" max-vertical-offset="13374">
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -65,6 +75,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="download.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/download.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="314" column="34" selection-start="14446" selection-end="14446" vertical-scroll-proportion="-6.703704" vertical-offset="5471" max-vertical-offset="7344">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -85,8 +104,6 @@
       <list>
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/download.html" />
-        <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/news.html" />
@@ -95,6 +112,8 @@
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/benefits.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/download.html" />
+        <option value="$PROJECT_DIR$/faq.html" />
       </list>
     </option>
   </component>
@@ -439,7 +458,11 @@
       <created>1383558980135</created>
       <updated>1383558980135</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="added the debugging video.">
+      <created>1383566320937</created>
+      <updated>1383566320938</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -495,7 +518,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added video." />
     <MESSAGE value="small change." />
     <MESSAGE value="updated menu bar." />
     <MESSAGE value="the first three videos are added." />
@@ -520,7 +542,8 @@
     <MESSAGE value="updated video cover." />
     <MESSAGE value="worked on the footer." />
     <MESSAGE value="updated analytics ID" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated analytics ID" />
+    <MESSAGE value="added the debugging video." />
+    <option name="LAST_COMMIT_MESSAGE" value="added the debugging video." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -556,13 +579,6 @@
     <entry file="file://$PROJECT_DIR$/mps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="228" column="0" selection-start="9809" selection-end="9809" vertical-scroll-proportion="0.9584296" vertical-offset="3274" max-vertical-offset="4662">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/download.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="0" selection-start="16840" selection-end="16840" vertical-scroll-proportion="0.9584296" vertical-offset="5938" max-vertical-offset="7344">
           <folding />
         </state>
       </provider>
@@ -609,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="347" column="18" selection-start="14915" selection-end="14915" vertical-scroll-proportion="0.351626" vertical-offset="6073" max-vertical-offset="9162">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benefits.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="55" selection-start="5910" selection-end="5910" vertical-scroll-proportion="0.6219512" vertical-offset="2106" max-vertical-offset="5490">
@@ -625,7 +634,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="413" column="43" selection-start="15985" selection-end="15985" vertical-scroll-proportion="0.2553648" vertical-offset="7315" max-vertical-offset="13392">
+        <state line="162" column="66" selection-start="6459" selection-end="6459" vertical-scroll-proportion="24.245283" vertical-offset="4201" max-vertical-offset="13374">
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -656,6 +665,20 @@
             <element signature="n#style#0;n#h3#0;n#div#3;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="314" column="34" selection-start="14446" selection-end="14446" vertical-scroll-proportion="-6.703704" vertical-offset="5471" max-vertical-offset="7344">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="375" column="76" selection-start="16354" selection-end="16354" vertical-scroll-proportion="0.66056913" vertical-offset="6425" max-vertical-offset="9216">
+          <folding />
         </state>
       </provider>
     </entry>
