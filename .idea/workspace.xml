@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="fixes based on feedback from the team.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bigVideoCover3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bigVideoCover4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -459,7 +456,11 @@
       <created>1383554340658</created>
       <updated>1383554340658</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="updated video cover.">
+      <created>1383555017430</created>
+      <updated>1383555017430</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -515,7 +516,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="worked on the colors" />
     <MESSAGE value="deleted images we don't need. Still left some of the generic ones in there, might proof useful." />
     <MESSAGE value="commtented things in again." />
     <MESSAGE value="added video." />
@@ -540,7 +540,8 @@
     <MESSAGE value="added IDs to the block entries for referencing." />
     <MESSAGE value="blue areas are now mutliple columns." />
     <MESSAGE value="fixes based on feedback from the team." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes based on feedback from the team." />
+    <MESSAGE value="updated video cover." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated video cover." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
