@@ -9,7 +9,8 @@
     <file path="/Dummy.txt" changelist="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" time="1385287943168" ignored="false" />
     <file path="/default.html" changelist="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" time="1385288317719" ignored="false" />
     <file path="/blogpost.html" changelist="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" time="1385288537803" ignored="false" />
-    <file path="/index.html" changelist="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" time="1385288782904" ignored="false" />
+    <file path="/index.html" changelist="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" time="1385289648515" ignored="false" />
+    <file path="/2010-06-11-more-screencasts-added.html" changelist="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" time="1385289381729" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
         </entry>
       </file>
       <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/_layouts/default.html">
+        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="28" column="160" selection-start="1497" selection-end="1497" vertical-scroll-proportion="-5.625">
               <folding>
@@ -83,18 +84,18 @@
         </entry>
       </file>
       <file leaf-file-name="blogpost.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/_layouts/blogpost.html">
+        <entry file="file://$PROJECT_DIR$/_layouts/blogpost.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="24" selection-end="285" vertical-scroll-proportion="-1.875">
+            <state line="16" column="13" selection-start="285" selection-end="285" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/index.html">
+      <file leaf-file-name="2010-06-11-more-screencasts-added.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2010-06-11-more-screencasts-added.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="374" selection-end="374" vertical-scroll-proportion="0.37628278">
+            <state line="0" column="0" selection-start="0" selection-end="54" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -112,35 +113,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="support.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support.html">
+      <file leaf-file-name="2010-07-28-detailed-mps-tutorial.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2010-07-28-detailed-mps-tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="3125" selection-end="3125" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/team.html">
+      <file leaf-file-name="2011-01-23-hello-world.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2011-01-23-hello-world.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="3125" selection-end="3125" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="58" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/faq.html">
+      <file leaf-file-name="2011-01-23-code-available.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2011-01-23-code-available.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="59" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="2011-06-06-good-news.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2011-06-06-good-news.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="70" column="14" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="13446">
               <folding />
@@ -148,10 +149,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mps.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mps.html">
+      <file leaf-file-name="atom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/atom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="3023" selection-end="3145" vertical-scroll-proportion="0.0">
+            <state line="3" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.051252846">
               <folding />
             </state>
           </provider>
@@ -175,11 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/benefits.html" />
-        <option value="$PROJECT_DIR$/download.html" />
-        <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/screencasts.html" />
@@ -277,7 +273,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -305,6 +311,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -745,42 +754,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CNAME">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="423" selection-end="423" vertical-scroll-proportion="0.6589595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/benefits.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3125" selection-end="3125" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/download.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3125" selection-end="3125" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3023" selection-end="3145" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screencasts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="0" selection-start="3125" selection-end="3125" vertical-scroll-proportion="0.0">
@@ -802,6 +775,21 @@
       </provider>
     </entry>
         <state line="146" column="53" selection-start="5699" selection-end="5699" vertical-scroll-proportion="-8.259259" vertical-offset="2405" max-vertical-offset="52848">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="72" selection-start="5893" selection-end="5949" vertical-scroll-proportion="0.24885496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="14" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -848,16 +836,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/_layouts/blogpost.html">
+    <entry file="file://$PROJECT_DIR$/_layouts/blogpost.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="24" selection-end="285" vertical-scroll-proportion="-1.875">
+        <state line="16" column="13" selection-start="285" selection-end="285" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="374" selection-end="374" vertical-scroll-proportion="0.37628278">
+        <state line="10" column="88" selection-start="215" selection-end="215" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2010-06-11-more-screencasts-added.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="54" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2010-07-28-detailed-mps-tutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-01-23-hello-world.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="58" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-01-23-code-available.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="59" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2770" column="54" selection-start="156619" selection-end="156778" vertical-scroll-proportion="-11.291667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-06-06-good-news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="42" selection-start="189" selection-end="189" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/atom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="20" selection-end="20" vertical-scroll-proportion="0.051252846">
           <folding />
         </state>
       </provider>
