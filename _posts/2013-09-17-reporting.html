@@ -1,0 +1,89 @@
+---
+layout: blogpost
+title: Customizing the Reporting Framework For Serial Output
+---
+<h3 id="introduction">Introduction</h3>
+
+<p>As some of you might already know I have worked on an Arduino extension for mbeddr. Because such systems run headless, you can't just use <i>printf</i> for displaying messages. These systems usually ship with a serial or USB port which can be used to communicate with the outside world. There are actually two ways to deal with this. First we could replace the printf-backing file handle with a handle that writes to the serial port. Second we can use mbeddr's own reporting infrastructure: this approach also gives us  more flexibility because we could either write messages to the serial port or store critical errors in EPROM for further investigation. </p>
+<p>Here I will talk about how to build your own reporting backend for mbeddr, in this case a backend that writes to the serial port.</p>
+<!--more-->
+
+<h3 id="architecture">Architecture</h3>
+<p>First I will give you an overview about the reporting architecture of mbeddr. It consists of four main parts: <i>MessagesDefinition</i>, <i>MessageDefinitionTable</i>, the<i>ReportStatement</i> and a <i>ReportingStrategy</i>. </p>
+
+<h4 id="messagesdefinition">MessagesDefinition</h4>
+<p><i>Messages</i>, as the name suggests, define messages. They have a name to reference them, a text that is written out when the message is reported and they <strong>may</strong> have parameters. These parameters are basically key-value pairs. A message also has additional attributes: </p>
+<ul>
+    <li><i>MessageSeverity</i>:  similar to a priority it can be <i>ERROR</i>,<i>WARN</i> and <i>INFO</i></p>
+    <li><i>active</i>: a boolean flag that defines if the message is active or not. </p>
+    <li><i>count</i>: a boolean flag that defines whether the number of times the messages was reported should be counted (useful in test cases).</p>
+</ul>
+
+<h4 id="messagedefinitiontable">MessageDefinitionTable</h4>
+<p>A collection of messages. Any <i>MessagesDefinition</i> belongs to a <i>MessageDefinitionTable</i>. It acts as a kind of namespace for messages.</p>
+
+<h4 id="reportstatement">ReportStatement</h4>
+<p>The <i>ReportStatement</i> is used to report a message. It references a message and provides the actual values for parameters, if the message defines any. The parameters can be any value matching the type of its definition, for instance a local variable or a value obtained from an external sensor.  The statement also provides so called <i>checks</i> which is a guard. Only if it evaluates to <i>true</i> will the message be reported.</p>
+
+<h4 id="reportingstrategy">ReportingStrategy</h4>
+<p>The <i>ReportingStrategy</i> is used in the build configuration to configure which kind of reporting the project uses. In mbeddr there are already predefined reporting strategies: printf and nothing. As the name suggest the first one uses simple <i>printf</i> statements to report a message and the later does nothing with them.</p>
+
+<h3 id="implementation">Implementation</h3>
+<p>Now that we have a overview about what we need let's start implementing our own reporting.</p>
+
+<h4 id="reportingstrategy_1">ReportingStrategy</h4>
+<p>The first thing we need is a <i>ReportingStrategy</i>.  To do so we create a new concept and name it <i>SerialReportingStrategy</i>:</p>
+<p><img src="/images/blog/1.png" alt="reporting" width="750" /></p>
+
+<p>The editor also looks straight forward, just a constant cell with the words <i>serial reporting</i> in it:</p>
+<p><img src="/images/blog/2.png" alt="Screenshot of SerialReportingStrategy  editor" width="750" /></p>
+
+<p>Now we can select this new strategy in the mbeddr build configuration:</p>
+<p><img src="/images/blog/3.png" alt="Selection in build config" width="750" /></p>
+
+<p>So thats it for the visible part. We can select it but it doesn't really do anything, because there is no generator that generates the code to write the serial port. To change this we need to add a generator that reduces the concepts discussed above to C, in case <i>serial reporting</i> is selected. </p>
+
+<h4 id="generator">Generator</h4>
+<p>First we create a new Generator in MPS:</p>
+<p><img src="/images/blog/4.png" alt="generator skeleton" width="750" /></p>
+
+<p>As you can see the <i>is applicable</i> rule checks if the selected reporting in the build configuration is the <i>SerialReportingStrategy</i>; otherwise this generator will not do anything (hoping that another generator will reduce the reporting concepts to C).  </p>
+
+<p>Let's start with the easiest thing the generator should handle: disabled messages! We create a reduction rule that only applies to messages that have the <i>active</i> flag set to <i>false</i> and then abandons the input:</p>
+<p><img src="/images/blog/5.png" alt="abandon inactive message" width="750" /></p>
+
+<p>The reporting architecture of mbeddr contains two core elements: a <i>MessageDefinition</i>  and a <i>MessageDefinitionTable</i> which combines multiple messages. Messages are always part of a message definition table. So we need to reduce the table first. The generator is also quite simple. It take a <i>MessageDefinitionTable</i> and calls the <i>$COPY_SRCL$</i> for its messages. Which loops over all of the massages and tries to reduce them in turn:</p>
+<p><img src="/images/blog/6.png" alt="reduce message definition table" width="750" /></p>
+
+<p>To get all the messages to reduce we use the <i>nonEmptyMessages</i> method of the <i>MessageDefinitionTable</i> behavior:</p>
+<p><img src="/images/blog/7.png" alt="copy source list macro definition" width="750" /></p>
+
+<p>Next we need to reduce the message definition itself.
+    We do two things in this reduction rule. First we generate a counter variable for the message. This variable can be used in tests to check how often a message occurred. In normal C code this variable is not relevant. And second we generate a <i>char*</i> variable that is initialized with the message text for later usage when the message is fired.<sup id="fnref:1"><a class="footnote-ref" href="1" rel="footnote">1</a></sup></p>
+<p><img src="/images/blog/8.png" alt="message reduction" width="750" /></p>
+
+<p>The property macros for the names are quite simple, they just generate a unique name for each variable so that we can reference them later. The macro for the initializer of the <i>string</i> is a bit more interesting. It generates its value from the name of the message and the text but also appends a <i>\n</i> at the end for line ending.</p>
+<p><img src="/images/blog/9.png" alt="message text" width="750" /></p>
+
+<p>Now that we have the texts and the counters generated, we can start with the part that emits the code to post the message to the serial port. I our case we have a library that does all the details. All we need to do is call a function with a <i>char*</i> as a argument. The library is added via the make file, the corresponding header file is called <i>serial.h</i>.  So the next thing to do is reducing the <i>ReportStatements</i>, but in order to keep the generator clean we implemented two different reduction rules one for a message with parameters and one for messages without parameters. Later you will see why. Here is what the generator for messages without parameters looks like:</p>
+<p><img src="/images/blog/10.png" alt="report reduction" width="750" /></p>
+
+<p>The <i>condition</i> checks if there are no arguments and it does not contain an <i>check</i> guard. The reduction rule then defines some dummy variable and a dummy function. Inside the function an <i>ArbitraryTextExpression</i> is used to insert some text which is not a expressed with mbeddr semantics.  In the inspector you see that it also specifies a header to include and a type.</p>
+<p>Both variables use reference macros, and the message counter is also guarded with an <i>if</i> in the generator to avoid emitting this code in the case the message is not counted. </p>
+<p>Next is the <i>ReportStatement</i> with properties. It requires some more work to be done because we can not use printf we have to use sprintf and store that result in a buffer before we can put it to the serial port:</p>
+<p><img src="/images/blog/11.png" alt="report reduction" width="750" /></p>
+
+<p>The major difference here is that it first generates a buffer variable to use it with sprintf, then prints the message and after that loops over all properties of the message where it prints them to the buffer and finally writes them to the serial port.  The size of the buffer is also calculated in the reduction rule. It takes the maximum length of the property name and adds 24 to which is the maximum length of a 64 bit integer printed as a string plus the characters added to make it look pretty. There is downside of this hard coded number, it will cause long strings to be corrupted. </p>
+
+<h3 id="whats-next">What's next?</h3>
+<p>As you may have noticed, the whole part of checks is missing. I omitted this because it would blow up the post and shouldn't be that hard to do for you if you are familiar with the generator. To prevent data corruption of long string parameters you can either prohibit the usage of anything else than a number as parameter by using a type system check rule or calculate the length at runtime. It's up to you!</p>
+
+<p>The main part of this code was written while adding serial reporting support to the <a href="https://github.com/coolya/mbeddr.arduino">mbeddr.arduino</a> project. You can have a look at the code there for further references. </p>
+<div class="footnote">
+    <hr />
+    <ol>
+        <li id="fn:1">
+            <p>Note: Due some limitations of older GCC versions char literals in C code would end up in the flash area of the memory which is a different address space. This is why the generator generates char* variables for each of messages. This done to either accomplish backward compatibility and to illustrate the difference between this generator and the printf generator. If I would have been lazy I could have simply copied the old generator and replaced the printf calls.</p>
+        </li>
+    </ol>
+</div>

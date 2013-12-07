@@ -1,0 +1,15 @@
+---
+layout: blogpost
+title: mbeddr Windows installer
+---
+<p>
+    After making it easier to use mbeddr on Debian-based Linux system, we are proud to announce that Windows users are now also able to use a simple installer to install mbeddr and all it's required tools. This will make using mbeddr on Windows much easier. The installer will run on any Windows system with .Net 4.0 installed. This is the case for Windows Vista and newer, or if you have <a href="http://www.microsoft.com/de-de/download/details.aspx?id=17718">manually installed</a> it on XP.
+</p>
+
+<p>
+    The installer is available from now on with the <a href="https://github.com/mbeddr/mbeddr.core/releases">install packages</a>. After downloading it, you have to extract the zip file and run the <i>mbeddr-installer.exe</i>. It will ask you for administrator permissions and then download all the dependencies of mbeddr. We are able to download and install most of them but some need your interaction. The installer will guide you through the process. If you experience any problems with the installer please file an issue at our <a href="https://github.com/mbeddr/mbeddr.core/issues">github repository</a>. Beside a detailed description of the problem please also include the debug log of the installer. It is located in %TEMP%/mbeddr/.
+</p>
+
+<p>
+    The installer also deploys the mbeddr tutorial, in the subdirectory "tutorial". After opening it, you will likely get two errors. First, it complains about an undefined path variable <i>mbeddr.github.core.home</i>. Select Fix It, and delete the path variable. Second, it will complain about VCS root errors. Select Ignore, and the problem is solved. Both errors are a consequence of the fact that we take the tutorial from an environment that requires these two variables, it is currently not so simply to avoid the (easy to fix) errors in the deployed version.
+</p>
