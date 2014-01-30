@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-01-28-new-release-0.6EAP3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-01-30-eclipse-project.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2013-10-29-eclipse-proposal.html" afterPath="$PROJECT_DIR$/_posts/2013-10-29-eclipse-proposal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="benefits.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/benefits.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="5490">
+            <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="-0.0" vertical-offset="1602" max-vertical-offset="5490">
               <folding />
             </state>
           </provider>
@@ -53,28 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/faq.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="38" selection-start="4024" selection-end="4024" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="9216">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="10" selection-start="6225" selection-end="6225" vertical-scroll-proportion="-5.3333335" vertical-offset="2808" max-vertical-offset="7380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-01-28-new-release-0.6EAP3.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-01-28-new-release-0.6EAP3.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-01-28-new-release-0.6EAP3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="870">
+            <state line="5" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="216">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-01-30-eclipse-project.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-01-30-eclipse-project.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="21" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.31177828" vertical-offset="0" max-vertical-offset="866">
               <folding />
             </state>
           </provider>
@@ -134,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/news.html" />
-        <option value="$PROJECT_DIR$/_posts/2013-08-22-mbeddr-release.html" />
         <option value="$PROJECT_DIR$/_posts/2013-09-09-statemachines-as-tables.html" />
         <option value="$PROJECT_DIR$/_posts/2013-07-30-migration-to-mps3.html" />
         <option value="$PROJECT_DIR$/_posts/2013-11-22-new-mbeddr-flyer.html" />
@@ -150,13 +140,15 @@
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/_posts/2014-01-28-new-release-0.6EAP3.html" />
+        <option value="$PROJECT_DIR$/_posts/2013-10-29-eclipse-proposal.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-01-30-eclipse-project.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1058" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -184,7 +176,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,18 +224,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -262,14 +254,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -278,6 +262,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -559,7 +551,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1058" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -623,20 +615,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="38" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="9216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="7236">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4662">
@@ -723,14 +701,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="10" selection-start="6225" selection-end="6225" vertical-scroll-proportion="-5.3333335" vertical-offset="2808" max-vertical-offset="7380">
+        <state line="164" column="10" selection-start="6225" selection-end="6225" vertical-scroll-proportion="0.0" vertical-offset="2808" max-vertical-offset="7380">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-01-28-new-release-0.6EAP3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="870">
+        <state line="5" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-10-29-eclipse-proposal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="117" selection-start="286" selection-end="286" vertical-scroll-proportion="0.10514019" vertical-offset="0" max-vertical-offset="856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-01-30-eclipse-project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.31177828" vertical-offset="0" max-vertical-offset="866">
           <folding />
         </state>
       </provider>
