@@ -1,0 +1,114 @@
+---
+layout: blogpost
+title: How mbeddr prevents goto fail (and similar problems)
+---
+<p>
+    As a consequence of the <a href="https://www.imperialviolet.org/2014/02/22/applebug.html">Apple goto fail</a>,
+    everybody seems to feel the
+    need to point out how their particular system would have prevented this
+    problem. So I guess we should do this with mbeddr as well.
+</p>
+
+<p>
+    One can make out several causes for the problem (in addition to the obvious,
+    which is that somebody made a mistake). So here are some thoughts relative
+    to these causes and mbeddr.
+</p>
+
+<p>
+    First, there is a mix up between indentation and actual block structure.
+    The goto fail code clearly shows, that the developer intended to make the
+    gotos part of the if. After all both gotos were indented. In MPS' projectional
+    editor, developers have no control over indentation. So the second goto would
+    not have been indented, avoiding the visual confusion.
+</p>
+
+<p>
+    A second reason for the goto fail could be the missing curlies in the body
+    of the if statement. Since the if statement executes conditionally the one
+    statement that follows the if condition, it is good style to use a block
+    statement there (curlies). In mbeddr, the definition of the if statement in mbeddr forces
+    the use of a block statement as the body of an if statement. Thus, an if is ALWAYS
+    followed by curlies. This really does prevent
+    errors like the one that caused goto fail.
+</p>
+
+
+<p>
+    Some people argue that the goto statement should not be used in code in
+    the first place (even though the C code in the goto fail example is idiomatic
+    C). It mbeddr, it is trivial to define a modular language extension that
+    prevents developers from using gotos, if this is so desired.
+</p>
+
+<p>
+    If no gotos should be used, then some other means of handling errors need to
+    be provided. Obviously, in C++, exceptions could have been used; the fail
+    part is an exception handler. However, exceptions do incur some runtime
+    overhead, they don't work with functions that return an error code, and, of
+    course, they are not available in C. However, in mbeddr, one could simple
+    develop a language extension for the following syntax:
+</p>
+
+
+<verbatim>
+    try-sequentially {
+    callFunction1(arg1, arg2); // only functions that return ints
+    callFunction2(arg3);       // would be allowed here, because the return
+    callFunction3(arg2, arg3); // value is interpreted as an error code
+    } on fail(error) {
+    // do whatever is done in case of an error
+    // the "error" expression contains the error code
+    // and the step that failed
+    }
+</verbatim>
+
+<p>
+    This extension could be translated in the following way:
+</p>
+
+<verbatim>
+    int8 __error = 0;
+    __error = callFunction1(arg1, arg2);
+    if ( __error != 0 ) { goto fail; }
+    __error = callFunction2(arg3);
+    if ( __error != 0 ) { goto fail; }
+    __error = callFunction3(arg2, arg3);
+    if ( __error != 0 ) { goto fail; }
+    goto end;
+    fail:
+    // do whatever is done in case of an error
+    // the "error" expression is mapped to a
+    // reference to __error
+    end:
+</verbatim>
+
+<p>
+    While the implementation uses the same pattern used by the Apple code, the pattern is
+    automatically generated, and hence users cannot make mistakes for error
+    handling. This is a little bit like exception handling, but it works only
+    locally (it doesn't use longjmp) and it works with existing library functions.
+    And of course this language could easily be extended to where the error
+    handler can get information about the failed call (by passing a step variable
+    to the error handler). One could also easily have several error handlers
+    that each handle a specific (range of) error code(s).
+</p>
+
+<p>
+    By the way, you can find this language extension in the mbeddr repository
+    now. It took 30 minutes to build :-)
+</p>
+
+<p>
+    So this is in fact a nice example how, by avoiding unnecessary detail, a
+    language extension can improve the robustness and security (in this case!)
+    of low level code. It simply prevents users from making mistakes in the
+    (unnecessary) details. In addition, the intent of what the users wanted to
+    do is much clearer.
+</p>
+
+<p>
+    There are many things like that in (embedded) software. The goal of mbeddr is
+    to make it simple to extend C with "little languages" that prevent these
+    problems.
+</p>
