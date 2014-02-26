@@ -27,7 +27,7 @@ title: How mbeddr prevents goto fail (and similar problems)
     A second reason for the goto fail could be the missing curlies in the body
     of the if statement. Since the if statement executes conditionally the one
     statement that follows the if condition, it is good style to use a block
-    statement there (curlies). In mbeddr, the definition of the if statement in mbeddr forces
+    statement there (curlies). In mbeddr, the definition of the if statement forces
     the use of a block statement as the body of an if statement. Thus, an if is ALWAYS
     followed by curlies. This really does prevent
     errors like the one that caused goto fail.
@@ -37,7 +37,7 @@ title: How mbeddr prevents goto fail (and similar problems)
 <p>
     Some people argue that the goto statement should not be used in code in
     the first place (even though the C code in the goto fail example is idiomatic
-    C). It mbeddr, it is trivial to define a modular language extension that
+    C). In mbeddr, it is trivial to define a modular language extension that contains a constraint that
     prevents developers from using gotos, if this is so desired.
 </p>
 
@@ -51,7 +51,7 @@ title: How mbeddr prevents goto fail (and similar problems)
 </p>
 
 
-<p><img src="/images/blog/tryseq.png" width="550"/></p>
+<p><img src="/images/blog/tryseq.png" width="475"/></p>
 
 
 <p>
