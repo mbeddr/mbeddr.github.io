@@ -51,7 +51,7 @@ title: How mbeddr prevents goto fail (and similar problems)
 </p>
 
 
-<verbatim>
+<code>
     try-sequentially {
     callFunction1(arg1, arg2); // only functions that return ints
     callFunction2(arg3);       // would be allowed here, because the return
@@ -61,13 +61,13 @@ title: How mbeddr prevents goto fail (and similar problems)
     // the "error" expression contains the error code
     // and the step that failed
     }
-</verbatim>
+</code>
 
 <p>
     This extension could be translated in the following way:
 </p>
 
-<verbatim>
+<code>
     int8 __error = 0;
     __error = callFunction1(arg1, arg2);
     if ( __error != 0 ) { goto fail; }
@@ -81,7 +81,7 @@ title: How mbeddr prevents goto fail (and similar problems)
     // the "error" expression is mapped to a
     // reference to __error
     end:
-</verbatim>
+</code>
 
 <p>
     While the implementation uses the same pattern used by the Apple code, the pattern is
