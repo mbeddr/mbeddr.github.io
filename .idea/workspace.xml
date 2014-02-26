@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/tryseq-c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/tryseq.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html" afterPath="$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="2014-02-26-preventing-goto-fail-with-mbeddr.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="32" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.10921501" vertical-offset="890" max-vertical-offset="1746">
+            <state line="58" column="5" selection-start="2385" selection-end="2385" vertical-scroll-proportion="0.26279864" vertical-offset="890" max-vertical-offset="1746">
               <folding />
             </state>
           </provider>
@@ -675,7 +672,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="32" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.10921501" vertical-offset="890" max-vertical-offset="1746">
+        <state line="58" column="5" selection-start="2385" selection-end="2385" vertical-scroll-proportion="0.26279864" vertical-offset="890" max-vertical-offset="1746">
           <folding />
         </state>
       </provider>
