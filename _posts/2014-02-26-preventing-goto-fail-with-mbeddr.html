@@ -51,37 +51,14 @@ title: How mbeddr prevents goto fail (and similar problems)
 </p>
 
 
-<pre>
-    try-sequentially {
-    callFunction1(arg1, arg2); // only functions that return ints
-    callFunction2(arg3);       // would be allowed here, because the return
-    callFunction3(arg2, arg3); // value is interpreted as an error code
-    } on fail(error) {
-    // do whatever is done in case of an error
-    // the "error" expression contains the error code
-    // and the step that failed
-    }
-</pre>
+<p><img src="/images/blog/tryseq.png"/></p>
+
 
 <p>
     This extension could be translated in the following way:
 </p>
 
-<pre>
-    int8 __error = 0;
-    __error = callFunction1(arg1, arg2);
-    if ( __error != 0 ) { goto fail; }
-    __error = callFunction2(arg3);
-    if ( __error != 0 ) { goto fail; }
-    __error = callFunction3(arg2, arg3);
-    if ( __error != 0 ) { goto fail; }
-    goto end;
-    fail:
-    // do whatever is done in case of an error
-    // the "error" expression is mapped to a
-    // reference to __error
-    end:
-</pre>
+<p><img src="/images/blog/tryseq-c.png"/></p>
 
 <p>
     While the implementation uses the same pattern used by the Apple code, the pattern is
