@@ -18,24 +18,25 @@ title: How mbeddr prevents goto fail (and similar problems)
 <p>
     First, there is a mix up between indentation and actual block structure.
     The goto fail code clearly shows, that the developer intended to make the
-    gotos part of the if. After all both gotos were indented. In MPS' projectional
-    editor, developers have no control over indentation. So the second goto would
+    gotos part of the <tt>if</tt>. After all both gotos were indented. In mbeddr developers have
+    no control over indentation (as a consequence of MPS' projectional
+    editor). So the second <tt>goto</tt> would
     not have been indented, avoiding the visual confusion.
 </p>
 
 <p>
     A second reason for the goto fail could be the missing curlies in the body
-    of the if statement. Since the if statement executes conditionally the one
-    statement that follows the if condition, it is good style to use a block
-    statement there (curlies). In mbeddr, the definition of the if statement forces
-    the use of a block statement as the body of an if statement. Thus, an if is ALWAYS
+    of the <tt>if</tt> statement. Since the <tt>if</tt> statement executes conditionally the one
+    statement that follows the <tt>if</tt> condition, it is good style to use a block
+    statement there (curlies). In mbeddr, the definition of the <tt>if</tt> statement forces
+    the use of a block statement as the body of an <tt>if</tt> statement. Thus, an <tt>if</tt> is ALWAYS
     followed by curlies. This really does prevent
     errors like the one that caused goto fail.
 </p>
 
 
 <p>
-    Some people argue that the goto statement should not be used in code in
+    Some people argue that the <tt>goto</tt> statement should not be used in code in
     the first place (even though the C code in the goto fail example is idiomatic
     C). In mbeddr, it is trivial to define a modular language extension that contains a constraint that
     prevents developers from using gotos, if this is so desired.
@@ -46,7 +47,7 @@ title: How mbeddr prevents goto fail (and similar problems)
     be provided. Obviously, in C++, exceptions could have been used; the fail
     part is an exception handler. However, exceptions do incur some runtime
     overhead, they don't work with functions that return an error code, and, of
-    course, they are not available in C. However, in mbeddr, one could simple
+    course, they are not available in C. However, in mbeddr, one could simply
     develop a language extension for the following syntax:
 </p>
 
