@@ -13,7 +13,7 @@ damit das Beispiel Projekt darauf funktioniert.
  * Arduino Uno (optional)
 
 Nach dem sie die mbeddr und mbeddr.arduino installiert haben finden sie den
-Quellcode des Beispiels hier. Nach dem Download öffnen sie das Projekt in mbeddr /
+Quellcode des Beispiels [hier](/files/mbeddr-arduino-sample.zip). Nach dem Download öffnen sie das Projekt in mbeddr /
 MPS.
 
 
