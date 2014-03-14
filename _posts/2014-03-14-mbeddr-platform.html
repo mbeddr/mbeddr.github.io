@@ -1,0 +1,46 @@
+---
+layout: blogpost
+title: New Artifact: the mbeddr.platform
+---
+<p>
+    As part of mbeddr, we are developing a lot of useful utilities around MPS that are not
+    at all specific to mbeddr itself. They just generally make MPS more useful or convenient.
+    While these things have always been modularized in terms of languages, they are available
+    as a separate set of downloadable plugins <a href="https://github.com/mbeddr/mbeddr.core/releases">since the last release</a>.
+    It is called the <b>mbeddr.platform</b>.
+</p>
+
+<p>
+    The platform includes things useful for the language developer (and hence, invisible to the end user),
+    as well as things that the end user will directly interact with. Here are some examples for the first category:
+</p>
+
+<ul>
+    <li>Utilities for logging in BaseLanguage</li>
+    <li>Utilities for working with intermediate nodes in generators</li>
+    <li>A BaseLanguage extension for writing AST interpreters</li>
+    <li>A type system trace/profiler</li>
+    <li>A number of smaller useful extensions to BaseLanguage incl. a builder expression</li>
+</ul>
+
+<p>The second category, things visible to end users, include:</p>
+
+<ul>
+    <li>Sascha Lisson's <a href="https://github.com/slisson/mps-tables/">tables</a></li>
+    <li>Sascha Lisson's <a href="https://github.com/slisson/mps-richtext/">richtext</a> facilities</li>
+    <li>The assessment framework for querying and auditing models</li>
+    <li>A namespace/module/import/visibility framework based on Chunks</li>
+    <li>Utilities for commenting code</li>
+    <li>An Outline view of models that pops up when pressing <i>Ctrl-O</i></li>
+    <li>A file/path picker concept</li>
+    <li>Utilities for debugging expressions by showing their values inline</li>
+    <li>The PlantUML-based visualization plugin</li>
+    <li>A model/solution-wide full-text search utility</li>
+</ul>
+
+<p>... and many more smaller utilities. While the documentation could be better (currently, there's none), you can 
+    always check out mbeddr and explore the use of these utilities by using <i>Find Instances</i> on the respective 
+    constructs and see how they are used. You can also drop us a line.</p>
+        
+<p>By the way: some of these extensions are scheduled to become part of MPS itself. As this happens, we'll remove
+them from the <p>mbeddr.platform</p>.</p>
