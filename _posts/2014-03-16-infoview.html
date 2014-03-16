@@ -1,0 +1,32 @@
+---
+layout: blogpost
+title: New InfoView in mbeddr and mbeddr.platform
+---
+<p>
+    Imagine you are working with the mbeddr requirements tracing facility. You add a trace to
+    some program element. The trace points to one or more requirements. While you can see the name
+    of the target requirement in the trace, the requirement's content is not visible, since it resides
+    in the editor for the target requirement. To see it, you have to follow the link to the requirement
+    (Ctrl-Click) and then later go back.
+</p>
+
+<p>
+    To address this situation (and similar situations like that) we have added the InfoView. A language
+    concept can implement an interface that defines one method that returns a node. If the view is open,
+    that node is shown in this view, as soon as the context element is selected. The requirements tracing
+    example shows the target requirement as soon as the trace is selected.
+</p>
+
+<img src="../images/blog/infoview.png">
+
+<p>
+    This view is different to the inspector, since it can show nodes from anywhere in the model. Also,
+    the content remains visible until another node that implements the interface is selected; it does not
+    change for <i>every</i> selection change.
+</p>
+
+<p>
+    The facility is generic, and has been added to the mbeddr platform as well.
+</p>
+
+

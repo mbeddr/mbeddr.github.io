@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html" afterPath="$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-03-16-infoview.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,16 +28,25 @@
       <file leaf-file-name="2014-02-26-preventing-goto-fail-with-mbeddr.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="-15.925926" vertical-offset="452" max-vertical-offset="1764">
+            <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="1764">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-03-14-mbeddr-platform.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-03-14-mbeddr-platform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="25" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.6869565" vertical-offset="156" max-vertical-offset="918">
+            <state line="10" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="-1.5555556" vertical-offset="138" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-03-16-infoview.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-infoview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="79" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.71692747" vertical-offset="0" max-vertical-offset="703">
               <folding />
             </state>
           </provider>
@@ -88,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2013-11-22-new-mbeddr-flyer.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/benefits.html" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -104,6 +112,7 @@
         <option value="$PROJECT_DIR$/_posts/2014-01-30-eclipse-project.html" />
         <option value="$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-16-infoview.html" />
       </list>
     </option>
   </component>
@@ -138,6 +147,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -146,21 +156,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -179,14 +212,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -195,6 +220,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -540,13 +573,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="61" selection-start="5528" selection-end="5528" vertical-scroll-proportion="0.0" vertical-offset="2268" max-vertical-offset="7272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/faq.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="38" selection-start="4024" selection-end="4024" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="9216" />
@@ -620,14 +646,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="-15.925926" vertical-offset="452" max-vertical-offset="1764">
+        <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="1764">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.6869565" vertical-offset="156" max-vertical-offset="918">
+        <state line="10" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="-1.5555556" vertical-offset="138" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-infoview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="79" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.71692747" vertical-offset="0" max-vertical-offset="703">
           <folding />
         </state>
       </provider>
