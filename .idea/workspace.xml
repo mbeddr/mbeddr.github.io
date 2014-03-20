@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/treeview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/treeviewcode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" afterPath="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="2014-03-20-treeview.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="891" selection-end="891" vertical-scroll-proportion="0.56905156" vertical-offset="0" max-vertical-offset="601">
+            <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.44925123" vertical-offset="0" max-vertical-offset="601">
               <folding />
             </state>
           </provider>
@@ -656,11 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-infoview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="932" selection-end="973" vertical-scroll-proportion="0.4724689" vertical-offset="112" max-vertical-offset="738" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="0.074600354" vertical-offset="138" max-vertical-offset="918" />
@@ -671,9 +663,16 @@
         <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.7337884" vertical-offset="452" max-vertical-offset="1764" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-infoview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.45238096" vertical-offset="112" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="891" selection-end="891" vertical-scroll-proportion="0.56905156" vertical-offset="0" max-vertical-offset="601">
+        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.44925123" vertical-offset="0" max-vertical-offset="601">
           <folding />
         </state>
       </provider>
