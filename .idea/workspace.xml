@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-03-16-infoview.html" afterPath="$PROJECT_DIR$/_posts/2014-03-16-infoview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/treeview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/treeviewcode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,28 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014-02-26-preventing-goto-fail-with-mbeddr.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html">
+      <file leaf-file-name="2014-03-20-treeview.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="1764">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-14-mbeddr-platform.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="-1.5555556" vertical-offset="138" max-vertical-offset="918">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-16-infoview.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-infoview.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="986" selection-end="986" vertical-scroll-proportion="0.6145092" vertical-offset="0" max-vertical-offset="738">
+            <state line="19" column="41" selection-start="891" selection-end="891" vertical-scroll-proportion="0.56905156" vertical-offset="0" max-vertical-offset="601">
               <folding />
             </state>
           </provider>
@@ -97,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/benefits.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/download.html" />
@@ -113,13 +97,14 @@
         <option value="$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-infoview.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1600" />
-    <option name="height" value="878" />
+    <option name="width" value="1280" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -147,7 +132,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -176,12 +160,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -509,14 +526,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1600" height="878" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23085107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.214331" sideWeight="0.76914895" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2140016" sideWeight="0.76914895" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978677" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -573,11 +590,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="38" selection-start="4024" selection-end="4024" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="9216" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4662">
@@ -593,13 +605,6 @@
     <entry file="file://$PROJECT_DIR$/support.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="-0.0" vertical-offset="2268" max-vertical-offset="7272">
           <folding />
         </state>
       </provider>
@@ -644,23 +649,31 @@
         <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="5490" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html">
+    <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.0" vertical-offset="452" max-vertical-offset="1764">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="-1.5555556" vertical-offset="138" max-vertical-offset="918">
+        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="-0.0" vertical-offset="2268" max-vertical-offset="7272">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-16-infoview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="986" selection-end="986" vertical-scroll-proportion="0.6145092" vertical-offset="0" max-vertical-offset="738">
+        <state line="21" column="0" selection-start="932" selection-end="973" vertical-scroll-proportion="0.4724689" vertical-offset="112" max-vertical-offset="738" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="528" selection-end="528" vertical-scroll-proportion="0.074600354" vertical-offset="138" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-02-26-preventing-goto-fail-with-mbeddr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="77" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.7337884" vertical-offset="452" max-vertical-offset="1764" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="41" selection-start="891" selection-end="891" vertical-scroll-proportion="0.56905156" vertical-offset="0" max-vertical-offset="601">
           <folding />
         </state>
       </provider>

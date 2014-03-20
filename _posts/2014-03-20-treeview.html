@@ -1,0 +1,24 @@
+---
+layout: blogpost
+title: New Tree View in mbeddr and mbeddr.platform
+---
+<p>
+    Tree views are a proven way of showing and navigating structure in IDEs. MPS
+    of course has several of them for various purposes. We have now added a nice
+    tree view that can be used for various tasks. The screenshot below shows a call
+    stack for functions.
+</p>
+
+<img src="../images/blog/treeview.png"/>
+
+<p>
+    Selecting a node in the tree automatically selects the corresponding node in the editor.
+    In addition, tree nodes can contribute user-defined actions that are shown in the
+    context menu. As with visualizations, a node can contribute different categories of tree
+    views. All of this can be defined without dealing with any Swing code. The code
+    below shows the implementation of the callgraph; the framework is part of the platform
+    and can be used for any MPS language.
+</p>
+
+<img src="../images/blog/treeviewcode.png"/>
+
