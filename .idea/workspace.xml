@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html" afterPath="$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="2014-03-20-treeview.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="594">
+            <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
@@ -37,7 +38,7 @@
       <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="-19.851852" vertical-offset="5800" max-vertical-offset="8298">
+            <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="0.0" vertical-offset="5800" max-vertical-offset="8298">
               <folding />
             </state>
           </provider>
@@ -46,7 +47,7 @@
       <file leaf-file-name="2014-03-21-newMPSBook.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="70" selection-start="412" selection-end="412" vertical-scroll-proportion="0.12778905" vertical-offset="0" max-vertical-offset="986">
+            <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.12753037" vertical-offset="0" max-vertical-offset="988">
               <folding />
             </state>
           </provider>
@@ -155,30 +156,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -188,12 +165,12 @@
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -212,14 +189,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -228,6 +197,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -644,21 +621,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="594">
+        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="594">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="-19.851852" vertical-offset="5800" max-vertical-offset="8298">
+        <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="0.0" vertical-offset="5800" max-vertical-offset="8298">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="70" selection-start="412" selection-end="412" vertical-scroll-proportion="0.12778905" vertical-offset="0" max-vertical-offset="288">
+        <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.12753037" vertical-offset="0" max-vertical-offset="988">
           <folding />
         </state>
       </provider>
