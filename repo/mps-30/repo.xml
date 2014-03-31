@@ -1,22 +1,21 @@
 <plugin-repository>
 	<ff>"Misc"</ff>
 	<category name="Misc">
-		<idea-plugin downloads="95" size="211115" date="1378983864000" url="">
-			<name>MPS Richtext Editor Component</name>
-			<id>de.slisson.mps.richtext</id>
+		<idea-plugin downloads="4135" size="10734" date="1197380578000" url="">
+			<name>mbeddr</name>
+			<id>com.mbeddr.core</id>
 			<description>
-				<![CDATA[ Multiline text that allows to embed nodes. ]]>
+				<![CDATA[ Standard Java dictionary based on Maven repository ]]>
 			</description>
-			<version>1.0</version>
-			<vendor email="" url="https://github.com/slisson/mps-richtext">Sascha Lisson</vendor>
+			<version>0.1</version>
+			<vendor email="kolja.dummann@logv.ws" url="">Kolja Dummann</vendor>
 			<idea-version min="n/a" max="n/a" since-build="129.1"/>
 			<change-notes>
-				<![CDATA[ ]]>
+				<![CDATA[
+				<ul>0.1 version (2100+ words) <li>Build word repository based on Maven repository</li> </ul>
+				]]>
 			</change-notes>
-			<depends>de.slisson.mps.editor.multiline</depends>
-			<depends>jetbrains.mps.core</depends>
-			<depends>de.slisson.mps.editor.override</depends>
-			<depends>jetbrains.mps.build</depends>
+			<depends>SpellChecker</depends>
 			<rating>00</rating>
 		</idea-plugin>
 	</category>
