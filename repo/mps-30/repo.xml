@@ -1,22 +1,3 @@
-<plugin-repository>
-	<ff>"Misc"</ff>
-	<category name="Misc">
-		<idea-plugin downloads="4135" size="10734" date="1197380578000" url="">
-			<name>mbeddr</name>
-			<id>com.mbeddr.core</id>
-			<description>
-				<![CDATA[ Standard Java dictionary based on Maven repository ]]>
-			</description>
-			<version>0.1</version>
-			<vendor email="kolja.dummann@logv.ws" url="">Kolja Dummann</vendor>
-			<idea-version min="n/a" max="n/a" since-build="129.1"/>
-			<change-notes>
-				<![CDATA[
-				<ul>0.1 version (2100+ words) <li>Build word repository based on Maven repository</li> </ul>
-				]]>
-			</change-notes>
-			<depends>SpellChecker</depends>
-			<rating>00</rating>
-		</idea-plugin>
-	</category>
-</plugin-repository>⁄
+<plugins>
+  <plugin id="mbeddr" url="http://mbeddr.logv.ws/mps-30/mbeddr.zip" version="0.6"/>
+</plugins>
