@@ -1,0 +1,46 @@
+---
+layout: blogpost
+title: Querylist - Views im MPS
+---
+<p>
+    So far, MPS has only been able to project nodes at the location
+    where they resided physically on the model. So, while the rendering
+    of nodes could be designed arbitrarily, the structure of the projection
+    itself always had to conform to the structure of the underlying AST.
+    In other words, real views were not supported.
+</p>
+
+<p>
+Enter querylist. A querylist is a list whose contents are the result
+of an arbitrary query over the model. The elements in the list can
+be editable, there are callbacks for what should happen when things
+are added or deleted, and it is even possible to define wrapper
+editors for the result elements or override the result element's
+editor completely.
+</p>
+
+<p>
+We are using this currently in two places. First, we use it to show
+the signature of inherited operation-like constructs. In this case,
+the queried elements are rendered in grey, and they are readonly.
+The following picture shows this.
+</p>
+
+
+<br/>
+<img src="/images/blog/querylist1.png"/>
+<br/>
+<br/>
+
+<p>
+The second location where we currently make use of this feature is
+in assessments. So instead of just showing pointers to the result
+elements in the assessment result, we can now show the actual element
+inline. If the assessment is used to detect errors, then that error
+can be fixed directly in the assessment instead of navigating to
+the respective program location.
+</p>
+
+<p>
+The querylist is not yet in MPS, but it is available on the mbeddr.platform.
+</p>
