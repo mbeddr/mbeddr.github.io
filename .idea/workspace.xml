@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-05-07-book.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/profiling1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/profiling2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -26,82 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014-03-20-treeview.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
+      <file leaf-file-name="2014-05-09-profiling.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="594">
+            <state line="38" column="71" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-25.333334" vertical-offset="0" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="0.0" vertical-offset="5800" max-vertical-offset="8298">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-21-newMPSBook.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="288">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-03-27-meetingInPrague.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-03-27-meetingInPrague.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="648">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-05-06-querylist.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="936">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-05-07-book.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2014-05-07-book.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="44" selection-start="750" selection-end="750" vertical-scroll-proportion="0.21535394" vertical-offset="0" max-vertical-offset="1003">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mps.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mps.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4662">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="support.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4734">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="team.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="0.0" vertical-offset="2268" max-vertical-offset="7272">
+            <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="0.018181818" vertical-offset="2250" max-vertical-offset="7272">
               <folding />
             </state>
           </provider>
@@ -125,10 +65,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/screencasts.html" />
         <option value="$PROJECT_DIR$/support.html" />
-        <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/_posts/2014-01-28-new-release-0.6EAP3.html" />
         <option value="$PROJECT_DIR$/_posts/2013-10-29-eclipse-proposal.html" />
         <option value="$PROJECT_DIR$/_posts/2014-01-30-eclipse-project.html" />
@@ -141,6 +79,8 @@
         <option value="$PROJECT_DIR$/_posts/2014-03-27-meetingInPrague.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-06-querylist.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-07-book.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
+        <option value="$PROJECT_DIR$/team.html" />
       </list>
     </option>
   </component>
@@ -175,6 +115,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,57 +144,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -272,14 +180,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -288,6 +188,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -633,41 +541,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2013-09-17-reporting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="4189" selection-end="4266" vertical-scroll-proportion="0.7353464" vertical-offset="450" max-vertical-offset="1692" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-01-30-eclipse-project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.47957373" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-01-28-new-release-0.6EAP3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.12788633" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/download.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="7344" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="34" selection-start="3903" selection-end="3903" vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="13446" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/benefits.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="5490" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="-0.0" vertical-offset="2268" max-vertical-offset="7272">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html">
@@ -685,44 +561,82 @@
         <state line="21" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.45238096" vertical-offset="112" max-vertical-offset="738" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="594">
+        <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.80757725" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn.html">
+    <entry file="file://$PROJECT_DIR$/mps.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="0.0" vertical-offset="5800" max-vertical-offset="8298">
+        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4662">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html">
+    <entry file="file://$PROJECT_DIR$/images/blog/profiling2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-05-07-book.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="288">
+        <state line="12" column="44" selection-start="750" selection-end="750" vertical-scroll-proportion="0.21535394" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-27-meetingInPrague.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="648">
+        <state line="16" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.28713858" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="936">
+        <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.12727273" vertical-offset="0" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-05-07-book.html">
+    <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="750" selection-end="750" vertical-scroll-proportion="0.21535394" vertical-offset="0" max-vertical-offset="1003">
+        <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="0.54141414" vertical-offset="5800" max-vertical-offset="8298">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.26919243" vertical-offset="0" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/blog/profiling1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="71" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-25.333334" vertical-offset="0" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="0.018181818" vertical-offset="2250" max-vertical-offset="7272">
           <folding />
         </state>
       </provider>
