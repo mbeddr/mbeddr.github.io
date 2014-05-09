@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/profiling1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/profiling2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" afterPath="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,19 +25,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014-05-09-profiling.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2014-05-09-profiling.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="71" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-25.333334" vertical-offset="0" max-vertical-offset="810">
+            <state line="18" column="10" selection-start="926" selection-end="926" vertical-scroll-proportion="0.32303092" vertical-offset="0" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="0.018181818" vertical-offset="2250" max-vertical-offset="7272">
+            <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="-0.6666667" vertical-offset="2250" max-vertical-offset="7272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-05-06-querylist.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -79,8 +84,8 @@
         <option value="$PROJECT_DIR$/_posts/2014-03-27-meetingInPrague.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-06-querylist.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-07-book.html" />
-        <option value="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
         <option value="$PROJECT_DIR$/team.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
       </list>
     </option>
   </component>
@@ -561,13 +566,6 @@
         <state line="21" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.45238096" vertical-offset="112" max-vertical-offset="738" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.80757725" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4662">
@@ -627,16 +625,23 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
+    <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="71" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-25.333334" vertical-offset="0" max-vertical-offset="810">
+        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="-0.6666667" vertical-offset="2250" max-vertical-offset="7272">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/team.html">
+    <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="0.018181818" vertical-offset="2250" max-vertical-offset="7272">
+        <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="10" selection-start="926" selection-end="926" vertical-scroll-proportion="0.32303092" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
