@@ -28,7 +28,7 @@
       <file leaf-file-name="2014-05-09-profiling.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.34097707" vertical-offset="0" max-vertical-offset="1003">
+            <state line="12" column="83" selection-start="612" selection-end="612" vertical-scroll-proportion="0.21492538" vertical-offset="0" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="-0.6666667" vertical-offset="2250" max-vertical-offset="7272">
+            <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="7272">
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
       <file leaf-file-name="2014-05-06-querylist.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="936">
+            <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -120,7 +120,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,18 +154,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -185,6 +185,14 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -193,14 +201,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -568,9 +568,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mps.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4662">
-          <folding />
-        </state>
+        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4662" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/blog/profiling2.png">
@@ -580,44 +578,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-07-book.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="750" selection-end="750" vertical-scroll-proportion="0.21535394" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
+        <state line="12" column="44" selection-start="750" selection-end="750" vertical-scroll-proportion="0.21535394" vertical-offset="0" max-vertical-offset="1003" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-27-meetingInPrague.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.28713858" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
+        <state line="16" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.28713858" vertical-offset="0" max-vertical-offset="1003" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.12727273" vertical-offset="0" max-vertical-offset="990">
-          <folding />
-        </state>
+        <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.12727273" vertical-offset="0" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="0.54141414" vertical-offset="5800" max-vertical-offset="8298">
-          <folding />
-        </state>
+        <state line="352" column="0" selection-start="15083" selection-end="15496" vertical-scroll-proportion="0.54141414" vertical-offset="5800" max-vertical-offset="8298" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.26919243" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.26919243" vertical-offset="0" max-vertical-offset="1003" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/support.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4734">
-          <folding />
-        </state>
+        <state line="89" column="38" selection-start="4006" selection-end="4006" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="4734" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/blog/profiling1.png">
@@ -627,21 +613,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="-0.6666667" vertical-offset="2250" max-vertical-offset="7272">
+        <state line="126" column="61" selection-start="5524" selection-end="5524" vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="7272">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="936">
+        <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.34097707" vertical-offset="0" max-vertical-offset="1003">
+        <state line="12" column="83" selection-start="612" selection-end="612" vertical-scroll-proportion="0.21492538" vertical-offset="0" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
