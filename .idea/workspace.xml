@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blog/doclangvideo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-05-20-docLangUpdate.html" afterPath="$PROJECT_DIR$/_posts/2014-05-20-docLangUpdate.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -37,7 +38,16 @@
       <file leaf-file-name="2014-05-20-docLangUpdate.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-05-20-docLangUpdate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="44" selection-start="65" selection-end="65" vertical-scroll-proportion="0.051209103" vertical-offset="0" max-vertical-offset="703">
+            <state line="9" column="105" selection-start="553" selection-end="553" vertical-scroll-proportion="0.2347826" vertical-offset="0" max-vertical-offset="690">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-05-09-profiling.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="40" selection-start="926" selection-end="966" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
@@ -135,6 +145,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -603,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="83" selection-start="612" selection-end="612" vertical-scroll-proportion="0.3072546" vertical-offset="0" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-06-querylist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="2" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.8207681" vertical-offset="233" max-vertical-offset="936" />
@@ -629,9 +664,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="40" selection-start="926" selection-end="966" vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-20-docLangUpdate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="65" selection-end="65" vertical-scroll-proportion="0.051209103" vertical-offset="0" max-vertical-offset="703">
+        <state line="9" column="105" selection-start="553" selection-end="553" vertical-scroll-proportion="0.2347826" vertical-offset="0" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
