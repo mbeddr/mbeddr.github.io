@@ -1,0 +1,38 @@
+---
+layout: blogpost
+title: Progress with mbeddr's C++
+---
+
+<p>
+In order to prove the extensibility of mbeddr, and to support customer interest we have been working for some time
+    on building a C++ support for mbeddr.  In September 2013, a Master’s Thesis has been defended by Zaur Molotnikov
+    (advisors: Markus Völter, Daniel Ratiu; supervisor: Bernhard Schätz), which addressed the research question of
+    whether mbeddr’s extensibility can accomodate C++. The goals were to explore mbeddr’s and MPS’s extension points,
+    and to define a restricted version of C++ that improves safety, similar to what mbeddr does with C. The Z++
+    programming language (aka Projectional C++ or C++ for mbeddr) was born. Back then it was a rather prototypical
+    language, and it was not maintained.
+</p>
+
+<p>
+In early 2014, <a href="http://sioux.eu">Sioux</a> decided to explore the use of Z++ in an industrial context. Developers at itemis, Sioux,
+    JetBrains and Fortiss worked jointly on the development of Z++. In particular,
+Zaur has spent the last week at Sioux, working on Z++ with Eugen Schindler, Klemens Schindler and Remi Bosman
+    to migrate it to the newer current versions of MPS/mbeddr and to improve it generally. One of the major issues
+    turned to be <i>GenericDotExpression</i>. Using this concept it is amazingly easy to create notations with dots,
+    such as <i>MyClass.helloWorld()</i>. The only thing the language developer must do is implement the
+    <i>IGenericDotTarget</i> interface to represent the code after the dot! Using the <i>GenericDotExpression</i>
+    in Z++ turned out to reduce the code base significantly.
+</p>
+
+<p>
+Z++ template support has always been tricky. We improved it at Sioux, making the overall design cleaner, and reducing
+    the code bas. A simple C++  example project was investigated that made use of templates and dynamic polymorphism.
+    By the end of the day, it worked well: it was implemented and compiled by Z++.
+</p>
+
+<p>
+In addition, several bugs have been discovered and fixed, including some curious C++ language quirks.
+    Despite the progress, Z++ does not (yet) represent the complete C++, but it can already be useful,
+    for example as a generation target. We encourage you to check it out at <a href="https://github.com/qutorial/zplusplus">https://github.com/qutorial/zplusplus</a>.
+    Sioux, Fortiss and itemis will continue to work on it in the coming months.
+</p>
