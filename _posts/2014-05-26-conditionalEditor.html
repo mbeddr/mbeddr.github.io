@@ -1,0 +1,57 @@
+---
+layout: blogpost
+title: Conditional Editors: AO for editor definitions in MPS
+---
+
+<p>
+In MPS, each language concept has its own editor. While this is useful in 99%
+of all cases, sometimes it is a problem: imagine you want to change the editor
+of many different language concepts at a time. Then you have to change the
+editor for all these language concepts. This is tedious and error prone.
+</p>
+
+<p>
+As an example, consider projecting a little arrow over all "things with names"
+in C that are pointers as a means of highlighting pointers throughout the
+program. This is shown in the example below.
+</p>
+
+<br/>
+<img src="/images/blog/pointerArrowExample.png"/>
+<br/>
+<br/>
+
+<p>
+The problem here is that there are separate language concepts for local variable
+references, global variable references, argument references, etc. All these
+have to be changed.
+</p>
+
+<p>
+Enter conditional editors. A conditional editor is almost like an aspect. It
+can be applied "around" existing editor, and whether it applies or not is
+determined by a condition and the applicable concept (similar to a pointcut in
+AO). The figure below shows the definition of the pointer arrow editor.
+</p>
+
+<br/>
+<img src="/images/blog/pointerArrowEditor.png"/>
+<br/>
+<br/>
+
+
+<p>
+It applies to all language concepts that are references and hence implement
+the <i>IReference</i> interface. It is conditionally applied only if the type of the
+reference is a pointer. As the editor itself, it shows the arrow (hiding
+behind the <i>custom cell</i> on top of the already existing editor (<i>[next-editor]</i>).
+</p>
+
+<p>
+Using this approach, it is now possible to essentially decorate any editor with
+any decoration based on arbitrary conditions. The plugin that enables this behavior
+can be found at github: <a href="https://github.com/slisson/mps-conditional-editor">https://github.com/slisson/mps-conditional-editor</a>,
+and it is also part of the mbeddr platform.
+</p>
+
+
