@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-07-21-newPapers.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="207" column="62" selection-start="7316" selection-end="7316" vertical-scroll-proportion="0.34545454" vertical-offset="3384" max-vertical-offset="9702">
+            <state line="203" column="0" selection-start="6897" selection-end="8253" vertical-scroll-proportion="-10.0" vertical-offset="3384" max-vertical-offset="9702">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-07-21-newPapers.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-07-21-newPapers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="75" selection-start="754" selection-end="754" vertical-scroll-proportion="0.19740778" vertical-offset="0" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -70,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2014-03-14-mbeddr-platform.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-16-infoview.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html" />
@@ -86,6 +94,7 @@
         <option value="$PROJECT_DIR$/_posts/2014-06-28-tooltips.html" />
         <option value="$PROJECT_DIR$/_posts/2014-06-27-release31.html" />
         <option value="$PROJECT_DIR$/learn.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-07-21-newPapers.html" />
       </list>
     </option>
   </component>
@@ -546,11 +555,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-27-meetingInPrague.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="479" selection-end="479" vertical-scroll-proportion="0.28713858" vertical-offset="0" max-vertical-offset="1003" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-03-21-newMPSBook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="153" selection-start="495" selection-end="495" vertical-scroll-proportion="0.12727273" vertical-offset="0" max-vertical-offset="990" />
@@ -627,7 +631,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="62" selection-start="7316" selection-end="7316" vertical-scroll-proportion="0.34545454" vertical-offset="3384" max-vertical-offset="9702">
+        <state line="203" column="0" selection-start="6897" selection-end="8253" vertical-scroll-proportion="-10.0" vertical-offset="3384" max-vertical-offset="9702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-07-21-newPapers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="75" selection-start="754" selection-end="754" vertical-scroll-proportion="0.19740778" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
