@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-06-27-release31.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2014-06-28-tooltips.html" afterPath="$PROJECT_DIR$/_posts/2014-06-25-tooltips.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,16 +28,25 @@
       <file leaf-file-name="2014-06-25-tooltips.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-06-25-tooltips.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="89" selection-start="405" selection-end="405" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="414">
+            <state line="13" column="89" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="414">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-06-27-release31.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-06-27-release31.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-06-27-release31.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.26919243" vertical-offset="0" max-vertical-offset="1003">
+            <state line="15" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="206" column="71" selection-start="7220" selection-end="7220" vertical-scroll-proportion="0.43636364" vertical-offset="3276" max-vertical-offset="9522">
               <folding />
             </state>
           </provider>
@@ -72,13 +79,13 @@
         <option value="$PROJECT_DIR$/_posts/2014-05-07-book.html" />
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
-        <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-20-docLangUpdate.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-cpp-progress.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-28-betterUsablity.html" />
         <option value="$PROJECT_DIR$/_posts/2014-06-28-tooltips.html" />
         <option value="$PROJECT_DIR$/_posts/2014-06-27-release31.html" />
+        <option value="$PROJECT_DIR$/learn.html" />
       </list>
     </option>
   </component>
@@ -154,12 +161,12 @@
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -178,6 +185,14 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -186,14 +201,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -589,11 +596,6 @@
         <state line="12" column="100" selection-start="611" selection-end="711" vertical-scroll-proportion="0.31213874" vertical-offset="0" max-vertical-offset="692" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="6122" selection-end="6122" vertical-scroll-proportion="0.39884394" vertical-offset="2676" max-vertical-offset="9180" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="40" selection-start="926" selection-end="966" vertical-scroll-proportion="0.18297872" vertical-offset="213" max-vertical-offset="918" />
@@ -611,14 +613,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-06-25-tooltips.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="89" selection-start="405" selection-end="405" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="414">
+        <state line="13" column="89" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="414">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-06-27-release31.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.26919243" vertical-offset="0" max-vertical-offset="1003">
+        <state line="15" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="71" selection-start="7220" selection-end="7220" vertical-scroll-proportion="0.43636364" vertical-offset="3276" max-vertical-offset="9522">
           <folding />
         </state>
       </provider>
