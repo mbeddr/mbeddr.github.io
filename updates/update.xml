@@ -1,6 +1,6 @@
 <products>
-  <product name="mbeddr">
-    <code>mbeddr</code>
+  <product name="MPS">
+    <code>MPS</code>
     <channel id="mbeddr" name="mbeddr Ide" status="release"
              url="https://github.com/mbeddr/mbeddr.core/releases/tag/0.7-EAP"
              feedback="https://github.com/mbeddr/mbeddr.core/issues"
