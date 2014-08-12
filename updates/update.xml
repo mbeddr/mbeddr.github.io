@@ -1,0 +1,14 @@
+<products>
+  <product name="mbeddr">
+    <code>mbeddr</code>
+    <channel id="mbeddr" name="mbeddr Ide" status="release"
+             url="https://github.com/mbeddr/mbeddr.core/releases/tag/0.7-EAP"
+             feedback="https://github.com/mbeddr/mbeddr.core/issues"
+             majorVersion="1" minorVersoin="1">
+      <build number="135.002" version="0.2">
+        <message>mbeddr 0.2 available.</message>
+      </build>
+    </channel>
+
+  </product>
+</products>
