@@ -5,7 +5,7 @@
              url="https://github.com/mbeddr/mbeddr.core/releases/tag/0.7-EAP"
              feedback="https://github.com/mbeddr/mbeddr.core/issues"
              majorVersion="3" minorVersoin="1">
-      <build number="135.002" version="0.2">
+      <build number="135.2" version="0.2">
         <message>mbeddr 0.2 available.</message>
       </build>
     </channel>
