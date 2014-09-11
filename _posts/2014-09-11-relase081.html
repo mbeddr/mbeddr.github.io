@@ -1,0 +1,8 @@
+---
+layout: blogpost
+title: bugfix release 0.8.1
+---
+
+<p>
+We have just published <a href="https://github.com/mbeddr/mbeddr.core/releases/tag/0.8.1-EAP">mbeddr 0.8.1-EAP</a>. This is a bugfix release on top of the 0.8 release. It fixes two major bug introduced in the previous release. The first one prevented users from running and debugging out of mbeddr on windows. The second is a false error message from the typesystem when using boolean types. Though this issue is resolved in the most common use cases it might still surface under some corner cases when using number literals with physical units. Since the physical units are getting a major overhaul in the next mbeddr release we decided to not fix this in the old system.
+</p>
