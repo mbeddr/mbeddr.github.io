@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-09-18-usabilityVideo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-09-11-relase081.html" afterPath="$PROJECT_DIR$/_posts/2014-09-11-relase081.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-09-18-usabilityVideo.html" afterPath="$PROJECT_DIR$/_posts/2014-09-18-usabilityVideo.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,7 +82,7 @@
       <file leaf-file-name="2014-09-18-usabilityVideo.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-09-18-usabilityVideo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="63" selection-start="540" selection-end="540" vertical-scroll-proportion="0.16718267" vertical-offset="0" max-vertical-offset="969">
+            <state line="2" column="21" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0371517" vertical-offset="0" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -695,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-09-18-usabilityVideo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="63" selection-start="540" selection-end="540" vertical-scroll-proportion="0.16718267" vertical-offset="0" max-vertical-offset="306">
+        <state line="2" column="21" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0371517" vertical-offset="0" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
