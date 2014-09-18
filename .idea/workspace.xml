@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/support.html" afterPath="$PROJECT_DIR$/support.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="support.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/support.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="0" selection-start="8437" selection-end="8437" vertical-scroll-proportion="0.45564517" vertical-offset="2770" max-vertical-offset="5310">
+            <state line="185" column="28" selection-start="8730" selection-end="8730" vertical-scroll-proportion="0.80040324" vertical-offset="2536" max-vertical-offset="5472">
               <folding />
             </state>
           </provider>
@@ -610,7 +609,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/support.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="0" selection-start="8437" selection-end="8437" vertical-scroll-proportion="0.45564517" vertical-offset="2770" max-vertical-offset="5310">
+        <state line="185" column="28" selection-start="8730" selection-end="8730" vertical-scroll-proportion="0.80040324" vertical-offset="2536" max-vertical-offset="5472">
           <folding />
         </state>
       </provider>
