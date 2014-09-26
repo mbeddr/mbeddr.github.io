@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-09-26-breadcumbs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-09-24-planToFIxUserGuide.html" afterPath="$PROJECT_DIR$/_posts/2014-09-24-planToFIxUserGuide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -27,10 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014-09-26-breadcumbs.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-09-26-breadcumbs.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-breadcumbs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="65" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.7164179" vertical-offset="0" max-vertical-offset="603">
+            <state line="24" column="65" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="558">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-09-24-planToFIxUserGuide.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-09-24-planToFIxUserGuide.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="4" selection-start="734" selection-end="734" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="378">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-09-26-janoschThesis.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="104" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.7016949" vertical-offset="0" max-vertical-offset="590">
               <folding />
             </state>
           </provider>
@@ -63,7 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2014-05-09-profiling.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-20-docLangUpdate.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-cpp-progress.html" />
@@ -79,6 +95,7 @@
         <option value="$PROJECT_DIR$/support.html" />
         <option value="$PROJECT_DIR$/_posts/2014-09-24-planToFIxUserGuide.html" />
         <option value="$PROJECT_DIR$/_posts/2014-09-26-breadcumbs.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" />
       </list>
     </option>
   </component>
@@ -539,11 +556,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2014-05-20-docLangUpdate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="100" selection-start="611" selection-end="711" vertical-scroll-proportion="0.31213874" vertical-offset="0" max-vertical-offset="692" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-09-profiling.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="40" selection-start="926" selection-end="966" vertical-scroll-proportion="0.18297872" vertical-offset="213" max-vertical-offset="918" />
@@ -601,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-09-24-planToFIxUserGuide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="734" selection-end="734" vertical-scroll-proportion="0.4477612" vertical-offset="0" max-vertical-offset="603">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/support.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="186" column="0" selection-start="8649" selection-end="8649" vertical-scroll-proportion="0.0" vertical-offset="3348" max-vertical-offset="5508">
@@ -624,7 +629,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-breadcumbs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="65" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.7164179" vertical-offset="0" max-vertical-offset="558">
+        <state line="24" column="65" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-09-24-planToFIxUserGuide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="734" selection-end="734" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="104" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.7016949" vertical-offset="0" max-vertical-offset="590">
           <folding />
         </state>
       </provider>
