@@ -1,0 +1,26 @@
+---
+layout: blogpost
+title: Breadcrumbs in the editor
+---
+
+<p>
+    Breadcrumbs are a way to improve the user's awareness where in a (big) file he is currently editing. It is essentially
+    a "horizontal tree" shown at the top of an editor that reflects the hierarchical structure of an editor's contents.
+    Niko has made an MPS extension that displays a breadcrumb in an MPS editor. By clicking on a label the user can jump
+    to the corresponding level of the containment hierarchy. By clicking on the little triangles one can see the remaining
+    nodes in the hierarchy.
+</p>
+
+<br/>
+<img src="/images/blog/breadcrumbs.png"/><br/>
+<br/>
+
+<P>
+    To use breadcrumbs in an editor, only two simple steps are required. Nodes that form the hierarchy (and should show up
+    in the breadcrumb) must implement the interface <i>IBreadcrumb</i>. The root of the editor that should show the
+    breadcrumbs must include a <i>breadcrumb</i> editor cell at the top.
+</P>
+
+<p>
+    The breadcrumbs are available as part of the mbeddr.platform.
+</p>
