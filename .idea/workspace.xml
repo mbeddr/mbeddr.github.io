@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-09-29-bastianThesis.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" afterPath="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +46,7 @@
       <file leaf-file-name="2014-09-26-janoschThesis.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.49146757" vertical-offset="0" max-vertical-offset="586">
+            <state line="16" column="66" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.49146757" vertical-offset="0" max-vertical-offset="586">
               <folding />
             </state>
           </provider>
@@ -672,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.49146757" vertical-offset="0" max-vertical-offset="586">
+        <state line="16" column="66" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.49146757" vertical-offset="0" max-vertical-offset="586">
           <folding />
         </state>
       </provider>
