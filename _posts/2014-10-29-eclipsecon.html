@@ -23,23 +23,23 @@ This includes assessments on requirements documents (the demo was about this use
 <ul>
   <li>
 	  The requirements document in mbeddr, where you can also see the workpackages with additional properties like responsible company, priority and scope. 
-	  <img src="../images/blog/ece2014_assessment_2.png"/>
+	  <img src="/images/blog/ece2014_assessment_2.png"/>
   </li>
   <li>
   	The assessment container and the report inside it. The report has the same properties as the workpackages so that the user can specify the conditions and only those workpackages are listed in the result which meet these conditions. 
-	<img src="../images/blog/ece2014_assessment_1.png"/>
+	<img src="/images/blog/ece2014_assessment_1.png"/>
   </li>
 </ul>
 </p>
 
 <p>
 Additionally you can see the query that we have written for the assessment. This establishes a connection between the WorkPackagesAssessmentReport and the WorkPackages. We access the interesting properties (company, priority, scope) of these concepts and use check expressions to specify the conditions when a tuple should appear in the match set of the query. 
-<img src="../images/blog/ece2014_pattern.png"/>
+<img src="/images/blog/ece2014_pattern.png"/>
 </p>
 
 <p>
 Finally here you can see parts of the Java code that is used in the language for the assessment. In MPS you can write constraints and behavior methods (basically derived features) for you language in the Java language of MPS. This language has been extended with additional constructs and types (in runtime) to access the matchers for the queries:
-<img src="../images/blog/ece2014_java.png"/>
+<img src="/images/blog/ece2014_java.png"/>
 Here, we create a matcher for our query and the scope of the query is specified as this.model which will evaluate to the model of the given assessment during “runtime”. Runtime is quite interesting here, because everything happens in the same JVM; query development, code generation and reloading of their classes and using the queries for your own instance model. After this we create a partial match where we set the first parameter to be the assessment and then we retrieve all the values for the second parameter which will be the workpackages found in the model. 
 </p>
 
