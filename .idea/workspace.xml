@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" afterPath="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html" afterPath="$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +44,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-09-26-janoschThesis.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-09-26-janoschThesis.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="66" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.49146757" vertical-offset="0" max-vertical-offset="586">
+            <state line="12" column="0" selection-start="1196" selection-end="1196" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-10-29-eclipsecon.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="102" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.6512301" vertical-offset="0" max-vertical-offset="1566">
               <folding />
             </state>
           </provider>
@@ -55,7 +65,7 @@
       <file leaf-file-name="2014-09-29-bastianThesis.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-09-29-bastianThesis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="100" selection-start="1697" selection-end="1890" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="522">
+            <state line="16" column="100" selection-start="1697" selection-end="1890" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="522">
               <folding />
             </state>
           </provider>
@@ -88,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-cpp-progress.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-28-betterUsablity.html" />
         <option value="$PROJECT_DIR$/_posts/2014-06-28-tooltips.html" />
@@ -104,13 +113,14 @@
         <option value="$PROJECT_DIR$/_posts/2014-09-26-breadcumbs.html" />
         <option value="$PROJECT_DIR$/_posts/2014-09-29-bastianThesis.html" />
         <option value="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="y" value="23" />
+    <option name="width" value="1600" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -179,12 +189,12 @@
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -203,6 +213,14 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -211,14 +229,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -500,14 +510,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="0" y="23" width="1600" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23085107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21002387" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2098922" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978677" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -539,7 +549,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23085107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21002387" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2098922" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -585,11 +595,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/screencasts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="257" column="18" selection-start="10949" selection-end="11245" vertical-scroll-proportion="0.6242775" vertical-offset="4194" max-vertical-offset="13284" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-05-28-betterUsablity.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="0.5858951" vertical-offset="0" max-vertical-offset="553" />
@@ -663,14 +668,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-09-29-bastianThesis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="100" selection-start="1697" selection-end="1890" vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="522">
+        <state line="16" column="100" selection-start="1697" selection-end="1890" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="522">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.49146757" vertical-offset="0" max-vertical-offset="586">
+        <state line="12" column="0" selection-start="1196" selection-end="1196" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="102" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.6512301" vertical-offset="0" max-vertical-offset="1566">
           <folding />
         </state>
       </provider>
