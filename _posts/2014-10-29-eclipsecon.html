@@ -3,38 +3,37 @@ layout: blogpost
 title: MPS-IncQuery - talk at EclipseCon Europe 2014
 ---
 
-<p>At this year's EclipseCon Europe Tamas Szabo presented a talk about an integration project between MPS (and mbeddr) and the EMF-IncQuery (Eclipse) project.
+<p>At this year's <a href="http://slideshare.net/IstvanRath/mbeddr-meets-incquer-combining-the-best-features-of-two-modeling-worlds">EclipseCon Europe Tamas Szabo presented a talk</a> about an integration project between MPS (and mbeddr) and the <a href="https://incquery.net">EMF-IncQuery</a> (Eclipse) project.
 During the summer we had started working on the MPS-IncQuery project which aims to bring IncQuery’s powerful features to the world of the Meta Programming System (MPS).
 The need for such an integration between the two projects has risen from the context of mbeddr; specifically the graph query engine of IncQuery could come handy for many use-cases in mbeddr.
 
-<!-- not just for large diagrams, but for all kinds of structures. Change? -->
-This includes assessments on requirements documents (the demo was about this use case), computing scoping information in the IDE to figure out what variables/functions are visible at a given point in the C code or to specify constraints. Additionally, projectional editing brings a whole lot of other usages where live maintenance of graphical viewers is important and response time is crucial for larger diagrams.</p>
+This includes assessments on requirements documents (the demo was about this use case), computing scoping information in the IDE to figure out what variables/functions are visible at a given point in the C code or to specify constraints. Additionally, projectional editing brings a whole lot of other usages where live maintenance of graphical viewers is important and the response time of the queries is crucial for larger diagrams and models.</p>
+
+<br/>
 
 <p>The talk was rather technical, due to the complexity of the many involved projects and because we tried to give
     details on as many of the following challenges as we could:
-
-<!-- formulation: some items start with "we", others with ...ing. Can this be made consistent? -->
 <ul>
-  <li>We needed to map the Xtext language of the EMF-IncQuery project to the MPS’ world to be able to express the queries right in the workbench. </li>
-  <li>Implementing the code generators for the queries in MPS. </li> <!-- (how) does this relate to the first item? -->
+  <li>Mapping the Xtext language of the EMF-IncQuery project to the MPS world to be able to express the queries right in the workbench. </li>
+  <li>In order to use the queries in the languages we needed to implement the code-generators. These generate Java code in the end, but due to MPS' nature the user will never interact with this code. This code will just be used to drive the query engine under the hood.</li>
   <li>Providing a type-safe API with an extension to the Java base language of MPS. Here, new statements have been introduced in MPS’ Java language to access the queries that you have written previously. </li>
   <li>MPS itself has also been extended with the Query Explorer view, which aims to ease the debugging of queries right in the IDE. It works similarly to a database browser with the functionality to automatically refresh the contents of the view when the underlying models are changed.</li>
   <li>Implementing the backend which is responsible for handling the notifications coming from the observed MPS models. Here, we tried to reuse as much as possible from the already existing EMF-IncQuery backend. By the way EMF-IncQuery is moving towards the refactoring that all kinds of model representations could be plugged in by simply rewriting the modeling-paradigm-specific parts of the backend (to handle the notifications, for example). </li>
 </ul> 
 </p>
 
-<!-- Can you use <br/>'s to create some whitespace around the images? The post looks very cramped. -->
+<br/>
 
 <p>We also gave a short live demo during the presentation which was centered around the requirements engineering language of mbeddr. This extension is used by many end users of mbeddr to write requirements documents and create various assessments on them. An assessment is simply a query which reports certain program elements and constructs which satisfy given conditions. The following screenshots briefly describe the scenario:
 
 <ul>
   <li>
-	  The requirements document in mbeddr, where you can also see the workpackages with additional properties like responsible company, priority and scope. 
-	  <img src="/images/blog/ece2014_assessment_2.png"/>
+	  The requirements document in mbeddr, where you can also see the workpackages with additional properties like responsible company, priority and scope. <br/>
+	  <img src="/images/blog/ece2014_assessment_2.png"/><br/>
   </li>
   <li>
-  	The assessment container and the report inside it. The report has the same properties as the workpackages so that the user can specify the conditions and only those workpackages are listed in the result which meet these conditions. 
-	<img src="/images/blog/ece2014_assessment_1.png"/>
+  	The assessment container and the report inside it. The report has the same properties as the workpackages so that the user can specify the conditions and only those workpackages are listed in the result which meet these conditions. <br/>
+	<img src="/images/blog/ece2014_assessment_1.png"/><br/>
   </li>
 </ul>
 </p>
@@ -61,22 +60,8 @@ assessment and then we retrieve all the values for the second parameter which wi
 <hr>
 
 <p>
+Currently we are at the phase of trying out the possibilities with the project; we have already used it in the assessment language of mbeddr (as shown in the demo). The next step would be to reimplement the scoping computation in mbeddr with graph queries of IncQuery and perform some measurements compared to the old solution. Future work will investigate the usability for the graphical editors (this may also have impact on the commercial projects also). The integration project can be obtained from <a href="https://github.com/szabta89/MPS-IncQuery">GitHub</a>, while the modified assessment language and the other IncQuery related codes reside in a separate branch of the mbeddr repository. 
+
 This integration project faces a dual-licensing situation, where MPS is licensed under Apache 2.0, while all the other
-tools (EMF-IncQuery, MPS-IncQuery) are licensed under Eclipse EPL.
-</p>
-<p>
-
-
-<!-- What I miss is some statement about the status: where is the code, is it used in mbeddr (or when will it), etc. -->
-
-
-<!-- Why separate resources and not just links when and where you mention these things? Feels strange in the web :-) -->
-Resources:
-<ul>
-<li>EclipseCon talk: <a href="https://eclipsecon.org/europe2014/session/mbeddr-meets-incquery-combining-best-features-two-modeling-worlds">https://eclipsecon.org/europe2014/session/mbeddr-meets-incquery-combining-best-features-two-modeling-worlds</a></li>
-<li>Slides: <a href="http://slideshare.net/IstvanRath/mbeddr-meets-incquer-combining-the-best-features-of-two-modeling-worlds">http://slideshare.net/IstvanRath/mbeddr-meets-incquer-combining-the-best-features-of-two-modeling-worlds</a></li>
-<li>EMF-IncQuery: <a href="https://incquery.net">https://incquery.net</a></li>
-<li>MPS-IncQuery (also includes a simple demo): <a href="https://github.com/szabta89/MPS-IncQuery">https://github.com/szabta89/MPS-IncQuery</a></li>
-<li>Meta Programming System: <a href="https://jetbrains.com/mps/">https://jetbrains.com/mps/</a></li>
-</ul>
+tools (EMF-IncQuery, MPS-IncQuery) are licensed under Eclipse EPL. We are planning to provide automatic builds for the project, these will be available through the mbeddr build infrastructure. 
 </p>
