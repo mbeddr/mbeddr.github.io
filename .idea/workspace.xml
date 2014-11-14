@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-11-07-newUserGuide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,16 +55,25 @@
       <file leaf-file-name="2014-10-29-eclipsecon.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="5" selection-start="2794" selection-end="2794" vertical-scroll-proportion="-3.6296296" vertical-offset="334" max-vertical-offset="1350">
+            <state line="24" column="5" selection-start="2794" selection-end="2794" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-11-07-newUserGuide.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014-11-07-newUserGuide.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-11-07-newUserGuide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="4" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.7906027" vertical-offset="0" max-vertical-offset="979">
+            <state line="43" column="4" selection-start="1709" selection-end="1709" vertical-scroll-proportion="-28.666666" vertical-offset="0" max-vertical-offset="882">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="177" column="191" selection-start="6704" selection-end="6704" vertical-scroll-proportion="0.5217391" vertical-offset="2682" max-vertical-offset="10152">
               <folding />
             </state>
           </provider>
@@ -111,7 +119,6 @@
         <option value="$PROJECT_DIR$/_posts/2014-06-28-tooltips.html" />
         <option value="$PROJECT_DIR$/_posts/2014-06-27-release31.html" />
         <option value="$PROJECT_DIR$/_posts/2014-07-21-newPapers.html" />
-        <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/_posts/2014-08-25-mpsNotations.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-06-querylist.html" />
         <option value="$PROJECT_DIR$/_posts/2014-09-11-relase081.html" />
@@ -123,6 +130,7 @@
         <option value="$PROJECT_DIR$/_posts/2014-09-26-janoschThesis.html" />
         <option value="$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html" />
         <option value="$PROJECT_DIR$/_posts/2014-11-07-newUserGuide.html" />
+        <option value="$PROJECT_DIR$/learn.html" />
       </list>
     </option>
   </component>
@@ -157,7 +165,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,18 +199,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -222,6 +230,14 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -230,14 +246,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -559,9 +567,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2098922" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -619,11 +627,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="52848" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="0" selection-start="7500" selection-end="8051" vertical-scroll-proportion="0.48991936" vertical-offset="3744" max-vertical-offset="10152" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-06-27-release31.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.26865673" vertical-offset="0" max-vertical-offset="1005" />
@@ -647,13 +650,6 @@
     <entry file="file://$PROJECT_DIR$/support.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="186" column="0" selection-start="8649" selection-end="8649" vertical-scroll-proportion="0.0" vertical-offset="3348" max-vertical-offset="5508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2014-06-25-tooltips.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="310" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="414">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-09-26-breadcumbs.html">
@@ -686,14 +682,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-10-29-eclipsecon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="2794" selection-end="2794" vertical-scroll-proportion="-3.6296296" vertical-offset="334" max-vertical-offset="1350">
+        <state line="24" column="5" selection-start="2794" selection-end="2794" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-11-07-newUserGuide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="4" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.7906027" vertical-offset="0" max-vertical-offset="979">
+        <state line="43" column="4" selection-start="1709" selection-end="1709" vertical-scroll-proportion="-28.666666" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-06-25-tooltips.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="310" selection-end="423" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="191" selection-start="6704" selection-end="6704" vertical-scroll-proportion="0.5217391" vertical-offset="2682" max-vertical-offset="10152">
           <folding />
         </state>
       </provider>
