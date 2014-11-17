@@ -4,7 +4,6 @@
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/blog/cpp (1).png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,7 +74,7 @@
       <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="0" selection-start="5719" selection-end="5719" vertical-scroll-proportion="0.6133056" vertical-offset="1732" max-vertical-offset="10224">
+            <state line="127" column="21" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.57588357" vertical-offset="1732" max-vertical-offset="10224">
               <folding />
             </state>
           </provider>
@@ -702,7 +701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="5719" selection-end="5719" vertical-scroll-proportion="0.6133056" vertical-offset="1732" max-vertical-offset="10224">
+        <state line="127" column="21" selection-start="5684" selection-end="5684" vertical-scroll-proportion="0.57588357" vertical-offset="1732" max-vertical-offset="10224">
           <folding />
         </state>
       </provider>
