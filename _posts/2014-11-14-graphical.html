@@ -1,0 +1,77 @@
+---
+layout: blogpost
+title: Graphical Editors in mbeddr
+---
+
+<p>
+Together with the MPS team, the mbeddr team (and in particular, Sascha)
+have been working over the last few months on the ability to use
+graphical notations as part of MPS languages. While this is still an
+ongoing effort, it is now mature and complete enough to be used for
+real. If you have downloaded the recent mbeddr master branch, you will
+have noticed that, for example, component wiring can now be done
+graphically. The screenshot below shows a simple example of graphical
+component wiring:
+</p>
+
+<br/>
+<img src="/images/blog/graphical_simple.png"/>
+<br/>
+<br/>
+
+
+<p>
+This screenshot shows a few interesting features: you can embed diagrams
+anywhere in "text", you can use different shapes (at this point drawn by
+custom Java code), you can use various line styles, the framework
+supports ports (i.e., connection endpoints on the boxes), inside boxes
+you can use arbitrary MPS text (or other) editors, and the system also
+supports edge and endpoint labels. Port labels are also supported, but
+they are only shown if the mouse is "in the vicinity" of the port to not
+clutter the diagram. Below is a second screenshot of a bigger diagram:
+</p>
+
+<br/>
+<img src="/images/blog/graphical_sm.png"/>
+<br/>
+<br/>
+
+<p>
+This one illustrates that the approach scales to reasonable sizes, shows
+that zooming is supported and  also demonstrates the auto layouting
+capability. The graphical notation also integrates with things such as
+tooltips. Below is another example diagram that shows a different language:
+</p>
+
+<br/>
+<img src="/images/blog/graphical_ex3.png"/>
+<br/>
+<br/>
+
+<p>
+The definition of a graphical editor is based on the same "cell" abstraction
+used in other MPS editors: the language for defining editors contains additional
+cells that are then rendered as a diagram. Similar to tables, these abstractions
+for defining graphical editors rely on queries to make sure that the structure
+of the graphical editor does not have to directly correspond to the structure
+of the AST (for example, in terms of ownership).
+</p>
+
+<p>
+The next steps for the graphical notations include improvements to robustness,
+and support for hierarchical diagrams. In addition, a shape library and a
+framework for simplified shape definition is being developed.
+</p>
+
+<p>
+JetBrains is also developing a framework for graphical notations in MPS that
+has a number of different trade-offs. However, we are in the process of
+agreeing on a common definition language so that the concrete rendering
+engines can be exchanged with very limited effort.
+</p>
+
+<p>
+To experiment with this stuff, make sure you download the mbeddr.platform and/
+or check out the sources of mbeddr. The graphical notation itself lives at
+<a href="https://github.com/slisson/mps-diagram-editor">github</a>.
+</p>

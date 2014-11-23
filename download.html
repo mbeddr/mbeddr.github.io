@@ -112,107 +112,177 @@
 <div id="page">
 <div class="inner">
 <div class="container clearfix">
-<h2>General</h2>
+
+
+<h2>Documentation, Installation and Setup</h2>
 
 <div class="container">
     <div class="container">
         <div class="span7">
             <p>
-                <strong>How to get it:</strong> You can get the code in the following ways, all of them are
-                detailed below:
+                This page contains the documentation of how to install mbeddr.
+                It describes the manual installation process of mbeddr in detail, including
+                MPS, Java and additional tools needed for compilation, debugging, visualization and verification.
+                The remainder of the mbeddr documentation
+                lives in the user guide. <a href="learn.html">See the top of the Learn page for details.</a>
+            </p>
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+<hr/>
+
+
+<h2>Gcc, Make and Gdb</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span7">
+			<p>
+            mbeddr relies on <strong>gcc</strong> and <strong>make</strong> for compilation and <strong>gdb</strong> for debugging. You must install these tools unless you have a different, 
+			target-specific build process. Below we describe the installation of these tools on the various platforms.
+			</p>
+            <ul>
+                <li>
+					<p>
+						 <strong>Windows:</strong> We recommend installing cygwin (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>), 
+						 a Unix-like environment for Windows. When selecting the packages to be installed, make sure <strong>gcc-core</strong>,
+						 <strong>gdb</strong> and <strong>make</strong> are included (all of them are in the  subtree in the selection dialog).
+					</p>
+				</li>
+                <li>
+					<p>
+						 <strong>Linux:</strong> These tools should be installed by default. Otherwise use your favourite package manager to install them 
+						 (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>).
+					</p>
+				</li>
+                <li>
+					<p>
+						 <strong>MacOS:</strong> You should install XCode's command line tools to get <strong>gcc</strong>, <strong>make</strong> and the associated tools 
+						 (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>). XCode comes with <strong>lldb</strong>,
+						 which is not yet supported by mbeddr. Therefore you have to install <strong>gdb</strong> via <strong>brew</strong> 
+						 (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>). Use the following command for installing <strong>gdb</strong>: 
+						 <strong>brew install https://raw.github.com/Homebrew/homebrew-dupes/master/gdb.rb</strong>. Additionally, you have to sign a certificate for <strong>gdb</strong> 
+						 (<a href="http://wiki.freepascal.org/GDB_on_OS_X_Mavericks_and_Xcode_5">GDB_on_OS_X_Mavericks_and_Xcode_5</a>).
+					</p>
+				</li>
+			</ul>
+			<p>
+				After the installation, please make sure the tools can be invoked from the command-line. If this is not possible, please add them to your system path, 
+				as described in <a href="#ChangingPath">Adding Tools to the System Path</a>.
+			</p>
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+<hr/>
+
+<h2>Graphviz</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span7">
+			<p>
+            mbeddr supports visualization via PlantUML (<a href="http://plantuml.sourceforge.net">http://plantuml.sourceforge.net</a>), directly embedded in MPS. To use it, you have to install graphviz. 
+			<a href="#RequiredToolsAndVersions">Required Tools and Versions</a> describes which
+			version is required and where to get it from. After the installation, you have to put the <strong>bin</strong> directory of graphviz into your system path 
+			(see <a href="#ChangingPath">Adding Tools to the System Path</a>). <em>On Windows</em>, in addition, you also need
+			to have an environment variable <strong>GRAPHVIZ_DOT</strong> that points to the <strong>dot.exe</strong> file supplied with graphviz.
+			</p>                                                                                                                                                                                                               
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+<hr/>
+
+<h2>Verification Tools</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span7">
+			<p>
+			To be able to use the verifications in mbeddr, you have to install <strong>CBMC</strong>, which is a C-level model-checker. 
+			<a href="#RequiredToolsAndVersions">Required Tools and Versions</a> describes which version is required and where to get it from. You can find installers
+			for the various platforms at the bottom of the website. After the installation, please make sure <strong>CBMC</strong> can be invoked from the command-line. If this is not possible, please add it to your system
+			path, as described in <a href="#ChangingPath">Adding Tools to the System Path</a>. CBMC uses gcc for preprocessing the C files, so please make sure that you have gcc installed on your machine.
+            
+			</p>                                                                                                                                                                                                               
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+<hr/>
+
+
+<h2>mbeddr</h2>
+
+<div class="container">
+    <div class="container">
+        <div class="span7">
+			<p>
+            Depending on what you want to do with mbeddr, we provide <strong>three different installation methods</strong>. 
+			The following list describes differences between these methods, the next sections describe each of them in detail:
+			</p>                                                                                                                                                                                                                
+            <ul>
+                <li>
+					<p>
+						<strong>mbeddr IDE:</strong> sufficient, if  you want to use mbeddr, but not change or extend it. 
+						The mbeddr IDE is a stripped-down version of MPS, which just provides the UI facilities required for using mbeddr. 
+						It already comes with the mbeddr distribution and is the easiest way to get mbeddr running on your machine.
+					</p>
+				</li>
+                <li>
+					<p>
+						<strong>mbeddr Plugin Distribution:</strong> suitable if you want to use and extend mbeddr. With this approach, 
+						you install MPS manually on your machine and deploy the mbeddr plugins into this installation.
+					</p>
+				</li>
+                <li>
+					<p>
+						<strong>mbeddr from Sources:</strong> use this option if you want total control over what you are doing with mbeddr 
+						or want to stay at the bleeding edge of mbeddr development. This way you can just use mbeddr, 
+						extend it or even change the sources and try out things. You can pull from the current master 
+						or even check out experimental branches.
+					</p>
+				</li>
+            </ul>         
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+
+
+</div>
+
+
+<hr/>
+<h3 id="win">mbeddr IDE</h3>
+
+<div class="container">
+    <div class="container">
+        <div class="span7">
+
+            <p>
+				With the mbeddr IDE you can use all languages provided by mbeddr and write applications with them. Installing the IDE is simple, as you just have to perform two tasks:				
             </p>
             <ul>
-                <li>Using the <a href="#win">Windows Installer</a></li>
-                <li>As a <a href="#debian">Debian package</a></li>
-                <li>As a <a href="#distro">ZIP Distribution</a> with MPS plugins.</li>
-                <li>By cloning our <a href="#git">Github repository</a>.</li>
-            </ul>
-
-            <p>
-                <b>License and Status:</b> The code is released under the <a
-                    href="http://eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>. The code
-                below is an
-                <b>early access preview</b>. This means that incompatible changes are possible in the
-                future, even
-                though we try to avoid them (the C core has been stable for a while, some of the extensions
-                may change
-                slightly).
-            </p>
-
-            <p>
-                <b>Issue Tracker:</b> Please use <a href="https://github.com/mbeddr/mbeddr.core/issues">github's
-                issue
-                tracker</a> to report
-                <issues class=""></issues>
-            </p>
-
-            <p>
-                <b>Extending mbeddr:</b> The user guide (get it <a
-                    href="https://github.com/mbeddr/mbeddr.core/releases">here</a>) describes a set of
-                example
-                extensions. You may also want to look at the <a
-                    href="http://www.jetbrains.com/mps/documentation/index.html">MPS Documentation page</a>,
-                and in
-                particular, you should read (in this order) the <a
-                    href="http://code.google.com/p/mps-lwc11/wiki/GettingStarted">LWC11 MPS Tutorial</a> and
-                the paper
-                <a href="http://voelter.de/data/pub/Voelter-GTTSE-MPS.pdf">Language Modularization and
-                    Composition with
-                    MPS</a> (the <a href="http://www.jetbrains.com/mps/documentation/index.html">docs
-                page</a> also has
-                a total of 90 minutes worth of screencasts on this topic).
-            </p>
-
-            <p>
-                <b>Contribute:</b> As of now, only our project team are registered as committers. However,
-                you can
-                always clone the repository, make changes there and then send a pull request to us so we can
-                get at your
-                code. And of course, once you've contributed useful patches, we may make you a committer.
-            </p>
-
-
-        </div>
-        <div class="span1">&nbsp;</div>
-    </div>
-
-
-</div>
-
-
-<hr/>
-<h2 id="win">Windows Installer</h2>
-
-<div class="container">
-    <div class="container">
-        <div class="span7">
-
-            <p>
-                The installer is the most convenient way of installing mbeddr on Windows. It installs MPS, mbeddr
-                and all of its dependent tools (cygwin, compilers, verification tools, graphviz). The installer can
-                be found as part of the releases on the <a href="https://github.com/mbeddr/mbeddr.core/releases">github
-                releases page</a>.
-            </p>
-
-            <p>
-                It is distributed as a ZIP file. Unzip it and run <i>mbeddr-installer.exe</i>. It will ask you to
-                grant administrator permissions, and then it will install mbeddr and it's dependencies. After
-                installation, restart your computer to make sure the changes to the PATH variable are active. The
-                installer also deploys the mbeddr tutorial, in the subdirectory "tutorial". After opening it, you
-                will likely get two errors. First, it complains about an undefined path variable <i>mbeddr.github.core.home</i>.
-                Select Fix It, and delete the path variable. Second, it will complain about VCS root errors. Select
-                Ignore, and the problem is solved. Both errors are a consequence of the fact that we take the
-                tutorial from an environment that requires these two variables, it is currently not so simply to
-                avoid the (easy to fix) errors in the deployed version.
-            </p>
-
-            <p>
-                If you experience any problems with the installer please file an issue at our <a
-                    href="https://github.com/mbeddr/mbeddr.core/issues">github repository</a>. Beside a detailed
-                description of the problem please also include the debug log of the installer. It is located in
-                %TEMP%/mbeddr/.
-            </p>
-
+                <li>
+					<p>
+						install a JDK (<a href="#RequiredToolsAndVersions">Required Tools and Versions</a> lists which version is required for your platform)
+						 on your local machine and make sure it is available on the path (see <a href="#ChangingPath">Adding Tools to the System Path</a>).
+					</p>
+				</li>
+                <li>
+					<p>						
+						download from the mbeddr GitHub page the mbeddr IDE that fits to your platform and unzip the downloaded ZIP file: 
+						<a href="https://github.com/mbeddr/mbeddr.core/releases">github releases page</a>.						
+					</p>
+				</li>
+			</ul>
+         
 
         </div>
         <div class="span1">&nbsp;</div>
@@ -221,28 +291,22 @@
 
 
 <hr/>
-<h2 id="debian">Debian Package</h2>
+<h3 id="debian">mbeddr Plugin Distribution</h3>
 
 <div class="container">
     <div class="container">
         <div class="span7">
             <p>
-                Just like the Windows installer you can get the debian package from the github <a
-                    href="https://github.com/mbeddr/mbeddr.core/releases">release page</a>. In order to be able to
-                install the package you will also need to have JetBrains MPS installed via debian package. Since
-                there is not official debian package available we have also created a debian package for MPS. To
-                even more simplify the installation we provide packages for the other mebbdr dependencies. You can
-                find a detailed description how it enable it on your machine <a
-                    href="http://logv.ws/b/2013/10/04/jetbrains-mps-debian-package/"> here</a>. This will also help
-                you keeping everything up to date without any additional work because it uses the well know debian
-                package mechanisms.
+                In case you do not want to change mbeddr but still want to be able to extend it (so you'll need MPS' language engineering facilities), 
+				we recommend installing the distribution. This just requires downloading a ZIP file and copying a bunch of plugins into your existing MPS installation. 
+				If you do not have an existing MPS installation on your machine, please follow the steps described in <a href="#MPS">JetBrains MPS and Java</a>.
             </p>
-
-            <p>
-                If you experience any problems with the packages please fill us a issue a our <a
-                    href="https://github.com/mbeddr/mbeddr.core/issues/new">github repository</a> and label it with
-                <i> debian package </i>.
-            </p>
+			<p>
+				To install the distribution, please download the distribution ZIP file from the mbeddr GitHub release page: <a href="https://github.com/mbeddr/mbeddr.core/releases">github releases page</a>. 
+				This ZIP file contains the mbeddr plugins for MPS. After unzipping, please take all folders inside the <strong>plugins</strong> directory and copy them into the <strong>plugins</strong>
+				directory of your MPS installation .Note that there is also a <strong>plugin</strong> (without the <strong>s</strong>) directory under MPS. 
+				So, for example, after copying, there should be a <strong>$MPS_DIR$/plugins/mbeddr.core</strong> directory.
+			</p>
         </div>
         <div class="span1">&nbsp;</div>
     </div>
@@ -250,76 +314,364 @@
 
 
 <hr/>
-<h2 id="distro">mbeddr MPS Plugin Distribution</h2>
+<h3 id="distro">mbeddr Source Installation</h3>
 
 <div class="container">
     <div class="container">
         <div class="span7">
 
             <p>
-                This distribution only contains the MPS plugins that represent MPS. All external tools (compilers,
-                verification tools, graphviz) have to be installed manually. The process how to do this is detailed in
-                the user guide. Please see the <a href="https://github.com/mbeddr/mbeddr.core/releases">github releases
-                page</a> for the downloadable plugins.
+                Installing mbeddr from sources gives you total control over what you want to do with mbeddr. However this is the most complex installation process. 
+				We rather recommend working with the distribution or the mbeddr IDE, except if you have good reasons not to. The following list provides some of these <em>good reasons</em>:
             </p>
-
-            <p>
-                Here is a very brief installation guide. If you feel unsure about it, take a look at the user guide
-                linked below. It contains a much more detailed installation guide. Also, the <a
-                    href="screencasts.html">Screencasts</a> page contains a few screencasts on
-                the installation.
-            </p>
-
-            <p>
-                Please make sure that none of your intall paths for any of the things below contains any spaces!
-            </p>
-
             <ul>
-                <li>Get <a href="http://www.jetbrains.com/mps/download">Version 3.0 of MPS</a> from the JetBrains
-                    website; there are binaries for each major platform.
-                <li>On Windows: <a href="http://cygwin.com/install.html">install cygwin</a> and be sure to include the
-                    <i>gcc-core</i> and <i>make</i> packages. Put the cygwin <i>bin/</i> folder into you system's <i>PATH</i>
-                <li>On Mac: install XCode to get <i>gcc</i> and <i>make</i>.
-                <li>On Linux: <i>gcc</i> and <i>make</i> should be there by default.
-                <li>To be able to use the visualizations, you must install <a
-                        href="http://www.graphviz.org/">graphviz</a> and put it on the path.
-                <li>To use the verifications, you must install <a href="http://nusmv.fbk.eu/">NuSMV</a>, <a
-                        href="http://yices.csl.sri.com/">Yices 1</a> and <a href="http://www.cprover.org/cbmc/">CBMC</a>.
-                    All of these are command-line tools and need to be available on the path.
-                <li>Download the mbeddr binaries (from the top of this page), unzip the ZIP file into some directory.
-                <li>In the unzipped directory there is a folder <i>plugins</i> that contains a bunch of folders. Copy
-                    all these folders into the <i>plugins</i> directory under MPS.
-                <li>Restart MPS, you should be ready to go.
-                <li><b>Please read the user guide </b>(from the <a
-                        href="https://github.com/mbeddr/mbeddr.core/releases">download page</a>). We've put a lot of
-                    love and energy in it, and you will have a much easier time understanding and exploiting what we've
-                    done :-)
-            </ul>
-
-
+                <li>
+					<p>
+						want to stay at the bleeding edge of mbeddr development by using the most recent version on <strong>master</strong>.
+					</p>
+				</li>
+                <li>
+					<p>
+						plan to fork mbeddr.
+					</p>
+				</li>
+                <li>
+					<p>
+						need to regularly update your local mbeddr.
+					</p>
+				</li>
+			</ul>
+			<p>
+				The following guide will explain you how to install mbeddr from sources. Please carry out the following instructions step by step in their defined order:
+			</p>
+            <ul>
+                <li>
+					<p>
+						First, in order to clone the mbeddr repository, you will need to have a client git client installed on your local machine 
+						(see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>). 						
+					</p>
+				</li>
+                <li>
+					<p>
+						Second, you will need an Apache ant installation (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>). 
+						After the installation, please make sure the <strong>ant</strong> binary is in your path (see <a href="#ChangingPath">Adding Tools to the System Path</a>). 
+					</p>
+				</li>
+                <li>
+					<p>
+						If you do not already have an MPS installation on your machine, please follow the installation guide in <a href="#MPS">JetBrains MPS and Java</a>. 
+					</p>
+				</li>
+                <li>
+					<p>
+						Next, clone the mbeddr repository from GitHub onto your local machine. You can find it at <a href="https://github.com/mbeddr/mbeddr.core">mbeddr.core</a>, 
+						the repository URLs to be used for cloning (for various protocols) can also be found at this URL. 
+					</p>
+				</li>
+                <li>
+					<p>
+						After cloning the repository, you now have to build all languages shipped with mbeddr. For this task we provide a shell script named <strong>rebuildLanguagesAfterCheckout</strong>,
+						which is located inside the <strong>mbeddr.core/code/languages</strong> directory. Depending on your operating system, you either use the one with <strong>.bat</strong> (Windows) or 
+						<strong>.sh</strong> (Linux/Mac) file extension. Before running the script, you first have to copy the <strong>build.properties.example</strong> into the same folder as the script and rename it to
+						<strong>build.properties</strong>. Next, open this file and	change the paths (<em>On Windows</em>, <strong>you have to use forward slashes as directory separators even on Windows!)</strong>
+						of the following properties: 
+						<ul>
+							<li>
+								<p>
+									<strong>mps.home</strong>: points to the <strong>Contents</strong> folder of your MPS installation 
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>mps.platform.caches</strong>: points to a folder, which is used by the build process to store temporary files 
+								</p>
+							</li>
+							<li>
+								<p>
+									<strong>mbeddr.github.core.home</strong>: points to the mbeddr.core folder of your local mbeddr repository  
+								</p>
+							</li>
+						</ul>
+					</p>
+					<p>
+						You can now execute the <strong>rebuildLanguagesAfterCheckout</strong> script from within the <strong>mbeddr.core/code/languages</strong> folder. At the end of the build you should
+						get a message stating <strong>BUILD SUCCESSFUL</strong>. Depending on the performance of your machine, running the script takes between 20 and 45 minutes.						
+					</p>	
+				</li>
+                <li>
+					<p>
+						We now have to make future application projects aware of the <strong>mbeddr.core</strong> languages in your local repository. Start MPS and go to the <strong>File->Settings</strong>
+						(on the Mac it is under <strong>MPS->Preferences</strong>)  and select the <strong>Path Variables</strong> in the <strong>IDE Settings</strong>. 
+						Create a path variable named <strong>mbeddr.github.core.home</strong> and point to the root directory of your mbeddr git clone (e.g. <strong>/Users/peter/Documents/mbeddr.core</strong>). 
+					</p>
+				</li>
+                <li>
+					<p>
+						Finally, go to the <strong>Global Libraries</strong> section in the IDE settings (see <a href="#ChangingGlobalLibraries">Changing Global Libraries</a>). 
+						Create a library named <strong>mbeddr.core</strong> that points to the
+						<strong>code</strong> directory of the github repository directory (<strong>/Users/peter/Documents/mbeddr.core/code</strong>). This library must point to the <strong>code</strong>
+						directory of the checkout so that all languages are below it, including <em>core</em> and <em>mpsutil</em>. Because we had earlier defined the path variable, it will use the path 
+						variable for defining the library. Notice that this is a global setting, which means it has to be performed only once before your first application project.
+					</p>
+				</li>	
+			</ul>
+						
+			<p align="center">
+				<img src="images/SettingsGlobalLibraries.png" /><br>
+				<a name="#ChangingGlobalLibraries">Defining a global library so that application projects can see mbeddr.</a>
+			</p>						
+			<br>
+			<p>
+				<strong>Congrats: you are now ready to build your first project with mbeddr!</strong>
+			</p>			
         </div>
         <div class="span1">&nbsp;</div>
     </div>
 </div>
 
-
 <hr/>
-<h2 id="git">Public Github Repository</h2>
+
+<a name="#MPS"><h2>JetBrains MPS and Java</h2></a>
 
 <div class="container">
     <div class="container">
         <div class="span7">
-
-            <p>
-                The code is open source and can be accessed via <a href="https://github.com/mbeddr">public github
-                repository</a>. Please refer to the user guide how to set up an mbeddr system based on the github
-                checkout.
-            </p>
-
+			<p>
+            	The mbeddr system is based on JetBrains MPS, an open source language workbench available from <a href="http://www.jetbrains.com/mps/">jetbrains.com</a>. MPS is available for different platforms,
+				like Windows, Mac and Linux. Please make sure you pick the right installer for your platform and the proper version (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>). 
+				When running the installer, please make sure you install MPS in a path that does not contain blanks in any of its directory or file names (not even
+				in the <strong>MPS 3.1</strong> folder). This will simplify some of the command line work you may want to do. After installing MPS, please follow the platform-specific steps mentioned below.
+			</p>
+            <ul>
+                <li>
+					<p>
+						<strong>Windows</strong>: If you installed MPS with the Windows-specific installer, Java was already installed along with it. Open the <strong>bin</strong> folder and edit, 
+						depending on weather you are running mbeddr	on a 32- or 64-bit machine, either <strong>mps.exe.vmoptions</strong> or <strong>mps64.exe.vmoptions</strong>. To make MPS run smoothly, 
+						increase the <strong>MaxPermSize</strong> setting to at least <strong>512m</strong>. This JVM setting controls how much space is occupied for loaded Java classes, methods etc. 
+					</p>
+				</li>
+                <li>
+					<p>
+						<strong>Linux</strong>: Make sure you have installed Java on your machine (Version 1.6 or higher). Next, open the <strong>bin</strong> folder and edit the <strong>mps.vmoptions</strong>.
+						To make MPS run smoothly,increase the <strong>MaxPermSize</strong> setting to at least <strong>512m</strong>. 
+					</p>
+				</li>
+                <li>
+					<p>
+						<strong>Mac</strong>: Make sure you have installed Java on your machine (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>) 
+						Next, open the <strong>app</strong> folder (right click on the application
+						and do a <em>Show package contents</em>) and open the <strong>Contents</strong> folder. Open the <strong>Info.plist</strong> file with a text editor and navigate to the entry
+						<strong>VMOptions</strong> at the very bottom of the file. Edit the <strong>mps.vmoptions</strong> to make MPS run smoothly, 
+						increase the <strong>-XX:MaxPermSize</strong> setting to at least <strong>512m</strong>.
+					</p>
+				</li>
+			</ul>		
+			
+			<p>
+				If your MPS does not start with the error message <em>Could not create the VM</em>, then your system has less main memory available than required. In this case, 
+				you should open the previously edited file (<strong>*.vmoptions</strong> or <strong>Info.plist</strong>) and decrease the value of the <strong>-Xmx</strong>
+				parameter in small steps, until you are able to start MPS. This parameter controls the maximum size of dynamic memory that the JVM provides to MPS.
+			</p>                                                                                                                                                                               
         </div>
         <div class="span1">&nbsp;</div>
     </div>
 </div>
+
+<hr/>
+
+<a name="ChangingPath"><h2>Adding Tools to the System Path</h2></a>
+
+<div class="container">
+    <div class="container">
+        <div class="span7">
+			<p>
+            	For mbeddr/MPS to be able to access command-line tools, their binaries have to be added to your system's <strong>PATH</strong> variable. You can do this either globally, 
+				or locally in the script that starts up MPS. The way how the <strong>PATH</strong> variable is changed depends on your platform. The table below shows these platform-specific differences.
+			</p>
+			<p>
+ 
+			    For changing the variable <strong>locally</strong>, open your <em>start-up script</em> that is located inside your MPS installation directory. Next, add the <em>PATH redefinition</em>
+				at the beginning of that file, replacing <strong>&lt;your  path&gt;</strong> with the file system path of the tool you want to add to the path. For details see the second column of the table below.
+			</p>
+			<p>
+ 
+			    To change the path globally, see the right column of the table below. It explains how to add tools to the global <strong>PATH</strong> on the different platforms.
+				Here, you should also replace <strong>&lt;your  path&gt;</strong> with the file system path that points to your tool.
+			</p>
+			
+			<table border="1" cellpadding="4">
+			  <tr>
+			    <th width="10%"></th>
+			    <th width="35%"><p><strong>locally</strong></p></th>
+			    <th width="55%"><p><strong>globally</p></strong></th>
+			  </tr>
+			  <tr>
+			    <td><p><strong>Windows</strong></p></td>
+				<td> 	
+					<p>
+						<em>start-up script:</em><br> 
+						mps.bat<br>
+						<br>
+  			  			<em>PATH redefinition:</em><br>
+						set PATH=&lt;your path&gt;;%PATH%
+					</p>
+				</td>
+			    <td>
+					<p>
+						in your Windows System Settings, change the value of the <strong>PATH</strong> variable by adding your path to the existing paths: <strong>&lt;existing path&gt;;&lt;your path&gt;<strong>
+					</p>
+				</td>
+			  </tr>
+			  <tr>
+				<td><p><strong>Linux/Mac</strong></p></td>				
+				<td>
+					<p>
+						<em>start-up script:</em><br>
+						mps.bat   
+					</p>					
+				</td>
+				<td>
+					<p>
+						in general you will have to add your tool path to the <strong>PATH</strong> variable. However, the way how this is done depends on your actual operating system and the shell you are using. 
+						Since nowadays almost every Unix system comes with a <strong>bash</strong> shell, we describe the process just for tis scenario. In case you using a different shell, please refer to the vendor's 						documentation. 
+					</p>						
+					<p>
+						First, create or open your existing <strong>.bash_profile</strong>, that is located inside your home folder. Next, just add the following line to it, save the file and restart your shell: 
+					    <strong>export PATH=&lt;your path&gt;:$PATH</strong>
+					</p>	
+	 			</td>
+			  </tr>			  
+			</table>			
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+<hr/>
+
+<a name="RequiredToolsAndVersions"><h2>Required Tools and Versions</h2></a>
+
+<div class="container">
+    <div class="container">
+        <div class="span7">
+			<p>
+            	The following table lists all tools mentioned in this guide, on which platform they are needed, in which version, which components are required and where to get the tool from.
+			</p>                                                                                                                                                                               
+			
+			<table border="1" cellpadding="4">
+			  <tr>
+			    <th>Tool</th>
+			    <th>Platform</th>
+			    <th>Version</th>
+				<th>Required Components</th>
+				<th>URL</th>
+			  </tr>
+			  <tr>
+			    <td>Cygwin</td>
+			    <td>Windows</td>
+			    <td>newest</td>
+			    <td>gcc-core, make and gdb</td>
+			    <td><a href="http://www.cygwin.com">cygwin.com</a></td>
+			  </tr>
+			  <tr>
+			    <td>XCode</td>
+			    <td>Mac</td>
+			    <td>newest</td>
+			    <td>gcc and make</td>
+			    <td>-</td>
+			  </tr>
+			  <tr>
+			    <td>Brew</td>
+			    <td>Mac</td>
+			    <td>newest</td>
+			    <td>gdb</td>
+			    <td><a href="http://brew.sh">brew.sh</a></td>
+			  </tr>			  
+			  <tr>
+			    <td>make</td>
+			    <td>Linux</td>
+			    <td>newest</td>
+			    <td>-</td>
+			    <td>-</td>
+			  </tr>
+			  <tr>
+			    <td>gcc</td>
+			    <td>Linux</td>
+			    <td>newest</td>
+			    <td>-</td>
+			    <td>-</td>
+			  </tr>
+			  <tr>
+			    <td>gdb</td>
+			    <td>Linux</td>
+			    <td>newest</td>
+			    <td>-</td>
+			    <td>-</td>
+			  </tr>
+			  <tr>
+			    <td>Graphviz</td>
+			    <td>all</td>
+			    <td>2.30</td>
+			    <td>-</td>
+			    <td><a href="http://graphviz.org">graphviz.org</a></td>
+			  </tr>			  
+			  <tr>
+			    <td>CBMC</td>
+			    <td>all</td>
+			    <td>4.9</td>
+			    <td>-</td>
+			    <td><a href="http://www.cprover.org/cbmc">cprover.org/cbmc</a></td>
+			  </tr>
+			  <tr>
+			    <td>ant</td>
+			    <td>all</td>
+			    <td>newest</td>
+			    <td>-</td>
+			    <td><a href="http://ant.apache.org">ant.apache.org</a></td>
+			  </tr>
+			  <tr>
+			    <td>git</td>
+			    <td>all</td>
+			    <td>newest</td>
+			    <td>-</td>
+			    <td>-</td>
+			  </tr>
+			  <tr>
+			    <td>MPS</td>
+			    <td>all</td>
+			    <td>3.1.4 or 3.1.5 (MPS 3.2 not yet supported)</td>
+			    <td>-</td>
+			    <td><a href="http://www.jetbrains.com/mps">jetbrains.com/mps</a></td>
+			  </tr>
+			  <tr>
+			    <td>JDK</td>
+			    <td>Windows</td>
+			    <td>1.6 or higher</td>
+			    <td>-</td>
+			    <td>-</td>
+			  </tr>
+			  <tr>
+			    <td>JDK</td>
+			    <td>Linux</td>
+			    <td>1.6 or higher</td>
+			    <td>-</td>
+			    <td>-</td>
+			  </tr>
+			  <tr>
+			    <td>JDK</td>
+			    <td>Mac</td>
+			    <td>1.6</td>
+			    <td>-</td>
+			    <td>-</td>
+			  </tr>
+			</table>                                             
+			                                
+        </div>
+        <div class="span1">&nbsp;</div>
+    </div>
+</div>
+
+<hr/>
 
 
 </div>
