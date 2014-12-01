@@ -370,7 +370,7 @@
 				</li>
                 <li>
 					<p>
-						After cloning the repository, you now have to build all languages shipped with mbeddr. For this task we provide a shell script named <strong>rebuildLanguagesAfterCheckout</strong>,
+						After cloning the repository, you now have to build all languages shipped with mbeddr. For this task we provide a shell script named <strong>buildLanguages</strong>,
 						which is located inside the <strong>mbeddr.core/code/languages</strong> directory. Depending on your operating system, you either use the one with <strong>.bat</strong> (Windows) or 
 						<strong>.sh</strong> (Linux/Mac) file extension. Before running the script, you first have to copy the <strong>build.properties.example</strong> into the same folder as the script and rename it to
 						<strong>build.properties</strong>. Next, open this file and	change the paths (<em>On Windows</em>, <strong>you have to use forward slashes as directory separators even on Windows!)</strong>
@@ -394,7 +394,7 @@
 						</ul>
 					</p>
 					<p>
-						You can now execute the <strong>rebuildLanguagesAfterCheckout</strong> script from within the <strong>mbeddr.core/code/languages</strong> folder. At the end of the build you should
+						You can now execute the <strong>buildLanguages</strong> script from within the <strong>mbeddr.core/code/languages</strong> folder. At the end of the build you should
 						get a message stating <strong>BUILD SUCCESSFUL</strong>. Depending on the performance of your machine, running the script takes between 20 and 45 minutes.						
 					</p>	
 				</li>
