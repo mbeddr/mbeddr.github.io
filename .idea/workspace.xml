@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2014-12-06-indentation.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/blog/cpp (1).png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-12-06-indentation.html" afterPath="$PROJECT_DIR$/_posts/2014-12-06-indentation.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,7 +83,7 @@
       <file leaf-file-name="2014-12-06-indentation.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2014-12-06-indentation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.31811488" vertical-offset="0" max-vertical-offset="679">
+            <state line="14" column="98" selection-start="479" selection-end="479" vertical-scroll-proportion="0.371134" vertical-offset="0" max-vertical-offset="679">
               <folding />
             </state>
           </provider>
@@ -720,7 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-12-06-indentation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.31811488" vertical-offset="0" max-vertical-offset="679">
+        <state line="14" column="98" selection-start="479" selection-end="479" vertical-scroll-proportion="0.371134" vertical-offset="0" max-vertical-offset="679">
           <folding />
         </state>
       </provider>
