@@ -7,11 +7,13 @@ title: Graph Visualizations in mbeddr/MPS
 Wow, long time no blog. Sorry for that. Here's some news:
 </p>
 
+<p>
 As an additional means of displaying relationships between nodes (next
 to PlantUML and the tree views) we have integrated the <a
  href="http://jung.sourceforge.net/">JUNG framework</a> for graph
 display. As a language developer, you can implement an interface
 <i>IJGraphProvider</i> and implement a method that creates the graph:
+</p>
 
 <ul>
     <li>Programmable with high-level API
@@ -22,8 +24,10 @@ display. As a language developer, you can implement an interface
     <li>Extensibility to plug in your own layouters (such as the one from yWorks)
 </ul>
 
+<p>
 Once you have created a graph, your users have many options to view the
 graph in an MPS tool window:
+</p>
 
 <ul>
     <li>Double-click selects node or edge in editor
@@ -36,15 +40,22 @@ graph in an MPS tool window:
     <li>Incremental, node-based collapsing and expansion
 </ul>
 
+<br/>
 <center>
 <a href="/images/blog/jung2.png"><img src="/images/blog/jung2.png" width="300"></a>
 </center>
-        
+<br/>
+
+<p>
 The JUNG integration is available as part of mbeddr, but also as part
 of the mbeddr.platform, so you can use it for your own languages. Check out
 the <i>Chunk</i> node for an example of how to use it.
+</p>
 
+<p>
 <a href="http://youtu.be/-v1X0GhsLJ4">A demo video of the viewer can be found here.</a>
+</p>
+
 
 
 
