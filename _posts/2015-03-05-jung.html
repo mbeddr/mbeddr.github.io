@@ -1,0 +1,51 @@
+---
+layout: blogpost
+title: Graph Visualizations in mbeddr/MPS
+---
+
+<p>
+Wow, long time no blog. Sorry for that. Here's some news:
+</p>
+
+As an additional means of displaying relationships between nodes (next
+to PlantUML and the tree views) we have integrated the <a
+ href="http://jung.sourceforge.net/">JUNG framework</a> for graph
+display. As a language developer, you can implement an interface
+<i>IJGraphProvider</i> and implement a method that creates the graph:
+
+<ul>
+    <li>Programmable with high-level API
+    <li>Specify initial layout
+    <li>Configurable node size, color, line style and color, fill color, shape and label
+    <li>Configurable edge width, style, color and label
+    <li>Configurable tooltip text for nodes and edges
+    <li>Extensibility to plug in your own layouters (such as the one from yWorks)
+</ul>
+
+Once you have created a graph, your users have many options to view the
+graph in an MPS tool window:
+
+<ul>
+    <li>Double-click selects node or edge in editor
+    <li>Zoom and Pan
+    <li>Tooltips
+    <li>Selectable Layouts
+    <li>Selection and highlighting of outgoing and incoming nodes and edges
+    <li>Filtering based on node and edge type
+    <li>Filtering along a continuous axis (for example, time)
+    <li>Incremental, node-based collapsing and expansion
+</ul>
+
+<center>
+<a href="/images/blog/jung2.png"><img src="/images/blog/jung2.png" width="300"></a>
+</center>
+        
+The JUNG integration is available as part of mbeddr, but also as part
+of the mbeddr.platform, so you can use it for your own languages. Check out
+the <i>Chunk</i> node for an example of how to use it.
+
+<a href="http://youtu.be/-v1X0GhsLJ4">A demo video of the viewer can be found here.</a>
+
+
+
+
