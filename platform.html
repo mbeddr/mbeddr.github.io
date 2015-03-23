@@ -310,6 +310,14 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                             nodes (collected by a query) anywhere. <a href="http://mbeddr.com/2014/05/06/querylist.html">See this Blog Post</a>.
                         </p>
 
+                        <p>
+                            A querylist can projects read-only and read-write. Note that any MPS root editor can
+                            project every node only once in an editable way. So if you are sure (by design) that
+                            a particular querylist only shows nodes from other roots, you can leave it editable.
+                            If it may show nodes from the same root, make sure you select the Duplicate Safe option.
+                            Check out existing uses of the querylist for details on how to do this.
+                        </p>
+
 
 
 
@@ -318,7 +326,10 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>Hyperlink (com.mbeddr.mpsutil.hyperlink)</h3>
 
                         <p>
-
+                            Hyperlink cells can be used for references in MPS. In contrast to normal reference cells
+                            they automatically become blue and underlined if the mouse hovers over them (no Ctrl is
+                            necessary). To make a reference a hyperlink, use the hyperlink-reference style attribute contributed
+                            by the hyperlink language.
                         </p>
 
 
@@ -332,7 +343,11 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>Breadcrumbs (com.mbeddr.mpsutil.breadcrumb)</h3>
 
                         <p>
+                            Breadcrumbs support structured navigation in a root.
                             <a href="http://mbeddr.com/2014/09/26/breadcumbs.html">See this Blog Post</a>.
+                            Concepts that should show up in the breadcrumb must implement IBreadcrumb. The editor
+                            of the root that should contain the breadcrumb widget at the top must use the
+                            breadcrumb cell as the outermost cell.
                         </p>
 
 
