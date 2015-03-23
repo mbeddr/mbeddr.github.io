@@ -1,0 +1,24 @@
+---
+layout: blogpost
+title: Pasting C text into mbeddr
+---
+
+<p>
+A weak aspect of mbeddr has always been the interoperability with existing textual C source. We have made many attempts
+at parsing C sources and importing them into mbeddr, all with different degrees of success and various different problems.
+</p>
+
+<p>
+Out latest, and so far most successful attempt is based on <a href="http://ckaestne.github.io/TypeChef/">TypeChef</a> by
+<a href="http://www.cs.cmu.edu/~ckaestne/">Christian Kästner</a> and friends). <a href="https://www.youtube.com/watch?v=o4PN9ggehQk">Check
+out this video to get an impression of the current capabilities.</a>.
+</p>
+
+<p>
+We are still working on importing whole header files (as external modules) and C files. We also have a good handle on
+    the preprocessor (defines, macros, ifdefs), because TypeChef deals with them gracefully.
+</p>
+
+<p>
+Stay tuned.
+</p>
