@@ -60,8 +60,8 @@
     </script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
-		var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-		_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+        _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
         _gaq.push([ '_setAccount', 'UA-45406798-1' ]);
         _gaq.push([ '_trackPageview' ]);
         (function () {
@@ -111,128 +111,200 @@
 <div id="header_wrapper" class="container">
 </div>
 <div id="page">
-<div class="inner">
-<div class="container clearfix">
-
-<div class="container">
-    <div class="container">
-        <div class="span7">
-
-
-            <h1>Introduction</h1>
-
-            <p>
-                The mbeddr.platform is a collection of utilities and MPS extensions useful
-                to many different kinds of systems built on MPS. We have developed it as part
-                of the development of mbeddr, and all the utilities and extensions mentioned
-                here are used extensively in mbeddr.
-            </p>
-
-            <p>
-                Some extensions work automatically as soon as you put the platform into your
-                plugins folder. We describe these first. Other extensions require some
-                simple code to be written as part of your language: typically, your language
-                concepts must implement an interface and implement one or two methods, or you
-                just use some new cell in the editor. We describe that second group next.
-                The final group are full blown additional languages, typically in the editor,
-                and require more work to understand and use. We describe these last.
-            </p>
-
-            <p>
-                This documentation is intended as an overview to give you a head start.
-                All the examples we refer to are in mbeddr, so we suggest you download
-                mbeddr (not just the platform) as a means for you to see how the extensions
-                work. Here  are some of the mechanisms we use in this documentation:
-            </p>
-
-
-        </div>
-        <div class="span1">&nbsp;</div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-</div>
-
-
-</div>
-
-
-<div id="extra">
-    <div id="intro">
-        <div class="container">
-
-        </div>
-    </div>
     <div class="inner">
-        <div class="container">
-            <div class="row">
-                <div class="span6">
-                    <ul class="footer-links clearfix">
-                        <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
-                        <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
-                        <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
-                        <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
-                    </ul>
-                    <ul class="footer-links clearfix">
-                        <li><a href="benefits.html">Key characteristics and benefits.</a></li>
-                        <li><a href="learn.html#overview">Read and Learn: Papers.</a></li>
-                        <li><a href="screencasts.html">Watch and Learn: Screencasts.</a></li>
-                        <li><a href="learn.html#cs">See how it's used: Case Studies.</a></li>
-                    </ul>
-                </div>
-                <div class="span6">
-                    <ul class="footer-links clearfix">
-                        <li><a href="download.html">Download and Try.</a></li>
-                        <li><a href="download.html">Adapt and Extend.</a></li>
-                        <li><a href="news.html">Read the Blog.</a></li>
-                        <li><a href="faq.html">Read the FAQ.</a></li>
-                    </ul>
-                    <ul class="footer-links clearfix">
-                        <li><a href="support.html">Contact the team.</a></li>
-                        <li><a href="support.html">Get Help.</a></li>
-                        <li><a href="http://dslbook.org">Learn about Language Engineering.</a></li>
-                        <li><a href="http://jetbrains.com/mps">Download MPS.</a></li>
-                    </ul>
+        <div class="container clearfix">
+
+            <div class="container">
+                <div class="container">
+                    <div class="span7">
+
+
+
+
+
+
+
+
+                        
+                        <h1>Introduction</h1>
+
+                        <p>
+                            The mbeddr.platform is a collection of utilities and MPS extensions useful
+                            to many different kinds of systems built on MPS. We have developed it as part
+                            of the development of mbeddr, and all the utilities and extensions mentioned
+                            here are used extensively in mbeddr.
+                        </p>
+
+                        <p>
+                            Some extensions work automatically as soon as you put the platform into your
+                            plugins folder. We describe these first. Other extensions require some
+                            simple code to be written as part of your language: typically, your language
+                            concepts must implement an interface and implement one or two methods, or you
+                            just use some new cell in the editor. We describe that second group next.
+                            The final group are full blown additional languages, typically in the editor,
+                            and require more work to understand and use. We describe these last.
+                        </p>
+
+                        <p>
+                            This documentation is intended as an overview to give you a head start.
+                            All the examples we refer to are in mbeddr, so we suggest you download
+                            mbeddr (not just the platform) as a means for you to see how the extensions
+                            work. Here are some of the mechanisms we use in this documentation:
+                        </p>
+
+                        <ul>
+                            <li>We briefly describe what each utility or extension does (possibly
+                                by linking to a previously published blog post).
+                            </li>
+                            <li>We mention a qualified name of the a language concept. Open this concept
+                                in mbeddr, and perform an Find Usages (Instances) to find example code
+                            </li>
+                            <li>We point to example code by using a Node Info (see below) or Node URL.
+                                Check out this example code to understand how the extension works.
+                            </li>
+                        </ul>
+
+                        <p>
+                            Note that for historic reasons, the various extensions reside in various
+                            repositories and languges including git repositories by Sascha Lisson,
+                            languages and solutions in the com.mbeddr.mpsutil namespace as well as
+                            in one monster langauage com.mbeddr.core.base (and its plugin solution).
+                            If you download the platform, all of these are available, the platform
+                            packages them together. Nonetheless, we will clean up the structure and
+                            modularity of these things in the future -- for historic reasons, some
+                            of them are in the wrong place.
+                        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="span1">&nbsp;</div>
                 </div>
             </div>
-            <br/>
-        </div>
-    </div>
-    <div id="intro">
-        <div class="container">
+
 
         </div>
+
+
     </div>
-</div>
-
-<!-- Le javascript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-
-<script src="js/bootstrap-transition.js"></script>
-<script src="js/bootstrap-alert.js"></script>
-<script src="js/bootstrap-modal.js"></script>
-<script src="js/bootstrap-dropdown.js"></script>
-<script src="js/bootstrap-scrollspy.js"></script>
-<script src="js/bootstrap-tab.js"></script>
-<script src="js/bootstrap-tooltip.js"></script>
-<script src="js/bootstrap-popover.js"></script>
-<script src="js/bootstrap-button.js"></script>
-<script src="js/bootstrap-collapse.js"></script>
-<script src="js/bootstrap-carousel.js"></script>
-<script src="js/bootstrap-typeahead.js"></script>
 
 
-<!-- Include the plug-in -->
-<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="js/custom.js" type="text/javascript"></script>
+    <div id="extra">
+        <div id="intro">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <ul class="footer-links clearfix">
+                            <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+                            <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+                            <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+                            <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+                        </ul>
+                        <ul class="footer-links clearfix">
+                            <li><a href="benefits.html">Key characteristics and benefits.</a></li>
+                            <li><a href="learn.html#overview">Read and Learn: Papers.</a></li>
+                            <li><a href="screencasts.html">Watch and Learn: Screencasts.</a></li>
+                            <li><a href="learn.html#cs">See how it's used: Case Studies.</a></li>
+                        </ul>
+                    </div>
+                    <div class="span6">
+                        <ul class="footer-links clearfix">
+                            <li><a href="download.html">Download and Try.</a></li>
+                            <li><a href="download.html">Adapt and Extend.</a></li>
+                            <li><a href="news.html">Read the Blog.</a></li>
+                            <li><a href="faq.html">Read the FAQ.</a></li>
+                        </ul>
+                        <ul class="footer-links clearfix">
+                            <li><a href="support.html">Contact the team.</a></li>
+                            <li><a href="support.html">Get Help.</a></li>
+                            <li><a href="http://dslbook.org">Learn about Language Engineering.</a></li>
+                            <li><a href="http://jetbrains.com/mps">Download MPS.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br/>
+            </div>
+        </div>
+        <div id="intro">
+            <div class="container">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Le javascript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+
+    <!-- Include the plug-in -->
+    <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
 </body>
 </html>
