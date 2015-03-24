@@ -392,7 +392,17 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>File/Path Picker (com.mbeddr.core.base)</h3>
 
                         <p>
-
+                            This is a language concept that supports picking paths and files from the file system.
+                            The files are picked relative to several different roots (see below). The picker provides
+                            code completion, opening the OS file/dir dialog, verifies that a file is valid and has
+                            methods to return the absolute path for loading the file.
+                            <ul>
+                            <li><b>FileSystemDirPicker:</b> picks an absolute directory</li>
+                            <li><b>MacroFilePicker:</b> picks a file relative to an MPS path variable</li>
+                            <li><b>MacroFolderPicker:</b> picks a dir relative to an MPS path variable</li>
+                            <li><b>SolutionRelativeFilePicker:</b> picks a directory relative to the current solution's root</li>
+                            <li><b>SolutionRelativeDirPicker:</b> picks a file relative to the current solution's root</li>
+                            </ul>
                         </p>
 
 
