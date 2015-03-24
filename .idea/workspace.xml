@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform.html" afterPath="$PROJECT_DIR$/platform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +55,7 @@
       <file leaf-file-name="platform.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="727" column="112" selection-start="37152" selection-end="37152" vertical-scroll-proportion="0.70600414" vertical-offset="12404" max-vertical-offset="16236">
+            <state line="713" column="65" selection-start="36104" selection-end="36104" vertical-scroll-proportion="0.44513458" vertical-offset="12404" max-vertical-offset="16236">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -772,7 +771,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="727" column="112" selection-start="37152" selection-end="37152" vertical-scroll-proportion="0.70600414" vertical-offset="12404" max-vertical-offset="16236">
+        <state line="713" column="65" selection-start="36104" selection-end="36104" vertical-scroll-proportion="0.44513458" vertical-offset="12404" max-vertical-offset="16236">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
