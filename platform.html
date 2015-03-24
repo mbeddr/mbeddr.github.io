@@ -176,7 +176,10 @@
                             of them are in the wrong place.
                         </p>
 
-
+                        <p>
+                            If the explanations here plus the sample code is not enough,
+                            <a href="http://mbeddr.com/support.html">contact the team and ask for help!</a>
+                        </p>
 
                         <br/>
                         <h2>Utilitities that just work</h2>
@@ -412,7 +415,19 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>PlantUML Visualizations (com.mbeddr.mpsutil.plantuml)</h3>
 
                         <p>
-                            <a href="https://mbeddr.wordpress.com/2013/02/14/visualizations-reloaded/">See this Blog Post</a>.
+                            This provides an integration of <a href="http://plantuml.com/">PlantUML</a> with MPS.
+                            <a href="https://www.youtube.com/watch?v=QjwXITp6fwg">Watch this video to get an overview.</a>.
+                        </p>
+                        <p>
+                            To use it in your own languages, implement the IVisualizable interface in your language
+                            concept. Each concept can have several visualizations, called categories. The getCategories()
+                            method returns the list (just strings). The getVisualization() method then returns the
+                            actual visualition. It gets the user-requested category as an argument, as well as an empty
+                            VisGraph object. The getVisualization() method then has to fill the VisGraph with the
+                            actual visualiztion. This is done simply by using the add() method to build a native,
+                            textual PlantUML visualization. Check out the existing implementations of the interface
+                            to learn the deails; in particular, there is a helper method on VisGraph that creates
+                            a URL for users to click on in the graph: createUrl(node).
                         </p>
 
 
@@ -421,6 +436,15 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
                         <p>
                             <a href="http://mbeddr.com/2015/03/05/jung.html">See this Blog Post</a>.
+                        </p>
+
+                        <p>
+                            To use it in your own language, implement the IJGraphProvider interface. Return a
+                            JNGraph from the getGraph() method. Check out the existing implementations, and in
+                            particular the DepGraphHelper (called from Chunk.getGraph()) to learn the details.
+                            In short, a graph is built in two steps: the first step actually adds the nodes
+                            and edges. The second step uses closures to style the graph. Examples can be seen
+                            from DepGraphHelper.
                         </p>
 
 
