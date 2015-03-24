@@ -730,7 +730,7 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
 
 
-
+                        <!--
                         <br/>
                         <br/><hr/>
                         <h3>PreferenceForm (com.mbeddr.mpsutil.interpreter)</h3>
@@ -738,6 +738,7 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <p>
 
                         </p>
+                        -->
 
 
 
@@ -746,11 +747,30 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>SPreferences (com.mbeddr.mpsutil.spreferences)</h3>
 
                         <p>
+                            This extension allows the definition of preference pages by using MPS models; so in the
+                            preference page you get a normal MPS editor, as exemplified by mbeddr's platform templates
+                            preference page:
+                        </p>
 
+                        <p>
+                            <center>
+                            <img src="/images/prefpage.png">
+                            </center>
                         </p>
 
 
+                        <p>
+                            Such pages are defined using an instance of PreferencePageDescription. This instance
+                            must reside in a plugin solution. The data, i.e., the respective MPS model, is stored
+                            as part of the respective project or in MPS globally (this is configurable). It is possible
+                            to access the model that contains the preferences via code:
+                        </p>
 
+                        <p>
+                        <center>
+                            <img src="/images/prefpageAccess.png">
+                        </center>
+                        </p>
 
 
 
