@@ -25,15 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="faq.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/faq.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="4184" selection-end="4184" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="9234">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,7 +46,16 @@
       <file leaf-file-name="news.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="52866">
+            <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="-6.0" vertical-offset="1512" max-vertical-offset="52866">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014-05-26-conditionalEditor.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="4" selection-start="88" selection-end="1939" vertical-scroll-proportion="-29.851852" vertical-offset="166" max-vertical-offset="1134">
               <folding />
             </state>
           </provider>
@@ -73,7 +73,7 @@
       <file leaf-file-name="platform.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="475" column="46" selection-start="23869" selection-end="23869" vertical-scroll-proportion="0.8365288" vertical-offset="7721" max-vertical-offset="12186">
+            <state line="372" column="0" selection-start="18065" selection-end="18065" vertical-scroll-proportion="0.21656051" vertical-offset="6492" max-vertical-offset="13050">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -136,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2014-12-06-indentation.html" />
         <option value="$PROJECT_DIR$/_posts/2015-03-05-jung.html" />
         <option value="$PROJECT_DIR$/_posts/2015-03-05-pastingC.html" />
         <option value="$PROJECT_DIR$/_posts/2015-03-05-graphicalSM.html" />
@@ -151,6 +150,7 @@
         <option value="$PROJECT_DIR$/support.html" />
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
         <option value="$PROJECT_DIR$/platform.html" />
       </list>
     </option>
@@ -647,11 +647,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2015-03-05-jung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="76" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="1224" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-03-05-pastingC.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="11" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="522" />
@@ -709,13 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="52866">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screencasts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="0" selection-start="4220" selection-end="4220" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="13302">
@@ -744,9 +732,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="-6.0" vertical-offset="1512" max-vertical-offset="52866">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="4" selection-start="88" selection-end="1939" vertical-scroll-proportion="-29.851852" vertical-offset="166" max-vertical-offset="1134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="475" column="46" selection-start="23869" selection-end="23869" vertical-scroll-proportion="0.8365288" vertical-offset="7721" max-vertical-offset="12186">
+        <state line="372" column="0" selection-start="18065" selection-end="18065" vertical-scroll-proportion="0.21656051" vertical-offset="6492" max-vertical-offset="13050">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
