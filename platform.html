@@ -390,12 +390,22 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>Breadcrumbs (com.mbeddr.mpsutil.breadcrumb)</h3>
 
                         <p>
-                            Breadcrumbs support structured navigation in a root.
-                            <a href="http://mbeddr.com/2014/09/26/breadcumbs.html">See this Blog Post</a>.
-                            Concepts that should show up in the breadcrumb must implement IBreadcrumb. The editor
-                            of the root that should contain the breadcrumb widget at the top must use the
-                            breadcrumb cell as the outermost cell.
+                            Breadcrumbs are a way to improve the user's awareness where in a (big) file he is currently editing. It is essentially
+                            a "horizontal tree" shown at the top of an editor that reflects the hierarchical structure of an editor's contents.
+                            Niko has made an MPS extension that displays a breadcrumb in an MPS editor. By clicking on a label the user can jump
+                            to the corresponding level of the containment hierarchy. By clicking on the little triangles one can see the remaining
+                            nodes in the hierarchy.
                         </p>
+
+                        <br/>
+                        <img src="/images/blog/breadcrumbs.png"/><br/>
+                        <br/>
+
+                        <P>
+                            To use breadcrumbs in an editor, only two simple steps are required. Nodes that form the hierarchy (and should show up
+                            in the breadcrumb) must implement the interface <i>IBreadcrumb</i>. The root of the editor that should show the
+                            breadcrumbs must include a <i>breadcrumb</i> editor cell at the top.
+                        </P>
 
 
 
@@ -532,8 +542,55 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <hr/>
                         <h3>Graph Diagrams (com.mbeddr.mpsutil.jung)</h3>
 
+
+
                         <p>
-                            <a href="http://mbeddr.com/2015/03/05/jung.html">See this Blog Post</a>.
+                            As an additional means of displaying relationships between nodes (next
+                            to PlantUML and the tree views) we have integrated the <a
+                                href="http://jung.sourceforge.net/">JUNG framework</a> for graph
+                            display. As a language developer, you can implement an interface
+                            <i>IJGraphProvider</i> and implement a method that creates the graph:
+                        </p>
+
+                        <ul>
+                            <li>Programmable with high-level API
+                            <li>Specify initial layout
+                            <li>Configurable node size, color, line style and color, fill color, shape and label
+                            <li>Configurable edge width, style, color and label
+                            <li>Configurable tooltip text for nodes and edges
+                            <li>Extensibility to plug in your own layouters (such as the one from yWorks)
+                        </ul>
+
+                        <p>
+                            Once you have created a graph, your users have many options to view the
+                            graph in an MPS tool window:
+                        </p>
+
+                        <ul>
+                            <li>Double-click selects node or edge in editor
+                            <li>Zoom and Pan
+                            <li>Tooltips
+                            <li>Selectable Layouts
+                            <li>Selection and highlighting of outgoing and incoming nodes and edges
+                            <li>Filtering based on node and edge type
+                            <li>Filtering along a continuous axis (for example, time)
+                            <li>Incremental, node-based collapsing and expansion
+                        </ul>
+
+                        <br/>
+                        <center>
+                            <a href="/images/blog/jung2.png"><img src="/images/blog/jung2.png" width="450"></a>
+                        </center>
+                        <br/>
+
+                        <p>
+                            The JUNG integration is available as part of mbeddr, but also as part
+                            of the mbeddr.platform, so you can use it for your own languages. Check out
+                            the <i>Chunk</i> node for an example of how to use it.
+                        </p>
+
+                        <p>
+                            <a href="http://youtu.be/-v1X0GhsLJ4">A demo video of the viewer can be found here.</a>
                         </p>
 
                         <p>
@@ -588,11 +645,49 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>Asssessments (com.mbeddr.core.base)</h3>
 
                         <p>
-                            <a href="https://mbeddr.wordpress.com/2013/06/03/assessing-your-program/">See this Blog Post</a>.
+                        MPS, like any other language workbench, supports various forms of constraint checks that
+                        lead to errors or warnings, annotated directly to the element that fails the constraint check.
+                        However, there are some kinds of checks that are different in nature: they may be global
+                        and require expensive algorithms to compute. They may be used to create some kind of
+                        overview, or report, and using error annotations spread all over the code may not be
+                        suitable. You may also want to mark failed constraints as ok and ignore them in the
+                        future. To support these use cases, we have added Assessments to mbeddr.
                         </p>
 
+                        <p>
+                        Here is an example assessment. It highlights all requirements in a model that have no
+                        effort specified. Not having an effort is a problem, and you may want to keep track of
+                        the requirements where you have yet to perform your estimation. The assessment shown below
+                        shows an example result (of course, the results are references and you can navigate to
+                        the offending requirement):
+                        </p>
 
+                        <p>
+                        <img src="/images/assessment.png"/>
+                        </p>
 
+                        <p>
+                            Note the colors. Green results are those that are marked as ok, so they are judged by the
+                        user to not be a real problem. Red results are those that have been added during the last
+                        update of the assessment. Black ones have been there from previous updates. Using the
+                        colors, you can keep track of the current state of the assessment, as well as of its changes.
+                        Assessment results are part of the model, so they are persisted and shared. They are
+                        intended to be actively maintained and managed (in contrast to regular error or warning
+                        annotations in the code). You can also set the “must be ok” flat to true, in which case the
+                        Assessment itself gets an error annotation if the results contain non-ok entries.
+                        </p>
+
+                        <p>
+                        The requirements thing above is of course just an example and the assessment facility
+                        is extensible. You have to create two concepts:
+
+                        <ul>
+                            <li>A subconcept of AssessmentQuery, which has a behavior method to run the query and create the list of results</li>
+                            <li>A subconcept of AssessmentResult, which is used to represent each "line" in the assessment result.</li>
+                        </ul>
+
+                        Check out the exisiting subconcepts to learn the details.
+                        <p>
 
 
 
