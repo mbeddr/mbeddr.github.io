@@ -154,8 +154,7 @@
                         </p>
 
                         <ul>
-                            <li>We briefly describe what each utility or extension does (possibly
-                                by linking to a previously published blog post).
+                            <li>We briefly describe what each utility or extension does.
                             </li>
                             <li>We mention a qualified name of the a language concept. Open this concept
                                 in mbeddr, and perform an Find Usages (Instances) to find example code
@@ -295,9 +294,20 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <hr/>
                         <h3>Tooltips (de.itemis.mps.tooltips)</h3>
 
+
                         <p>
-                            This supports (read only) tooltips in MPS editors. The contents of tooltips are regular
-                            MPS editor cells. <a href="http://mbeddr.com/2014/06/25/tooltips.html">See this Blog Post</a>.
+                            Sascha has added support for tooltips to MPS. Tooltips
+                            are defined using the regular MPS projectional editor and hence have all its notational flexibility. Check out the
+                            video below:
+                        </p>
+
+
+                        <br/>
+                        <a href="https://www.youtube.com/watch?v=FTvUhjK8Zwk"><img src="/images/blog/tooltips.png"/></a><br/>
+                        <br/>
+
+
+                        <p>
                             To use it, just use the language mentioned above and include a tooltip cell in the editor:
                             in the top slot of the cell put the original editor. In the bottom slot put the cells that
                             make up the tooltip. The tooltips work together particularly well with the querylist in
@@ -311,18 +321,47 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>Querylist (com.mbeddr.mpsutil.editor.querylist)</h3>
 
                         <p>
-                            Normally, MPS can project nodes in the editor only at the location where the nodes are
-                            actually contained in the tree. The querylist relieves this limitation; it can project
-                            nodes (collected by a query) anywhere. <a href="http://mbeddr.com/2014/05/06/querylist.html">See this Blog Post</a>.
+                            Normally, MPS can only project nodes at the location
+                            where they resided physically on the model. So, while the rendering
+                            of nodes could be designed arbitrarily, the structure of the projection
+                            itself always had to conform to the structure of the underlying AST.
+                            In other words, real views were not supported.
                         </p>
 
                         <p>
-                            A querylist can projects read-only and read-write. Note that any MPS root editor can
+                            Enter querylist. A querylist is a list whose contents are the result
+                            of an arbitrary query over the model. The elements in the list can
+                            be editable, there are callbacks for what should happen when things
+                            are added or deleted, and it is even possible to define wrapper
+                            editors for the result elements or override the result element's
+                            editor completely. Note that any MPS root editor can
                             project every node only once in an editable way. So if you are sure (by design) that
                             a particular querylist only shows nodes from other roots, you can leave it editable.
                             If it may show nodes from the same root, make sure you select the Duplicate Safe option.
                             Check out existing uses of the querylist for details on how to do this.
                         </p>
+
+                        <p>
+                            We are using this currently in two places. First, we use it to show
+                            the signature of inherited operation-like constructs. In this case,
+                            the queried elements are rendered in grey, and they are readonly.
+                            The following picture shows this.
+                        </p>
+
+                        <br/>
+                        <img src="/images/blog/querylist1.png"/>
+                        <br/>
+                        <br/>
+
+                        <p>
+                            The second location where we currently make use of this feature is
+                            in assessments. So instead of just showing pointers to the result
+                            elements in the assessment result, we can now show the actual element
+                            inline. If the assessment is used to detect errors, then that error
+                            can be fixed directly in the assessment instead of navigating to
+                            the respective program location.
+                        </p>
+
 
 
 
