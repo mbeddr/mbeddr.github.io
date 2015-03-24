@@ -702,11 +702,31 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h2>More Sophisticated Extensions</h2>
 
 
-                        <h3>MarginCell/Review (com.mbeddr.mpsutil.margincell)</h3>
+                        <h3>MarginCell/Review (com.mbeddr.mpsutil.margincell, com.mbeddr.mpsutil.review)</h3>
 
                         <p>
+                            Margin cells are editor cells that are shown beyond the right editor margin, a little bit
+                            like comments in Word. In fact, the ReviewNote cell implements exactly Word's comment
+                            facility as an example of the margin cell. Here is a screenshot:
                         </p>
 
+                        <p>
+                        <center><img src="/images/margincell.png" width="500"></center>
+                        </p>
+
+                        <p>
+                        To use the review notes, just include the respective language; intentions are available to attach
+                            review notes to editor cells.
+                        </p>
+
+                        <p>
+                            To put your own cells into the right margin, your cell must implement the IMarginCellContent
+                            interface. The editor of your cell may use the margincell-cell-width and margincell-dashed-line-interval
+                            style attributes to design the width and line style. You also have to have the actual margincell
+                            on the root element of the editor. However, as illustrated by the CommentAnnotationContainer
+                            from the review language, you can use an annotation for this. Hence, margin comments can
+                            essentially be added to every model, without the model's language being aware of it.
+                        </p>
 
 
 
