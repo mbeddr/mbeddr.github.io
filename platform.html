@@ -779,9 +779,36 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h3>Interpreter (com.mbeddr.mpsutil.interpreter)</h3>
 
                         <p>
-
+                            This extension lets you efficiently write interpreters of your languages. An interpreter
+                            is defined as an instance of Interpreter. Check out the concept CInterpreter, which interprets
+                            mbeddr C.
                         </p>
 
+                        <p>
+                            Each interpreter consists of the following sections:
+
+                            <ul>
+                            <li>Category: a string that identifies what the interpreter does, e.g., execute C</li>
+                            <li>Applicable Languages: the languages whose concepts the interpreter interprets</li>
+                            <li>Type Mappings: maps the subject language types to Java types for execution in the interpreter</li>
+                            <li>Evaluators: the interpreter logic for each of the language concepts. Each evaluator is a three-tuple of
+                              <ul>
+                                <li>The concept, represented by its alias (if any; otherwise the name)</li>
+                                <li>Optional type guards for its child nodes</li>
+                                <li>The Java expression that is executed. The # represents recursive execution of the interpreter.
+                                    You can use an intention to change the expression into a statement list, so you can write more code</li>
+                              </ul>
+
+                            </li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            Interpreters can be composed; check out CExtInterpreter, which specifies that it must run
+                            after the CInterpreter discussed before. The java class CombinedInterpreter can be used
+                            to create composite interpreters from several interpreters. Do a Find Usages on the CombinedInterpreter
+                            to see how this works.
+                        </p>
 
 
                         <br/>
