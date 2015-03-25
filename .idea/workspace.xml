@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform.html" afterPath="$PROJECT_DIR$/platform.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="platform.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="882" column="112" selection-start="44846" selection-end="44846" vertical-scroll-proportion="-10.703704" vertical-offset="15587" max-vertical-offset="18738">
+            <state line="123" column="0" selection-start="5112" selection-end="5112" vertical-scroll-proportion="0.27892563" vertical-offset="1944" max-vertical-offset="18666">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="57" selection-start="4336" selection-end="4336" vertical-scroll-proportion="0.6136364" vertical-offset="1080" max-vertical-offset="3564">
+            <state line="93" column="57" selection-start="4336" selection-end="4336" vertical-scroll-proportion="-22.0" vertical-offset="1080" max-vertical-offset="3564">
               <folding />
             </state>
           </provider>
@@ -149,9 +149,9 @@
         <option value="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
         <option value="$PROJECT_DIR$/_posts/2014-11-14-graphical.html" />
-        <option value="$PROJECT_DIR$/platform.html" />
         <option value="$PROJECT_DIR$/_posts/2015-03-25-platformPage.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/platform.html" />
       </list>
     </option>
   </component>
@@ -753,16 +753,6 @@
         <state line="14" column="0" selection-start="173" selection-end="300" vertical-scroll-proportion="0.25099602" vertical-offset="0" max-vertical-offset="1004" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="882" column="112" selection-start="44846" selection-end="44846" vertical-scroll-proportion="-10.703704" vertical-offset="15587" max-vertical-offset="18738">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-03-25-platformPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="96" selection-start="530" selection-end="530" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="396">
@@ -779,8 +769,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="57" selection-start="4336" selection-end="4336" vertical-scroll-proportion="0.6136364" vertical-offset="1080" max-vertical-offset="3564">
+        <state line="93" column="57" selection-start="4336" selection-end="4336" vertical-scroll-proportion="-22.0" vertical-offset="1080" max-vertical-offset="3564">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="5112" selection-end="5112" vertical-scroll-proportion="0.27892563" vertical-offset="1944" max-vertical-offset="18666">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
