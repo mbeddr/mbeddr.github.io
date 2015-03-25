@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-03-25-platformPage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-03-25-platformPage.html" afterPath="$PROJECT_DIR$/_posts/2015-03-25-platformPage.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +58,7 @@
       <file leaf-file-name="2015-03-25-platformPage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2015-03-25-platformPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="933" selection-end="933" vertical-scroll-proportion="0.23306774" vertical-offset="0" max-vertical-offset="1004">
+            <state line="9" column="96" selection-start="530" selection-end="530" vertical-scroll-proportion="0.16135459" vertical-offset="0" max-vertical-offset="1004">
               <folding />
             </state>
           </provider>
@@ -769,7 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-03-25-platformPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="933" selection-end="933" vertical-scroll-proportion="0.23306774" vertical-offset="0" max-vertical-offset="1004">
+        <state line="9" column="96" selection-start="530" selection-end="530" vertical-scroll-proportion="0.16135459" vertical-offset="0" max-vertical-offset="1004">
           <folding />
         </state>
       </provider>
