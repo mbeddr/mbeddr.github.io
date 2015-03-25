@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform.html" afterPath="$PROJECT_DIR$/platform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mps.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mps.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="4220" selection-end="4220" vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="4680">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="news.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="52866">
+            <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="-6.0" vertical-offset="1512" max-vertical-offset="52866">
               <folding />
             </state>
           </provider>
@@ -56,7 +46,7 @@
       <file leaf-file-name="platform.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="863" column="100" selection-start="44131" selection-end="44131" vertical-scroll-proportion="0.9223007" vertical-offset="14620" max-vertical-offset="17748">
+            <state line="936" column="0" selection-start="47796" selection-end="47796" vertical-scroll-proportion="0.7638749" vertical-offset="16091" max-vertical-offset="18738">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -128,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2015-03-05-jung.html" />
         <option value="$PROJECT_DIR$/_posts/2015-03-05-pastingC.html" />
         <option value="$PROJECT_DIR$/_posts/2015-03-05-graphicalSM.html" />
         <option value="$PROJECT_DIR$/benefits.html" />
@@ -143,6 +132,7 @@
         <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
+        <option value="$PROJECT_DIR$/_posts/2014-11-14-graphical.html" />
         <option value="$PROJECT_DIR$/platform.html" />
       </list>
     </option>
@@ -671,20 +661,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/download.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="4220" selection-end="4220" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="13698">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="4184" selection-end="4184" vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="9234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="0" selection-start="4357" selection-end="4357" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="13464">
@@ -736,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="52866">
+        <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="-6.0" vertical-offset="1512" max-vertical-offset="52866">
           <folding />
         </state>
       </provider>
@@ -770,9 +746,23 @@
         <state line="57" column="0" selection-start="136" selection-end="1746" vertical-scroll-proportion="0.8715596" vertical-offset="171" max-vertical-offset="1224" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-11-14-graphical.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="4" selection-start="61" selection-end="2830" vertical-scroll-proportion="0.8715596" vertical-offset="513" max-vertical-offset="1494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-03-05-graphicalSM.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="173" selection-end="300" vertical-scroll-proportion="0.25099602" vertical-offset="0" max-vertical-offset="1004">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="863" column="100" selection-start="44131" selection-end="44131" vertical-scroll-proportion="0.9223007" vertical-offset="14620" max-vertical-offset="17748">
+        <state line="936" column="0" selection-start="47796" selection-end="47796" vertical-scroll-proportion="0.7638749" vertical-offset="16091" max-vertical-offset="18738">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
