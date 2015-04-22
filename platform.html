@@ -267,16 +267,16 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         
                         <p>
                         Example Concept:
-                    	<br/><img src="/images/blog/uniquenames_concept_plain.png" width="380"/>
+                    	<br/><img src="/images/blog/uniquenames_concept_plain.png"/>
                     	<br/>
-                    	<br/><img src="/images/blog/uniquenames_concept_unique.png" width="436"/>
+                    	<br/><img src="/images/blog/uniquenames_concept_unique.png"/>
                     	</p>
 
                         <p>
                         Example BaseLanguage:
-                    	<br/><img src="/images/blog/uniquenames_class_plain.png" width="699"/>
+                    	<br/><img src="/images/blog/uniquenames_class_plain.png"/>
                     	<br/>
-                    	<br/><img src="/images/blog/uniquenames_class_unique.png" width="944"/>
+                    	<br/><img src="/images/blog/uniquenames_class_unique.png"/>
                     	</p>
 
 
@@ -511,6 +511,23 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                             It also allows you to insert real, structured program nodes into the otherwise unstructured
                             text, enabling mixed content editing. The details are explained in
                             <a href="http://voelter.de/data/pub/mpm13.pdf">this paper</a>.
+                        </p>
+
+
+
+                        <br/>
+                        <br/><hr/>
+                        <h3>RichString (com.mbeddr.mpsutil.richstring)</h3>
+
+                        <p>
+                            This BaseLanguage extension simplifies usage of variables and <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html">Java String.format()</a>
+                            inside BaseLanguage Strings. Just add the language <tt>com.mbeddr.mpsutil.richstring</tt> to your model.
+                        </p>
+                        
+                        <p>
+                        The following example shows referencing a simple variable, embedding an expression inside a string,
+                        and the equivalent of calling <code>String.format()</code>.
+                        <br/><img src="/images/blog/richstring.png"/>
                         </p>
 
 
