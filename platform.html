@@ -767,18 +767,6 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
 
 
-                        <!--
-                        <br/>
-                        <br/><hr/>
-                        <h3>PreferenceForm (com.mbeddr.mpsutil.interpreter)</h3>
-
-                        <p>
-
-                        </p>
-                        -->
-
-
-
                         <br/>
                         <br/><hr/>
                         <h3>SPreferences (com.mbeddr.mpsutil.spreferences)</h3>
@@ -807,6 +795,39 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <center>
                             <img src="/images/prefpageAccess.png">
                         </center>
+                        </p>
+
+
+
+                        <br/>
+                        <br/><hr/>
+                        <h3>PreferenceForm (com.mbeddr.mpsutil.preferenceform)</h3>
+
+                        <p>
+							If we needed less sophisticated preferences, mbeddr platform offers the PreferenceForm extension.
+							It allows to define preferences on both application and project scope, and cares for a simple UI
+							and the persistence. For the latter part, it can be seen as an extension to the built-in
+							<tt>jetbrains.mps.lang.plugin.structure.PreferencePage</tt>.
+                        </p>
+                        
+                        <p>
+                        	For using PreferenceForm, create a new PreferenceForm root node inside an MPS plugin.<br/>
+                        	The following field types are available:
+                        	<ul>
+                        		<li>Checkbox</li>
+                        		<li>TextField</li>
+                        		<li>IntegerField</li>
+                        		<li>PassWordField</li>
+                        		<li>PredefinedComboBox (entries are entered as-is)</li>
+                        		<li>DynamicComboBox (entries are queried)</li>
+                        	</ul>
+                        </p>
+                        
+                        <p>
+                        	Example:
+                        	<br/><img src="/images/blog/preferenceForm_config.png"/>
+                        	Resulting preferences:
+                        	<br/><img src="/images/blog/preferenceForm_result.png"/>
                         </p>
 
 
