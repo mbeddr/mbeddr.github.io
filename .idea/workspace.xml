@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mps.html" afterPath="$PROJECT_DIR$/mps.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="mps.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="0" selection-start="7313" selection-end="7313" vertical-scroll-proportion="0.9080068" vertical-offset="2239" max-vertical-offset="4824">
+            <state line="155" column="122" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.93867123" vertical-offset="2239" max-vertical-offset="4842">
               <folding />
             </state>
           </provider>
@@ -650,7 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mps.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="0" selection-start="7313" selection-end="7313" vertical-scroll-proportion="0.9080068" vertical-offset="2239" max-vertical-offset="4824">
+        <state line="155" column="122" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.93867123" vertical-offset="2239" max-vertical-offset="4842">
           <folding />
         </state>
       </provider>
