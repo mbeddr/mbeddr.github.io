@@ -121,10 +121,6 @@
 
 
 
-                        <p>
-                        <font color="red"><b>THIS PAGE IS STILL WORK IN PROGRESS!</b></font>
-                        </p>
-
 
 
                         <h2>Introduction</h2>
@@ -154,8 +150,7 @@
                         </p>
 
                         <ul>
-                            <li>We briefly describe what each utility or extension does (possibly
-                                by linking to a previously published blog post).
+                            <li>We briefly describe what each utility or extension does.
                             </li>
                             <li>We mention a qualified name of the a language concept. Open this concept
                                 in mbeddr, and perform an Find Usages (Instances) to find example code
@@ -176,11 +171,13 @@
                             of them are in the wrong place.
                         </p>
 
-
+                        <p>
+                            If the explanations here plus the sample code is not enough,
+                            <a href="http://mbeddr.com/support.html">contact the team and ask for help!</a>
+                        </p>
 
                         <br/>
                         <h2>Utilitities that just work</h2>
-
 
 
                         <h3>Console Opener (com.mbeddr.core.base)</h3>
@@ -195,6 +192,7 @@
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>Text Search (com.mbeddr.core.base)</h3>
 
                         <p>
@@ -209,6 +207,7 @@
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>Node Info and URL (com.mbeddr.core.base)</h3>
 
                         <p>
@@ -230,13 +229,11 @@
                         </p>
 
                         <p>
-                        <pre>
-project: tutorial (/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/applications/tutorial)
+                        <pre>project: tutorial (/Users/markusvoelter/Documents/mbeddr/mbeddr.core/code/applications/tutorial)
 module:  mbeddr.tutorial.main
 model:   mbeddr.tutorial.main.analyses
 node:    BasicAnalyses [CBMCAnalysisConfiguration] (root)
-url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261d35d7/3978189422528365848/
-                        </pre>
+url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261d35d7/3978189422528365848/</pre>
                         </p>
 
                         <p>
@@ -245,7 +242,7 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         pasted into a textual environment (see below).
                         </p>
 
-                        <br/>
+                        <br/><hr/>
                         <h3>Copy/Paste to XML (com.mbeddr.core.base)</h3>
 
                         <p>
@@ -257,6 +254,30 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         mentioned above.
                         </p>
 
+
+                        <br/><hr/>
+                        <h3>Unique Names (com.mbeddr.mpsutil.uniquenames)</h3>
+
+                        <p>
+                        MPS references all nodes by their id, not their name. Still, as humans, we see
+                        only the name, and this might be ambiguous. The Unique Names hint can be activated
+                        in MPS Preferences, Editor Hints. It shows as much of the full qualified name as
+                        required to render a name unique.
+                        </p>
+                        
+                        <p>
+                        Example Concept:
+                    	<br/><img src="/images/blog/uniquenames_concept_plain.png"/>
+                    	<br/>
+                    	<br/><img src="/images/blog/uniquenames_concept_unique.png"/>
+                    	</p>
+
+                        <p>
+                        Example BaseLanguage:
+                    	<br/><img src="/images/blog/uniquenames_class_plain.png"/>
+                    	<br/>
+                    	<br/><img src="/images/blog/uniquenames_class_unique.png"/>
+                    	</p>
 
 
 
@@ -274,6 +295,7 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>Boolean Editor (de.itemis.mps.editor.bool)</h3>
 
                         <p>
@@ -288,118 +310,441 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>Tooltips (de.itemis.mps.tooltips)</h3>
 
+
                         <p>
-                            <a href="http://mbeddr.com/2014/06/25/tooltips.html">See this Blog Post</a>.
+                            Sascha has added support for tooltips to MPS. Tooltips
+                            are defined using the regular MPS projectional editor and hence have all its notational flexibility. Check out the
+                            video below:
                         </p>
 
 
                         <br/>
-                        <h3>Hyperlink (com.mbeddr.mpsutil.hyperlink)</h3>
+                        <a href="https://www.youtube.com/watch?v=FTvUhjK8Zwk"><img src="/images/blog/tooltips.png"/></a><br/>
+                        <br/>
+
 
                         <p>
+                            To use it, just use the language mentioned above and include a tooltip cell in the editor:
+                            in the top slot of the cell put the original editor. In the bottom slot put the cells that
+                            make up the tooltip. The tooltips work together particularly well with the querylist in
+                            the sense that a querylist can be used to create the contents of the tooltip.
                         </p>
 
 
 
-
                         <br/>
+                        <br/><hr/>
                         <h3>Querylist (com.mbeddr.mpsutil.editor.querylist)</h3>
 
                         <p>
-                            <a href="http://mbeddr.com/2014/05/06/querylist.html">See this Blog Post</a>.
+                            Normally, MPS can only project nodes at the location
+                            where they resided physically on the model. So, while the rendering
+                            of nodes could be designed arbitrarily, the structure of the projection
+                            itself always had to conform to the structure of the underlying AST.
+                            In other words, real views were not supported.
+                        </p>
+
+                        <p>
+                            Enter querylist. A querylist is a list whose contents are the result
+                            of an arbitrary query over the model. The elements in the list can
+                            be editable, there are callbacks for what should happen when things
+                            are added or deleted, and it is even possible to define wrapper
+                            editors for the result elements or override the result element's
+                            editor completely. Note that any MPS root editor can
+                            project every node only once in an editable way. So if you are sure (by design) that
+                            a particular querylist only shows nodes from other roots, you can leave it editable.
+                            If it may show nodes from the same root, make sure you select the Duplicate Safe option.
+                            Check out existing uses of the querylist for details on how to do this.
+                        </p>
+
+                        <p>
+                            We are using this currently in two places. First, we use it to show
+                            the signature of inherited operation-like constructs. In this case,
+                            the queried elements are rendered in grey, and they are readonly.
+                            The following picture shows this.
+                        </p>
+
+                        <br/>
+                        <img src="/images/blog/querylist1.png"/>
+                        <br/>
+                        <br/>
+
+                        <p>
+                            The second location where we currently make use of this feature is
+                            in assessments. So instead of just showing pointers to the result
+                            elements in the assessment result, we can now show the actual element
+                            inline. If the assessment is used to detect errors, then that error
+                            can be fixed directly in the assessment instead of navigating to
+                            the respective program location.
                         </p>
 
 
 
 
+
+
                         <br/>
+                        <br/><hr/>
+                        <h3>Hyperlink (com.mbeddr.mpsutil.hyperlink)</h3>
+
+                        <p>
+                            Hyperlink cells can be used for references in MPS. In contrast to normal reference cells
+                            they automatically become blue and underlined if the mouse hovers over them (no Ctrl is
+                            necessary). To make a reference a hyperlink, use the hyperlink-reference style attribute contributed
+                            by the hyperlink language.
+                        </p>
+
+
+
+
+
+
+
+
+                        <br/>
+                        <br/><hr/>
                         <h3>Breadcrumbs (com.mbeddr.mpsutil.breadcrumb)</h3>
 
                         <p>
-                            <a href="http://mbeddr.com/2014/09/26/breadcumbs.html">See this Blog Post</a>.
+                            Breadcrumbs are a way to improve the user's awareness where in a (big) file he is currently editing. It is essentially
+                            a "horizontal tree" shown at the top of an editor that reflects the hierarchical structure of an editor's contents.
+                            Niko has made an MPS extension that displays a breadcrumb in an MPS editor. By clicking on a label the user can jump
+                            to the corresponding level of the containment hierarchy. By clicking on the little triangles one can see the remaining
+                            nodes in the hierarchy.
                         </p>
+
+                        <br/>
+                        <img src="/images/blog/breadcrumbs.png"/><br/>
+                        <br/>
+
+                        <P>
+                            To use breadcrumbs in an editor, only two simple steps are required. Nodes that form the hierarchy (and should show up
+                            in the breadcrumb) must implement the interface <i>IBreadcrumb</i>. The root of the editor that should show the
+                            breadcrumbs must include a <i>breadcrumb</i> editor cell at the top.
+                        </P>
 
 
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>Outline (com.mbeddr.core.base)</h3>
 
                         <p>
+                            MPS comes with an Outline view that opens when pressing Ctrl-F12. The view contains a
+                            customizable list of contents in a root. It can be filtered by typing, and by pressing Enter,
+                            the selected element can be selected in the editor. To have your own concepts show up
+                            in this view, make them implement IShowUpInOutline.
                         </p>
 
 
 
 
                         <br/>
-                        <h3>Conditional Editor (de.lisson.mps.conditionalEditor)</h3>
+                        <br/><hr/>
+                        <h3>Conditional Editor (de.slisson.mps.conditionalEditor)</h3>
+
 
                         <p>
-                            <a href="http://mbeddr.com/2014/05/26/conditionalEditor.html">See this Blog Post</a>.
+                            In MPS, each language concept has its own editor. While this is useful in 99%
+                            of all cases, sometimes it is a problem: imagine you want to change the editor
+                            of many different language concepts at a time. Then you have to change the
+                            editor for all these language concepts. This is tedious and error prone.
                         </p>
-
-
-
-
-                        <br/>
-                        <h3>Richtext (de.lisson.mps.richtext)</h3>
 
                         <p>
+                            As an example, consider projecting a little arrow over all "things with names"
+                            in C that are pointers as a means of highlighting pointers throughout the
+                            program. This is shown in the example below.
+                        </p>
 
+                        <br/>
+                        <img src="/images/blog/pointerArrowExample.png"/>
+                        <br/>
+                        <br/>
+
+                        <p>
+                            The problem here is that there are separate language concepts for local variable
+                            references, global variable references, argument references, etc. All these
+                            have to be changed.
+                        </p>
+
+                        <p>
+                            Enter conditional editors. A conditional editor is almost like an aspect. It
+                            can be applied "around" existing editor, and whether it applies or not is
+                            determined by a condition and the applicable concept (similar to a pointcut in
+                            AO). The figure below shows the definition of the pointer arrow editor.
+                        </p>
+
+                        <br/>
+                        <img src="/images/blog/pointerArrowEditor.png"/>
+                        <br/>
+                        <br/>
+
+
+                        <p>
+                            It applies to all language concepts that are references and hence implement
+                            the <i>IReference</i> interface. It is conditionally applied only if the type of the
+                            reference is a pointer. As the editor itself, it shows the arrow (hiding
+                            behind the <i>custom cell</i> on top of the already existing editor (<i>[next-editor]</i>).
+                        </p>
+
+                        <p>
+                            Using this approach, it is now possible to essentially decorate any editor with
+                            any decoration based on arbitrary conditions.
+                        </p>
+
+
+
+
+
+
+                        <br/>
+                        <br/><hr/>
+                        <h3>Richtext (de.slisson.mps.richtext)</h3>
+
+                        <p>
+                            With this extension you can use a non-structured, multi-line text editing cell in MPS editor.
+                            It also allows you to insert real, structured program nodes into the otherwise unstructured
+                            text, enabling mixed content editing. The details are explained in
+                            <a href="http://voelter.de/data/pub/mpm13.pdf">this paper</a>.
                         </p>
 
 
 
                         <br/>
+                        <br/><hr/>
+                        <h3>RichString (com.mbeddr.mpsutil.richstring)</h3>
+
+                        <p>
+                            This BaseLanguage extension simplifies usage of variables and <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html">Java String.format()</a>
+                            inside BaseLanguage Strings. Just add the language <tt>com.mbeddr.mpsutil.richstring</tt> to your model.
+                        </p>
+                        
+                        <p>
+                        The following example shows referencing a simple variable, embedding an expression inside a string,
+                        and the equivalent of calling <code>String.format()</code>.
+                        <br/><img src="/images/blog/richstring.png"/>
+                        </p>
+
+
+
+                        <br/>
+                        <br/><hr/>
                         <h3>File/Path Picker (com.mbeddr.core.base)</h3>
 
                         <p>
-
+                            This is a language concept that supports picking paths and files from the file system.
+                            The files are picked relative to several different roots (see below). The picker provides
+                            code completion, opening the OS file/dir dialog, verifies that a file is valid and has
+                            methods to return the absolute path for loading the file.
+                            <ul>
+                            <li><b>FileSystemDirPicker:</b> picks an absolute directory</li>
+                            <li><b>MacroFilePicker:</b> picks a file relative to an MPS path variable</li>
+                            <li><b>MacroFolderPicker:</b> picks a dir relative to an MPS path variable</li>
+                            <li><b>SolutionRelativeFilePicker:</b> picks a directory relative to the current solution's root</li>
+                            <li><b>SolutionRelativeDirPicker:</b> picks a file relative to the current solution's root</li>
+                            </ul>
                         </p>
 
 
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>PlantUML Visualizations (com.mbeddr.mpsutil.plantuml)</h3>
 
                         <p>
-                            <a href="https://mbeddr.wordpress.com/2013/02/14/visualizations-reloaded/">See this Blog Post</a>.
+                            This provides an integration of <a href="http://plantuml.com/">PlantUML</a> with MPS.
+                            <a href="https://www.youtube.com/watch?v=QjwXITp6fwg">Watch this video to get an overview.</a>.
+                        </p>
+                        <p>
+                            To use it in your own languages, implement the IVisualizable interface in your language
+                            concept. Each concept can have several visualizations, called categories. The getCategories()
+                            method returns the list (just strings). The getVisualization() method then returns the
+                            actual visualition. It gets the user-requested category as an argument, as well as an empty
+                            VisGraph object. The getVisualization() method then has to fill the VisGraph with the
+                            actual visualiztion. This is done simply by using the add() method to build a native,
+                            textual PlantUML visualization. Check out the existing implementations of the interface
+                            to learn the deails; in particular, there is a helper method on VisGraph that creates
+                            a URL for users to click on in the graph: createUrl(node).
                         </p>
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>Graph Diagrams (com.mbeddr.mpsutil.jung)</h3>
 
+
+
                         <p>
-                            <a href="http://mbeddr.com/2015/03/05/jung.html">See this Blog Post</a>.
+                            As an additional means of displaying relationships between nodes (next
+                            to PlantUML and the tree views) we have integrated the <a
+                                href="http://jung.sourceforge.net/">JUNG framework</a> for graph
+                            display. As a language developer, you can implement an interface
+                            <i>IJGraphProvider</i> and implement a method that creates the graph:
+                        </p>
+
+                        <ul>
+                            <li>Programmable with high-level API
+                            <li>Specify initial layout
+                            <li>Configurable node size, color, line style and color, fill color, shape and label
+                            <li>Configurable edge width, style, color and label
+                            <li>Configurable tooltip text for nodes and edges
+                            <li>Extensibility to plug in your own layouters (such as the one from yWorks)
+                        </ul>
+
+                        <p>
+                            Once you have created a graph, your users have many options to view the
+                            graph in an MPS tool window:
+                        </p>
+
+                        <ul>
+                            <li>Double-click selects node or edge in editor
+                            <li>Zoom and Pan
+                            <li>Tooltips
+                            <li>Selectable Layouts
+                            <li>Selection and highlighting of outgoing and incoming nodes and edges
+                            <li>Filtering based on node and edge type
+                            <li>Filtering along a continuous axis (for example, time)
+                            <li>Incremental, node-based collapsing and expansion
+                        </ul>
+
+                        <br/>
+                        <center>
+                            <a href="/images/blog/jung2.png"><img src="/images/blog/jung2.png" width="450"></a>
+                        </center>
+                        <br/>
+
+                        <p>
+                            The JUNG integration is available as part of mbeddr, but also as part
+                            of the mbeddr.platform, so you can use it for your own languages. Check out
+                            the <i>Chunk</i> node for an example of how to use it.
+                        </p>
+
+                        <p>
+                            <a href="http://youtu.be/-v1X0GhsLJ4">A demo video of the viewer can be found here.</a>
+                        </p>
+
+                        <p>
+                            To use it in your own language, implement the IJGraphProvider interface. Return a
+                            JNGraph from the getGraph() method. Check out the existing implementations, and in
+                            particular the DepGraphHelper (called from Chunk.getGraph()) to learn the details.
+                            In short, a graph is built in two steps: the first step actually adds the nodes
+                            and edges. The second step uses closures to style the graph. Examples can be seen
+                            from DepGraphHelper.
                         </p>
 
 
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>TreeView (com.mbeddr.core.base)</h3>
 
                         <p>
-                            <a href="http://mbeddr.com/2014/03/20/treeview.html">See this Blog Post</a>.
+                            Tree views are a proven way of showing and navigating structure in IDEs. MPS
+                            of course has several of them for various purposes. We have now added a nice
+                            tree view that can be used for various tasks. The screenshot below shows a call
+                            stack for functions.
                         </p>
+
+                        <br/>
+                        <img src="/images/blog/treeview.png"/>
+                        <br/>
+                        <br/>
+
+                        <p>
+                            Selecting a node in the tree automatically selects the corresponding node in the editor.
+                            In addition, tree nodes can contribute user-defined actions that are shown in the
+                            context menu.
+                        </p>
+
+                        <p>
+                            As with visualizations, a node can contribute different categories of tree
+                            views. All of this can be defined without dealing with any Swing code. The code
+                            below shows the implementation of the callgraph based on the interfaces ITreeViewable
+                            and ITreeViewRoot.
+                        </p>
+
+                        <img src="/images/blog/treeviewcode.png"/>
+
 
 
 
 
                         <br/>
-                        <h3>Asssessments (com.mbeddr.core.base)</h3>
+                        <br/><hr/>
+                        <h3>Assessments (com.mbeddr.core.base)</h3>
 
                         <p>
-                            <a href="https://mbeddr.wordpress.com/2013/06/03/assessing-your-program/">See this Blog Post</a>.
+                        MPS, like any other language workbench, supports various forms of constraint checks that
+                        lead to errors or warnings, annotated directly to the element that fails the constraint check.
+                        However, there are some kinds of checks that are different in nature: they may be global
+                        and require expensive algorithms to compute. They may be used to create some kind of
+                        overview, or report, and using error annotations spread all over the code may not be
+                        suitable. You may also want to mark failed constraints as ok and ignore them in the
+                        future. To support these use cases, we have added Assessments to mbeddr.
                         </p>
 
+                        <p>
+                        Here is an example assessment. It highlights all requirements in a model that have no
+                        effort specified. Not having an effort is a problem, and you may want to keep track of
+                        the requirements where you have yet to perform your estimation. The assessment shown below
+                        shows an example result (of course, the results are references and you can navigate to
+                        the offending requirement):
+                        </p>
+
+                        <p>
+                            <center>
+                        <img src="/images/assessment.png" width="350"/>
+                        </center>
+
+                        </p>
+
+                        <p>
+                            Note the colors. Green results are those that are marked as ok, so they are judged by the
+                        user to not be a real problem. Red results are those that have been added during the last
+                        update of the assessment. Black ones have been there from previous updates. Using the
+                        colors, you can keep track of the current state of the assessment, as well as of its changes.
+                        Assessment results are part of the model, so they are persisted and shared. They are
+                        intended to be actively maintained and managed (in contrast to regular error or warning
+                        annotations in the code). You can also set the “must be ok” flat to true, in which case the
+                        Assessment itself gets an error annotation if the results contain non-ok entries.
+                        </p>
+
+                        <p>
+                        The requirements thing above is of course just an example and the assessment facility
+                        is extensible. You have to create two concepts:
+
+                        <ul>
+                            <li>A subconcept of AssessmentQuery, which has a behavior method to run the query and create the list of results</li>
+                            <li>A subconcept of AssessmentResult, which is used to represent each "line" in the assessment result.</li>
+                        </ul>
+
+                        Check out the exisiting subconcepts to learn the details.
+                        <p>
 
 
-
+                        <br/>
+                        <br/><hr/>
+                        <h3>Property Default Values (com.mbeddr.mpsutil.propertydefault)</h3>
+                        
+                        <p>
+                        	MPS does not allow default values for properties; this extension adds them.
+                        </p>
+                        
+                        <p>
+                        	Add the language <tt>com.mbeddr.mpsutil.propertydefault</tt> to the constraints
+                        	aspect of our concept. Due to limitations in MPS, we first need to add a "standard" constraint
+                        	for a property. Then, after selecting the whole constraint and pressing Ctrl-Space, we can select
+                        	the default property value, and assign any expression to it.
+                        
+	                        <br/><img src="/images/blog/propertydefault.png"/>
+	                    </p>
 
 
 
@@ -411,81 +756,268 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <h2>More Sophisticated Extensions</h2>
 
 
-                        <h3>MarginCell/Review (com.mbeddr.mpsutil.margincell)</h3>
+                        <h3>MarginCell/Review (com.mbeddr.mpsutil.margincell, com.mbeddr.mpsutil.review)</h3>
 
                         <p>
+                            Margin cells are editor cells that are shown beyond the right editor margin, a little bit
+                            like comments in Word. In fact, the ReviewNote cell implements exactly Word's comment
+                            facility as an example of the margin cell. Here is a screenshot:
+                        </p>
+
+                        <p>
+                        <center><img src="/images/margincell.png"></center>
+                        </p>
+
+                        <p>
+                        To use the review notes, just include the respective language; intentions are available to attach
+                            review notes to editor cells.
+                        </p>
+
+                        <p>
+                            To put your own cells into the right margin, your cell must implement the IMarginCellContent
+                            interface. The editor of your cell may use the margincell-cell-width and margincell-dashed-line-interval
+                            style attributes to design the width and line style. You also have to have the actual margincell
+                            on the root element of the editor. However, as illustrated by the CommentAnnotationContainer
+                            from the review language, you can use an annotation for this. Hence, margin comments can
+                            essentially be added to every model, without the model's language being aware of it.
                         </p>
 
 
 
-
-
                         <br/>
-                        <h3>PreferenceForm (com.mbeddr.mpsutil.interpreter)</h3>
-
-                        <p>
-
-                        </p>
-
-
-
-                        <br/>
+                        <br/><hr/>
                         <h3>SPreferences (com.mbeddr.mpsutil.spreferences)</h3>
 
                         <p>
+                            This extension allows the definition of preference pages by using MPS models; so in the
+                            preference page you get a normal MPS editor, as exemplified by mbeddr's platform templates
+                            preference page:
+                        </p>
 
+                        <p>
+                            <center>
+                            <img src="/images/prefpage.png">
+                            </center>
+                        </p>
+
+
+                        <p>
+                            Such pages are defined using an instance of PreferencePageDescription (check out the root "Platform Templates" as an example).
+                            This instance must reside in a plugin solution. The data, i.e., the respective MPS model, is stored
+                            as part of the respective project or in MPS globally (this is configurable). It is possible
+                            to access the model that contains the preferences via code:
+                        </p>
+
+                        <p>
+                        <center>
+                            <img src="/images/prefpageAccess.png">
+                        </center>
                         </p>
 
 
 
+                        <br/>
+                        <br/><hr/>
+                        <h3>PreferenceForm (com.mbeddr.mpsutil.preferenceform)</h3>
+
+                        <p>
+							If we needed less sophisticated preferences, mbeddr platform offers the PreferenceForm extension.
+							It allows to define preferences on both application and project scope, and cares for a simple UI
+							and the persistence. For the latter part, it can be seen as an extension to the built-in
+							<tt>jetbrains.mps.lang.plugin.structure.PreferencePage</tt>.
+                        </p>
+                        
+                        <p>
+                        	For using PreferenceForm, create a new PreferenceForm root node inside an MPS plugin.<br/>
+                        	The following field types are available:
+                        	<ul>
+                        		<li>Checkbox</li>
+                        		<li>TextField</li>
+                        		<li>IntegerField</li>
+                        		<li>PassWordField</li>
+                        		<li>PredefinedComboBox (entries are entered as-is)</li>
+                        		<li>DynamicComboBox (entries are queried)</li>
+                        	</ul>
+                        </p>
+                        
+                        <p>
+                        	Example:
+                        	<br/><img src="/images/blog/preferenceForm_config.png"/>
+                        	Resulting preferences:
+                        	<br/><img src="/images/blog/preferenceForm_result.png"/>
+                        </p>
 
 
 
                         <br/>
+                        <br/><hr/>
                         <h3>Interpreter (com.mbeddr.mpsutil.interpreter)</h3>
 
                         <p>
+                            This extension lets you efficiently write interpreters of your languages. An interpreter
+                            is defined as an instance of Interpreter. Check out the concept CInterpreter, which interprets
+                            mbeddr C.
+                        </p>
 
+                        <p>
+                            Each interpreter consists of the following sections:
+
+                            <ul>
+                            <li>Category: a string that identifies what the interpreter does, e.g., execute C</li>
+                            <li>Applicable Languages: the languages whose concepts the interpreter interprets</li>
+                            <li>Type Mappings: maps the subject language types to Java types for execution in the interpreter</li>
+                            <li>Evaluators: the interpreter logic for each of the language concepts. Each evaluator is a three-tuple of
+                              <ul>
+                                <li>The concept, represented by its alias (if any; otherwise the name)</li>
+                                <li>Optional type guards for its child nodes</li>
+                                <li>The Java expression that is executed. The # represents recursive execution of the interpreter.
+                                    You can use an intention to change the expression into a statement list, so you can write more code</li>
+                              </ul>
+
+                            </li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            Interpreters can be composed; check out CExtInterpreter, which specifies that it must run
+                            after the CInterpreter discussed before. The java class CombinedInterpreter can be used
+                            to create composite interpreters from several interpreters. Do a Find Usages on the CombinedInterpreter
+                            to see how this works.
                         </p>
 
 
-
                         <br/>
+                        <br/><hr/>
                         <h3>Math Notations (de.itemis.mps.editor.math)</h3>
 
                         <p>
-
+                            An introduction to the math notation is in <a href="http://voelter.de/data/pub/gemoc2014-voelterLisson-MPSNotations.pdf">this paper</a>.
+                            The image below shows an example of the notation used in C. However, the notational primitives are separate from the language.
                         </p>
+
+                        <p>
+                            <center>
+                            <img src="/images/math.png" width="400">
+                            </center>
+                        </p>
+
+                        <p>
+                            To use the notation with your own language, import the above mentioned language into your
+                            editor definition. A set of math.* editor cells are then available for use with your
+                            concepts in the editor definition. Check out the com.mbeddr.ext.math language for examples
+                            of most available editor cells.
+                        </p>
+
+
+                        <br/>
+                        <br/><hr/>
+                        <h3>Tables (de.slisson.mps.tables)</h3>
+
+                        <p>
+                            An introduction to the table notation is in <a href="http://voelter.de/data/pub/gemoc2014-voelterLisson-MPSNotations.pdf">this paper</a>.
+                            Below are a few screenshots of tables used in various languages. Click to enlarge.
+                        </p>
+
+                        <p>
+                            <center>
+                            <a href="/images/table1.png"><img src="/images/table1.png" width="200"/></a>&nbsp;&nbsp;
+                            <a href="/images/table2.png"><img src="/images/table2.png" width="200"/></a>&nbsp;&nbsp;
+                            <a href="/images/table3.png"><img src="/images/table3.png" width="200"/></a>
+                            </center>
+                        </p>
+
+                        <p>
+                            Similar to the math notation, the table notation defines a new editor cell "table". The
+                            cell is very flexible and can define row-oriented tables (like this <a href="/images/table1.png">reference data cell</a>),
+                            as well as tables where the data is not row-oriented (like the <a href="/images/table2.png">decision table</a>,
+                            or the <a href="/images/table3.png">table notation for state machines</a>). Check out the concepts
+                            DecisionTable and Statemachine (and its table editor).
+                        </p>
+
+                        <p>
+                            The tables notation is relatively sophisticated and requires much more documentation
+                            than what we can provide right now on this page. More will follow later.
+                        </p>
+
+
 
 
 
                         <br/>
-                        <h3>Tables (de.lisson.mps.tables)</h3>
+                        <br/><hr/>
+                        <h3>Diagrams (de.slisson.mps.editor.diagram)</h3>
 
                         <p>
-
+                            If you have downloaded the recent mbeddr master branch, you will
+                            have noticed that, for example, component wiring and state machines can now be edited
+                            graphically. The screenshots below show examples of these two notations.
                         </p>
+
+                        <br/>
+                        <center>
+                            <a href="/images/blog/graphical_simple.png"><img src="/images/blog/graphical_simple.png" width="400"></a>
+                        </center>
+                        <br/>
 
 
 
                         <br/>
-                        <h3>Diagrams (de.lisson.mps.editor.diagram)</h3>
+                        <center>
+                            <a href="/images/blog/graphicalSM.png"><img src="/images/blog/graphicalSM.png" width="400"></a>
+                        </center>
+                        <br/>
+
 
                         <p>
+                            This screenshot shows a few interesting features: you can embed diagrams
+                            anywhere in "text", you can use different shapes (at this point drawn by
+                            custom Java code), you can use various line styles, the framework
+                            supports ports (i.e., connection endpoints on the boxes), inside boxes
+                            you can use arbitrary MPS text (or other) editors, and the system also
+                            supports edge and endpoint labels. Port labels are also supported, but
+                            they are only shown if the mouse is "in the vicinity" of the port to not
+                            clutter the diagram. Below is a second screenshot of a bigger diagram:
+                        </p>
 
+                        <br/>
+                        <img src="/images/blog/graphical_sm.png"/>
+                        <br/>
+                        <br/>
+
+                        <p>
+                            This one illustrates that the approach scales to reasonable sizes, shows
+                            that zooming is supported and  also demonstrates the auto layouting
+                            capability. The graphical notation also integrates with things such as
+                            tooltips. Below is another example diagram that shows a different language:
+                        </p>
+
+                        <br/>
+                        <img src="/images/blog/graphical_ex3.png"/>
+                        <br/>
+                        <br/>
+
+                        <p>
+                            The definition of a graphical editor is based on the same "cell" abstraction
+                            used in other MPS editors: the language for defining editors contains additional
+                            cells that are then rendered as a diagram (diagram, diagram.box, diagram.edge). Similar to tables, these abstractions
+                            for defining graphical editors rely on queries to make sure that the structure
+                            of the graphical editor does not have to directly correspond to the structure
+                            of the AST (for example, in terms of ownership). The language also supports
+                            hierarchical diagrams, for example, in state machines.
+                        </p>
+
+                        <p>
+                            To see example code, check out InstanceConfiguration and Statemachine.
                         </p>
 
 
+                        <p>
+                            The diagram notation is relatively sophisticated and requires much more documentation
+                            than what we can provide right now on this page. More will follow later.
+                        </p>
 
 
-
-
-
-
-
-
-
-
+                        <br/>
 
 
 
