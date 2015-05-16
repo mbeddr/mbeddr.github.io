@@ -8,7 +8,7 @@ It was already possible to implement such functions in mbeddr in a way that it w
 
 ### The mbeddr way
 
-In order to make such an implementation explicit we have added an extension to C. The natural way to this is by adding an annotation to a function. By simply pressing `alt + enter` on a function signature and select the “Add Implements External Function” item form the intention menu the editor will allow to specify the function declaration to implement. Afterwards the name, parameters and return type will be synced with the referenced function. The generator will take of generating the appropriate C code so the linker will pick the implementation done in mbeddr.
+In order to make such an implementation explicit we have added an extension to C. The natural way to this is by adding an annotation to a function. First of all the header file has to be available as a EternalModule in mbeddr. This can be either be done by typing the function signature manually or by the importer that will be released in the near future. After that by pressing `alt + enter` on a function signature and selecting the “Add Implements External Function” item form the intention menu the editor will allow to specify the function declaration to implement. Then the name, parameters and return type will be synced with the referenced function. The generator will take of generating the appropriate C code so the linker will pick the implementation done in mbeddr.
 
 This feature is included in the new 1.0 RC1 release.
 
