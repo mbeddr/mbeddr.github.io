@@ -784,20 +784,14 @@ flexible notations and language modularity.
           mbeddr does not come with its own compiler. While this could be considered &quot;cheating&quot;, it is actually a good idea because <code class="code">gcc</code> and other compilers contain person-decades of optimizations. Replicating those is hopeless. Hence, mbeddr relies on existing backends.
         </p>
         <p class="body">
-          For compiling, building and debugging mbeddr code, mbeddr relies on the established GNU C tool chain. In particular, <code class="code">gcc</code> is used to compile the generated C code, <code class="code">make</code> is used to orchestrate the compile and link process, and <code class="code">gdb</code> is used by the mbeddr debugger. Note that all of these tools are not visible to the mbeddr user. But they have to be available on your system (see <span><strong class="todo">[ToDo: 
-          
-          ]</strong></span> for details). 
+          For compiling, building and debugging mbeddr code, mbeddr relies on the established GNU C tool chain. In particular, <code class="code">gcc</code> is used to compile the generated C code, <code class="code">make</code> is used to orchestrate the compile and link process, and <code class="code">gdb</code> is used by the mbeddr debugger. Note that all of these tools are not visible to the mbeddr user. But they have to be available on your system (see  <span class="sectRef">Section <a href="#sid6403595147461065871">Gcc, Make and Gdb</a></span> for details). 
         </p>
         <p class="body">Other compilers, make tools and debuggers can be plugged into mbeddr (we have just integrated the  Microchip PIC 16 for a customer). How this is done is beyond the scope of this user guide.</p>
       </div>
       <div>
         <h2 id="sid1481709176727416605" class="section">1.4 CBMC</h2>
         <p class="body">
-          CBMC is used for verification. It is discussed in detail in <span><strong class="todo">[ToDo: 
-          
-          ]</strong></span>. To summarize, CBMC is a bounded model checker for C programs. This means that it can essentially simulate the execution of a C program regarding all its possible execution paths. CBMC is open source software and can be downloaded from <a href="http://www.cprover.org/cbmc/" class="url">http://www.cprover.org/cbmc/</a>. It has to be installed separately, as described in the Installation section <span><strong class="todo">[ToDo: 
-          
-          ]</strong></span>. For details on how mbeddr uses CBMC, please take a look at the following papers, as well as at <span><strong class="todo">[ToDo: 
+          CBMC is used for verification. It is discussed in detail in <span class="sectRef">Section <a href="#sid3861573051957205464">Formal Verification with CBMC</a></span>. To summarize, CBMC is a bounded model checker for C programs. This means that it can essentially simulate the execution of a C program regarding all its possible execution paths. CBMC is open source software and can be downloaded from <a href="http://www.cprover.org/cbmc/" class="url">http://www.cprover.org/cbmc/</a>. It has to be installed separately, as described in the Installation section <span class="sectRef">Section <a href="#sid2564556814935137124">Verification Tools</a></span>. For details on how mbeddr uses CBMC, please take a look at the following papers, as well as at <span><strong class="todo">[ToDo: 
           section
           ]</strong></span>:
         </p>
@@ -815,9 +809,7 @@ flexible notations and language modularity.
       <div>
         <h2 id="sid1481709176727855915" class="section">1.5 PlantUML and Graphviz</h2>
         <p class="body">
-          PlantUML (<a href="http://www.plantuml.com/" class="url">http://www.plantuml.com/</a>) is an open source tool to generate UML diagrams from relatively simple textual specifications. We use it in mbeddr to render read-only diagrams of program structures in a separate view (these are different from graphical editors). Internally, PlantUML relies on Graphviz (<a href="http://www.graphviz.org/" class="url">http://www.graphviz.org/</a>) for layouting the diagrams. As a user, you will not interact with graphviz directly, but you have to install it manually (see <span><strong class="todo">[ToDo: 
-          
-          ]</strong></span>). PlantUML itself is packaged with mbeddr and does not have to be installed manually.
+          PlantUML (<a href="http://www.plantuml.com/" class="url">http://www.plantuml.com/</a>) is an open source tool to generate UML diagrams from relatively simple textual specifications. We use it in mbeddr to render read-only diagrams of program structures in a separate view (these are different from graphical editors). Internally, PlantUML relies on Graphviz (<a href="http://www.graphviz.org/" class="url">http://www.graphviz.org/</a>) for layouting the diagrams. As a user, you will not interact with graphviz directly, but you have to install it manually (see <span class="sectRef">Section <a href="#sid2564556814933926657">Graphviz</a></span>). PlantUML itself is packaged with mbeddr and does not have to be installed manually.
         </p>
       </div>
       <div>
@@ -1134,9 +1126,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             The Logical View contains the project structure. It is the primary means for navigating around mbeddr (and MPS in general). We describe the project structure separately below (<span class="sectRef">Section <a href="#sid1481709176728451319">Project Structure</a></span>). The Project Explorer is an example of a Tool (aka View in Eclipse). 
           </p>
           <p class="body">
-            <b>Editor</b>&nbsp;&nbsp;The main part of the MPS window is made up of the editor pane. The editor pane contains any number of editors, each with its own Tab. Each editor edits a so-called root (see <span><strong class="todo">[ToDo: 
-            
-            ]</strong></span>). It is also possible to split the editor pane into several editors (arranged vertically and horizontally) through the <span class="menuClick"><span><span class="menuItem">Window</span></span></span> menu.
+            <b>Editor</b>&nbsp;&nbsp;The main part of the MPS window is made up of the editor pane. The editor pane contains any number of editors, each with its own Tab. Each editor edits a so-called root (see <span class="sectRef">Section <a href="#sid1481709176729756665">Nodes, Roots and Concepts</a></span>). It is also possible to split the editor pane into several editors (arranged vertically and horizontally) through the <span class="menuClick"><span><span class="menuItem">Window</span></span></span> menu.
           </p>
           <p class="body">
             <b>Logical Inspector</b>&nbsp;&nbsp;The Inspector is associated with the editor. For each selected node in the currently active editor, the Inspector provides additional (read/write) information. The particular contents of the inspector are determined by the language definition (of the concept that defines the selected node). Sometimes it shows nothing useful, sometimes it just shows additional information (such as the statically evaluated value of an expression), and sometimes it contains additional stuff that can be edited (and is hence essential for the editing experience). We suggest to always keep it open.
@@ -1285,9 +1275,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             </div>
           </div>
           <p class="body">
-            <b>Models</b>&nbsp;&nbsp;MPS is fundamentally a file-based system. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see <span><strong class="todo">[ToDo: 
-            
-            ]</strong></span>). These files are called <em class="emph">models</em> in MPS. Each model contains a number of roots (which then have arbitrary substructure). In <a href="#sid1481709176729817605" class="imgRef">Figure
+            <b>Models</b>&nbsp;&nbsp;MPS is fundamentally a file-based system. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see <span class="sectRef">Section <a href="#sid1481709176729755835">Version Control</a></span>). These files are called <em class="emph">models</em> in MPS. Each model contains a number of roots (which then have arbitrary substructure). In <a href="#sid1481709176729817605" class="imgRef">Figure
             3.2.2-A</a>, the purple diamonds with the little M inside are models. Models als determine which languages are used for the programs/roots/nodes inside the model. Models can import each other in order to be able to establish cross-references. These dependencies are established in the <code class="code">Model Properties</code> dialog (Dependencies tab).
           </p>
           <p class="body">
@@ -1639,9 +1627,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
         <div>
           <h3 id="sid1418902825862766330" class="section">3.6.1 Interop with Text</h3>
           <p class="body">
-            There are various ways of interoperating with textual worlds. One of them is the import of textual, legacy C source. This is covered in <span><strong class="todo">[ToDo: 
-            
-            ]</strong></span>. In this section we discuss a few additional ways.
+            There are various ways of interoperating with textual worlds. One of them is the import of textual, legacy C source. This is covered in <span class="sectRef">Section <a href="#sid3861573051956758831">Accessing Libraries</a></span>. In this section we discuss a few additional ways.
           </p>
           <p class="body">
             <b>Node Info and Node URL</b>&nbsp;&nbsp;It is often useful to be able to be able to point somebody to a specific node. For example, one may want to send an email to a coworker pointing out a specific node, or an issue in an issue tracker may want to refer to a program node in MPS. For this purpose, it is possible to copy the Node Info and the Node URL to the clipboard (and then paste it as text somewhere else). 
