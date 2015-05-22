@@ -753,8 +753,7 @@ flexible notations and language modularity.
         <div>
           <h3 id="sid1481709176726611755" class="section">1.2.1 mbeddr Architecture</h3>
           <p class="body">
-            mbeddr is structured into 5 layers and addresses three different concerns (see <a href="#sid1481709176726612629" class="imgRef">Figure
-            1.2.1-A</a>). The platform layer consists of the JetBrains MPS language workbench, which enables the overall approach. The core layer includes the base languages used in mbeddr; these are different for each of the three concerns. The default extensions layer consits of a set of predefined extensions of the core languages that can be used out-of-the-box to develop software. The user extension layer is empty, it is intended to be filled by users. The backend layer consists of existing tools compilation and analysis tools which mbeddr uses.
+            mbeddr is structured into 5 layers and addresses three different concerns (see <a href="#sid1481709176726612629" class="imgRef">Fig. 1.2.1-A</a>). The platform layer consists of the JetBrains MPS language workbench, which enables the overall approach. The core layer includes the base languages used in mbeddr; these are different for each of the three concerns. The default extensions layer consits of a set of predefined extensions of the core languages that can be used out-of-the-box to develop software. The user extension layer is empty, it is intended to be filled by users. The backend layer consists of existing tools compilation and analysis tools which mbeddr uses.
           </p>
           <div class="imagecontainer" id="sid1481709176726612629">
             <div class="image">
@@ -981,8 +980,7 @@ You can now execute the <code class="code">buildLanguages</code> script from wit
                 We now have to make future application projects aware of the <code class="code">mbeddr.core</code> languages in your local repository. Start MPS and go to the <span class="menuClick"><span><span class="menuItem">File</span>&rarr;</span><span><span class="menuItem">Settings</span></span></span> (on the Mac it is under <span class="menuClick"><span><span class="menuItem">MPS</span>&rarr;</span><span><span class="menuItem">Preferences</span></span></span>)  and select the <code class="code">Path Variables</code> in the <code class="code">IDE Settings</code>. Create a path variable named <code class="code">mbeddr.github.core.home</code> and point to the root directory of your mbeddr git clone (e.g. <code class="code">/Users/peter/Documents/mbeddr.core</code>).
               </li>
               <li>
-                Finally, go to the <code class="code">Global Libraries</code> section in the IDE settings (see <a href="#sid2564556814935136498" class="imgRef">Figure
-                2.4.3.3-A</a>). Create a library named <code class="code">mbeddr.core</code> that points to the <code class="code">code</code> directory of the github repository directory (<code class="code">/Users/peter/Documents/mbeddr.core/code</code>). This library must point to the <code class="code">code</code> directory of the checkout so that all languages are below it, including <em class="emph">core</em> and <em class="emph">mpsutil</em>. Because we had earlier defined the path variable, it will use the path variable for defining the library. Notice that this is a global setting, which means it has to be performed only once before your first application project. 
+                Finally, go to the <code class="code">Global Libraries</code> section in the IDE settings (see <a href="#sid2564556814935136498" class="imgRef">Fig. 2.4.3.3-A</a>). Create a library named <code class="code">mbeddr.core</code> that points to the <code class="code">code</code> directory of the github repository directory (<code class="code">/Users/peter/Documents/mbeddr.core/code</code>). This library must point to the <code class="code">code</code> directory of the checkout so that all languages are below it, including <em class="emph">core</em> and <em class="emph">mpsutil</em>. Because we had earlier defined the path variable, it will use the path variable for defining the library. Notice that this is a global setting, which means it has to be performed only once before your first application project. 
               </li>
             </ol>
             <div class="imagecontainer" id="sid2564556814935136498">
@@ -1099,8 +1097,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
         <div>
           <h3 id="sid1481709176728447354" class="section">3.1.1 Overall Structure</h3>
           <p class="body">
-            Fundamentally, MPS looks and works like any modern IDE. <a href="#sid1481709176728444850" class="imgRef">Figure
-            3.1.1-A</a> shows an overview. We describe the various marked up parts below.
+            Fundamentally, MPS looks and works like any modern IDE. <a href="#sid1481709176728444850" class="imgRef">Fig. 3.1.1-A</a> shows an overview. We describe the various marked up parts below.
           </p>
           <div class="imagecontainer" id="sid1481709176728444850">
             <div class="image">
@@ -1153,8 +1150,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             <b>Changes</b>&nbsp;&nbsp;The Changes view shows the files that have been changed since the last commit. This is part of MPS&apos; version control support and is discussed in more detail in <span class="sectRef">Section <a href="#sid1481709176729755835">Version Control</a></span>.
           </p>
           <p class="body">
-            <b>Model Checker</b>&nbsp;&nbsp;The Model Checker shows the result of running <span class="menuClick"><span><span class="menuItem">Check Model</span></span></span> on a project, solution, language or model. It shows warnings and errors. Double-clicking on an element opens this element in the editor. There are various options for grouping and filtering the contents using the buttons on the left. You should play around with these options. <a href="#sid1481709176729756382" class="imgRef">Figure
-            3.1.2-A</a> shows an example. Note that errors that result from a transformation (code generation) are not shown here. They are shown in the Messages view.
+            <b>Model Checker</b>&nbsp;&nbsp;The Model Checker shows the result of running <span class="menuClick"><span><span class="menuItem">Check Model</span></span></span> on a project, solution, language or model. It shows warnings and errors. Double-clicking on an element opens this element in the editor. There are various options for grouping and filtering the contents using the buttons on the left. You should play around with these options. <a href="#sid1481709176729756382" class="imgRef">Fig. 3.1.2-A</a> shows an example. Note that errors that result from a transformation (code generation) are not shown here. They are shown in the Messages view.
           </p>
           <div class="imagecontainer" id="sid1481709176729756382">
             <div class="image">
@@ -1171,8 +1167,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             <b>Messages</b>&nbsp;&nbsp;This view shows (mostly) messages, errors and warning resulting from the build process. These include problems in the transformation as well as problems with the subsequent compilation and link process. If an error shows up here during build, it is likely that there has already been a problem with the input models. In this case, please run the Model Checker on the respective parts of the project and fix all errors reported there before attempting to generate.
           </p>
           <p class="body">
-            <b>Visualizations</b>&nbsp;&nbsp;A visualization is a read-only diagram of some program structures. It is layouted automatically. Users can double-click on nodes and labels to jump back into the code. <a href="#sid1481709176729810904" class="imgRef">Figure
-            3.1.2-B</a> shows an example. To open a visualization, users can press <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Alt</span>+</span><span><span class="key">V</span></span></span> or use the context menu to open a visualization if the selected node defines any. Note that the view also supports changing between multiple visualizations for the same node (if the node defines several of them) through the combobox. The buttons support navigating through the recent diagrams, zooming, and to export the diagram as a PNG file.
+            <b>Visualizations</b>&nbsp;&nbsp;A visualization is a read-only diagram of some program structures. It is layouted automatically. Users can double-click on nodes and labels to jump back into the code. <a href="#sid1481709176729810904" class="imgRef">Fig. 3.1.2-B</a> shows an example. To open a visualization, users can press <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Alt</span>+</span><span><span class="key">V</span></span></span> or use the context menu to open a visualization if the selected node defines any. Note that the view also supports changing between multiple visualizations for the same node (if the node defines several of them) through the combobox. The buttons support navigating through the recent diagrams, zooming, and to export the diagram as a PNG file.
           </p>
           <div class="imagecontainer" id="sid1481709176729810904">
             <div class="image">
@@ -1206,8 +1201,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             <b>Version Control </b>&nbsp;&nbsp;This tool shows the version control console, essentially a stream of all version control operations. Typically not needed.
           </p>
           <p class="body">
-            <b>Explorer</b>&nbsp;&nbsp;The explorer shows the low level tree structure of a node. It is more like a debugging tool and is not used regularly. It can be opened for a node by selecting the node and choosing <span class="menuClick"><span><span class="menuItem">Show Node in Explorer</span></span></span> from the context menu. <a href="#sid1481709176728451511" class="imgRef">Figure
-            3.1.2-D</a> shows an example.
+            <b>Explorer</b>&nbsp;&nbsp;The explorer shows the low level tree structure of a node. It is more like a debugging tool and is not used regularly. It can be opened for a node by selecting the node and choosing <span class="menuClick"><span><span class="menuItem">Show Node in Explorer</span></span></span> from the context menu. <a href="#sid1481709176728451511" class="imgRef">Fig. 3.1.2-D</a> shows an example.
           </p>
           <div class="imagecontainer" id="sid1481709176728451511">
             <div class="image">
@@ -1227,9 +1221,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
         <div>
           <h3 id="sid1481709176729756665" class="section">3.2.1 Nodes, Roots and Concepts</h3>
           <p class="body">
-            MPS programs are trees of nodes (this is the structure you can see in the Node Explorer). Each node can have several children, resulting in the tree structure. However, there can also be cross-references between nodes in a program tree. So this makes MPS programs a graph, but one with a primary containment hierarchy. And in fact, a complete MPS program consists of several such trees, we call each of theses trees a Root. Importantly, each Root gets its own editor tab in MPS. References can be across Root boundaries. <a href="#sid1481709176729816571" class="imgRef">Figure
-            3.2.1-A</a> shows the structure. In <a href="#sid1481709176729817605" class="imgRef">Figure
-            3.2.2-A</a>, all the implementation modules (blue I icon) such as <code class="code">Components</code> or <code class="code">StateMachines</code> are roots.
+            MPS programs are trees of nodes (this is the structure you can see in the Node Explorer). Each node can have several children, resulting in the tree structure. However, there can also be cross-references between nodes in a program tree. So this makes MPS programs a graph, but one with a primary containment hierarchy. And in fact, a complete MPS program consists of several such trees, we call each of theses trees a Root. Importantly, each Root gets its own editor tab in MPS. References can be across Root boundaries. <a href="#sid1481709176729816571" class="imgRef">Fig. 3.2.1-A</a> shows the structure. In <a href="#sid1481709176729817605" class="imgRef">Fig. 3.2.2-A</a>, all the implementation modules (blue I icon) such as <code class="code">Components</code> or <code class="code">StateMachines</code> are roots.
           </p>
           <div class="imagecontainer" id="sid1481709176729816571">
             <div class="image">
@@ -1243,8 +1235,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             </div>
           </div>
           <p class="body">
-            Each node is an instance of a language concept. The language concept defines all properties of its instance nodes, including its visual representation (notation, concrete syntax). Concepts are created as part of a language. <a href="#sid1481709176729815548" class="imgRef">Figure
-            3.2.1-B</a> shows this relationship. 
+            Each node is an instance of a language concept. The language concept defines all properties of its instance nodes, including its visual representation (notation, concrete syntax). Concepts are created as part of a language. <a href="#sid1481709176729815548" class="imgRef">Fig. 3.2.1-B</a> shows this relationship. 
           </p>
           <div class="imagecontainer" id="sid1481709176729815548">
             <div class="image">
@@ -1275,15 +1266,13 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             </div>
           </div>
           <p class="body">
-            <b>Models</b>&nbsp;&nbsp;MPS is fundamentally a file-based system. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see <span class="sectRef">Section <a href="#sid1481709176729755835">Version Control</a></span>). These files are called <em class="emph">models</em> in MPS. Each model contains a number of roots (which then have arbitrary substructure). In <a href="#sid1481709176729817605" class="imgRef">Figure
-            3.2.2-A</a>, the purple diamonds with the little M inside are models. Models als determine which languages are used for the programs/roots/nodes inside the model. Models can import each other in order to be able to establish cross-references. These dependencies are established in the <code class="code">Model Properties</code> dialog (Dependencies tab).
+            <b>Models</b>&nbsp;&nbsp;MPS is fundamentally a file-based system. The roots discussed above are stored in XML files (these can then be managed with existing version control systems, see <span class="sectRef">Section <a href="#sid1481709176729755835">Version Control</a></span>). These files are called <em class="emph">models</em> in MPS. Each model contains a number of roots (which then have arbitrary substructure). In <a href="#sid1481709176729817605" class="imgRef">Fig. 3.2.2-A</a>, the purple diamonds with the little M inside are models. Models als determine which languages are used for the programs/roots/nodes inside the model. Models can import each other in order to be able to establish cross-references. These dependencies are established in the <code class="code">Model Properties</code> dialog (Dependencies tab).
           </p>
           <p class="body">
             Models are important because they represent the only real &quot;physical structure&quot; in MPS. Hence they are the granularity relevant to version control (since they are files, it is models that are seen by file-based tools such as git). Also, the MPS transformation and generation engine always processes complete models. So in order to keep (partial) generation times low, you should split your overall system into a reasonable number of (relatively small-sized) models. See <span class="sectRef">Chapter <a href="#sid2101724341003970568">Structuring Complex Projects</a></span> for details.
           </p>
           <p class="body">
-            <b>Solutions</b>&nbsp;&nbsp;From a user&apos;s perspective, a solution is where application code lives (this is in contrast to Languges, which is where language definitions reside). Technically, a solution is a way to group models. A solution can contain any number of models and each model resides in exactly one solution. In <a href="#sid1481709176729817605" class="imgRef">Figure
-            3.2.2-A</a>, the orange <code class="code">S</code> is a solution. Solutions can also have dependencies onto other solutions.
+            <b>Solutions</b>&nbsp;&nbsp;From a user&apos;s perspective, a solution is where application code lives (this is in contrast to Languges, which is where language definitions reside). Technically, a solution is a way to group models. A solution can contain any number of models and each model resides in exactly one solution. In <a href="#sid1481709176729817605" class="imgRef">Fig. 3.2.2-A</a>, the orange <code class="code">S</code> is a solution. Solutions can also have dependencies onto other solutions.
           </p>
           <p class="body">
             <b>Project</b>&nbsp;&nbsp;A project contains several solutions. Any particular solution can be used in several projects, so projects do not own the solutions (in contrast to models, which are owned by a solution). A project is really more like a workspace in Eclipse: it&apos;s a collection of solutions which you want to work on for a particular task. The project defines various settings, preferences and view options.
@@ -1292,8 +1281,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
         <div>
           <h3 id="sid1481709176729814334" class="section">3.2.3 Using Languages and Devkits</h3>
           <p class="body">
-            To be able to write code in a model, that model must specify which languages should be used to write the code. As shown in <a href="#sid1481709176729819620" class="imgRef">Figure
-            3.2.3-A</a>, these languages are specified in the <code class="code">Used Languages</code> tab of the model&apos;s properties.
+            To be able to write code in a model, that model must specify which languages should be used to write the code. As shown in <a href="#sid1481709176729819620" class="imgRef">Fig. 3.2.3-A</a>, these languages are specified in the <code class="code">Used Languages</code> tab of the model&apos;s properties.
           </p>
           <div class="imagecontainer" id="sid1481709176729819620">
             <div class="image">
@@ -1334,8 +1322,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
           <h3 id="sid2101724341004008376" class="section">3.3.2 Projection Modes</h3>
           <p class="body">Since MPS is a projectional editor, the same program can be shown with different notations. Users can switch the notation at any time to match the task they are working on. The specific available notations are discussed throughout this user guide when we discuss the respective languages; examples include a tabular notation for state machines, a textual vs. graphical notation for wiring components, as well as the regular and the presentation mode in the kinds of documents you may be reading right now.</p>
           <p class="body">
-            All notations can be switched from one common menu location: <span class="menuClick"><span><span class="menuItem">Code</span>&rarr;</span><span><span class="menuItem">Projection Modes</span>&rarr;</span><span><span class="menuItem">...</span></span></span>. See also <a href="#sid2101724341004022975" class="imgRef">Figure
-            3.3.2-A</a>. The menu shows only those options that are valid for the languages used in the current model, and the selection is specific for any given editor/root. The specific entries are discussed in the context of their respective languages. 
+            All notations can be switched from one common menu location: <span class="menuClick"><span><span class="menuItem">Code</span>&rarr;</span><span><span class="menuItem">Projection Modes</span>&rarr;</span><span><span class="menuItem">...</span></span></span>. See also <a href="#sid2101724341004022975" class="imgRef">Fig. 3.3.2-A</a>. The menu shows only those options that are valid for the languages used in the current model, and the selection is specific for any given editor/root. The specific entries are discussed in the context of their respective languages. 
           </p>
           <div class="imagecontainer" id="sid2101724341004022975">
             <div class="image">
@@ -1456,8 +1443,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
         <div>
           <h3 id="sid2101724341004068759" class="section">3.5.3 Setting Up Version Control for a Project</h3>
           <p class="body">
-            To be able to use version control from within MPS, MPS must be made aware of the version control system and its meta data. MPS uses so called VCS roots. A <em class="emph">VCS root</em> is simply a root directory in which git (or other version control systems) store their meta data. You can configure the roots via the Preferences (see <a href="#sid6952748365713388050" class="imgRef">Figure
-            3.5.3-A</a>). Note that MPS also detects directories that could/should be roots and brings up a popup.
+            To be able to use version control from within MPS, MPS must be made aware of the version control system and its meta data. MPS uses so called VCS roots. A <em class="emph">VCS root</em> is simply a root directory in which git (or other version control systems) store their meta data. You can configure the roots via the Preferences (see <a href="#sid6952748365713388050" class="imgRef">Fig. 3.5.3-A</a>). Note that MPS also detects directories that could/should be roots and brings up a popup.
           </p>
           <div class="imagecontainer" id="sid6952748365713388050">
             <div class="image">
@@ -1474,9 +1460,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
         <div>
           <h3 id="sid2101724341004068813" class="section">3.5.4 Tools and Views</h3>
           <p class="body">
-            <b>Change Markup in Editor</b>&nbsp;&nbsp;As you edit code in the regular MPS editor, MPS keeps track of changes. In particular, it shows changes in the left gutter. <a href="#sid6952748365714254507" class="imgRef">Figure
-            3.5.4-A</a> shows how new nodes are highlighted. MPS also shows changes to existing nodes as shown in <a href="#sid6952748365714254535" class="imgRef">Figure
-            3.5.4-B</a>. Clicking on the respective color bar in the gutter lets you revert that change, among other things. It also lets you show a detailed diff; we discuss the diff in the next paragraph.
+            <b>Change Markup in Editor</b>&nbsp;&nbsp;As you edit code in the regular MPS editor, MPS keeps track of changes. In particular, it shows changes in the left gutter. <a href="#sid6952748365714254507" class="imgRef">Fig. 3.5.4-A</a> shows how new nodes are highlighted. MPS also shows changes to existing nodes as shown in <a href="#sid6952748365714254535" class="imgRef">Fig. 3.5.4-B</a>. Clicking on the respective color bar in the gutter lets you revert that change, among other things. It also lets you show a detailed diff; we discuss the diff in the next paragraph.
           </p>
           <div class="imagecontainer" id="sid6952748365714254507">
             <div class="image">
@@ -1501,9 +1485,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
             </div>
           </div>
           <p class="body">
-            <b>Changes View</b>&nbsp;&nbsp;The Changes view keeps track of which files (i.e., models) have changed on you system compared to the latest in the version control system. <a href="#sid6952748365714814903" class="imgRef">Figure
-            3.5.4-C</a> shows an example. The <code class="code">defaultExtensions</code> model is the one that contains the root with the two changes shown above. You can see a diff by selecting <span class="menuClick"><span><span class="menuItem">Show Diff</span></span></span> from the context menu of the respective model in the changes view. The view which then opens (<a href="#sid6952748365714866969" class="imgRef">Figure
-            3.5.4-D</a>) lets you choose from the changed roots (if several have changed) and then see a diff in the usual side-by-side style. Note that this works for arbitrary notations! You can also undo the changes with the usual operations.
+            <b>Changes View</b>&nbsp;&nbsp;The Changes view keeps track of which files (i.e., models) have changed on you system compared to the latest in the version control system. <a href="#sid6952748365714814903" class="imgRef">Fig. 3.5.4-C</a> shows an example. The <code class="code">defaultExtensions</code> model is the one that contains the root with the two changes shown above. You can see a diff by selecting <span class="menuClick"><span><span class="menuItem">Show Diff</span></span></span> from the context menu of the respective model in the changes view. The view which then opens (<a href="#sid6952748365714866969" class="imgRef">Fig. 3.5.4-D</a>) lets you choose from the changed roots (if several have changed) and then see a diff in the usual side-by-side style. Note that this works for arbitrary notations! You can also undo the changes with the usual operations.
           </p>
           <div class="imagecontainer" id="sid6952748365714814903">
             <div class="image">
@@ -1539,8 +1521,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
           <div>
             <h4 id="sid2101724341004032088" class="section">3.5.5.1 Update/Pull</h4>
             <p class="body">
-              Updating, or pulling in git-speak, refers to getting the newest contents from the version control system. From within MPS you can do this via  the menu entry <span class="menuClick"><span><span class="menuItem">VCS</span>&rarr;</span><span><span class="menuItem">Update Project</span></span></span>. After the update, the Version Control view shows the set of changed files (<a href="#sid6952748365715126170" class="imgRef">Figure
-              3.5.5.1-A</a>). You can use the context menu to show a diff of the changes that came in. 
+              Updating, or pulling in git-speak, refers to getting the newest contents from the version control system. From within MPS you can do this via  the menu entry <span class="menuClick"><span><span class="menuItem">VCS</span>&rarr;</span><span><span class="menuItem">Update Project</span></span></span>. After the update, the Version Control view shows the set of changed files (<a href="#sid6952748365715126170" class="imgRef">Fig. 3.5.5.1-A</a>). You can use the context menu to show a diff of the changes that came in. 
             </p>
             <div class="imagecontainer" id="sid6952748365715126170">
               <div class="image">
@@ -1557,8 +1538,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
           <div>
             <h4 id="sid2101724341004032093" class="section">3.5.5.2 Commit/Push</h4>
             <p class="body">
-              You can use <span class="menuClick"><span><span class="menuItem">VCS</span>&rarr;</span><span><span class="menuItem">Commit Changes</span></span></span> or <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">K</span></span></span> to bring up the commit dialog. This dialog, shown in <a href="#sid6952748365715455374" class="imgRef">Figure
-              3.5.5.2-A</a>, lets you select the models you want to commit and specify a commit message. By using the context menu on models, you can also revert some of the changes. By pressing the little down-arrow on the <span class="menuClick"><span><span class="menuItem">Commit</span></span></span> button, you can also directly push from within MPS. You can also use the context menu to show the diff, i.e. the changes that are about to be committed.
+              You can use <span class="menuClick"><span><span class="menuItem">VCS</span>&rarr;</span><span><span class="menuItem">Commit Changes</span></span></span> or <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">K</span></span></span> to bring up the commit dialog. This dialog, shown in <a href="#sid6952748365715455374" class="imgRef">Fig. 3.5.5.2-A</a>, lets you select the models you want to commit and specify a commit message. By using the context menu on models, you can also revert some of the changes. By pressing the little down-arrow on the <span class="menuClick"><span><span class="menuItem">Commit</span></span></span> button, you can also directly push from within MPS. You can also use the context menu to show the diff, i.e. the changes that are about to be committed.
             </p>
             <div class="imagecontainer" id="sid6952748365715455374">
               <div class="image">
@@ -1575,8 +1555,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
           <div>
             <h4 id="sid2101724341004032097" class="section">3.5.5.3 Conflicts/Merging</h4>
             <p class="body">
-              Conflicts happen if the same node(s) are changed independently by different parties. It can happen during an update/pull (if somebody else has changed the same nodes independently) or when merging a branch (in the case where the two branches have changes to the same model). In both cases, the Version Control view, when showing the incoming changes, will mark conflicting files as red, as shown in <a href="#sid6952748365716245147" class="imgRef">Figure
-              3.5.5.3-A</a>. 
+              Conflicts happen if the same node(s) are changed independently by different parties. It can happen during an update/pull (if somebody else has changed the same nodes independently) or when merging a branch (in the case where the two branches have changes to the same model). In both cases, the Version Control view, when showing the incoming changes, will mark conflicting files as red, as shown in <a href="#sid6952748365716245147" class="imgRef">Fig. 3.5.5.3-A</a>. 
             </p>
             <div class="imagecontainer" id="sid6952748365716245147">
               <div class="image">
@@ -1590,8 +1569,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
               </div>
             </div>
             <p class="body">
-              You can then select <span class="menuClick"><span><span class="menuItem">Git</span>&rarr;</span><span><span class="menuItem">Merge Conflicts</span></span></span> to open the Merge overview (<a href="#sid6952748365716256156" class="imgRef">Figure
-              3.5.5.3-B</a>). It shows the list of conflicing files, and for each of them you can select whether you want to accept your local changes (overwriting what comes in), accept the incoming changes (discarding your own changes) or merge manually.
+              You can then select <span class="menuClick"><span><span class="menuItem">Git</span>&rarr;</span><span><span class="menuItem">Merge Conflicts</span></span></span> to open the Merge overview (<a href="#sid6952748365716256156" class="imgRef">Fig. 3.5.5.3-B</a>). It shows the list of conflicing files, and for each of them you can select whether you want to accept your local changes (overwriting what comes in), accept the incoming changes (discarding your own changes) or merge manually.
             </p>
             <div class="imagecontainer" id="sid6952748365716256156">
               <div class="image">
@@ -1605,8 +1583,7 @@ msys-coreutils (v 5.97-3)</td><td><a href="http://http://www.mingw.org/" class="
               </div>
             </div>
             <p class="body">
-              In case you select <span class="menuClick"><span><span class="menuItem">Merge</span></span></span>, you will get a three-way merge dialog as shown in <a href="#sid6952748365716257562" class="imgRef">Figure
-              3.5.5.3-C</a>. There you pick and choose then changes you want to use. You can also edit, as well as copy/paste changes into the merge result.
+              In case you select <span class="menuClick"><span><span class="menuItem">Merge</span></span></span>, you will get a three-way merge dialog as shown in <a href="#sid6952748365716257562" class="imgRef">Fig. 3.5.5.3-C</a>. There you pick and choose then changes you want to use. You can also edit, as well as copy/paste changes into the merge result.
             </p>
             <div class="imagecontainer" id="sid6952748365716257562">
               <div class="image">
@@ -1680,9 +1657,7 @@ url:     http://localhost:8080/select/tutorial/r:4ac377c2-0a54-4908-ae24-f86f1ba
         <div>
           <h3 id="sid1418902825862766569" class="section">3.6.2 Searching Models</h3>
           <p class="body">
-            You can do a full-text search on soutions and models. The functionality is available via the context menu (shown in <a href="#sid1418902825862783824" class="imgRef">Figure
-            3.6-B</a>). The resulting search window (<a href="#sid1418902825863412961" class="imgRef">Figure
-            3.6.2-A</a>) reports all the model elements that contain your search string. Note that this can also be used to search this documentation itself.
+            You can do a full-text search on soutions and models. The functionality is available via the context menu (shown in <a href="#sid1418902825862783824" class="imgRef">Fig. 3.6-B</a>). The resulting search window (<a href="#sid1418902825863412961" class="imgRef">Fig. 3.6.2-A</a>) reports all the model elements that contain your search string. Note that this can also be used to search this documentation itself.
           </p>
           <div class="imagecontainer" id="sid1418902825863412961">
             <div class="image">
@@ -1699,8 +1674,7 @@ url:     http://localhost:8080/select/tutorial/r:4ac377c2-0a54-4908-ae24-f86f1ba
         <div>
           <h3 id="sid1418902825862775310" class="section">3.6.3 Opening Terminals</h3>
           <p class="body">
-            It is often useful to open a terminal (console, command line) in solutions or models. The context menu for solutions or models has this option. For solutions, the terminal opens in the solution directory. For models, it opens in the model&apos;s output directory (where the model&apos;s code will be generated to). <a href="#sid1418902825862783824" class="imgRef">Figure
-            3.6-B</a> shows the context menu for solutions.
+            It is often useful to open a terminal (console, command line) in solutions or models. The context menu for solutions or models has this option. For solutions, the terminal opens in the solution directory. For models, it opens in the model&apos;s output directory (where the model&apos;s code will be generated to). <a href="#sid1418902825862783824" class="imgRef">Fig. 3.6-B</a> shows the context menu for solutions.
           </p>
         </div>
         <div class="imagecontainer" id="sid1418902825862783824">
@@ -1923,8 +1897,7 @@ If you need to interact with existing C that uses <code class="code">int</code>,
         <div>
           <h3 id="sid3592268205547053903" class="section">4.2.4 Type Size Configuration</h3>
           <p class="body">
-            As described above, mbeddr uses size-qualified alternatives of the C99 native types. To interact with existing C code, mbeddr offers <code class="code">ExternalModule</code>s. In those modules it is possible to use unqualified integers (such as <code class="code">int )</code>. Since mbeddr by default doesn&apos;t know about the size of these types, those have to be configured on a per-project basis. This is done in the so called <code class="code">TypesizeConfiguration</code>. This configuration can be accessed via <span class="menuClick"><span><span class="menuItem">File</span>&rarr;</span><span><span class="menuItem">Settings</span>&rarr;</span><span><span class="menuItem">Type Size Configuration</span></span></span> (see <a href="#sid3592268205547072864" class="imgRef">Figure
-            4.2.4-A</a>). It contains a mapping for each C99 type to an mbeddr type. The mapping for a given target may differ from the defaults that ship with mbeddr. These can be changes for each project. 
+            As described above, mbeddr uses size-qualified alternatives of the C99 native types. To interact with existing C code, mbeddr offers <code class="code">ExternalModule</code>s. In those modules it is possible to use unqualified integers (such as <code class="code">int )</code>. Since mbeddr by default doesn&apos;t know about the size of these types, those have to be configured on a per-project basis. This is done in the so called <code class="code">TypesizeConfiguration</code>. This configuration can be accessed via <span class="menuClick"><span><span class="menuItem">File</span>&rarr;</span><span><span class="menuItem">Settings</span>&rarr;</span><span><span class="menuItem">Type Size Configuration</span></span></span> (see <a href="#sid3592268205547072864" class="imgRef">Fig. 4.2.4-A</a>). It contains a mapping for each C99 type to an mbeddr type. The mapping for a given target may differ from the defaults that ship with mbeddr. These can be changes for each project. 
           </p>
           <div class="imagecontainer" id="sid3592268205547072864">
             <div class="image">
@@ -2021,8 +1994,7 @@ int32 divide(int32 a, int32 b) {                                                
 } testAdding(test case)</pre><a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/1187244948808238502/" class="originalNode" title="open in MPS"></a>
         </div>
         <p class="body">
-          <b>Asserting</b>&nbsp;&nbsp;Inside test cases, a number of <code class="code">assert</code> statements are available, as <a href="#sid2723638869555190765" class="imgRef">Figure
-          4.5-A</a> shows. It should be self-explanatory what they mean. Using these assert statements, test cases can now be made meaningful.
+          <b>Asserting</b>&nbsp;&nbsp;Inside test cases, a number of <code class="code">assert</code> statements are available, as <a href="#sid2723638869555190765" class="imgRef">Fig. 4.5-A</a> shows. It should be self-explanatory what they mean. Using these assert statements, test cases can now be made meaningful.
         </p>
         <div class="codeblockContainer">
           <pre class="codeblock">exported testcase testDivision {     <br/>
@@ -2515,12 +2487,10 @@ its main function is here: <a href="http://localhost:8080/select/tutorial/r:4c2d
           </p>
           <ul>
             <li>
-              Go to the entry point (i.e., <a href="http://localhost:8080/select/tutorial/r:5bb9f839-879d-4d8b-98b1-43aac3dcfbee/699350427876703514/" class="cref">main</a>) of the executable and select <span class="menuClick"><span><span class="menuItem">Run PlainCDemo</span></span></span> (or similarly <span class="menuClick"><span><span class="menuItem">Debug PlainCDemo</span></span></span>) from the context menu. You will see the name of the executable at the menu item that you have specified in the <code class="code">Build Configuration</code>. This approach can be seen in <a href="#sid4376803293071871273" class="imgRef">Figure
-              6.3.1-A</a>.
+              Go to the entry point (i.e., <a href="http://localhost:8080/select/tutorial/r:5bb9f839-879d-4d8b-98b1-43aac3dcfbee/699350427876703514/" class="cref">main</a>) of the executable and select <span class="menuClick"><span><span class="menuItem">Run PlainCDemo</span></span></span> (or similarly <span class="menuClick"><span><span class="menuItem">Debug PlainCDemo</span></span></span>) from the context menu. You will see the name of the executable at the menu item that you have specified in the <code class="code">Build Configuration</code>. This approach can be seen in <a href="#sid4376803293071871273" class="imgRef">Fig. 6.3.1-A</a>.
             </li>
             <li>
-              Go to the <code class="code">Build Configuration</code> of your application and run/debug the executable from the context menu of the executable definition. This approach can be senn in <a href="#sid4376803293071872223" class="imgRef">Figure
-              6.3.1-B</a>.
+              Go to the <code class="code">Build Configuration</code> of your application and run/debug the executable from the context menu of the executable definition. This approach can be senn in <a href="#sid4376803293071872223" class="imgRef">Fig. 6.3.1-B</a>.
             </li>
           </ul>
           <div class="imagecontainer" id="sid4376803293071871273">
@@ -2546,12 +2516,9 @@ its main function is here: <a href="http://localhost:8080/select/tutorial/r:4c2d
             </div>
           </div>
           <p class="body">
-            After you have run the executable a new launch configuration will be created with the name of the executable that you have specified. If a configuration already exists with the same name then it will be overwritten. From this point, it is also possible to run/debug the executable from the menu bar or from the <span class="menuClick"><span><span class="menuItem">Run</span></span></span> menu of MPS. The launch configuration can also be created manually, or from the context menus of the entry point or executable definition; take a look at the previous two figures (<a href="#sid4376803293071872223" class="imgRef">Figure
-            6.3.1-B</a> or <a href="#sid4376803293071871273" class="imgRef">Figure
-            6.3.1-A</a>) for the corresponding <code class="code">Create PlainCDemo</code> element. <br/>
+            After you have run the executable a new launch configuration will be created with the name of the executable that you have specified. If a configuration already exists with the same name then it will be overwritten. From this point, it is also possible to run/debug the executable from the menu bar or from the <span class="menuClick"><span><span class="menuItem">Run</span></span></span> menu of MPS. The launch configuration can also be created manually, or from the context menus of the entry point or executable definition; take a look at the previous two figures (<a href="#sid4376803293071872223" class="imgRef">Fig. 6.3.1-B</a> or <a href="#sid4376803293071871273" class="imgRef">Fig. 6.3.1-A</a>) for the corresponding <code class="code">Create PlainCDemo</code> element. <br/>
 <br/>
-An existing launch configuration can also be used to launch your application. Select the <code class="code">PlainCDemo</code> element from the drop down list which lists the available <code class="code">Launch Configuration</code>s. Simply click on the green run button to launch the executable as shown on <a href="#sid4376803293071872223" class="imgRef">Figure
-            6.3.1-B</a>. In order to debug the application, you need to click on the green bug icon next to the selected <code class="code">Launch Configuration</code>. You can read more about how you can debug your application in <span class="sectRef">Section <a href="#sid3861573051956754942">Debugging</a></span>.
+An existing launch configuration can also be used to launch your application. Select the <code class="code">PlainCDemo</code> element from the drop down list which lists the available <code class="code">Launch Configuration</code>s. Simply click on the green run button to launch the executable as shown on <a href="#sid4376803293071872223" class="imgRef">Fig. 6.3.1-B</a>. In order to debug the application, you need to click on the green bug icon next to the selected <code class="code">Launch Configuration</code>. You can read more about how you can debug your application in <span class="sectRef">Section <a href="#sid3861573051956754942">Debugging</a></span>.
           </p>
           <div class="imagecontainer" id="sid4376803293071879798">
             <div class="image">
@@ -2568,8 +2535,7 @@ An existing launch configuration can also be used to launch your application. Se
         <div>
           <h3 id="sid4376803293071868990" class="section">6.3.2 Contents of the Launch Configuration </h3>
           <p class="body">
-            <code class="code">Launch Configuration</code>s can be opened for editing either from the menubar or by clicking on the <span class="menuClick"><span><span class="menuItem">Run</span>&rarr;</span><span><span class="menuItem">Edit Configurations</span></span></span> menu item. <a href="#sid4376803293071894118" class="imgRef">Figure
-            6.3.2-A</a> shows the contents of the <code class="code">Launch Configuration</code> for the <code class="code">PlainCDemo</code>. 
+            <code class="code">Launch Configuration</code>s can be opened for editing either from the menubar or by clicking on the <span class="menuClick"><span><span class="menuItem">Run</span>&rarr;</span><span><span class="menuItem">Edit Configurations</span></span></span> menu item. <a href="#sid4376803293071894118" class="imgRef">Fig. 6.3.2-A</a> shows the contents of the <code class="code">Launch Configuration</code> for the <code class="code">PlainCDemo</code>. 
           </p>
           <div class="imagecontainer" id="sid4376803293071894118">
             <div class="image">
@@ -2607,8 +2573,7 @@ An existing launch configuration can also be used to launch your application. Se
           <p class="body">
             After you have launched the application all the output will be redirected to the <code class="code">Console</code> view of MPS. You will be able to see all the messages that would appear if you run the executable from the command line. <br/>
 <br/>
-Executable tests will show the test results also in the <code class="code">Console</code>. <a href="#sid4376803293072173622" class="imgRef">Figure
-            6.3.3-A</a> shows the output of the test run for the <code class="code">mbeddr.tutorial.main.defaultExtensions.SimpleTestCase</code> executable. The console output contains links for executed tests and failed assertions, and you can click on them and to select the corresponding program element (test case, assertion) in the editor.   
+Executable tests will show the test results also in the <code class="code">Console</code>. <a href="#sid4376803293072173622" class="imgRef">Fig. 6.3.3-A</a> shows the output of the test run for the <code class="code">mbeddr.tutorial.main.defaultExtensions.SimpleTestCase</code> executable. The console output contains links for executed tests and failed assertions, and you can click on them and to select the corresponding program element (test case, assertion) in the editor.   
           </p>
           <div class="imagecontainer" id="sid4376803293072173622">
             <div class="image">
@@ -2649,8 +2614,7 @@ Executable tests will show the test results also in the <code class="code">Conso
             </div>
           </div>
           <p class="body">
-            Next, create a run configuration as explained in <span class="sectRef">Section <a href="#sid7863625513831639756">Running Applications from MPS/mbeddr</a></span> and run it in debug mode by pressing <span class="keyPress"><span><span class="key">Shift</span>+</span><span><span class="key">F9</span></span></span> or by clicking on the debug button in MPS&apos; toolbar (see <a href="#sid7788280986208260432" class="imgRef">Figure
-            6.4.2-B</a>). 
+            Next, create a run configuration as explained in <span class="sectRef">Section <a href="#sid7863625513831639756">Running Applications from MPS/mbeddr</a></span> and run it in debug mode by pressing <span class="keyPress"><span><span class="key">Shift</span>+</span><span><span class="key">F9</span></span></span> or by clicking on the debug button in MPS&apos; toolbar (see <a href="#sid7788280986208260432" class="imgRef">Fig. 6.4.2-B</a>). 
           </p>
           <div class="imagecontainer" id="sid7788280986208260432">
             <div class="image">
@@ -2676,8 +2640,7 @@ Executable tests will show the test results also in the <code class="code">Conso
             </div>
           </div>
           <p class="body">
-            Next, press <span class="keyPress"><span><span class="key">F7</span></span></span> to <em class="emph">step into</em> the current line, this will suspend the debugger in the called function <code class="code">add</code>. For returning to the calling function <code class="code">main</code>, press <span class="keyPress"><span><span class="key">Shift</span>+</span><span><span class="key">F8</span></span></span>. Once the debugger is suspended there, you can see the stack frame <code class="code">main</code> in the call stack and the local variables <code class="code">p</code>, <code class="code">argc</code> and <code class="code">argv</code> in the watchables view (see <a href="#sid7788280986208289326" class="imgRef">Figure
-            6.4.2-D</a>).
+            Next, press <span class="keyPress"><span><span class="key">F7</span></span></span> to <em class="emph">step into</em> the current line, this will suspend the debugger in the called function <code class="code">add</code>. For returning to the calling function <code class="code">main</code>, press <span class="keyPress"><span><span class="key">Shift</span>+</span><span><span class="key">F8</span></span></span>. Once the debugger is suspended there, you can see the stack frame <code class="code">main</code> in the call stack and the local variables <code class="code">p</code>, <code class="code">argc</code> and <code class="code">argv</code> in the watchables view (see <a href="#sid7788280986208289326" class="imgRef">Fig. 6.4.2-D</a>).
           </p>
           <div class="imagecontainer" id="sid7788280986208289326">
             <div class="image">
@@ -2698,8 +2661,7 @@ Executable tests will show the test results also in the <code class="code">Conso
         <div>
           <h3 id="sid5607395629656564110" class="section">6.5.1 A new Project</h3>
           <p class="body">
-            We first create a new project. You can do this via <span class="menuClick"><span><span class="menuItem">File</span>&rarr;</span><span><span class="menuItem">New Project</span></span></span>. <a href="#sid5607395629656569313" class="imgRef">Figure
-            6.5.1-A</a> shows the Wizard that opens subsequently. We select a Solution Project <sup id="sid5607395629656564110_footnote_1_origin" title="If you work with the mbeddr IDE, then the language project shown in  is not available." class="footnodeOrigin"><a href="#sid5607395629656564110_footnote_1_text">1</a></sup>, which is a project that contains one solution. We use the usual Java package naming conventions for the solution. 
+            We first create a new project. You can do this via <span class="menuClick"><span><span class="menuItem">File</span>&rarr;</span><span><span class="menuItem">New Project</span></span></span>. <a href="#sid5607395629656569313" class="imgRef">Fig. 6.5.1-A</a> shows the Wizard that opens subsequently. We select a Solution Project <sup id="sid5607395629656564110_footnote_1_origin" title="If you work with the mbeddr IDE, then the language project shown in  is not available." class="footnodeOrigin"><a href="#sid5607395629656564110_footnote_1_text">1</a></sup>, which is a project that contains one solution. We use the usual Java package naming conventions for the solution. 
           </p>
           <div class="imagecontainer" id="sid5607395629656569313">
             <div class="image">
@@ -2718,15 +2680,13 @@ Executable tests will show the test results also in the <code class="code">Conso
           <p class="footnoteText" id="sid5607395629656564110_footnote_1_text">
             <a href="#sid5607395629656564110_footnote_1_origin">1:</a> 
              
-            If you work with the mbeddr IDE, then the language project shown in <a href="#sid5607395629656569313" class="imgRef">Figure
-            6.5.1-A</a> is not available.
+            If you work with the mbeddr IDE, then the language project shown in <a href="#sid5607395629656569313" class="imgRef">Fig. 6.5.1-A</a> is not available.
           </p>
         </div>
         <div>
           <h3 id="sid5607395629656570364" class="section">6.5.2 New Model</h3>
           <p class="body">
-            Inside the solution you have to create a (or potentially several) new model (see <a href="#sid5607395629656581603" class="imgRef">Figure
-            6.5.2-A</a>). Use the <span class="menuClick"><span><span class="menuItem">New</span>&rarr;</span><span><span class="menuItem">Model</span></span></span> in the context menu of the solution. The model should have a (qualified) name which typically starts with the solution name. We call our model <code class="code">...main</code>.  
+            Inside the solution you have to create a (or potentially several) new model (see <a href="#sid5607395629656581603" class="imgRef">Fig. 6.5.2-A</a>). Use the <span class="menuClick"><span><span class="menuItem">New</span>&rarr;</span><span><span class="menuItem">Model</span></span></span> in the context menu of the solution. The model should have a (qualified) name which typically starts with the solution name. We call our model <code class="code">...main</code>.  
           </p>
           <div class="imagecontainer" id="sid5607395629656581603">
             <div class="image">
@@ -2740,8 +2700,7 @@ Executable tests will show the test results also in the <code class="code">Conso
             </div>
           </div>
           <p class="body">
-            After pressing ok, the new model is created. Also, the model&apos;s property dialog pops up automatically (it can be brought up manually by selecting <span class="menuClick"><span><span class="menuItem">Model Properties</span></span></span> from its context menu). In any case, select the <span class="menuClick"><span><span class="menuItem">Used Languages</span></span></span> tab and use the <span class="menuClick"><span><span class="menuItem">+</span></span></span> button to add the <code class="code">com.mbeddr.core</code> devkit (note that you can select devkits and languages by just typing the first letters (<code class="code">c.m.c</code>)). <a href="#sid5607395629656587859" class="imgRef">Figure
-            6.5.2-B</a> shows the result. 
+            After pressing ok, the new model is created. Also, the model&apos;s property dialog pops up automatically (it can be brought up manually by selecting <span class="menuClick"><span><span class="menuItem">Model Properties</span></span></span> from its context menu). In any case, select the <span class="menuClick"><span><span class="menuItem">Used Languages</span></span></span> tab and use the <span class="menuClick"><span><span class="menuItem">+</span></span></span> button to add the <code class="code">com.mbeddr.core</code> devkit (note that you can select devkits and languages by just typing the first letters (<code class="code">c.m.c</code>)). <a href="#sid5607395629656587859" class="imgRef">Fig. 6.5.2-B</a> shows the result. 
           </p>
           <div class="imagecontainer" id="sid5607395629656587859">
             <div class="image">
@@ -2761,8 +2720,7 @@ Executable tests will show the test results also in the <code class="code">Conso
             Note: the stuff explained in this subsection can be done automatically using the <span class="menuClick"><span><span class="menuItem">Code</span>&rarr;</span><span><span class="menuItem">Wizards</span>&rarr;</span><span><span class="menuItem">Create Minimal Test</span></span></span> wizard. We do it manually to explain things in detail.
           </p>
           <p class="body">
-            Inside the model we create a new <code class="code">Implementation Module</code>. To do so, select <span class="menuClick"><span><span class="menuItem">New</span>&rarr;</span><span><span class="menuItem">c.m.c.modules</span>&rarr;</span><span><span class="menuItem">module</span></span></span> from the model&apos;s context menu. Specify the name <code class="code">HelloWorld</code> for the module. The result looks as shown in <a href="#sid5607395629656602954" class="imgRef">Figure
-            6.5.3-A</a>.
+            Inside the model we create a new <code class="code">Implementation Module</code>. To do so, select <span class="menuClick"><span><span class="menuItem">New</span>&rarr;</span><span><span class="menuItem">c.m.c.modules</span>&rarr;</span><span><span class="menuItem">module</span></span></span> from the model&apos;s context menu. Specify the name <code class="code">HelloWorld</code> for the module. The result looks as shown in <a href="#sid5607395629656602954" class="imgRef">Fig. 6.5.3-A</a>.
           </p>
           <div class="imagecontainer border" id="sid5607395629656602954">
             <div class="imageWithBorder">
@@ -2792,8 +2750,7 @@ Executable tests will show the test results also in the <code class="code">Conso
 } main (function)</pre><a href="http://localhost:8080/select/tutorial/r:f440e167-2cf6-4609-a4e7-2d2c3fda0805/5607395629656995945/" class="originalNode" title="open in MPS"></a>
           </div>
           <p class="body">
-            To be able to run the code, we also have to create a build configuration. Use the menu <span class="menuClick"><span><span class="menuItem">New</span>&rarr;</span><span><span class="menuItem">c.m.core.buildconfig</span>&rarr;</span><span><span class="menuItem">BuildConfiguration</span></span></span> on the <code class="code">main</code> model to create one. Initially it looks as shown in <a href="#sid5607395629657097824" class="imgRef">Figure
-            6.5.3-B</a>
+            To be able to run the code, we also have to create a build configuration. Use the menu <span class="menuClick"><span><span class="menuItem">New</span>&rarr;</span><span><span class="menuItem">c.m.core.buildconfig</span>&rarr;</span><span><span class="menuItem">BuildConfiguration</span></span></span> on the <code class="code">main</code> model to create one. Initially it looks as shown in <a href="#sid5607395629657097824" class="imgRef">Fig. 6.5.3-B</a>
             
           </p>
           <div class="imagecontainer border" id="sid5607395629657097824">
@@ -2820,8 +2777,7 @@ Executable tests will show the test results also in the <code class="code">Conso
             </li>
           </ul>
           <p class="body">
-            You&apos;re done. It should now look as shown in <a href="#sid5607395629657105885" class="imgRef">Figure
-            6.5.3-C</a>
+            You&apos;re done. It should now look as shown in <a href="#sid5607395629657105885" class="imgRef">Fig. 6.5.3-C</a>
             
           </p>
           <div class="imagecontainer border" id="sid5607395629657105885">
@@ -2856,8 +2812,7 @@ No input. Skipping optional target.<br/>
 Other targets execution time: 35 ms; compile: 24 ms, configure: 6 ms, runProcessors: 5 ms, preloadModels: 0 ms, make: 0 ms, addLanguages: 0 ms, resetCache: 0 ms, checkParameters: 0 ms, auxCompile: 0 ms, collectPathes: 0 ms</pre>
           </div>
           <p class="body">
-            To run the code, you can select <span class="menuClick"><span><span class="menuItem">Run HelloWorld</span></span></span> from the context menu of either the <code class="code">main</code> function or the <code class="code">HelloWorld</code> executable. The result should be shown in the <code class="code">Run</code> tool, as shown in <a href="#sid5607395629657116377" class="imgRef">Figure
-            6.5.4-A</a>. Note how it contains clickable lines for the test(s) that have run as well as for the failed assertions.
+            To run the code, you can select <span class="menuClick"><span><span class="menuItem">Run HelloWorld</span></span></span> from the context menu of either the <code class="code">main</code> function or the <code class="code">HelloWorld</code> executable. The result should be shown in the <code class="code">Run</code> tool, as shown in <a href="#sid5607395629657116377" class="imgRef">Fig. 6.5.4-A</a>. Note how it contains clickable lines for the test(s) that have run as well as for the failed assertions.
           </p>
           <div class="imagecontainer" id="sid5607395629657116377">
             <div class="image">
@@ -2963,8 +2918,7 @@ void free(void* ptr);                                                           
           </div>
         </div>
         <p class="body">
-          In addition to the pure static value calculation mbeddr can perform various rounding operations before the static value is inserted into your code (an example is shown in <a href="#sid7088286182581556449" class="imgRef">Figure
-          7.1-A</a>). These rounding operations can be added via an intention on the <code class="code">staticValueOf</code> expression (<span class="menuClick"><span><span class="menuItem">Add rounding operation</span></span></span>) or it can be selected in the inspector of the <code class="code">staticValueOf</code> expression. The following rounding operations are available:
+          In addition to the pure static value calculation mbeddr can perform various rounding operations before the static value is inserted into your code (an example is shown in <a href="#sid7088286182581556449" class="imgRef">Fig. 7.1-A</a>). These rounding operations can be added via an intention on the <code class="code">staticValueOf</code> expression (<span class="menuClick"><span><span class="menuItem">Add rounding operation</span></span></span>) or it can be selected in the inspector of the <code class="code">staticValueOf</code> expression. The following rounding operations are available:
         </p>
         <ul>
           <li>
@@ -3548,8 +3502,7 @@ void free(void* ptr);                                                           
         <div>
           <h3 id="sid1891280913627286661" class="section">7.3.5 Tabular Notation</h3>
           <p class="body">
-            State machines can also be rendered and edited as a table: the events become the column headers, and the states become the row headers. <a href="#sid5450602153900837513" class="imgRef">Figure
-            7.3.5-A</a> shows an example. You can switch projection modes the usual way via the <span class="menuClick"><span><span class="menuItem">Code</span>&rarr;</span><span><span class="menuItem">Projection Modes</span></span></span>.
+            State machines can also be rendered and edited as a table: the events become the column headers, and the states become the row headers. <a href="#sid5450602153900837513" class="imgRef">Fig. 7.3.5-A</a> shows an example. You can switch projection modes the usual way via the <span class="menuClick"><span><span class="menuItem">Code</span>&rarr;</span><span><span class="menuItem">Projection Modes</span></span></span>.
           </p>
           <div class="imagecontainer" id="sid5450602153900837513">
             <div class="image">
@@ -3568,8 +3521,7 @@ void free(void* ptr);                                                           
           <p class="body">
             State machines can also be visualized with PlantUML (a graphical editor will be done soon). The visualization can be generated from the context menu of the state machine. You may want to use the <code class="code">statechart</code> or <code class="code">statechart (short)</code>, the former one displays all information for the transitions while the latter one will only print the event&apos;s name which triggers the given transition.<br/>
 <br/>
-<a href="#sid3458996998997894837" class="imgRef">Figure
-            7.3.6-A</a> shows an example visualization for the hierarchical state machine that was described in the previous section.
+<a href="#sid3458996998997894837" class="imgRef">Fig. 7.3.6-A</a> shows an example visualization for the hierarchical state machine that was described in the previous section.
           </p>
           <div class="imagecontainer" id="sid3458996998997894837">
             <div class="image">
@@ -4307,8 +4259,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
           <h3 id="sid4098353292122311572" class="section">7.4.9 Visualizing Components</h3>
           <p class="body">mbeddr&apos;s diagramming capabilities are put to use in two ways in the context of components: component/interface dependencies and instance diagrams.</p>
           <p class="body">
-            <strong class="bold">* Component/Interface Dependencies</strong> Select a component or an interface and execute the <em class="emph">Visualize</em> action from the context menu (or press <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Alt</span>+</span><span><span class="key">V</span></span></span>). <a href="#sid2112775524680345223" class="imgRef">Figure
-            7.4.9-A</a> shows the result. 
+            <strong class="bold">* Component/Interface Dependencies</strong> Select a component or an interface and execute the <em class="emph">Visualize</em> action from the context menu (or press <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Alt</span>+</span><span><span class="key">V</span></span></span>). <a href="#sid2112775524680345223" class="imgRef">Fig. 7.4.9-A</a> shows the result. 
           </p>
           <div class="imagecontainer" id="sid2112775524680345223">
             <div class="image">
@@ -4322,8 +4273,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
             </div>
           </div>
           <p class="body">
-            <strong class="bold">* Instance/Wiring Diagrams</strong> You can also select an instance configuration and visualize it. You&apos;ll get a diagram that shows component instances and their connections (<a href="#sid2112775524680350931" class="imgRef">Figure
-            7.4.9-B</a>).
+            <strong class="bold">* Instance/Wiring Diagrams</strong> You can also select an instance configuration and visualize it. You&apos;ll get a diagram that shows component instances and their connections (<a href="#sid2112775524680350931" class="imgRef">Fig. 7.4.9-B</a>).
           </p>
           <div class="imagecontainer" id="sid2112775524680350931">
             <div class="image">
@@ -4376,8 +4326,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
 } verification(test case)</pre><a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/1634970928501131025/" class="originalNode" title="open in MPS"></a>
           </div>
           <p class="body">
-            The second line in the configuration determines how often a loop is executed. You should start with low numbers to keep verification times low. Finally, the third parameter determines if the verification should fail in case it cannot be proven that the <code class="code">unwinding loops</code> number is sufficient.  You can now run the verification by selecting the component and executing the <span class="menuClick"><span><span class="menuItem">Verify Component</span></span></span> action. After a few seconds, you&apos;ll get a result table that reports everything as ok (see <a href="#sid7979854108175988977" class="imgRef">Figure
-            7.4.10-A</a>): every precondition of every operation in every provided port has been proven to be correct.
+            The second line in the configuration determines how often a loop is executed. You should start with low numbers to keep verification times low. Finally, the third parameter determines if the verification should fail in case it cannot be proven that the <code class="code">unwinding loops</code> number is sufficient.  You can now run the verification by selecting the component and executing the <span class="menuClick"><span><span class="menuItem">Verify Component</span></span></span> action. After a few seconds, you&apos;ll get a result table that reports everything as ok (see <a href="#sid7979854108175988977" class="imgRef">Fig. 7.4.10-A</a>): every precondition of every operation in every provided port has been proven to be correct.
           </p>
           <div class="imagecontainer" id="sid7979854108175988977">
             <div class="image">
@@ -4399,8 +4348,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
 }</pre>
           </div>
           <p class="body">
-            Let us rerun the verification. Now we get an error, as shown in <a href="#sid7979854108176023036" class="imgRef">Figure
-            7.4.10-B</a>. Note how the lower part of the table now shows the execution trace that led to the contract violation. You should check the <code class="code">Call/Return</code> checkbox to filter the trace to only show the call/return-granularity, and not every statement. You can also double-click onto the trace elements to select the particular program element in the code.
+            Let us rerun the verification. Now we get an error, as shown in <a href="#sid7979854108176023036" class="imgRef">Fig. 7.4.10-B</a>. Note how the lower part of the table now shows the execution trace that led to the contract violation. You should check the <code class="code">Call/Return</code> checkbox to filter the trace to only show the call/return-granularity, and not every statement. You can also double-click onto the trace elements to select the particular program element in the code.
           </p>
           <div class="imagecontainer" id="sid7979854108176023036">
             <div class="image">
@@ -4508,8 +4456,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
             Requirements are contained in requirements modules. An example is <a href="http://localhost:8080/select/tutorial/r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d/1433966787984154171/" class="cref">FlightJudgementRules</a>. Like C implementation modules, requirements modules can import other modules. The (exported) contents of the imported modules then become visible in the current module.
           </p>
           <p class="body">
-            Each requirement is decribed with a number of characteristics; an example is shown in <a href="#sid1195021413140797749" class="imgRef">Figure
-            8.1.2-A</a>. Each requirement has a unique ID (<code class="code">InitialNoPoints</code>), a summary (<code class="code">Initially you have no points.</code>), a requirements kind (<code class="code">/functional</code>), a number of tags (none here), a detailed textual description (only one line given here), plus optional additional data (here we show a workpackage). The number (1 in the example) is automatically determined by the tree structure of the requirements. In order to reference a requirement, the unique ID is used, not the number. We discuss some of these things below.
+            Each requirement is decribed with a number of characteristics; an example is shown in <a href="#sid1195021413140797749" class="imgRef">Fig. 8.1.2-A</a>. Each requirement has a unique ID (<code class="code">InitialNoPoints</code>), a summary (<code class="code">Initially you have no points.</code>), a requirements kind (<code class="code">/functional</code>), a number of tags (none here), a detailed textual description (only one line given here), plus optional additional data (here we show a workpackage). The number (1 in the example) is automatically determined by the tree structure of the requirements. In order to reference a requirement, the unique ID is used, not the number. We discuss some of these things below.
           </p>
           <div class="imagecontainer border" id="sid1195021413140797749">
             <div class="imageWithBorder">
@@ -4532,8 +4479,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
             <b>Additional Data</b>&nbsp;&nbsp;In addition to the description, a requirement can have data objects. As usual, these are extensible and can represent any additional structure. Examples include the (demo) business rules in <a href="http://localhost:8080/select/tutorial/r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d/552710421071397247/" class="cref">PointForATrackpoint</a>, tables as in <a href="http://localhost:8080/select/tutorial/r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d/2992054467179682925/" class="cref">priceDep</a> or architectural components as shown in <a href="http://localhost:8080/select/tutorial/r:79ed4c17-66fc-4c5a-bff7-46990b4e0c5d/8119642625901800301/" class="cref">Driver</a>. The requirements kind described above can include constraints that enforce certain kinds of data (e.g., a <code class="code">timing</code> requirement may require a <code class="code">timing spec</code> data object).
           </p>
           <p class="body">
-            <b>Cross References</b>&nbsp;&nbsp;An important aspect of requirements are their relationships: a requirement can establish relations to other requirements. The requirement shown in <a href="#sid1195021413140970734" class="imgRef">Figure
-            8.1.2-B</a> shows both kinds of cross references. First, cross references can be added to the prose description using the <code class="code">@req</code> word (press <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Space</span></span></span> anywhere in the prose block to insert such special words). The other alternative is to use special data objects (such as <code class="code">requires also</code> and <code class="code">conflicts with</code>. The former approach is a generic relationship, the latter ones are qualified. Of course, additional relationships can be created using language extension. 
+            <b>Cross References</b>&nbsp;&nbsp;An important aspect of requirements are their relationships: a requirement can establish relations to other requirements. The requirement shown in <a href="#sid1195021413140970734" class="imgRef">Fig. 8.1.2-B</a> shows both kinds of cross references. First, cross references can be added to the prose description using the <code class="code">@req</code> word (press <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Space</span></span></span> anywhere in the prose block to insert such special words). The other alternative is to use special data objects (such as <code class="code">requires also</code> and <code class="code">conflicts with</code>. The former approach is a generic relationship, the latter ones are qualified. Of course, additional relationships can be created using language extension. 
           </p>
           <div class="imagecontainer border" id="sid1195021413140970734">
             <div class="imageWithBorder">
@@ -4556,9 +4502,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
         <div>
           <h3 id="sid1195021413141367739" class="section">8.1.3 Visualizations and Tree Views</h3>
           <p class="body">
-            The requirements visualization show the upstream and downstream dependencies of a particular requirement. An example is shown in <a href="#sid1195021413141343962" class="imgRef">Figure
-            8.1.3-A</a>. In addition, several tree views are available that show the requirements hierarchy, the dependencies and also the up- and downstream dependencies of the requirements module (shown in <a href="#sid1195021413141415802" class="imgRef">Figure
-            8.1.3-B</a>).
+            The requirements visualization show the upstream and downstream dependencies of a particular requirement. An example is shown in <a href="#sid1195021413141343962" class="imgRef">Fig. 8.1.3-A</a>. In addition, several tree views are available that show the requirements hierarchy, the dependencies and also the up- and downstream dependencies of the requirements module (shown in <a href="#sid1195021413141415802" class="imgRef">Fig. 8.1.3-B</a>).
           </p>
           <div class="imagecontainer border" id="sid1195021413141343962">
             <div class="imageWithBorder">
@@ -4590,8 +4534,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
           A trace is a pointer from some implementation artifact to one or more requirements <sup id="sid2805811593275579771_footnote_1_origin" title="Strictly speaking, it can also point to other traceable elements; mbeddr is extensible in this way. But by default, only requirements are supported as trace targets." class="footnodeOrigin"><a href="#sid2805811593275579771_footnote_1_text">1</a></sup>. To use traces, make sure you use the <code class="code">com.mbeddr.reqtrace</code> devkit in your models.
         </p>
         <p class="body">
-          For an example of a trace, see the <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5160057464295358354/" class="cref">StateMachines</a> module. It has traces attached to a number of C constants and to various parts of the state machine (make sure you select a projection mode that actually shows the traces); an example is also shown in <a href="#sid85256576553522975" class="imgRef">Figure
-          8.2-A</a>. Make sure you select a projection mode that lets you actually see the traces (see below).
+          For an example of a trace, see the <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5160057464295358354/" class="cref">StateMachines</a> module. It has traces attached to a number of C constants and to various parts of the state machine (make sure you select a projection mode that actually shows the traces); an example is also shown in <a href="#sid85256576553522975" class="imgRef">Fig. 8.2-A</a>. Make sure you select a projection mode that lets you actually see the traces (see below).
         </p>
         <p class="body">
           <b>Trace Kind</b>&nbsp;&nbsp;Each trace has a trace kind associated with it. Trace kinds characterize the nature of the trace relationship. While the set of trace kinds is extensible, mbeddr ships with three default trace kinds: <code class="code">implements</code>, <code class="code">exemplifies</code> and <code class="code">tests</code>. Note that a trace kind can restrict the kinds of requirements it can trace to, and it can also restrict to which nodes the trace can be attached. While the default trace kinds have no such constraints, it is useful in general to enforce specific semantics through those constraints. 
@@ -4601,12 +4544,10 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
         </p>
         <ul>
           <li>
-            <code class="code">Detailed Traces</code>: The trace kind and the trace target(s) are shown on the right side of the traced node (see <a href="#sid85256576553522975" class="imgRef">Figure
-            8.2-A</a>).
+            <code class="code">Detailed Traces</code>: The trace kind and the trace target(s) are shown on the right side of the traced node (see <a href="#sid85256576553522975" class="imgRef">Fig. 8.2-A</a>).
           </li>
           <li>
-            <code class="code">Compact Traces</code>: Only a small <code class="code">[T]</code> is shown on the right side of the traced node (see <a href="#sid85256576552176368" class="imgRef">Figure
-            8.2-B</a>). A tooltip shows the first of the traces elements and the trace kind. The kind and targets can be changed in the inspector of the <code class="code">[T]</code> node. 
+            <code class="code">Compact Traces</code>: Only a small <code class="code">[T]</code> is shown on the right side of the traced node (see <a href="#sid85256576552176368" class="imgRef">Fig. 8.2-B</a>). A tooltip shows the first of the traces elements and the trace kind. The kind and targets can be changed in the inspector of the <code class="code">[T]</code> node. 
           </li>
           <li>
             <code class="code">No Traces</code>: the traces are not shown (even though, of course, they are still in the code)
@@ -4649,9 +4590,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
         <div>
           <h3 id="sid2805811593282828696" class="section">8.2.2 Reverse Tracing</h3>
           <p class="body">
-            Traces always go <em class="emph">towards</em> a requirement. However, often you want to see which artifacts trace <em class="emph">to</em> which requirement, i.e., you want to reverse the direction. You can do this by using the customized <span class="menuClick"><span><span class="menuItem">Find Usages Settings...</span></span></span> context menu. If you select <code class="code">Traces</code> in the dialog (see <a href="#sid4424988308480506112" class="imgRef">Figure
-            8.2.2-A</a>). In the result, you will get a separate section with only the traces to the respective requirement. <a href="#sid4424988308481611390" class="imgRef">Figure
-            8.2.2-B</a> shows an example result. <span class="sectRef">Section <a href="#sid4424988308481613119">Find Usages</a></span> explains the find usages facility in general.
+            Traces always go <em class="emph">towards</em> a requirement. However, often you want to see which artifacts trace <em class="emph">to</em> which requirement, i.e., you want to reverse the direction. You can do this by using the customized <span class="menuClick"><span><span class="menuItem">Find Usages Settings...</span></span></span> context menu. If you select <code class="code">Traces</code> in the dialog (see <a href="#sid4424988308480506112" class="imgRef">Fig. 8.2.2-A</a>). In the result, you will get a separate section with only the traces to the respective requirement. <a href="#sid4424988308481611390" class="imgRef">Fig. 8.2.2-B</a> shows an example result. <span class="sectRef">Section <a href="#sid4424988308481613119">Find Usages</a></span> explains the find usages facility in general.
           </p>
           <div class="imagecontainer" id="sid4424988308480506112">
             <div class="image">
@@ -4735,7 +4674,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
           <h3 id="sid5479545238865063690" class="section">8.4.1 Basic Ideas</h3>
           <p class="body">Writing documentation for code is annoying, since you always have to copy code snippets into the document (as text or as a screenshot), make sure they are formatted nicely, and - most importantly - keep them up to date as the code changes. The mbeddr documentation language avoids this problem: it treats documentation just like code in MPS, the documentation language is just another language written in MPS. Consequently it is trivial to refer to code, make sure that the reference is refactored along with the code itself (in particular in case of renames) and, by using a few tricks, you can even &quot;virtually embed&quot; code into the documents.  </p>
           <p class="body">
-            The user guide you are reading right now is written with this language. Consequently, a good way to learn mbeddr&apos;s documentation language is to switch off Presentation Mode (via the <span class="menuClick"><span><span class="menuItem">Code</span>&rarr;</span><span><span class="menuItem">Projection Modes</span></span></span> menu) and take a look how the user guide is built. We&apos;ll explain some basics in this chapter but otherwise recommend you to just look at the user guide.
+            The user guide you are reading right now is written with this language. Consequently, a good way to learn mbeddr&apos;s documentation language is to switch off Presentation Mode (via the <span class="menuClick"><span><span class="menuItem">Code</span>&rarr;</span><span><span class="menuItem">Projection Modes</span></span></span> menu) and take a look how the user guide is built. We&apos;ll explain some basics in this chapter but otherwise recommend you to just look at the <a href="http://localhost:8080/select/tutorial/r:7f372397-146b-40d5-9f20-607974c4fed4/324047639341435712/" class="cref">user guide</a>.
           </p>
           <p class="body">
             In addition, you can also check out this video: <a href="http://www.youtube.com/watch?v=-kMrvreg6n0" class="url">http://www.youtube.com/watch?v=-kMrvreg6n0</a>
@@ -4747,18 +4686,15 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
           <p class="body">We support several target plaforms for the documentation language:</p>
           <ul>
             <li>
-              <strong class="bold">Presentation Mode:</strong> Most importantly, we support the Presentation Mode where the document is rendered in MPS with a nice, readable projection and all images, listings or code snippets shown inline. We strongly recommend reading the user guide (and other documents) in this way. We currently spend most of our efforts optizing this target platform.
+              <strong class="bold">Presentation Mode:</strong> Most importantly, we support the Presentation Mode where the document is rendered in MPS with a nice, readable projection and all images, listings or code snippets shown inline.
             </li>
             <li>
-              <strong class="bold">LaTeX:</strong> A generator creates LaTeX sources from documentation language Documents. While this works well in principle, there are several layouting problems with image sizes. After the sources have been generated they have to be processed by Latex manually (e.g., by invoking <code class="code">pdflatex</code> on them). A more detailed documentation is still <span><strong class="todo">[ToDo: 
+              <strong class="bold">LaTeX:</strong> A generator creates LaTeX sources from documentation language Documents. While this works well in principle, there are several layouting problems with image sizes. After the sources have been generated they have to be processed by Latex manually (e.g., by invoking <code class="code">xelatex</code> on them). A more detailed documentation is still <span><strong class="todo">[ToDo: 
               
               ]</strong></span>.
             </li>
             <li>
-              <strong class="bold">HTML:</strong> Similar to LaTeX, we can also generate HTML sources. The approach has some of the same issues. Will be discussed in more detail soon. <span><strong class="todo">[ToDo: 
-              
-              ]</strong></span>
-              
+              <strong class="bold">HTML:</strong> Similar to LaTeX, we can also generate HTML sources. We use this to generate the online version of this user guide.
             </li>
           </ul>
         </div>
@@ -4791,17 +4727,17 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
             <strong class="bold">image:</strong> This represents an embedded image. You specify a path prefix (see Configuration and Resources below), and then you can use code completion to select an image file under that path that should be shown in the editor.
           </li>
           <li>
-            <strong class="bold">embed as text</strong> This embeds arbitrary code into the document. When rendered to HTML or Latex, the embedded code will be &quot;copied to text&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially).
+            <strong class="bold">embed as text</strong> This embeds arbitrary MPS nodes into the document. When rendered to HTML or LaTeX, the embedded code will be &quot;copied to text&quot;, so this really only makes sense for notations that have a meaningful textual representation (program code, essentially).
           </li>
           <li>
-            <strong class="bold">embed as image:</strong> Similar to the previous one, but the code is rendered as an image (screenshot) when serialized to Latex or HTML.
+            <strong class="bold">embed as image:</strong> Similar to the previous one, but the MPS nodes are rendered as an image (screenshot) when serialized to LaTeX or HTML.
           </li>
           <li>
             <strong class="bold">visualization:</strong> References a program node that has a visualization. When rendered out, the visualization is created in real time and embedded.
           </li>
         </ul>
         <p class="body">
-          <b>Words</b>&nbsp;&nbsp;Inside text paragraphs, you can use various different special words. Those that start with a backslash are used for formatting. Those that start with an <code class="code">@</code> are references. They can be entered by pressing <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Space</span></span></span> inside text blocks. 
+          <b>Words</b>&nbsp;&nbsp;Inside text paragraphs, you can use various different special words. Those that start with a backslash are used for formatting. Those that start with an <code class="code">@</code> are references, the ones starting with an <code class="code">\</code> are formatting options. They can be entered by pressing <span class="keyPress"><span><span class="key">Ctrl</span>+</span><span><span class="key">Space</span></span></span> inside text blocks. The default text for references can be overridden in the inspector view.
         </p>
         <ul>
           <li>
@@ -4815,8 +4751,11 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
             
           </li>
           <li>
-            You can reference code elements via <code class="code">@code</code>
+            You can reference MPS nodes via <code class="code">@node</code>
             
+          </li>
+          <li>
+            You can reference MPS modules via <code class="code">@language</code>, <code class="code">@solution</code>, <code class="code">@generator</code> or <code class="code">@devkit</code>.
           </li>
           <li>
             You can embed URLs using <code class="code">\url</code>
@@ -4883,8 +4822,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
         <div>
           <h3 id="sid85256576547059029" class="section">8.5.4 Assessments</h3>
           <p class="body">
-            There is an assessment (see <span class="sectRef">Section <a href="#sid3231021218602645814">Assessments</a></span> for details about assessments) to show the global state of the code review. <a href="#sid85256576550624296" class="imgRef">Figure
-            8.5.4-A</a> shows an example. 
+            There is an assessment (see <span class="sectRef">Section <a href="#sid3231021218602645814">Assessments</a></span> for details about assessments) to show the global state of the code review. <a href="#sid85256576550624296" class="imgRef">Fig. 8.5.4-A</a> shows an example. 
           </p>
           <div class="imagecontainer border" id="sid85256576550624296">
             <div class="imageWithBorder">
@@ -4915,8 +4853,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
             Both approaches have in common that in mbeddr, you first describe the available variability on an abstract level that is unrelated to the implementation artifacts that realize the variability. We use feature models for this aspect. A feature model describes the available variability (aka the configuration space) in a software system. Let us start by creating a feature model that describes variability for processing flights. To do so, add the <code class="code">com.mbeddr.cc.variability</code> devkit to your model and add a <code class="code">VariabilitySupport</code> node into your program. <code class="code">VariabilitySupport</code> nodes contain feature models as well as configurations. An example can be found in <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062389703/" class="cref">FlightVariability</a>.
           </p>
           <p class="body">
-            <b>Feature Models</b>&nbsp;&nbsp;Feature models map a configuration space. An example feature model is shown in <a href="#sid5479545238858017740" class="imgRef">Figure
-            8.6.1-A</a>. A feature is simply a named entity. Features can have children (subfeatures). A feature specifies a constraint over the subfeatures that determine how they can be selected. The following four tree constraints exist:
+            <b>Feature Models</b>&nbsp;&nbsp;Feature models map a configuration space. An example feature model is shown in <a href="#sid5479545238858017740" class="imgRef">Fig. 8.6.1-A</a>. A feature is simply a named entity. Features can have children (subfeatures). A feature specifies a constraint over the subfeatures that determine how they can be selected. The following four tree constraints exist:
           </p>
           <ul>
             <li>
@@ -4950,8 +4887,7 @@ Let&apos;s build an imaginary GPS parser that can be reused. The first interface
             Features can also have attributes. For and example see <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062512675/" class="cref">maxSpeed</a> below. These are (more or less primitively) typed attribute declarations. In a valid configuration, all attributes of all selected features must have a value. 
           </p>
           <p class="body">
-            <b>Configurations</b>&nbsp;&nbsp;Once a feature model is defined, you can specify <em class="emph">configurations</em> or <em class="emph">variants</em>. A configuration has a name and selects any valid (in terms of the constraints discussed above) subset of the features defined in the referenced feature model. The example below has three configurations: <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062477136/" class="cref">cfgDoNothing</a>, <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062505657/" class="cref">cfgNullifyOnly</a> and <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062477139/" class="cref">cfgNullifyMaxAt200</a>. Note how <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062477139/" class="cref">cfgNullifyMaxAt200</a> specifies a value of 200 for the attribute associated with the <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062505651/" class="cref">maxCustom</a> feature. An example configuration is also shown in <a href="#sid85256576553537121" class="imgRef">Figure
-            8.6.1-B</a>.
+            <b>Configurations</b>&nbsp;&nbsp;Once a feature model is defined, you can specify <em class="emph">configurations</em> or <em class="emph">variants</em>. A configuration has a name and selects any valid (in terms of the constraints discussed above) subset of the features defined in the referenced feature model. The example below has three configurations: <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062477136/" class="cref">cfgDoNothing</a>, <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062505657/" class="cref">cfgNullifyOnly</a> and <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062477139/" class="cref">cfgNullifyMaxAt200</a>. Note how <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062477139/" class="cref">cfgNullifyMaxAt200</a> specifies a value of 200 for the attribute associated with the <a href="http://localhost:8080/select/tutorial/r:bd5ec23c-c294-47cc-a078-675c03abdb69/5441227754062505651/" class="cref">maxCustom</a> feature. An example configuration is also shown in <a href="#sid85256576553537121" class="imgRef">Fig. 8.6.1-B</a>.
           </p>
           <p class="greyBox">Note that, in order for the stuff described below to work (static and runtime variability), you need to make sure that the feature models, on which the variability relies, are actually imported into the respective implementation modules.</p>
           <div class="imagecontainer border" id="sid85256576553537121">
