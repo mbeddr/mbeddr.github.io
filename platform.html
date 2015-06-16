@@ -747,23 +747,57 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <p>
 
 
+                            <br/>
+                            <br/><hr/>
+                        <h3>Property Default Values (com.mbeddr.mpsutil.propertydefault)</h3>
+
+                        <p>
+                            MPS does not allow default values for properties; this extension adds them.
+                        </p>
+
+                        <p>
+                            Add the language <tt>com.mbeddr.mpsutil.propertydefault</tt> to the constraints
+                            aspect of our concept. Due to limitations in MPS, we first need to add a "standard" constraint
+                            for a property. Then, after selecting the whole constraint and pressing Ctrl-Space, we can select
+                            the default property value, and assign any expression to it.
+
+                            <br/><img src="/images/blog/propertydefault.png"/>
+                        </p>
+
+
+
                         <br/>
                         <br/><hr/>
-                        <h3>Property Default Values (com.mbeddr.mpsutil.propertydefault)</h3>
-                        
-                        <p>
-                        	MPS does not allow default values for properties; this extension adds them.
-                        </p>
-                        
-                        <p>
-                        	Add the language <tt>com.mbeddr.mpsutil.propertydefault</tt> to the constraints
-                        	aspect of our concept. Due to limitations in MPS, we first need to add a "standard" constraint
-                        	for a property. Then, after selecting the whole constraint and pressing Ctrl-Space, we can select
-                        	the default property value, and assign any expression to it.
-                        
-	                        <br/><img src="/images/blog/propertydefault.png"/>
-	                    </p>
+                        <h3>Target Chooser (com.mbeddr.mpsutil.targetchooser)</h3>
 
+                        <p>
+                            Sometimes you want to be able to select a location in the model where you want to modify
+                            something. For example, in mbeddr's requirements, you may have an intention or refactoring
+                            that allows you to move one or more selected requirements to another location. To make this
+                            possible, you need a way to choose a node. The targetchooser dialog supports this, as
+                            you can see from the following screenshot.
+                        </p>
+
+                        <p>
+                        <center>
+                            <img src="/images/targetchooser.png" width="350"/>
+                        </center>
+                        </p>
+
+
+                        <p>
+                            The target chooser supports limiting the scope of what is shown in the tree
+                            (one or more solutions or models), lets you filter the contents of the tree (e.g., only
+                            requirements modules and requirements) and lets you return an error message in case
+                            the user selects an invalid target. The dialog also supports deep search; you can
+                            just start typing and the matched node is highlighted, even if the respective subtree
+                            has not yet been opened when the search is started.
+                        </p>
+
+                        <p>
+                            To understand how to use the target chooser, take a look at the <a href="http://localhost:8080/select/com.mbeddr.cc/r:a85ddf64-0248-4e9b-81ab-306845f3da69/1802085703486799709/">moveToOtherModule</a> intention
+                            in the requirements language.
+                        </p>
 
 
 
