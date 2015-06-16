@@ -803,6 +803,37 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
 
 
+                        <br/>
+                        <br/><hr/>
+                        <h3>Selection Intentions (com.mbeddr.mpsutil.selection.intentions)</h3>
+
+                        <p>
+                            By default, an intention always applies to one node. Only refactorings can apply
+                            to several nodes. However, refactorings work differently in the UI and it is hard
+                            to explain to users when to use an intention and when to use a refactoring.
+                        </p>
+
+                        <p>
+                            To address this problem, the selection intention can be used; it is not defined
+                            for a particular concept, but for a particular selection (represented by a Java
+                            class in MPS). As of now, there is a selection class for ranges of cells in tables
+                            and a class for ranges (lists) of nodes. The latter one ic called NodeRangeSelection.
+                            By defining an selection intention for a NodeRangeSelection, you can create an
+                            intentions for several nodes at a time.
+                        </p>
+
+
+                        <p>
+                            To understand how to use the selection intention, take a look at
+                            the <a href="http://localhost:8080/select/com.mbeddr.cc/r:a85ddf64-0248-4e9b-81ab-306845f3da69/1802085703486799709/">moveToOtherModule</a> intention
+                            in the requirements language.
+                        </p>
+
+
+
+
+
+
 
                         <br/>
                         <h2>More Sophisticated Extensions</h2>
