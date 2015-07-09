@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform.html" afterPath="$PROJECT_DIR$/platform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-07-9-actions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="platform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="834" column="52" selection-start="42784" selection-end="42784" vertical-scroll-proportion="0.7457114" vertical-offset="14273" max-vertical-offset="22104">
+            <state line="801" column="0" selection-start="41067" selection-end="41067" vertical-scroll-proportion="-5.3703704" vertical-offset="14273" max-vertical-offset="22104">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-07-9-actions.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-07-9-actions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="10" selection-start="497" selection-end="497" vertical-scroll-proportion="0.23353294" vertical-offset="0" max-vertical-offset="1002">
               <folding />
             </state>
           </provider>
@@ -64,7 +74,7 @@
       <file leaf-file-name="2015-06-16-platformNews.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-06-16-platformNews.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="91" selection-start="824" selection-end="824" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="504">
+            <state line="18" column="91" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="504">
               <folding />
             </state>
           </provider>
@@ -88,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/screencasts.html" />
@@ -104,6 +113,7 @@
         <option value="$PROJECT_DIR$/_posts/2015-05-21-userguideInHTML.md" />
         <option value="$PROJECT_DIR$/_posts/2015-06-16-platformNews.html" />
         <option value="$PROJECT_DIR$/platform.html" />
+        <option value="$PROJECT_DIR$/_posts/2015-07-9-actions.html" />
       </list>
     </option>
   </component>
@@ -138,6 +148,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,7 +197,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -599,11 +609,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2015-03-05-jung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="136" selection-end="1746" vertical-scroll-proportion="0.8715596" vertical-offset="171" max-vertical-offset="1224" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-11-14-graphical.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="4" selection-start="61" selection-end="2830" vertical-scroll-proportion="0.8715596" vertical-offset="513" max-vertical-offset="1494" />
@@ -621,9 +626,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="0.28723404" vertical-offset="1512" max-vertical-offset="52866">
-          <folding />
-        </state>
+        <state line="93" column="0" selection-start="4224" selection-end="4224" vertical-scroll-proportion="0.28723404" vertical-offset="1512" max-vertical-offset="52866" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-03-25-platformPage.html">
@@ -638,9 +641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="57" selection-start="4336" selection-end="4336" vertical-scroll-proportion="1.0119251" vertical-offset="1080" max-vertical-offset="3564">
-          <folding />
-        </state>
+        <state line="93" column="57" selection-start="4336" selection-end="4336" vertical-scroll-proportion="1.0119251" vertical-offset="1080" max-vertical-offset="3564" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-06-25-tooltips.html">
@@ -655,9 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="4280" selection-end="4280" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="7416">
-          <folding />
-        </state>
+        <state line="94" column="0" selection-start="4280" selection-end="4280" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="7416" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
@@ -683,14 +682,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-06-16-platformNews.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="91" selection-start="824" selection-end="824" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="504">
+        <state line="18" column="91" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="504">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="834" column="52" selection-start="42784" selection-end="42784" vertical-scroll-proportion="0.7457114" vertical-offset="14273" max-vertical-offset="22104">
+        <state line="801" column="0" selection-start="41067" selection-end="41067" vertical-scroll-proportion="-5.3703704" vertical-offset="14273" max-vertical-offset="22104">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-07-9-actions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="497" selection-end="497" vertical-scroll-proportion="0.23353294" vertical-offset="0" max-vertical-offset="1002">
           <folding />
         </state>
       </provider>
