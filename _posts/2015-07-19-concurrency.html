@@ -1,0 +1,68 @@
+---
+layout: blogpost
+title: Lessons learned from building the first Concurrency Extensions
+---
+
+<p>
+    Did we ever mention recently that MPS is a wonderful language engineering tool? We have recently added the following features to mbeddr C:
+</p>
+
+<ul>
+    <li> Tasks that contain executable code that is to be scheduled concurrently
+    <li> Cyclic tasks that are executed with some specified period and offset
+    <li> Blocking tasks that are allowed to block their execution and reschedule themselves
+    <li> An event mechanism that can be used to signal between tasks (waiting up blocked tasks)
+    <li> Shared variables, plus an 'atomic' statement that provides locks to the shared variables (using global lock ordering to prevent races)
+    <li> Data queues for communication between tasks, with nice APIs that provide locks (non-blocking and blocking variants).
+</ul>
+
+<p>
+    We have built the language extensions, the type system, IDE support, generation to a pthreads-based implementation
+    plus tests for the type system and the semantics in 25 person-hours! There are still a few open language design
+    questions that may need revisiting, but that low number is nonetheless a clear testament to the productivity of MPS.
+</p>
+
+<p> Let us investigate where this productivity comes from. mbeddr
+    already has a language extension for queues. We reused this queue
+    extension when building the concurrent queues used in the concurrency
+    extension. In particular, we designed an 'enqueue' and 'dequeue'
+    statement that takes care of locking the queue itself. To do this, we
+    relied on the 'atomic' statement we built earlier to coordinate access to
+    shared variables. So in building the extension for queue-based
+    communication between tasks, we reused other extensions we built earlier:
+    the queue extension itself plus the atomic statement for coordinating
+    access to shared variables. And of course the stuff runs inside of
+    tasks, reusing the scheduling. Later we built blocking read access to
+    queues: when grabbing an element from the queue, the task blocks until
+    an element is available. To build this, we reused the event mechanism we
+    built earlier. </p>
+
+<p> Here is the kicker: in both cases, the tests worked correctly on the
+    first try! The generators ran through, the code compiled successfully
+    and the tests ran through. </p>
+
+<p> So why is this interesting? We think it is interesting for two
+    reasons. First, we did "test-driven language development". We started with
+    the language syntax (if you will, the API of the to-be-built system).
+    Then we wrote type system tests that asserted the error messages we wanted
+    to get from the IDE. We then implemented the type checks to satisfy these
+    tests. Next we wrote tests for the execution semantics. They failed,
+    because we had no generators yet. We then filled in the generators to
+    generate low-level C code from the new concurrency extensions. So
+    test-driven language development is a reality with MPS. </p>
+
+<p> Second, we stacked higher level extensions on lower-level extensions.
+    This allowed me to reuse the generators for the lower-level extensions,
+    making the generators for my high-level concurrency extensions much
+    simpler (this is the reason that they worked on first try). Stacking
+    abstractions is not a new idea, of course. Computer science is all about
+    that. However, it is remarkable that MPS lets you do this with languages
+    (syntax, type systems, IDE support, and, importantly, generators). And
+    all while keeping the language definitions modular! This is a major
+    ingredient to the productivity afforded by MPS. </p>
+
+<p> If you want to check out the code, go to the mbeddr repository,
+    check out the 'concurrency' branch, open the 'com.mbeddr.ext' project
+    and look at the concurrency folder. It's still a prototype, but you can
+    certainly inspect the stuff we wrote about here. Stay tuned for more news
+    on concurrency support in mbeddr. </p>
