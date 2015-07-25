@@ -1,0 +1,45 @@
+---
+layout: blogpost
+title: A language extension for Error Handling
+---
+
+<p>
+    Modern Languages use exceptions for error handling. The big plus of exceptions is that
+    they provide, if you will, a kind of additional return value that is handled differently
+    from the regular return value. In older languages such as C, the return type of a function
+    is often used to return an error code, and if actual data should be returned, it has to
+    be done through an out parameter. This is awkward. C provides another way, of course, with
+    is the <i>errno</i> global variable. A function can set <i>errno</i> and a caller can
+    inspect this variable directly after calling a function. But there is no information in a
+    function's signature which errors it may raise and the IDE cannot force the programmer
+    to write code to handle them. Exceptions (depending on their specific implementation)
+    can provide this feature. A big disadvantage of exceptions, however, is that they require
+    longjumps "up the stack". These are expensive and hance often not used in embedded software.
+</p>
+
+<p>
+    Based on these constraints we have designed a compromise feature for error handling into C:
+    <ul>
+    <li>Error types are declared in way similar to constants</li>
+    <li>Functions declare the errors they may raise</li>
+    <li>Only those declared errors can actually be raised by the implememtation</li>
+    <li>The caller is required to handle the error with a <i>try/catch</i>-like syntax</li>
+    </ul>
+</p>
+
+<br/>
+<br/>
+<img src="/images/blog/errorHandling.png"/>
+<br/>
+
+<p>
+    The feature is implemented by transparently adding an out variable to the function, so no
+    long jump is required -- but of course the "exceptions" cannot propagate up the stack and
+    must be handled locally.
+</p>
+
+<p>
+    Currently this only works for functions, but we plan on adding this to components and interfaces as well. Note
+    that, as usual, this is an independent language extension and can be used optionally. The feature resides
+    in the <i>com.mbeddr.core.util</i> language.
+</p>
