@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-07-28-weAreHiring.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,15 +29,6 @@
         <entry file="file://$PROJECT_DIR$/mps.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="155" column="122" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.0" vertical-offset="2239" max-vertical-offset="4842">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="0" selection-start="5070" selection-end="6105" vertical-scroll-proportion="0.0" vertical-offset="1908" max-vertical-offset="10602">
               <folding />
             </state>
           </provider>
@@ -98,10 +88,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-07-28-weAreHiring.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2015-07-28-weAreHiring.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-07-28-weAreHiring.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="173" selection-end="173" vertical-scroll-proportion="0.19033232" vertical-offset="0" max-vertical-offset="662">
+            <state line="7" column="4" selection-start="173" selection-end="173" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="209" column="6" selection-start="8067" selection-end="8067" vertical-scroll-proportion="0.94561934" vertical-offset="3136" max-vertical-offset="13824">
               <folding />
             </state>
           </provider>
@@ -134,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-20-treeview.html" />
         <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
         <option value="$PROJECT_DIR$/_posts/2014-11-14-graphical.html" />
@@ -150,6 +148,7 @@
         <option value="$PROJECT_DIR$/_posts/2015-07-19-concurrency.html" />
         <option value="$PROJECT_DIR$/_posts/2015-07-25-errorHandling.html" />
         <option value="$PROJECT_DIR$/_posts/2015-07-28-weAreHiring.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -199,20 +198,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -631,11 +616,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2015-03-25-platformPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="96" selection-start="530" selection-end="530" vertical-scroll-proportion="0.28723404" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/blogpost.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008" />
@@ -726,7 +706,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-07-28-weAreHiring.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="173" selection-end="173" vertical-scroll-proportion="0.19033232" vertical-offset="0" max-vertical-offset="662">
+        <state line="7" column="4" selection-start="173" selection-end="173" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="6" selection-start="8067" selection-end="8067" vertical-scroll-proportion="0.94561934" vertical-offset="3136" max-vertical-offset="13824">
           <folding />
         </state>
       </provider>
