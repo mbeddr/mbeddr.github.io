@@ -22,7 +22,7 @@ title: Data-flow analyzers in mbeddr
 	
 	<h3> Liveness </h3>
 	
-	<img src="/images/blog/liveness.png" align="right" height="100">
+	<img src="/images/blog/liveness.png" align="right" height="100px">
 	
 	A variable is said to be live at a given program point, if its value may be read during the remaining execution of the program. 
 	The liveness analyzer gives hints about assignments which are useless, because the assigned variable does not appear later 
@@ -64,6 +64,10 @@ title: Data-flow analyzers in mbeddr
     
     <h4>Examples</h4> 
     
+    This is the basic example of reading from an uninitialized variable 
+  	<img src="/images/blog/init_simple.png" align="right" height="100">
+    <img src="/images/blog/init_pointers.png" align="right" height="100">
+    <img src="/images/blog/init_call.png" align="right" height="100">
     <hr/>   
 	
 	The topic of analyzers is a rather new feature in mbeddr and it its current state it may have bugs. On the other hand, these analyzers will always 
