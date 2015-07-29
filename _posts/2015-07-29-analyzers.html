@@ -22,7 +22,7 @@ title: Data-flow analyzers in mbeddr
 	
 	<h3> Liveness </h3>
 	
-	<img src="/images/blog/liveness.png" align="right" height="100px">
+	<img src="/images/blog/liveness.png" align="right" height="100">
 	
 	A variable is said to be live at a given program point, if its value may be read during the remaining execution of the program. 
 	The liveness analyzer gives hints about assignments which are useless, because the assigned variable does not appear later 
@@ -42,9 +42,9 @@ title: Data-flow analyzers in mbeddr
 	mbeddr comes with an analyzer to check for reads from uninitialized variables. According to the classification among data-flow analyzers, the current implementation 
 	is a flow-sensitive, path-insensitive and context-insensitive analyzer;
 	<ul>
-    <li>flow-sensitive: it takes into account the order of the statements in your C function</li>
-    <li>path-insensitive: we do not perform any kind of interpretation on conditional branches, loops, etc so the analyzer doesn't know about this information</li>
-    <li>context-insensitive: all functions are analyzed in separation and we do not follow function calls, nor rely on context information. 
+    <li><b>flow-sensitive</b>: it takes into account the order of the statements in your C function</li>
+    <li><b>path-insensitive</b>: we do not perform any kind of interpretation on conditional branches, loops, etc so the analyzer doesn't know about this information</li>
+    <li><b>context-insensitive</b>: all functions are analyzed in separation and we do not follow function calls, nor rely on context information. 
     This is less precise than a context-sensitive analyzer, but it was a design decision to implement it that way, because we execute the analyzer in an 
     interactive fashion after editing the source code. Performing a full context-sensitive analysis would require a longer time and would break the editing flow in the IDE. 
     In order to compensate for the lost precision, we have extended the core C language of mbeddr with annotations on function arguments. </li>
@@ -55,10 +55,10 @@ title: Data-flow analyzers in mbeddr
     Two extensions are used to improve the precision of the analyzer and make up for the precision that may be lost due to the context-insensitive nature. <br>
     (1) The analyzer uses the results of the points-to analysis to get accurate information about pointer mappings. <br>
     (2) The user can annotate the function arguments with the in/out keywords which have the following semantics: <br>
-    An IN argument must be initialized at the time 
+    An <b>IN</b> argument must be initialized at the time 
     when the function is called and cannot be modified in a way that has an effect outside of the function. This means that if the argument has a pointer type, 
     it cannot be dereferenced and assigned inside the function. <br>
-    An OUT argument must be initialized at the time when the function is called and must be modified in a way that has an effect outside of the function. 
+    An <b>OUT</b> argument must be initialized at the time when the function is called and must be modified in a way that has an effect outside of the function. 
     This means that an OUT annotation can only be used for pointer types and the argument must be dereferenced and assigned inside the function body. 
     These semantics are enforced while editing the code and error markers are used on the offending arguments if the do not fulfil them.
     
@@ -66,7 +66,7 @@ title: Data-flow analyzers in mbeddr
     
     <hr/>   
 	
-	The topic of analyzers is a rather new feature of mbeddr and it its current state it may have bugs. On the other hand, these analyzers will always 
+	The topic of analyzers is a rather new feature in mbeddr and it its current state it may have bugs. On the other hand, these analyzers will always 
 	compute only an approximation of the program properties. Ultimately, our goal is to rather provide a smaller number of true positive examples for probable bugs, then to 
 	underline everything in the source code due to false positives. 
 
