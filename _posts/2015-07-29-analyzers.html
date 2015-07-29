@@ -8,12 +8,12 @@ title: Data-flow analyzers in mbeddr
 	The derived information consists of, for example, (1) the set of uninitialized variables at a given point in the program, 
 	(2) the possible targets of a pointer or (3) liveness of assignments to see if the assigned variable is used at a later point in the program.
 	A clever compiler can use this information to produce better code, where better may mean faster, safer, more robust or even more energy efficient. 
-	
+	<br><br>
 	In mbeddr, the below described analyses are executed immediately on the typed-in code, which helps you to reason about the program code and also to better 
 	understand what may be going on during the actual execution. We have implemented these analyses using the powerful data-flow facilities of MPS and tweaked 
 	them a little bit with additional language extensions. This blog post aims at giving a glimpse of what these analyzers can do. 
-	If you are more interested in the technical details, please refer to this presentation: https://prezi.com/_mtayndadtv_/data-flow-analysis/ 
-	(this was used to guide an in-house session on the topic) or to http://www.itu.dk/people/brabrand/UFPE/Data-Flow-Analysis/static.pdf.
+	If you are more interested in the technical details, please refer to this presentation: <a href="https://prezi.com/_mtayndadtv_/data-flow-analysis">https://prezi.com/_mtayndadtv_/data-flow-analysis</a> 
+	(this was used to guide an in-house session on the topic) or to <a href="http://www.itu.dk/people/brabrand/UFPE/Data-Flow-Analysis/static.pdf">http://www.itu.dk/people/brabrand/UFPE/Data-Flow-Analysis/static.pdf</a>.
 	
 	<h3> Points-to analysis </h3>
 	
@@ -22,11 +22,13 @@ title: Data-flow analyzers in mbeddr
 	
 	<h3> Liveness </h3>
 	
-	<img src="/images/blog/liveness.png" align="right">
+	<img src="/images/blog/liveness.png" align="right" height="100px">
 	
 	A variable is said to be live at a given program point, if its value may be read during the remaining execution of the program. 
 	The liveness analyzer gives hints about assignments which are useless, because the assigned variable does not appear later 
-	on in the right hand side of another assignment. In the example code snippet the last assignment to z is underlined and a warning is given, 
+	on in the right hand side of another assignment. 
+	<br><br>
+	In the example code snippet the last assignment to z is underlined and a warning is given, 
 	because (1) at the next iteration of the loop we assign a new value to z before we would use the old value or (2) we exit the loop and z is not used afterwards. 	
 	
 	<h3> Uninitialized read </h3>
@@ -34,6 +36,8 @@ title: Data-flow analyzers in mbeddr
 	An uninitialized variable is a variable which is declared but is not set to a definite known value before it is used. 
 	This is a major source of program errors in all programming languages and C is not an exception, in fact, pointers just complicate the problem even further 
 	because uninitialized pointer variables just point to some junk in the memory. Dereferencing these memory addresses can cause serious flaws in the program.
+	
+	<br><br>
 	
 	mbeddr comes with an analyzer to check for reads from uninitialized variables. According to the classification among data-flow analyzers, the current implementation 
 	is a flow-sensitive, path-insensitive and context-insensitive analyzer;
@@ -48,12 +52,12 @@ title: Data-flow analyzers in mbeddr
     
     <h4>Improving the precision of the analyzer</h4>
     
-    Two extensions are used to improve the precision of the analyzer and make up for the precision that may be lost due to the context-insensitive nature. 
-    (1) The analyzer uses the results of the points-to analysis to get accurate information about pointer mappings.
-    (2) The user can annotate the function arguments with the in/out keywords which have the following semantics: 
+    Two extensions are used to improve the precision of the analyzer and make up for the precision that may be lost due to the context-insensitive nature. <br>
+    (1) The analyzer uses the results of the points-to analysis to get accurate information about pointer mappings. <br>
+    (2) The user can annotate the function arguments with the in/out keywords which have the following semantics: <br>
     An IN argument must be initialized at the time 
     when the function is called and cannot be modified in a way that has an effect outside of the function. This means that if the argument has a pointer type, 
-    it cannot be dereferenced and assigned inside the function.
+    it cannot be dereferenced and assigned inside the function. <br>
     An OUT argument must be initialized at the time when the function is called and must be modified in a way that has an effect outside of the function. 
     This means that an OUT annotation can only be used for pointer types and the argument must be dereferenced and assigned inside the function body. 
     These semantics are enforced while editing the code and error markers are used on the offending arguments if the do not fulfil them.
