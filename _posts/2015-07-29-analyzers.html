@@ -9,13 +9,14 @@ title: Data-flow analyzers in mbeddr
 	(2) the possible targets of a pointer or (3) liveness of assignments to see if the assigned variable is used at a later point in the program.
 	A clever compiler can use this information to produce better code, where better may mean faster, safer, more robust or even more energy efficient. 
 	<br><br>
-	In mbeddr, the below described analyses are executed immediately on the typed-in code, which helps you to reason about the program code and also to better 
+	In mbeddr, the above described analyses are executed immediately on the typed-in code, which helps you to reason about the program code and also to better 
 	understand what may be going on during the actual execution. We have implemented these analyses using the powerful data-flow facilities of MPS and tweaked 
 	them a little bit with additional language extensions. This blog post aims at giving a glimpse of what these analyzers can do. 
 	If you are more interested in the technical details, please refer to this presentation: <a href="https://prezi.com/_mtayndadtv_/data-flow-analysis">https://prezi.com/_mtayndadtv_/data-flow-analysis</a> 
 	(this was used to guide an in-house session on the topic) or to <a href="http://www.itu.dk/people/brabrand/UFPE/Data-Flow-Analysis/static.pdf">http://www.itu.dk/people/brabrand/UFPE/Data-Flow-Analysis/static.pdf</a>.
 	
 	<h3> Points-to analysis </h3>
+	<br>
 	
 	The analysis is responsible for computing the set of targets that a given pointer variable can point to. 
 	It is often a building block for further analysis and, in mbeddr, we use it in the uninitialized read analyzer to derive more precise results. 
@@ -23,6 +24,8 @@ title: Data-flow analyzers in mbeddr
 	<h3> Liveness </h3>
 	
 	<table>
+		<col width="50%">
+		<col width="50%">
 		<tr>
 			<td>A variable is said to be live at a given program point, if its value may be read during the remaining execution of the program. 
 	The liveness analyzer gives hints about assignments which are useless, because the assigned variable does not appear later 
@@ -30,7 +33,8 @@ title: Data-flow analyzers in mbeddr
 	
 	<br><br>
 	In the example code snippet the last assignment to z is underlined and a warning is given, 
-	because (1) at the next iteration of the loop we assign a new value to z before we would use the old value or (2) we exit the loop and z is not used afterwards.
+	because (1) at the next iteration of the loop we assign a new value to z before we would use the old value or 
+	(2) we exit the loop and z is not used afterwards.
 	</td>
 			<td><img src="/images/blog/liveness.png" align="center" height="300px"></td>
 		</tr>
@@ -45,11 +49,11 @@ title: Data-flow analyzers in mbeddr
 	
 	<br><br>
 	
-	mbeddr comes with an analyzer to check for reads from uninitialized variables. According to the classification among data-flow analyzers, the current implementation 
-	is a flow-sensitive, path-insensitive and context-insensitive analyzer;
+	mbeddr comes with an analyzer to check for reads from uninitialized variables. According to the classification among data-flow analyzers, 
+	the current implementation is a flow-sensitive, path-insensitive and context-insensitive analyzer;
 	<ul>
-    <li><b>flow-sensitive</b>: it takes into account the order of the statements in your C function</li>
-    <li><b>path-insensitive</b>: we do not perform any kind of interpretation on conditional branches, loops, etc so the analyzer doesn't know about this information</li>
+    <li><b>flow-sensitive</b>: it takes into account the order of the statements in your C function.</li>
+    <li><b>path-insensitive</b>: we do not perform any kind of interpretation on conditional branches, loops, etc so the analyzer doesn't know about this information.</li>
     <li><b>context-insensitive</b>: all functions are analyzed in separation and we do not follow function calls, nor rely on context information. 
     This is less precise than a context-sensitive analyzer, but it was a design decision to implement it that way, because we execute the analyzer in an 
     interactive fashion after editing the source code. Performing a full context-sensitive analysis would require a longer time and would break the editing flow in the IDE. 
@@ -66,11 +70,13 @@ title: Data-flow analyzers in mbeddr
     it cannot be dereferenced and assigned inside the function. <br>
     An <b>OUT</b> argument must be initialized at the time when the function is called and must be modified in a way that has an effect outside of the function. 
     This means that an OUT annotation can only be used for pointer types and the argument must be dereferenced and assigned inside the function body. 
-    These semantics are enforced while editing the code and error markers are used on the offending arguments if the do not fulfil them.
+    These semantics are enforced while editing the code and error markers are used on the offending arguments if they do not fulfil them.
     
     <h4>Examples</h4> 
     
     <table>
+		<col width="50%">
+		<col width="50%">
 		<tr>
 			<td>This is the basic example of reading from an uninitialized variable (a). The IDE marks the read as an error.</td>
 			<td><img src="/images/blog/init_simple.png" align="center" height="100"></td>
@@ -89,10 +95,11 @@ title: Data-flow analyzers in mbeddr
     		<td><img src="/images/blog/init_call.png" align="center" height="200"></td>
 		</tr>
 	</table> 
+	
     <hr/>   
 	
-	The topic of analyzers is a rather new feature in mbeddr and it its current state it may have bugs. On the other hand, these analyzers will always 
+	The topic of analyzers is a rather new feature in mbeddr so feel free to try it out and play around with it. On the other hand, these analyzers will always 
 	compute only an approximation of the program properties. Ultimately, our goal is to rather provide a smaller number of true positive examples for probable bugs, then to 
-	underline everything in the source code due to false positives. 
+	underline everything in the source code due to false positives.
 
 </p>
