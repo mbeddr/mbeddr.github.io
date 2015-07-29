@@ -22,7 +22,7 @@ title: Data-flow analyzers in mbeddr
 	
 	<h3> Liveness </h3>
 	
-	<img src="/images/blog/liveness.png" align="right" height="100px">
+	<img src="/images/blog/liveness.png" align="right" height="300px">
 	
 	A variable is said to be live at a given program point, if its value may be read during the remaining execution of the program. 
 	The liveness analyzer gives hints about assignments which are useless, because the assigned variable does not appear later 
@@ -64,10 +64,25 @@ title: Data-flow analyzers in mbeddr
     
     <h4>Examples</h4> 
     
-    This is the basic example of reading from an uninitialized variable 
-  	<img src="/images/blog/init_simple.png" align="right" height="100">
-    <img src="/images/blog/init_pointers.png" align="right" height="100">
-    <img src="/images/blog/init_call.png" align="right" height="100">
+    <table>
+		<tr>
+			<td>This is the basic example of reading from an uninitialized variable (a). The IDE marks the read as an error.</td>
+			<td><img src="/images/blog/init_simple.png" align="right" height="100"></td>
+		</tr>
+		<tr>
+			<td>We create a pointer b, which points to the address of a. Then, we dereference b and assign a value to it. 
+			After this point, a can be safely read, its value is initialized. The analyzer relies on the results of the points-to analysis to 
+			provide accurate results.</td>
+    		<td><img src="/images/blog/init_pointers.png" align="right" height="100"></td>
+		</tr>
+		<tr>
+			<td>We pass the address of a to the function call2. 
+			The argument in call2 is marked as OUT, which means there must be a write to it which is visible to the outside. 
+			Doing otherwise would yield an error in the call2 function. In the call1 function we rely on this information and know that after the function call 
+			we can use the value of a because it is initialized. </td>
+    		<td><img src="/images/blog/init_call.png" align="right" height="100"></td>
+		</tr>
+	</table> 
     <hr/>   
 	
 	The topic of analyzers is a rather new feature in mbeddr and it its current state it may have bugs. On the other hand, these analyzers will always 
