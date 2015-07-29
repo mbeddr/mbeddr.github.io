@@ -36,7 +36,7 @@ title: Data-flow analyzers in mbeddr
 	because (1) at the next iteration of the loop we assign a new value to z before we would use the old value or 
 	(2) we exit the loop and z is not used afterwards.
 	</td>
-			<td><img src="/images/blog/liveness.png" align="center" height="300px"></td>
+			<td><img src="/images/blog/liveness.png" align="middle" height="300px"></td>
 		</tr>
 	</table> 
 	
@@ -79,20 +79,20 @@ title: Data-flow analyzers in mbeddr
 		<col width="50%">
 		<tr>
 			<td>This is the basic example of reading from an uninitialized variable (a). The IDE marks the read as an error.</td>
-			<td><img src="/images/blog/init_simple.png" align="center" height="100"></td>
+			<td><img src="/images/blog/init_simple.png" align="middle" height="100"></td>
 		</tr>
 		<tr>
 			<td>We create a pointer b, which points to the address of a. Then, we dereference b and assign a value to it. 
 			After this point, a can be safely read, its value is initialized. The analyzer relies on the results of the points-to analysis to 
 			provide accurate results.</td>
-    		<td><img src="/images/blog/init_pointers.png" align="center" height="150"></td>
+    		<td><img src="/images/blog/init_pointers.png" align="middle" height="150"></td>
 		</tr>
 		<tr>
 			<td>We pass the address of a to the function call2. 
 			The argument in call2 is marked as OUT, which means there must be a write to it which is visible to the outside. 
 			Doing otherwise would yield an error in the call2 function. In the call1 function we rely on this information and know that after the function call 
 			we can use the value of a because it is initialized. </td>
-    		<td><img src="/images/blog/init_call.png" align="center" height="200"></td>
+    		<td><img src="/images/blog/init_call.png" align="middle" height="200"></td>
 		</tr>
 	</table> 
 	
