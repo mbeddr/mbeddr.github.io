@@ -22,14 +22,20 @@ title: Data-flow analyzers in mbeddr
 	
 	<h3> Liveness </h3>
 	
-	<img src="/images/blog/liveness.png" align="right" height="300px">
-	
-	A variable is said to be live at a given program point, if its value may be read during the remaining execution of the program. 
+	<table>
+		<tr>
+			<td>A variable is said to be live at a given program point, if its value may be read during the remaining execution of the program. 
 	The liveness analyzer gives hints about assignments which are useless, because the assigned variable does not appear later 
 	on in the right hand side of another assignment. 
+	
 	<br><br>
 	In the example code snippet the last assignment to z is underlined and a warning is given, 
-	because (1) at the next iteration of the loop we assign a new value to z before we would use the old value or (2) we exit the loop and z is not used afterwards. 	
+	because (1) at the next iteration of the loop we assign a new value to z before we would use the old value or (2) we exit the loop and z is not used afterwards.
+	</td>
+			<td><img src="/images/blog/liveness.png" align="center" height="300px"></td>
+		</tr>
+	</table> 
+	
 	
 	<h3> Uninitialized read </h3>
 	
@@ -67,20 +73,20 @@ title: Data-flow analyzers in mbeddr
     <table>
 		<tr>
 			<td>This is the basic example of reading from an uninitialized variable (a). The IDE marks the read as an error.</td>
-			<td><img src="/images/blog/init_simple.png" align="right" height="100"></td>
+			<td><img src="/images/blog/init_simple.png" align="center" height="100"></td>
 		</tr>
 		<tr>
 			<td>We create a pointer b, which points to the address of a. Then, we dereference b and assign a value to it. 
 			After this point, a can be safely read, its value is initialized. The analyzer relies on the results of the points-to analysis to 
 			provide accurate results.</td>
-    		<td><img src="/images/blog/init_pointers.png" align="right" height="100"></td>
+    		<td><img src="/images/blog/init_pointers.png" align="center" height="150"></td>
 		</tr>
 		<tr>
 			<td>We pass the address of a to the function call2. 
 			The argument in call2 is marked as OUT, which means there must be a write to it which is visible to the outside. 
 			Doing otherwise would yield an error in the call2 function. In the call1 function we rely on this information and know that after the function call 
 			we can use the value of a because it is initialized. </td>
-    		<td><img src="/images/blog/init_call.png" align="right" height="100"></td>
+    		<td><img src="/images/blog/init_call.png" align="center" height="200"></td>
 		</tr>
 	</table> 
     <hr/>   
