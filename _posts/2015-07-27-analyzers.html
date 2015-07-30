@@ -15,12 +15,14 @@ title: Data-flow analyzers in mbeddr
 	If you are more interested in the technical details, please refer to this presentation: <a href="https://prezi.com/_mtayndadtv_/data-flow-analysis">https://prezi.com/_mtayndadtv_/data-flow-analysis</a> 
 	(this was used to guide an in-house session on the topic) or to <a href="http://www.itu.dk/people/brabrand/UFPE/Data-Flow-Analysis/static.pdf">http://www.itu.dk/people/brabrand/UFPE/Data-Flow-Analysis/static.pdf</a>.
 	
+	<br>
 	<h3> Points-to analysis </h3>
 	<br>
 	
 	The analysis is responsible for computing the set of targets that a given pointer variable can point to. 
 	It is often a building block for further analysis and, in mbeddr, we use it in the uninitialized read analyzer to derive more precise results. 
 	
+	<br>
 	<h3> Liveness </h3>
 	
 	<table>
@@ -42,7 +44,7 @@ title: Data-flow analyzers in mbeddr
 	
 	
 	<h3> Uninitialized read </h3>
-	
+	<br>
 	An uninitialized variable is a variable which is declared but is not set to a definite known value before it is used. 
 	This is a major source of program errors in all programming languages and C is not an exception, in fact, pointers just complicate the problem even further 
 	because uninitialized pointer variables just point to some junk in the memory. Dereferencing these memory addresses can cause serious flaws in the program.
