@@ -869,18 +869,44 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         
                         <p>
                         	This language eases the drawing part by creating a simple circle icon with one character in the middle.<br/>
-                        	As usual, we define the icon in the Inspector of a concept. Select the icon entry and execute
-                        	the "Toggle IconChar" intention. We can then define the character and some colors to be used.
+                        	As usual, we define the icon in the Inspector of a concept. Depend on com.mbeddr.mpsutil.iconchar as Used Language,
+                        	select the icon entry and execute the  "Toggle IconChar" intention. We can then define the character
+                        	and some colors to be used.<br/>
                         	Be aware that MPS caches icons heavily (without any means to flush the cache), so we might need to
                         	restart MPS in order to see our new icon.
                         </p>
 
                         <p>
-                        <center>
                             <img src="/images/iconchar.png" />
-                        </center>
                         </p>
 
+
+
+                        <br/>
+                        <br/><hr id="extensionclass"/>
+                        <h3>Extension Class (com.mbeddr.mpsutil.extensionclass)</h3>
+
+                        <p>
+                        	MPS already provides a language (jetbrains.mps.baseLanguage.extensionMethods) for defining extension methods,
+                        	i. e. methods to be called on an Object without being part of the Object's class. We extended this mechanism
+                        	to provide all static methods of a class as extension methods. They can be invoked on the type of the method's
+                        	first parameter.
+                        </p>
+                        
+                        <p>
+                        	Use the language com.mbeddr.mpsutil.extensionclass and create a new ExtensionClass root node. Point to the Java
+                        	class containing your static methods. If we like, we can add method annotations to overwrite parameter names, so
+                        	they are more elaborate than "p0" or "p2".
+                        </p>
+                        
+                        <p>
+                        	As a starting point, a dependency on Model com.mbeddr.mpsutil.extensionclass.annotation.apache.commons.lang3 provides
+                        	extension methods with useful parameter names for Apache Commons StringUtils, ObjectUtils, and StringEscapeUtils.
+                        </p>
+
+                        <p>
+                            <img src="/images/extensionclass.png" />
+                        </p>
 
 
                         <br/>
