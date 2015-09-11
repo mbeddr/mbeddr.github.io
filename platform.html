@@ -303,6 +303,59 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         <br/>
                         <h2>Simple Extensions</h2>
 
+
+
+
+
+
+
+
+
+
+
+
+                        <h3>Custom Project Views (com.mbeddr.mpsutil.projectView)</h3>
+
+                        <p>
+                            For many applications (and their end users) the default MPS Project Explorer
+                            (aka Logical View) is too complicated -- it shows too much "unnecessary" stuff.
+                            Also, depending on the use case and the stakeholder, the structure of the primary
+                            navigation device must be different, adapted for the use case or stakeholder.
+                        </p>
+
+                        <p>
+                            The platform contains a DSL to describe the structure of arbitrary alternative
+                            tree views in the project explorer; MPS already provides a drop down menu to select
+                            from various views, and the DSL can contribute additional ones.
+                        </p>
+
+                        <p>
+                            The DSL supports the definition of arbitrary structures, labels, icons and actions,
+                            and also lets you add additional nodes useful for structuring the tree. To see how
+                            this DSL works, checkout the custom views defined in <i>com.mbeddr.mpsutil.projectview.views</i>
+                            solution as well as our new Favourites view in the <i>com.mbeddr.mpsutil.favourites.plugin</i>
+                            plugin solution. Below is a screenshot of that favourites view.
+                        </p>
+
+                        <img src="/images/favourites.png"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <h3>Serializer (com.mbeddr.mpsutil.serializer)</h3>
 
                         <p>
