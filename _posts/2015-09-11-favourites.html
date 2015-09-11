@@ -1,0 +1,29 @@
+---
+layout: blogpost
+title: Favourites and other Custom Project Views
+---
+
+<h3>Custom Project Views (com.mbeddr.mpsutil.projectview)</h3>
+
+<p>
+    For many applications (and their end users) the default MPS Project Explorer
+    (aka Logical View) is too complicated -- it shows too much "unnecessary" stuff.
+    Also, depending on the use case and the stakeholder, the structure of the primary
+    navigation device must be different, adapted for the use case or stakeholder.
+</p>
+
+<p>
+    The platform contains a DSL to describe the structure of arbitrary alternative
+    tree views in the project explorer; MPS already provides a drop down menu to select
+    from various views, and the DSL can contribute additional ones.
+</p>
+
+<p>
+    The DSL supports the definition of arbitrary structures, labels, icons and actions,
+    and also lets you add additional nodes useful for structuring the tree. As an example,
+    we have built a new (and more flexible) favourites view. Below is a screenshot:
+</p>
+
+<center>
+    <img src="/images/favourites.png"/>
+</center>

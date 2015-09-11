@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform.html" afterPath="$PROJECT_DIR$/platform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-09-11-favourites.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,10 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="platform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="339" column="31" selection-start="16556" selection-end="16556" vertical-scroll-proportion="0.5116751" vertical-offset="5598" max-vertical-offset="24048">
+            <state line="316" column="1" selection-start="14961" selection-end="16652" vertical-scroll-proportion="-3.3333333" vertical-offset="5598" max-vertical-offset="24048">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-09-11-favourites.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-09-11-favourites.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="83" selection-start="997" selection-end="997" vertical-scroll-proportion="0.41482967" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -70,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2014-05-26-conditionalEditor.html" />
         <option value="$PROJECT_DIR$/_posts/2014-11-14-graphical.html" />
         <option value="$PROJECT_DIR$/_posts/2015-03-25-platformPage.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
@@ -86,6 +94,7 @@
         <option value="$PROJECT_DIR$/_posts/2015-08-19-smartMeterPaper.html" />
         <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/platform.html" />
+        <option value="$PROJECT_DIR$/_posts/2015-09-11-favourites.html" />
       </list>
     </option>
   </component>
@@ -135,6 +144,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,11 +576,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="57" selection-start="4336" selection-end="4336" vertical-scroll-proportion="1.0119251" vertical-offset="1080" max-vertical-offset="3564" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-06-25-tooltips.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="50" selection-end="424" vertical-scroll-proportion="0.4599659" vertical-offset="0" max-vertical-offset="587" />
@@ -640,7 +658,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="31" selection-start="16556" selection-end="16556" vertical-scroll-proportion="0.5116751" vertical-offset="5598" max-vertical-offset="24048">
+        <state line="316" column="1" selection-start="14961" selection-end="16652" vertical-scroll-proportion="-3.3333333" vertical-offset="5598" max-vertical-offset="24048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-09-11-favourites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="83" selection-start="997" selection-end="997" vertical-scroll-proportion="0.41482967" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
