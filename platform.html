@@ -307,6 +307,49 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
 
 
+                        <h3>Context Actions (com.mbeddr.mpsutil.contextactions)</h3>
+
+                        <p>
+                            MPS supports the use of non-textual notations as a consequence of its projectional
+                            editor. This means that programs may contain notations that cannot be typed in the
+                            same way as they look on the screen. Examples include sum symbols or fraction
+                            bars. Currently these are entered using textual aliases such as sum or frac.
+                        </p>
+
+                        <p>
+                            However, this is not easily explorable: users cannot easily find out which
+                            such "hidden" aliases are available in a given context.
+                        </p>
+
+                        <p>
+                            To solve this issue, we have created the context actions. These look like a
+                            palette in a graphical editor. Depending on the user's selection (cursor
+                            position), the context actions shows what is available for the user to do.
+                            Context actions can include
+                        </p>
+
+                        <p>
+                        <ul>
+                            <li>Code completion menu entries</li>
+                            <li>Intentions</li>
+                            <li>Left and Right Transformations</li>
+                            <li>Refactorings</li>
+                            <li>Existing UI-actions</li>
+                            <li>... as well as arbitrary, directly inserted code.</li>
+                        </ul>
+                        </p>
+
+                        <br/>
+
+
+                        <img src="/images/blog/contextActions.png"/>
+
+                        <br/><br/>
+
+                        <p>
+                            The context actions language ships with a DSL that supports the convenient deployment of the above mentioned
+                            artifacts into the context action palette.
+                        </p>
 
 
 
