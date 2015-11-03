@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-11-03-contextActions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-11-03-contextActions.html" afterPath="$PROJECT_DIR$/_posts/2015-11-03-contextActions.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="252" column="18" selection-start="9560" selection-end="9560" vertical-scroll-proportion="0.0" vertical-offset="4216" max-vertical-offset="11358">
+            <state line="264" column="0" selection-start="10272" selection-end="10272" vertical-scroll-proportion="0.0" vertical-offset="4432" max-vertical-offset="11574">
               <folding />
             </state>
           </provider>
@@ -38,7 +37,7 @@
       <file leaf-file-name="platform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="316" column="1" selection-start="14961" selection-end="16652" vertical-scroll-proportion="0.0" vertical-offset="5598" max-vertical-offset="24048">
+            <state line="328" column="1" selection-start="14961" selection-end="16652" vertical-scroll-proportion="0.0" vertical-offset="5814" max-vertical-offset="24264">
               <folding />
             </state>
           </provider>
@@ -56,7 +55,7 @@
       <file leaf-file-name="2015-11-03-contextActions.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2015-11-03-contextActions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="54" selection-start="103" selection-end="103" vertical-scroll-proportion="0.09" vertical-offset="0" max-vertical-offset="1000">
+            <state line="43" column="0" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.774" vertical-offset="0" max-vertical-offset="1000">
               <folding />
             </state>
           </provider>
@@ -643,14 +642,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="18" selection-start="9560" selection-end="9560" vertical-scroll-proportion="0.0" vertical-offset="4216" max-vertical-offset="11358">
+        <state line="264" column="0" selection-start="10272" selection-end="10272" vertical-scroll-proportion="0.0" vertical-offset="4432" max-vertical-offset="11574">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="316" column="1" selection-start="14961" selection-end="16652" vertical-scroll-proportion="0.0" vertical-offset="5598" max-vertical-offset="24048">
+        <state line="328" column="1" selection-start="14961" selection-end="16652" vertical-scroll-proportion="0.0" vertical-offset="5814" max-vertical-offset="24264">
           <folding />
         </state>
       </provider>
@@ -671,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-11-03-contextActions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="54" selection-start="103" selection-end="103" vertical-scroll-proportion="0.09" vertical-offset="0" max-vertical-offset="1000">
+        <state line="43" column="0" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.774" vertical-offset="0" max-vertical-offset="1000">
           <folding />
         </state>
       </provider>
