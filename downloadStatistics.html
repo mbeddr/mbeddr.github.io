@@ -22,7 +22,8 @@ table.main {
 $(document).ready(function(){
 	
 	$.getJSON("https://api.github.com/repos/mbeddr/mbeddr.core/releases",function(rel) {         
-	    $.each(rel.reverse(), function(relIdx,relVal) {
+	    var allTimeDownloads = 0;
+		$.each(rel.reverse(), function(relIdx,relVal) {
 	    	var row = "<tr class='main'>";
 			var date = new Date(relVal["published_at"]);
 			row += "<td class='main'>"+ date.toISOString().slice(0,10).replace(/-/g,"/")+"</td>";
@@ -42,8 +43,10 @@ $(document).ready(function(){
 				row += "</tr>"
 			});         
 			row +="</table></td>";
+			allTimeDownloads+=total
 			$("#releases tr:first").after(row);
 	    }); 
+		$("#releases").after("<p>All time total: "+ allTimeDownloads);
 	});
 });
 </script>
