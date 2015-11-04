@@ -22,8 +22,10 @@ table.main {
 $(document).ready(function(){
 	
 	$.getJSON("https://api.github.com/repos/mbeddr/mbeddr.core/releases",function(rel) {         
-	    $.each(rel, function(relIdx,relVal) {
-	    	var row = "<tr class='main'>"
+	    $.each(rel.reverse(), function(relIdx,relVal) {
+	    	var row = "<tr class='main'>";
+			var date = new Date(relVal["published_at"]);
+			row += "<td class='main'>"+ date.toISOString().slice(0,10).replace(/-/g,"/")+"</td>";
 			row += "<td class='main'><a href='"+relVal["html_url"]+"'>"+relVal["name"]+"</a></td>";
 			var total = 0;
 			$.each(relVal["assets"],function(ai, av) {
@@ -47,6 +49,7 @@ $(document).ready(function(){
 </script>
 <table id="releases" class="main">
 	<tr>
+      <th>Date</th>
 	  <th>Name</th>
   	  <th>Total</th>
    	  <th>Assets</th>
