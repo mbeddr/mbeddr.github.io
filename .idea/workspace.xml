@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="" />
+    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-12-01-grammarCells.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,16 +38,25 @@
       <file leaf-file-name="platform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="28" selection-start="16195" selection-end="16195" vertical-scroll-proportion="-19.222221" vertical-offset="5385" max-vertical-offset="25038">
+            <state line="328" column="28" selection-start="16195" selection-end="16195" vertical-scroll-proportion="0.0" vertical-offset="5385" max-vertical-offset="25038">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="0" selection-start="6756" selection-end="6756" vertical-scroll-proportion="0.16751269" vertical-offset="2805" max-vertical-offset="13986">
+            <state line="165" column="0" selection-start="6756" selection-end="6756" vertical-scroll-proportion="-6.111111" vertical-offset="2805" max-vertical-offset="13986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-12-01-grammarCells.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-12-01-grammarCells.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="95" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.6673347" vertical-offset="0" max-vertical-offset="998">
               <folding />
             </state>
           </provider>
@@ -95,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2015-03-25-platformPage.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/_posts/2015-05-21-userguideInHTML.md" />
@@ -111,6 +122,7 @@
         <option value="$PROJECT_DIR$/_posts/2015-11-03-contextActions.html" />
         <option value="$PROJECT_DIR$/platform.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_posts/2015-12-01-grammarCells.html" />
       </list>
     </option>
   </component>
@@ -145,7 +157,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -164,20 +175,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mbeddr.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editor.preferences.import" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -196,6 +222,14 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -204,14 +238,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -533,9 +559,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2098922" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -578,11 +604,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2014-03-20-treeview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="76" selection-end="958" vertical-scroll-proportion="0.12" vertical-offset="0" max-vertical-offset="600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="0" selection-start="4280" selection-end="4280" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="7416" />
@@ -658,14 +679,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="28" selection-start="16195" selection-end="16195" vertical-scroll-proportion="-19.222221" vertical-offset="5385" max-vertical-offset="25038">
+        <state line="328" column="28" selection-start="16195" selection-end="16195" vertical-scroll-proportion="0.0" vertical-offset="5385" max-vertical-offset="25038">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="0" selection-start="6756" selection-end="6756" vertical-scroll-proportion="0.16751269" vertical-offset="2805" max-vertical-offset="13986">
+        <state line="165" column="0" selection-start="6756" selection-end="6756" vertical-scroll-proportion="-6.111111" vertical-offset="2805" max-vertical-offset="13986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-12-01-grammarCells.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="95" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.6673347" vertical-offset="0" max-vertical-offset="998">
           <folding />
         </state>
       </provider>
