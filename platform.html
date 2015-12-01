@@ -300,10 +300,46 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <br/>
                         <h2>Simple Extensions</h2>
-
-
 
 
 
@@ -1011,11 +1047,96 @@ url:     http://localhost:8080/select/tutorial/r:0d2d1e96-2ec7-4797-ad03-f95f261
                         </p>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <br/>
                         <br/>
                         <br/>
                         <br/>
                         <h2>More Sophisticated Extensions</h2>
+
+
+
+
+
+
+
+
+
+                        <h3>Grammar Cells (com.mbeddr.mpsutil.grammarCells)</h3>
+
+                        <p>
+                            MPS projectional editor affords users a lot of flexibility in terms of
+                            notational flexibility and language composition. This blog is full of
+                            examples of this, so we don't have to provide more examples.
+                        </p>
+
+                        <p>
+                            However, this comes at a cost: building editor in MPS that don't just
+                            look nice but that also are nicely usable can be challenging. In
+                            particular, editor developers have to create so-called actions --
+                            wrappers, side transforms, substitutions, delete actions -- that, for
+                            example, allow entering expression tree structures linearly. Enabling
+                            the insertion of parentheses in cross-tree locations, or splitting a
+                            number literal in two is even more challenging. Implementing all of this
+                            correctly can be a challenge, even for practiced users of MPS. More
+                            importantly, it is easy to forget some of those actions, which then
+                            leads to editors that behave inconsistently: good in some cases, and bad
+                            in others. Such inconsistencies are a major source of frustration for
+                            new MPS users.
+                        </p>
+
+                        <p>
+                            To address this issue, we (mostly Sascha) have built the grammar cells
+                            infrastructure. These are new editor cells that have enough semantic
+                            richness so that the necessary actions can be generated automatically.
+                            To implement a nicely usable expression language, developers do not have
+                            to write a single line of action code. Check out this video:
+                        </p>
+
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=eANAxKMNBAU"><img src="/images/blog/grammarCells.png"></a>
+                        </p>
+
+                        <p>
+                            Even though language developers have to invest a little bit of effort
+                            into learning how to use these new cells, it is certainly simpler to
+                            work with than the actions. In particular, it is easier to get things
+                            consistent. Check them out, they are in the master branch.
+                        </p>
+
+
+
+
+
 
 
                         <h3>MarginCell/Review (com.mbeddr.mpsutil.margincell, com.mbeddr.mpsutil.review)</h3>
