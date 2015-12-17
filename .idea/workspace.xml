@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/download.html" afterPath="$PROJECT_DIR$/download.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="learn.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="245" column="32" selection-start="9263" selection-end="9263" vertical-scroll-proportion="0.37044746" vertical-offset="4054" max-vertical-offset="11574">
+            <state line="245" column="32" selection-start="9263" selection-end="9263" vertical-scroll-proportion="-163.33333" vertical-offset="0" max-vertical-offset="11574">
               <folding>
                 <element signature="n#style#0;n#h3#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,10 +37,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="downloadStatistics.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/downloadStatistics.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1242">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="download.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/download.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="322" column="58" selection-start="15224" selection-end="15224" vertical-scroll-proportion="0.69871795" vertical-offset="5142" max-vertical-offset="14148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="platform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1111" column="41" selection-start="53638" selection-end="53638" vertical-scroll-proportion="-11.222222" vertical-offset="19695" max-vertical-offset="27252">
+            <state line="1111" column="41" selection-start="53638" selection-end="53638" vertical-scroll-proportion="0.0" vertical-offset="19695" max-vertical-offset="27252">
               <folding />
             </state>
           </provider>
@@ -109,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_layouts/default.html" />
         <option value="$PROJECT_DIR$/mps.html" />
         <option value="$PROJECT_DIR$/_posts/2015-05-21-userguideInHTML.md" />
         <option value="$PROJECT_DIR$/_posts/2015-06-16-platformNews.html" />
@@ -125,6 +142,7 @@
         <option value="$PROJECT_DIR$/_posts/2015-12-01-grammarCells.html" />
         <option value="$PROJECT_DIR$/platform.html" />
         <option value="$PROJECT_DIR$/learn.html" />
+        <option value="$PROJECT_DIR$/download.html" />
       </list>
     </option>
   </component>
@@ -177,20 +195,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -200,12 +204,12 @@
     <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.import" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editor.preferences.import" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -224,14 +228,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -240,6 +236,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -561,9 +565,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2098922" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -606,16 +610,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="4280" selection-end="4280" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="7416" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="122" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.55939084" vertical-offset="2239" max-vertical-offset="4842" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-07-28-weAreHiring.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="4" selection-start="173" selection-end="173" vertical-scroll-proportion="0.12923077" vertical-offset="0" max-vertical-offset="975" />
@@ -688,17 +682,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1111" column="41" selection-start="53638" selection-end="53638" vertical-scroll-proportion="-11.222222" vertical-offset="19695" max-vertical-offset="27252">
+        <state line="1111" column="41" selection-start="53638" selection-end="53638" vertical-scroll-proportion="0.0" vertical-offset="19695" max-vertical-offset="27252">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="32" selection-start="9263" selection-end="9263" vertical-scroll-proportion="0.37044746" vertical-offset="4054" max-vertical-offset="11574">
+        <state line="245" column="32" selection-start="9263" selection-end="9263" vertical-scroll-proportion="-163.33333" vertical-offset="0" max-vertical-offset="11574">
           <folding>
             <element signature="n#style#0;n#h3#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/downloadStatistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/download.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="322" column="58" selection-start="15224" selection-end="15224" vertical-scroll-proportion="0.69871795" vertical-offset="5142" max-vertical-offset="14148">
+          <folding />
         </state>
       </provider>
     </entry>
