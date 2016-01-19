@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-01-19-introVideoForVerification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screencasts.html" afterPath="$PROJECT_DIR$/screencasts.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2016-01-19-introVideoForVerification.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2016-01-19-introVideoForVerification.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-01-19-introVideoForVerification.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.21538462" vertical-offset="0" max-vertical-offset="585">
+            <state line="7" column="117" selection-start="276" selection-end="357" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="252">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="screencasts.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/screencasts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="463" column="92" selection-start="18478" selection-end="18478" vertical-scroll-proportion="0.46153846" vertical-offset="8064" max-vertical-offset="14238">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#12;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2015-05-21-userguideInHTML.md" />
         <option value="$PROJECT_DIR$/_posts/2015-06-16-platformNews.html" />
         <option value="$PROJECT_DIR$/_posts/2015-07-9-actions.html" />
         <option value="$PROJECT_DIR$/_posts/2015-07-13-intentiongroups.html" />
@@ -69,6 +79,7 @@
         <option value="$PROJECT_DIR$/learn.html" />
         <option value="$PROJECT_DIR$/download.html" />
         <option value="$PROJECT_DIR$/_posts/2016-01-19-introVideoForVerification.html" />
+        <option value="$PROJECT_DIR$/screencasts.html" />
       </list>
     </option>
   </component>
@@ -119,20 +130,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mbeddr.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -550,11 +547,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2015-07-25-errorHandling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.60923076" vertical-offset="0" max-vertical-offset="975" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-07-19-concurrency.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="0" selection-start="4053" selection-end="4053" vertical-scroll-proportion="0.8917836" vertical-offset="334" max-vertical-offset="1332" />
@@ -645,8 +637,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-01-19-introVideoForVerification.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.21538462" vertical-offset="0" max-vertical-offset="585">
+        <state line="7" column="117" selection-start="276" selection-end="357" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="252">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screencasts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="463" column="92" selection-start="18478" selection-end="18478" vertical-scroll-proportion="0.46153846" vertical-offset="8064" max-vertical-offset="14238">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#12;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
