@@ -1,0 +1,27 @@
+---
+layout: blogpost
+title: Tree Notation
+---
+
+        <p>
+It has been a little bit more quiet on this channel. This is mainly because we are working on all kinds of
+        customer projects, very interesting DSLs in a wide variety of domains. However, we cannot publicly disclose
+        a lot of things we are working one -- hence the quiet.
+        </p>
+
+<p>
+    However, we have recently added a new notation to the mbeddr.platform. I can be used to render tree structures.
+    We have since used it for decision trees and feature models, as the following two screenshots show:
+</p>
+
+<center>
+<img src="/images/blog/tree-1.png"/>
+<img src="/images/blog/tree-2.png"/>
+</center>
+
+  <p>
+      The notation supports arbitrary tree structures, with decorators at the bottom end of connectors and decorators
+      between connectors at their roots (both used in feature models). It also supports collapsing of partial trees,
+      as well as horizontal and vertical orientations. The respective editor cell can be found in the
+      <i>com.mbeddr.mpsutil.treenotation</i> language. A demo is in <i>com.mbeddr.mpsutil.sandboxlang</i>.
+  </p>
