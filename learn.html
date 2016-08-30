@@ -129,13 +129,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="span7">
 
 
-            <p>
+            <p align="justify">
             The user guide is written and maintained in inside MPS using mbeddr's documentation language, because
             this supports close integration with the mbeddr artifacts documented in the user guide. It is available
             inside MPS as well as online:
             </p>
 
-            <p>
+            <p align="justify">
                 <b>Online User Guide:</b> The HTML version of the user guide is <a target="_blank" href="http://mbeddr.com/userguide/UserGuideExport.html">available here</a>.
                 This version has been exported from within MPS and has a few shortcomings including the size of some pictures
                 as well as the layout of some of the embedded sources (because of an MPS bug regarding to-text transformation
@@ -143,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 directly select the corresponding node in MPS (MPS has to be running, and the tutorial project must be opened for this to work).
             </p>
 
-            <p>
+            <p align="justify">
                 <b>User Guide in mbeddr:</b> To open the user guide, open
                 the <i>tutorial</i> project (which ships with the mbeddr distribution) and open the <i>mbeddrUserGuide</i> node. You can do this by opening
                 the node by name (via <i>Ctrl-Shift-N</i>) or by navigating there manually, according to the picture
@@ -173,13 +173,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="span7">
 
 
-            <p>
+            <p align="justify">
                 <a href='files/mbeddroverviewslides-ii.pdf'>High-Level
                     Overview</a>: (EN) A PDF (from Powerpoint) describing the overall mbeddr idea, includes a
                 lot of screenshots of example code.
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/mbeddr-flyer-2013.pdf'>Two-Page Flyer</a>: (EN) A
                 two-page English flyer used at expos and trade fairs.
             </p>
@@ -206,7 +206,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-            <p>
+            <p align="justify">
                 <a href='http://voelter.de/data/books/GenericToolsSpecificLanguages-1.0-web.pdf'>Generic Tools, Specific Languages</a>
                 Markus' PhD thesis addresses an approach for building domain-specific tools based on language engineering
                 and language workbenches. The main example of the approach is mbeddr. It is covered in detail. [<a href='http://voelter.de/data/books/GenericToolsSpecificLanguages-1.0-web.pdf'/>pdf</a>]
@@ -240,7 +240,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h3 style="color:black">Experience</h3>
 
 
-            <p>
+            <p align="justify">
                 <a href='/files/mbeddr-cs-oopsla2015-preprint.pdf'>Using C Language Extensions for Developing Embedded Software - A Case Study</a>
                 (OOPSLA 2015): This paper is a detailed report on our experience of building the Smart Meter with mbeddr.
                 [<a href='/files/mbeddr-cs-oopsla2015-preprint.pdf'/>pdf</a>]
@@ -248,7 +248,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-            <p>
+            <p align="justify">
                 <a href='/files/modern_mbd_for_embedded_systems.pdf'>Modern model-based development approach for embedded systems - Practical Experience</a>
                 (International Symposium on Systems Engineering): This paper is a case study of the use of mbeddr for developing rail/train systems, written by Siemens CT.
                 [<a href='/files/modern_mbd_for_embedded_systems.pdf'/>pdf</a>]
@@ -256,7 +256,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-            <p>
+            <p align="justify">
                 <a href='/files/mbees2014.pdf'>Preliminary Experience of using mbeddr for Developing Embedded Software</a>
                 (MBEES Workshop, 2014): In this paper we discuss our experience so far with using mbeddr to develop real systems. The
                 paper discusses several different systems, including the Smart Meter project by itemis France.
@@ -267,8 +267,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <h3 style="color:black">General/Language Engineering</h3>
 
+			
+			<p align="justify">
+                <a href='files/gc-sle.pdf'>Efficient Development of Consistent Projectional Editors using Grammar Cells</a>
+                (Software Language Engineering, 2016):
+                In this paper we provide an overview over the grammar cells and their implementation. The contributions of 
+                this paper advance the state-of-the-art in projectional editors by providing a more text-editor like and consistent editor behaviour. 
+                The paper addresses the limitations identified in our previous paper 'Towards Usable Projectional Editors'. 
+                [<a href='files/gc-sle.pdf'/>pdf</a>]
+            </p>
 
-            <p>
+			<p align="justify">
+                <a href='files/inca-ase.pdf'>IncA: A DSL for the Definition of Incremental Program Analyses</a>
+                (Automated Software Engineering, 2016):
+                This paper present the IncA project which is a framework for the definition and efficient execution of incremental program analyses. 
+				We used IncA to develop several real-world case studies including control flow and points-to analyses for C, well-formedness checks for DSLs, and 
+				FindBugs analyses for Java. Our evaluation based on real-world code bases shows that incrementalization can provide considerable speedups, and it 
+				can make even complex analyses feasible to be executed in a real-time fashion in the IDE. 
+                [<a href='files/inca-ase.pdf'/>pdf</a>]
+            </p>
+
+			<p align="justify">
+                <a href='files/mps-df-ase.pdf'>An Extensible Framework for Variable-Precision Data-Flow Analyses in MPS</a>
+                (Automated Software Engineering, 2016):
+                This tool paper presents the data-flow support of MPS. It gives details on the modular architecture of the tool and 
+				elaborates on the support for inter-procedural analyses. The two key characteristics are variable-precision and extensibility. 
+				The former one means that analysis developers can easily trade off precision for runtime performance and/or memory use thus tailoring an 
+				analysis to a particular use case. The latter one mean that analyses, similar to languages, are extensible, and making an analysis work 
+				on language compositions requires only minimal additional effort. 
+                [<a href='files/mps-df-ase.pdf'/>pdf</a>]
+            </p>
+            
+            <p align="justify">
+                <a href='files/gc-sle.pdf'>Efficient Development of Consistent Projectional Editors using Grammar Cells</a>
+                (Software Language Engineering, 2016):
+                In this paper we provide an overview over the grammar cells and their implementation. The contributions of 
+                this paper advance the state-of-the-art in projectional editors by providing a more text-editor like and consistent editor behaviour. 
+                The paper addresses the limitations identified in our previous paper 'Towards Usable Projectional Editors'. 
+                [<a href='files/gc-sle.pdf'/>pdf</a>]
+            </p>
+
+
+            <p align="justify">
                 <a href='files/gemoc2014-MPSNotations.pdf'>Supporting Diverse Notations with MPS' Projectional Editor</a>
                 (GEMOC 2014 Workshop):
                 In this paper we provide an overview over the notations
@@ -280,7 +320,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-            <p>
+            <p align="justify">
                 <a href='files/voelteretal-mbeddr-final.pdf'>mbeddr: Instantiating a Language Workbench in the Embedded Software Domain</a>
                 (Journal of Automated Software Engineering, 2013): This is our most comprehensive publication so far, providing
                 a detailed look at mbeddr. In contrast to the next paper, it looks at mbeddr more from a tooling perspective
@@ -288,14 +328,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </p>
 
 
-            <p>
+            <p align="justify">
                 <a href='files/wavefront-updatedsubmission2.pdf'>mbeddr: an
                     Extensible C-based Programming Language and IDE for Embedded Systems</a> (SplashCON/Wavefront 2012): This paper provides a general overview over mbeddr, emphasizing the
                 language engineering perspective. It details some of the challenges for embedded software
                 development, and how mbeddr addresses them. [<a href='files/wavefront-updatedsubmission2.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href="files/wsr2013_debuggers.pdf">Extensible Debuggers
                     for Extensible Languages</a> (WSR 2013 Workshop): Language workbenches
                 significantly reduce the effort for building extensible languages. However, they do not
@@ -305,7 +345,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 show an implementation of our approach for the mbeddr language workbench. [<a href='files/wsr2013_debuggers.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/tomassettiratiu-extractingvariabilityfromcandliftingittombeddr.pdf'>Extracting
                     variability from C and lifting it to mbeddr</a> (REVE 2013 Workshop): In this
                 paper we describe approaches for lifting textual C code into mbeddr, understanding product-line
@@ -314,7 +354,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </p>
 
 
-            <p>
+            <p align="justify">
                 <a href='files/voeltertomassetti-requirementsinmbeddr.pdf'>Requirements
                     as First-Class Citizens</a> (MBEES 2013 Workshop): In this paper we discuss
                 mbeddr's approach to requirements engineering including: requirements themselves, paritial
@@ -326,10 +366,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <h3 style="color:black">Verification/Safety</h3>
 
-
-
-
-            <p>
+            <p align="justify">
                 <a href='files/2016_carlan_bmc_assurance_case.pdf'>On Using Results of Code-level Bounded Model Checking in Assurance Cases</a>
                 (4th International Workshop on Assurance Cases for Software-intensive Systems): This paper describes our preliminary experience with using
                 the CBMC model checker and the mbeddr environment to verify three
@@ -337,15 +374,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 [<a href='files/ratiu_etal_safety_lab.pdf'/>pdf</a>]
             </p>
 
-
-            <p>
+            <p align="justify">
                 <a href='files/ratiu_etal_safety_lab.pdf'>Safety.Lab: Model-based Domain Specific Tooling for Safety Argumentation</a>
                 (3rd International Workshop on Assurance Cases for Software-intensive Systems): This paper describes a set of DSLs
                 for safety analysis, integrated with mbeddr, built by Siemens CT.
                 [<a href='files/ratiu_etal_safety_lab.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/ratiu_nimal_verification_case.pdf'>Verification-Cases: Characterizing the Completeness Degree of Incomplete Verification for C Programs</a>
                 (Verification and Assurance Workshop): This paper introduces the notion of Verification Cases as a means to make explicit the incomplete parts of verification.
                 [<a href='files/ratiu_nimal_verification_case.pdf'/>pdf</a>]
@@ -353,28 +389,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-            <p>
+            <p align="justify">
                 <a href='files/mbeddr_hilt2014.pdf'>mbeddr - Extensible languages for embedded software development</a>
                 (HILT 2014): This paper is an overview of the mbeddr features and toolset mainly focusing on the applications 
 				for safety-critical domains. It points out how the various extensible modules could be used to create high-integrity and robust systems. 
                 [<a href='files/mbeddr_hilt2014.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/dscv-ase2014.pdf'>Automated Domain-Specific C Verification with mbeddr</a>
                 (ASE 2014): This is the definitive paper on integrating C-level verification tools into mbeddr in a user-friendly
                 way. It contains examples from the Pacemaker Challenge.
                 [<a href='files/dscv-ase2014.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/nfm2013.pdf'>Using Language Engineering to
                     Lift Languages and Analyses at the Domain Level</a> (NASA Formal Methods
                 Symposium 2013): In this paper we discuss how we integrate the static checking of pre- and
                 postconditions as well as protocol checking (based on C-level model checking) into mbeddr. [<a href='files/nfm2013.pdf'/>pdf</a>, <a href='files/bibs/nfm2013.bib'/>bib</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/formsera2012.pdf'>Language Engineering as an
                     Enabler for Incrementally Defined Formal Analyses</a> (FORMSERA 2012 Workshop):
                 In this paper we discuss our approach for integrating formal verification into the development
@@ -383,7 +419,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 implementation code. We show two examples for formal verification in mbeddr. [<a href='files/formsera2012.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/modevva2012.pdf'>Implementing Modular Domain
                     Specific Languages and Analyses</a> (accepted at Modevva 2012 Workshop; Best Paper and Best
                 Presentation Awards): In this paper we discuss how language engineering makes the implementation
@@ -397,7 +433,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <h3 style="color:black">Usability</h3>
 
-            <p>
+            <p align="justify">
                 <a href='files/projectionalEditing-sle2014.pdf'>Towards Usable Projectional Editors</a>
                 (SLE 2014): In this paper we discuss how MPS has improved the usability of the projectional editor
                 over the last few years. This is obviously very relevant to (prospective) mbeddr users as well. The paper
@@ -437,26 +473,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="span7">
 
 
-            <p>
+            <p align="justify">
                 This section collects (over time) a set of example applications developed with mbeddr as a means
                 to illustrate its capabilities.
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/mbeddr_casestudy_asic.pdf'>ASIC Testing:</a>
                 This case study describes how Daniel Stieger from <a href="http://modellwerkstatt.org">die
                 modellwerkstatt</a> and Michael Gau from <a href="http://bachmann.info">Bachmann electronics</a>
                 built a DSL and a C generator for testing ASICs. [<a href='files/mbeddr_casestudy_asic.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/mbeddr_casestudy_smartmeter.pdf'>SmartMeter:</a>
                 This case study describes a real-world commercial development project for a Smart Meter
                 application. It runs on a custom processor, requires a different compiler, makes use of several
                 of the mbeddr default extensions and also uses a set of project-specific language extensions. [<a href='files/mbeddr_casestudy_smartmeter.pdf'/>pdf</a>]
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='files/mbeddr_casestudy_mindstorms.pdf'>Lego
                     Mindstorms</a> This case study is the original demo we built with mbeddr. Although a Lego
                 Mindstorms robot seems like a joke, the case study used the OSEK operating system and contains
@@ -477,23 +513,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container">
         <div class="span7">
 
-            <p>
+            <p align="justify">
                 In this section we list other publications, typically contributed to online or print magazines.
             </p>
 
 
-            <p>
+            <p align="justify">
                 <a href='http://www.elektronikpraxis.vogel.de/themen/embeddedsoftwareengineering/softwarekomponenten/articles/394621/'>mbeddr:
                     Embedded-Entwicklung mit erweiterbarem C</a> (ElektronikPRAXIS) Ein deutschsprachiger
                 Überblick über mbeddr.
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='http://www.heise.de/developer/artikel/mbeddr-Embedded-Entwicklung-mit-erweiterbarem-C-1647220.html'>Sprachschöpfer:</a>
                 (bei heise developer) Noch ein deutschsprachiger Überblick über mbeddr.
             </p>
 
-            <p>
+            <p align="justify">
                 <a href='http://www.infoq.com/presentations/mbeddr-C'>mbeddr C:</a> (at InfoQ) This is a
                 recording of a presentation from the Code Generation 2012 conference in cambridge, providing an
                 overview over mbeddr.
@@ -518,7 +554,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container">
         <div class="span7">
 
-            <p>
+            <p align="justify">
                 Since mbeddr relies on JetBrains MPS for the language engineering, learning about MPS itself is also
                 useful for those people who want to extend mbeddr with their own languages. The <a href="http://www.jetbrains.com/mps/documentation/">MPS documentation page</a> contains an extensive
                 list of links to various documentation artifacts. Not all of them are up to date. Hence we refer to a
@@ -526,18 +562,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </p>
 
 
-            <p>
+            <p align="justify">
                 The <a href="http://confluence.jetbrains.com/display/MPSD31/Shapes+-+an+introductory+MPS+tutorial">Shapes</a> tutorial
                 explains how to build a simple language in under two hours. It is a good first contact with MPS language engineering.
             </p>
 
-            <p>
+            <p align="justify">
                 <a href="http://physiology.med.cornell.edu/faculty/profile.php?id=campagne">Fabien Campagne's</a> book on MPS
                 is now <a href="https://play.google.com/store/books/details/Fabien_Campagne_The_MPS_Language_Workbench?id=nvcEAwAAQBAJ">available on Google Play Books</a>.
                 It is a comprehensive introduction to the MPS language workbench.
             </p>
 
-            <p>
+            <p align="justify">
                 <a href="http://www.voelter.de">Markus Voelter's</a> book on <a href="http://dslbook.org/">DSL Engineering</a> contains
                 a detailed discussion of the concepts behind MPS in its Part III on language implementation. It is less detailed than
                 Fabien's book, but also covers advanced aspects such as language modularization and composition.
