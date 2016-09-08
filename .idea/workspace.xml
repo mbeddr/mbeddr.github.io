@@ -47,7 +47,7 @@
       <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="28" selection-start="7484" selection-end="7484" vertical-scroll-proportion="-10.222222" vertical-offset="2514" max-vertical-offset="7812">
+            <state line="155" column="28" selection-start="7484" selection-end="7484" vertical-scroll-proportion="0.0" vertical-offset="2514" max-vertical-offset="7812">
               <folding />
             </state>
           </provider>
@@ -56,8 +56,10 @@
       <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="334" column="81" selection-start="14537" selection-end="14537" vertical-scroll-proportion="0.82978725" vertical-offset="5544" max-vertical-offset="11772">
-              <folding />
+            <state line="254" column="67" selection-start="9981" selection-end="9981" vertical-scroll-proportion="0.5516014" vertical-offset="4262" max-vertical-offset="12780">
+              <folding>
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -661,15 +663,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="28" selection-start="7484" selection-end="7484" vertical-scroll-proportion="-10.222222" vertical-offset="2514" max-vertical-offset="7812">
+        <state line="155" column="28" selection-start="7484" selection-end="7484" vertical-scroll-proportion="0.0" vertical-offset="2514" max-vertical-offset="7812">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="334" column="81" selection-start="14537" selection-end="14537" vertical-scroll-proportion="0.82978725" vertical-offset="5544" max-vertical-offset="11772">
-          <folding />
+        <state line="254" column="67" selection-start="9981" selection-end="9981" vertical-scroll-proportion="0.5516014" vertical-offset="4262" max-vertical-offset="12780">
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
