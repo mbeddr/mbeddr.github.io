@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn.html" afterPath="$PROJECT_DIR$/learn.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
@@ -56,7 +55,7 @@
       <file leaf-file-name="learn.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="254" column="67" selection-start="9981" selection-end="9981" vertical-scroll-proportion="0.5516014" vertical-offset="4262" max-vertical-offset="12780">
+            <state line="244" column="50" selection-start="9259" selection-end="9259" vertical-scroll-proportion="0.23131673" vertical-offset="4262" max-vertical-offset="12780">
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -499,7 +498,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -670,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="67" selection-start="9981" selection-end="9981" vertical-scroll-proportion="0.5516014" vertical-offset="4262" max-vertical-offset="12780">
+        <state line="244" column="50" selection-start="9259" selection-end="9259" vertical-scroll-proportion="0.23131673" vertical-offset="4262" max-vertical-offset="12780">
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
