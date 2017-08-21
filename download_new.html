@@ -299,31 +299,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</li>
                 <li>
 					<p>
-						After cloning the repository, you now have to build all languages shipped with mbeddr. For this task we provide a shell script named <strong>buildLanguages</strong>,
-						which is located inside the <strong>mbeddr.core/code/languages</strong> directory. Depending on your operating system, you either use the one with <strong>.bat</strong> (Windows) or 
-						<strong>.sh</strong> (Linux/Mac) file extension. Before running the script, you first have to copy the <strong>build.properties.example</strong> into the same folder as the script and rename it to
-						<strong>build.properties</strong>. Next, open this file and	change the paths (<em>On Windows</em>, <strong>you have to use forward slashes as directory separators even on Windows!)</strong>
-						of the following properties: 
+						After cloning the repository, you now have to build all languages shipped with mbeddr. For this task we provide Gradle scripts that you can simply execute
+						by either invoking the <strong>gradlew.sh</strong> (Linux and Mac) or <strong>gradlew.bat</strong> (Windows) executable, both located in the root directory of the repository
+						(mbeddr.core). Before invoking the script, you first have to copy the <strong>gradle.properties.example</strong> into the same folder as the script and rename it to
+						<strong>gradle.properties</strong>. Next, open this file and change the path (<em>On Windows</em>, <strong>you have to use forward slashes as directory separators even on Windows!)</strong>
+						of the following property: 
 						<ul>
 							<li>
 								<p>
-									<strong>mps.home</strong>: points to the <strong>Contents</strong> folder of your MPS installation 
-								</p>
-							</li>
-							<li>
-								<p>
-									<strong>mps.platform.caches</strong>: points to a folder, which is used by the build process to store temporary files 
-								</p>
-							</li>
-							<li>
-								<p>
-									<strong>mbeddr.github.core.home</strong>: points to the mbeddr.core folder of your local mbeddr repository  
+									<strong>MPS_Installation</strong>: points to the <strong>Contents</strong> folder of your MPS installation 
 								</p>
 							</li>
 						</ul>
 					</p>
 					<p>
-						You can now execute the <strong>buildLanguages</strong> script from within the <strong>mbeddr.core/code/languages</strong> folder. At the end of the build you should
+						You can now execute the <strong>gradlew</strong> script from within the <strong>mbeddr.core</strong> folder. At the end of the build you should
 						get a message stating <strong>BUILD SUCCESSFUL</strong>. Depending on the performance of your machine, running the script takes between 20 and 45 minutes.						
 					</p>	
 				</li>
