@@ -64,13 +64,20 @@ strong {
 emphasize {
 	font-style: italic;
 	text-decoration: underline;
+	color: #104c89;
 }
 
 emphasize_more {
 	font-style: italic;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 18px;
 	color: #Ac3661;
+}
+
+emphasize_more2 {
+	font-weight: bold;
+	font-size: 16px;
+	color: #104c89;
 }
 
 .btn_android {
