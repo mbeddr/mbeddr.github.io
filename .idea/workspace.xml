@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="added 2017.1 release">
+    <list default="true" id="9f72c460-9c84-48a5-b9a4-e2c4f7c937b1" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/download_new.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/download.html" afterPath="$PROJECT_DIR$/download.html" />
     </list>
     <ignored path="mbeddr.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -378,13 +377,6 @@
       <option name="presentableId" value="Default" />
       <updated>1383157364574</updated>
     </task>
-    <task id="LOCAL-00007" summary="added support page.">
-      <created>1383211709141</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1383211709141</updated>
-    </task>
     <task id="LOCAL-00008" summary="added the learn page.">
       <created>1383212569391</created>
       <option name="number" value="00008" />
@@ -721,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503332529977</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="make download page point to the 2017.1.0 release">
+      <created>1503401104055</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1503401104055</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -807,7 +806,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="video for IDE support added." />
     <MESSAGE value="fixed a bug." />
     <MESSAGE value="added version control video." />
     <MESSAGE value="added more videos." />
@@ -832,7 +830,8 @@
     <MESSAGE value="added a new news item." />
     <MESSAGE value="added a new news item.&#10;" />
     <MESSAGE value="added 2017.1 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 2017.1 release" />
+    <MESSAGE value="make download page point to the 2017.1.0 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="make download page point to the 2017.1.0 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1021,8 +1020,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="152" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="775" selection-end-column="0" />
+        <state relative-caret-position="318">
+          <caret line="162" column="12" lean-forward="true" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="12" />
           <folding />
         </state>
       </provider>
