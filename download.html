@@ -167,6 +167,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<ul>
 											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-1-0/mbeddr-win-2017_1_0.exe">win</a>,
 												<a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-1-0/mbeddr-macos-2017_1_0.dmg">macos</a></li>
+
+											<ul>
+												<li>known <a href="#KnownIssues">issues</a></li>
+											</ul>
 										</ul>
 									</li>
 									<li>mbeddr plugins:
@@ -682,6 +686,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			<hr/>
 
+			<a name="KnownIssues"><h2>Known Issues</h2></a>
+			<div class="container">
+				<div class="container">
+					<div class="span7">
+						<ul>
+							<li><strong>mbeddr 2017.1.0</strong></li>
+							<ul>
+								<li>if you want to use the formal verification functionality, you need CBMC.
+									The windows installer does not contain the CBMC executable. To fix this, CBMC 5.7 needs
+									to be <a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-1-0/cbmc_5_7_win.zip">downloaded manually</a>, unpacked and the executable copied in the "MBEDDR_HOME\cbmc" directory</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="span1">&nbsp;</div>
+				</div>
+			</div>
+			<hr/>
 
 		</div>
 
