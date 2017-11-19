@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="utf-8">
+	<title>mbeddr - engineering the future of embedded software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		  content="The website of mbeddr, a set of integrated and extensible languages for embedded software engineering, plus an IDE with refatorings, a debugger and verification tools.">
+	<meta name="author" content="Markus Voelter">
+	<!--  styles -->
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le fav and touch icons -->
+
+	<link rel="shortcut icon" href="images/favicon.gif">
+
+	<link href="css/bootstrap.css" rel="stylesheet" type='text/css'>
+	<link href="css/bootstrap-responsive.css" rel="stylesheet" type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type='text/css'>
+	<link href="css/shield-responsive.css" rel="stylesheet" type='text/css'>
+	<link href='css/fonts.css' rel='stylesheet' type='text/css'>
+	<link href="css/prettyPhoto.css" rel="stylesheet" media="screen" type='text/css'>
+	<link href="google-code-prettify/prettify.css" type="text/css" rel="stylesheet"/>
+	<!--[if lt IE 9]>
+	<link href="css/iebugs.css" rel="stylesheet" type='text/css'>
+	<![endif]-->
+	<script src="js/twitter.js" type="text/javascript"></script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('a[data-rel]').each(function () {
+                $(this).attr('rel', $(this).data('rel'));
+            });
+
+            $("a[rel^='prettyPhoto']").prettyPhoto({
+                animation_speed: 'fast',
+                slideshow: 5000,
+                autoplay_slideshow: false,
+                opacity: 0.80,
+                show_title: true,
+                theme: 'ligh_square',
+                overlay_gallery: false,
+                social_tools: false
+            });
+            $('#nav-outline > li > a').live('click', function () {
+                $(this).parent().find('ul').slideToggle();
+            });
+            $('.has-popover').popover();
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        });
+    </script>
+	<script type="text/javascript">
+        var _gaq = _gaq || [];
+		var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+		_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+        _gaq.push([ '_setAccount', 'UA-45406798-1' ]);
+        _gaq.push([ '_trackPageview' ]);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZX646"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZX646');</script>
+<!-- End Google Tag Manager -->
+<!-- Navbar -->
+<div class="navbar navbar-fixed-top"
+	 style="border-bottom: 1px solid #000;">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse"
+			   data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+			</a> <a class="brand" href="index.html"></a>
+
+			<div class="nav-collapse collapse" style="height: 0px;">
+				<ul class="nav">
+					<li><a href="/blog">News</a></li>
+					<li><a href="benefits.html">Benefits</a></li>
+					<li><a href="download.html">Download</a></li>
+					<li><a href="platform.html">Platform</a></li>
+					<li><a href="learn.html">Learn</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="screencasts.html">Screencasts</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="mps.html">MPS</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+			<div class="btn-group pull-right">
+				<g:plusone href="http://mbeddr.com"></g:plusone>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Navbar End -->
+<div id="header_wrapper" class="container">
+</div>
+<div id="page">
+	<div class="inner">
+		<div class="container clearfix">
+
+
+			<hr/>
+			<div class="container">
+				<div class="container">
+					<div class="span7">
+
+						<p><emphasize_more2>Older versions ...</emphasize_more2>:</p>
+						<ul>
+							<li><strong>mbeddr 2017.1.0</strong> (built on 22.08.2017, based on <a href="https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+2017.1+Download+Page"> MPS 2017.1.2</a>)
+								<ul>
+									<li>mbeddr-IDE (one-click installer):
+										<ul>
+											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-1-0/mbeddr-win-2017_1_0.exe">win</a>,
+												<a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-1-0/mbeddr-macos-2017_1_0.dmg">macos</a></li>
+
+											<ul>
+												<li>known <a href="#KnownIssues">issues</a></li>
+											</ul>
+										</ul>
+									</li>
+									<li>mbeddr plugins:
+										<ul>
+											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-1-0/com.mbeddr.allInOne_2017_1_0.zip">all-plugins</a></li>
+										</ul>
+									</li>
+									<li>github sources:
+										<ul>
+											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/tag/mbeddr-2017-1-0">here ...</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="span1">&nbsp;</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="container">
+					<div class="span7">
+						<p><a name="KnownIssues"><emphasize_more2>Known Issues</emphasize_more2></a></p>
+
+						<ul>
+							<li><strong>mbeddr 2017.1.0</strong></li>
+							<ul>
+								<li>if you want to use the formal verification functionality, you need CBMC.
+									The windows installer does not contain the CBMC executable. To fix this, CBMC 5.7 needs
+									to be <a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-1-0/cbmc_5_7_win.zip">downloaded manually</a>, unpacked and the executable copied in the "MBEDDR_HOME\cbmc" directory</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="span1">&nbsp;</div>
+				</div>
+			</div>
+			<hr/>
+
+		</div>
+
+
+	</div>
+
+	<div id="extra">
+		<div id="intro">
+			<div class="container">
+
+			</div>
+		</div>
+		<div class="inner">
+			<div class="container">
+				<div class="row">
+					<div class="span6">
+						<ul class="footer-links clearfix">
+							<li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+							<li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+							<li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+							<li><a href="http://www.eclipse.org/legal/">Legal</a></li>
+						</ul>
+						<ul class="footer-links clearfix">
+							<li><a href="benefits.html">Key characteristics and benefits.</a></li>
+							<li><a href="learn.html#overview">Read and Learn: Papers.</a></li>
+							<li><a href="screencasts.html">Watch and Learn: Screencasts.</a></li>
+							<li><a href="learn.html#cs">See how it's used: Case Studies.</a></li>
+						</ul>
+					</div>
+					<div class="span6">
+						<ul class="footer-links clearfix">
+							<li><a href="download.html">Download and Try.</a></li>
+							<li><a href="download.html">Adapt and Extend.</a></li>
+							<li><a href="news.html">Read the Blog.</a></li>
+							<li><a href="faq.html">Read the FAQ.</a></li>
+						</ul>
+						<ul class="footer-links clearfix">
+							<li><a href="support.html">Contact the team.</a></li>
+							<li><a href="support.html">Get Help.</a></li>
+							<li><a href="http://dslbook.org">Learn about Language Engineering.</a></li>
+							<li><a href="http://jetbrains.com/mps">Download MPS.</a></li>
+						</ul>
+					</div>
+				</div>
+				<br/>
+			</div>
+		</div>
+		<div id="intro">
+			<div class="container">
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Le javascript
+        ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="js/bootstrap-transition.js"></script>
+	<script src="js/bootstrap-alert.js"></script>
+	<script src="js/bootstrap-modal.js"></script>
+	<script src="js/bootstrap-dropdown.js"></script>
+	<script src="js/bootstrap-scrollspy.js"></script>
+	<script src="js/bootstrap-tab.js"></script>
+	<script src="js/bootstrap-tooltip.js"></script>
+	<script src="js/bootstrap-popover.js"></script>
+	<script src="js/bootstrap-button.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+	<script src="js/bootstrap-carousel.js"></script>
+	<script src="js/bootstrap-typeahead.js"></script>
+
+
+	<!-- Include the plug-in -->
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+
+	<!-- Start of Async HubSpot Analytics Code -->
+	<script type="text/javascript">
+(function(d,s,i,r) {
+if (d.getElementById(i)){return;}
+var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/761475.js';
+e.parentNode.insertBefore(n, e);
+})(document,"script","hs-analytics",300000);
+</script>
+	<!-- End of Async HubSpot Analytics Code -->
+
+</body>
+</html>
