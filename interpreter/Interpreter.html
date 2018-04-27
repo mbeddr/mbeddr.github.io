@@ -1,0 +1,637 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>Interpreter</title>
+    <style type="text/css">html{
+font-family : sans-serif;
+line-height : 120%;
+}
+a{
+text-decoration : none;
+}
+.tableContainer{
+}
+.table{
+}
+.tablecaption{
+}
+table.inline{
+}
+table{
+border-collapse : collapse;
+}
+td,th{
+border : 1px solid grey;
+padding : 0.5ex;
+}
+.tableOfContents{
+}
+.tocChapter{
+margin-left : 2em;
+}
+.tocSection{
+margin-left : 1em;
+}
+.section{
+}
+.codeblockContainer{
+border : 2px solid grey;
+padding : .5em;
+overflow : auto;
+margin : 1em 0;
+}
+.codeblock{
+display : inline-block;
+margin : 0;
+}
+.codeblock br{
+display : none;
+}
+.originalNode::before{
+content : "⬈";
+display : inline-block;
+padding-left : .1em;
+}
+.cref::after{
+content : "⬈";
+padding-left : .1em;
+}
+.greyBox{
+background-color : lightgrey;
+padding : 0.5em;
+}
+.imagecontainer{
+margin : 1em 0;
+}
+.imagecontainer.border{
+border : 2px solid grey;
+padding : .5em;
+}
+img{
+max-width : 100%;
+}
+.border .caption{
+margin-bottom : 0;
+padding-bottom : 0;
+}
+.imagecaption{
+}
+.caption{
+font-size : 80%;
+}
+.bold{
+}
+.code{
+}
+.emph{
+}
+.keyPress{
+-moz-border-radius : .5em;
+-webkit-border-radius : .5em;
+border-radius : .5em;
+-moz-box-shadow : inset 0 1px 3px rgba(0, 0, 0, .7);
+-webkit-box-shadow : inset 0 1px 3px rgba(0, 0, 0, .7);
+box-shadow : inset 0 1px 3px rgba(0, 0, 0, .7);
+background : rgb(240, 240, 240);
+color : rgb(40, 40, 40);
+display : inline;
+display : inline-block;
+padding : 0em .2em;
+font-size : 80%;
+}
+.key{
+display : inline;
+display : inline-block;
+min-width : 1em;
+padding : .2em .3em;
+margin : .2em;
+font : normal .85em/1 "Lucida Grande", Lucida, Arial, sans-serif;
+text-align : center;
+text-decoration : none;
+-moz-border-radius : .3em;
+-webkit-border-radius : .3em;
+border-radius : .3em;
+border : none;
+cursor : default;
+-moz-user-select : none;
+-webkit-user-select : none;
+user-select : none;
+}
+.key{
+background : rgb(80,80,80);
+background : -moz-linear-gradient(top, rgb(60, 60, 60), rgb(80, 80, 80));
+background : -webkit-gradient(linear, left top, left bottom, from(rgb(60, 60, 60)), to(rgb(80, 80, 80)));
+color : rgb(250,250,250);
+text-shadow : -1px -1px 0 rgb(70, 70, 70);
+-moz-box-shadow : inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3);
+-webkit-box-shadow : inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3);
+box-shadow : inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3);
+}
+.math{
+background-color : light-blue;
+}
+.menu{
+background-color : green;
+}
+.menuClick{
+-moz-box-shadow : inset 0 1px 3px rgba(0, 0, 0, .7);
+-webkit-box-shadow : inset 0 1px 3px rgba(0, 0, 0, .7);
+box-shadow : inset 0 1px 3px rgba(0, 0, 0, .7);
+background : rgb(240, 240, 240);
+color : rgb(40, 40, 40);
+display : inline;
+display : inline-block;
+padding : 0em 0.2em;
+font-size : 80%;
+}
+.menuItem{
+display : inline;
+display : inline-block;
+min-width : 1em;
+padding : .2em .3em;
+margin : 0 .2em;
+min-height : 1.2em;
+font : normal .85em/1 "Lucida Grande", Lucida, Arial, sans-serif;
+text-align : center;
+text-decoration : none;
+cursor : default;
+-moz-user-select : none;
+-webkit-user-select : none;
+user-select : none;
+background : rgb(0,0,240);
+background : -moz-linear-gradient(top, rgb(0, 0, 220), rgb(0, 0, 240));
+background : -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 220)), to(rgb(0, 0, 240)));
+color : rgb(250,250,250);
+text-shadow : -1px -1px 0 rgb(70, 70, 70);
+}
+.url{
+text-decoration : underline;
+}
+.attachment{
+}
+.footnoteOrigin{
+}
+.footnoteText{
+border-top : 1px solid lightgrey;
+padding-top : 4px;
+font-size : 80%;
+}
+.footnoteText+.footnoteText{
+border-top : 0;
+}
+.imgRef{
+}
+.sectRef{
+}
+.docRef{
+}
+.todo{
+background-color : yellow;
+}
+.cref{
+}
+</style>
+  </head>
+  <body>
+    <div>
+      <h1 id="sid4411878964389984265" class="section">1 Overview</h1>
+      <div>
+        <h2 id="sid4411878964389994969" class="section">1.1 Goal</h2>
+        <p class="body">
+          The <a href="http://127.0.0.1:63320/node?ref=r%3A7628c3bd-6988-4d33-9682-86b8cef4b8c0%28com.mbeddr.mpsutil.interpreter.behavior%29%2F5712773029545344294" class="cref">com.mbeddr.mpsutil.interpreter</a> language allows to create an interpreter for any language implemented in MPS. Creating the interpreter should be as simple as possible, avoiding the boilerplate code required for any interpreter.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid1389375883771159552" class="section">1.2 Interpreted Language</h2>
+        <p class="body">
+          We describe the set of MPS Language(s) defining the concepts of the evaluated nodes in one Interpreter as &quot;Interpreted Language&quot;. For example, the Interpreted Language of <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637458522" class="cref">CExpressionsInterpreter</a>, <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637458531" class="cref">CFunctionInterpreter</a> and <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637458544" class="cref">CMathInterpreter</a> is mbeddr C.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid4411878964389994995" class="section">1.3 Parts</h2>
+        <p class="body">The Interpreter language consists of these main building blocks:</p>
+        <ul>
+          <li>
+            The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883770147691" class="cref">Interpreter</a> definition
+          </li>
+          <li>
+            The <a href="http://127.0.0.1:63320/node?ref=r%3Aea6cf71d-29d2-478d-8027-a9f4a4de53c4%28com.mbeddr.mpsutil.interpreter.rt%29%2F5712773029520911577" class="cref">com.mbeddr.mpsutil.interpreter.rt</a> runtime solution
+          </li>
+          <li>
+            The <a href="http://127.0.0.1:63320/node?ref=r%3A5cb76491-cdbe-4d53-958c-9017fcd0ccc6%28com.mbeddr.mpsutil.interpreter.test.behavior%29%2F7019451652828631502" class="cref">com.mbeddr.mpsutil.interpreter.test</a> interpreter test language
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h1 id="sid2181941881727022029" class="section">2 Examples</h1>
+      <p class="body">
+        Complete examples are available for <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883770168196" class="cref">CExpressionsInterpreter</a>, <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883770168674" class="cref">CExtInterpreter</a>, <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F436675294368911482" class="cref">CPointerInterpreter</a>, <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883770168693" class="cref">CFunctionInterpreter</a>, <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F436675294368911453" class="cref">CModulesInterpreter</a>, <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883770168716" class="cref">CStatementInterpreter</a>, <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F436675294368912472" class="cref">CMathInterpreter</a> and <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883770168762" class="cref">ReqirementsInterpreter</a>.
+      </p>
+      <div class="imagecontainer border" id="sid1389375883770169150">
+        <div class="imageWithBorder">
+          <img src="./images/Interpreter_expressionInterpreter.png" />
+        </div>
+        <div class="imagecaption">
+          <p class="caption">
+            <b>Figure
+            2-A</b><a href="http://127.0.0.1:63320/node?ref=r%3A5f372c0d-445c-45f3-99eb-c6c0b6dfd07d%28com.mbeddr.mpsutil.interpreter.documentation.support%29%2F2181941881729976439" class="originalNode" title="open in MPS"></a>
+          </p>
+        </div>
+      </div>
+      <div class="imagecontainer border" id="sid1389375883770169216">
+        <div class="imageWithBorder">
+          <img src="./images/Interpreter_variableInterpreter.png" />
+        </div>
+        <div class="imagecaption">
+          <p class="caption">
+            <b>Figure
+            2-B</b><a href="http://127.0.0.1:63320/node?ref=r%3A5f372c0d-445c-45f3-99eb-c6c0b6dfd07d%28com.mbeddr.mpsutil.interpreter.documentation.support%29%2F2181941881729976441" class="originalNode" title="open in MPS"></a>
+          </p>
+        </div>
+      </div>
+      <div class="imagecontainer border" id="sid1389375883770169333">
+        <div class="imageWithBorder">
+          <img src="./images/Interpreter_functionCallInterpreter.png" />
+        </div>
+        <div class="imagecaption">
+          <p class="caption">
+            <b>Figure
+            2-C</b><a href="http://127.0.0.1:63320/node?ref=r%3A5f372c0d-445c-45f3-99eb-c6c0b6dfd07d%28com.mbeddr.mpsutil.interpreter.documentation.support%29%2F2181941881729976440" class="originalNode" title="open in MPS"></a>
+          </p>
+        </div>
+      </div>
+      <div class="imagecontainer border" id="sid2270780328638237690">
+        <div class="imageWithBorder">
+          <img src="./images/Interpreter_conditionalInterpreterExample.png" />
+        </div>
+        <div class="imagecaption">
+          <p class="caption">
+            <b>Figure
+            2-D</b><a href="http://127.0.0.1:63320/node?ref=r%3A5f372c0d-445c-45f3-99eb-c6c0b6dfd07d%28com.mbeddr.mpsutil.interpreter.documentation.support%29%2F2270780328637498948" class="originalNode" title="open in MPS"></a>
+          </p>
+        </div>
+      </div>
+      <div class="imagecontainer border" id="sid2270780328638237848">
+        <div class="imageWithBorder">
+          <img src="./images/Interpreter_exampleTest.png" />
+        </div>
+        <div class="imagecaption">
+          <p class="caption">
+            <b>Figure
+            2-E</b><a href="http://127.0.0.1:63320/node?ref=r%3A5f372c0d-445c-45f3-99eb-c6c0b6dfd07d%28com.mbeddr.mpsutil.interpreter.documentation.support%29%2F2270780328637910577" class="originalNode" title="open in MPS"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 id="sid1389375883771160032" class="section">3 Interpreter Lifecycle</h1>
+      <p class="body">
+        Interpreters exist in different steps within a lifecycle. At <em class="emph">definition time</em>, the instance of the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771160230" class="cref">Interpreter</a> exists with a name, e. g. &quot;SampleInterpreter&quot;. When the concept instance is being build at <em class="emph">compile time</em>, a Java class based on the <a href="http://127.0.0.1:63320/node?ref=r%3Aea6cf71d-29d2-478d-8027-a9f4a4de53c4%28com.mbeddr.mpsutil.interpreter.rt%29%2F5712773029520911577" class="cref">com.mbeddr.mpsutil.interpreter.rt</a> is created; following our example it would be named &quot;Interpreter_SampleInterpreter&quot;. An interpreter is used by querying <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771181389" class="cref">InterpreterRegistry</a> for an instance of the generated Java class; we call this <em class="emph">instantiation time</em>. We feed a node to this interpreter to start actual evaluation. The evaluators of the interpreter are executed now at <em class="emph">evaluation time</em>.
+      </p>
+    </div>
+    <div>
+      <h1 id="sid1389375883771181822" class="section">4 Interpreter Definition</h1>
+      <p class="body">
+        An Interpreter Definition describes the interpreter. The <strong class="bold">name</strong> of the Interpreter should comply to Java Class Name standards. The <strong class="bold">category</strong> is a way of grouping associated interpreters. Categories don&apos;t affect the interpreters except a warning if we mix interpreters of different categories.
+      </p>
+      <p class="body">
+        Interpreter Definitions need to be contained in a plugin model, as we generate an <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771182245" class="cref">ExtensionDeclaration</a> for Extension Point <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771182254" class="cref">InterpreterExtensionPoint</a> for each interpreter.
+      </p>
+      <div>
+        <h2 id="sid1389375883771182434" class="section">4.1 Related Interpreters</h2>
+        <p class="body">
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771184903" class="cref">relatedInterpreters</a> describe other interpreters somehow related to this interpreter. At <em class="emph">definition time</em>, Applicable Languages and Type Mappings of all related interpreters are considered additionally to the the ones defined locally. At <em class="emph">instantiation time</em>, if  we combine several related interpreters, the execution engine ensures the evaluation order defined by related interpreters (<em class="emph">before</em> or <em class="emph">after</em> relations). This order is similar to MPS Generators priorities.
+        </p>
+        <p class="body">An error is flagged if we define unsolvable dependency cycles between interpreters.</p>
+      </div>
+      <div>
+        <h2 id="sid1389375883771185697" class="section">4.2 Applicable Languages</h2>
+        <p class="body">
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771185968" class="cref">applicableLanguages</a> limit the types and concepts available in the Type Mappings and Evaluators to the languages defined here. This reduces possibility to mix concepts of different languages (e. g. BaseLanguage Statement and C Statement). Please note that we still need to add the languages to the dependencies of this model in order to use concepts contained within them.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid1389375883771186553" class="section">4.3 Type Mappings</h2>
+        <p class="body">
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771192959" class="cref">typeMappings</a> map types of the interpreted language to Java types. The most common mapping is the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771193313" class="cref">BaseLanguageTypeMapping</a>.
+        </p>
+        <p class="body">
+          The left-hand side of the mapping accepts BaseLanguage expressions to provide maximum flexibility. However, in most cases we just want to specify a type in the interpreted language. To do this we introduced the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771193542" class="cref">ConceptTypeExpression</a> $ (dollar) expression.
+        </p>
+        <p class="body">The right-hand side accepts any Java type, both primitives and classes.</p>
+        <p class="body">
+          Another mapping is the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771194133" class="cref">TypeMapping</a>. The left-hand side mirrors the BaseLanguageTypeMapping described above. The right-hand side is a BaseLanguage method body, expecting a compatible type of the left-hand side as result. We may use this to substitute types of the interpreted language if they don&apos;t change the interpreted result; otherwise, we would need to implement every evaluator twice.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid1389375883771194865" class="section">4.4 Evaluators</h2>
+        <p class="body">
+          The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771195292" class="cref">evaluators</a> are the core of the interpreter. They describe the concepts to be interpreted and how to evaluate the result of these concepts.
+        </p>
+        <p class="body">Besides the concept the evaluator applies for, we may specify type constraints on the evaluated concept&apos;s child concepts, i. e. the AST sub-nodes below the evaluated node. For each child concept, we specify the role and the expected type. The $ (dollar) expression can be used here as well.</p>
+        <p class="body">
+          The actual evaluation can be implemented in BaseLanguage. For <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771199831" class="cref">simpleEvaluator</a> (starting with an equals sign), we may enter a simple BaseLanguage expression. More <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771200226" class="cref">complexEvaluator</a> may be entered in a method body (denoted with a pair of braces).
+        </p>
+        <div>
+          <h3 id="sid1389375883771200648" class="section">4.4.1 Evaluator Selection</h3>
+          <p class="body">
+            Evaluators are selected at <em class="emph">evaluation time</em> based on the order described in <span class="sectRef">Section <a href="Interpreter.html#sid1389375883771182434">Related Interpreters</a></span> and the order of evaluators within the interpreter. However, most times the sensible order of evaluators can be deducted from the matching concepts and constraints. A warning was displayed If this sensible order is violated. The following rules define the sensible order:
+          </p>
+          <ul>
+            <li>
+              Evaluators for more specific concepts are selected before more generic concepts. For example, we have a concept <code class="code">MySuperConcept</code> and sub-concepts <code class="code">MySubConceptA</code> and <code class="code">MySubConceptB</code>. Evaluators exist for <code class="code">MySuperConcept</code> and <code class="code">MySubConceptA</code>. When the interpretation encounters an instance of <code class="code">MySubConceptA</code>, the evaluator for <code class="code">MySubConceptA</code> is triggered. When the interpretation encounters an instance of <code class="code">MySubConceptB</code>, the evaluator for <code class="code">MySuperConcept</code> is used.
+            </li>
+            <li>
+              If two evaluators are defined for the same concept, the one with more specific matching type constraints will be used. The example at <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771202478" class="cref">evaluators</a> shows this: As <code class="code">int16</code> is more specific than <code class="code">int32</code>, the evaluator for <code class="code">int16</code> will be chosen for <code class="code">int16</code> and <code class="code">int8</code> additions (as <code class="code">int8</code> is a subtype of <code class="code">int16</code>).
+            </li>
+            <li>
+              If we need to execute some evaluators <strong class="bold">before</strong> other evaluators <strong class="bold">after</strong> another interpreter, we need to split up our interpreter and define the appropriate related interpreters.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 id="sid1389375883771203295" class="section">4.4.2 Evaluator Implementation</h3>
+          <p class="body">
+            We may use any appropriate BaseLanguage constructs in the evaluator implementation. &quot;Appropriate&quot; meaning any BaseLanguage expression in <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771203767" class="cref">simpleEvaluator</a> and any BaseLanguage statement in a <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771204128" class="cref">complexEvaluator</a>. Additionally, we provide some new expressions specific for interpreters:
+          </p>
+          <ul>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637625488" class="cref">InterpretConstraintExpression</a> (displayed as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637625498" class="cref">interpretConstraintExpression</a> <code class="code">#(«childReference»)</code>) invokes the interpreter on the selected child and returns the evaluation result. If the selected child was constrained to a type by the containing evaluator, the evaluation result is of BaseLanguage type mapped to this constrained type in <span class="sectRef">Section <a href="Interpreter.html#sid1389375883771186553">Type Mappings</a></span> section. As an example, the type of <code class="code">right</code> is constrained to <code class="code">int16</code>, and <code class="code">int16</code> is mapped to <code class="code">int</code>. Thus, the result type of <code class="code">#right</code> is <code class="code">int</code>.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771204894" class="cref">InterpretExpression</a> (displayed as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771206266" class="cref">interpretExpression</a> <code class="code">#(«expression»)</code>) invokes the interpreter on the result of the contained expression. The contained expression must evaluate to <code class="code">node&lt;&gt;</code>. The result type of this expression is always <code class="code">Object</code>, as we cannot determine a more specific type.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771207264" class="cref">OperationCallExpression</a> (displayed as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771207274" class="cref">operationCallExpression</a> <code class="code">#-&gt;«functionRoleName»(«actualParametersRoleName» =&gt; «formalParametersRoleName»)</code>) invokes a function call semantic with positional arguments on the node contained in <code class="code">functionRoleName</code>. This semantic includes push/pop of a new environment before/after the evaluation of the function; evaluation of each actual parameter node; positional assignment of the results of these evaluations to the formal parameter nodes; and creating environment entries for all formal-&gt;actual parameter mappings so they can be used as variables.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771209166" class="cref">NodeExpression</a> (displayed as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771209758" class="cref">nodeExpression</a> <code class="code">node</code>) represents the currently interpreted node. Its type is defined by the concept of the evaluator.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771210433" class="cref">ContextExpression</a> (displayed as <code class="code">context</code>) provides access to the current interpreter context. Its type is <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771211771" class="cref">IContext</a>.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771211875" class="cref">EnvExpression</a> (displayed as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771212243" class="cref">envExpression</a> <code class="code">env</code>) provides access to the current environment. Its type is <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771212881" class="cref">IEnvironment</a>, a subtype of <code class="code">Map</code>.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637464810" class="cref">CastUpExpression</a> (displayed as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637465052" class="cref">castUpExpression</a> <code class="code">castUp(«value», «TargetType»)</code>) cares for boxing/unboxing primitive types and automatic compatible conversion, e. g. <code class="code">int</code> --&gt; <code class="code">long</code>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 id="sid1389375883771213832" class="section">5 Interpreter Runtime</h1>
+      <div>
+        <h2 id="sid1389375883771214283" class="section">5.1 Interpreter Java Classes</h2>
+        <p class="body">
+          For each Interpreter Definition, one subclass of <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771214751" class="cref">InterpreterBase</a> implementing <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771214760" class="cref">IInterpreter</a> is generated. An instance of this is returned by the generated <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771215241" class="cref">ExtensionDeclaration</a> for Extension Point <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771215258" class="cref">InterpreterExtensionPoint</a>. The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771215279" class="cref">InterpreterRegistry</a> provides access to this instance.
+        </p>
+        <p class="body">
+          We use <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771215839" class="cref">CombinedInterpreter</a> to leverage more than one interpreter for the evaluation of our model. This container class takes care of ordering all related interpreters <em class="emph">within the constructor argument list of interpreters</em>, i. e. no other interpreters are taken into account, even if they appear in the Related Interpreters section of some of the listed interpreters.
+        </p>
+        <p class="body">
+          The subclass <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771216389" class="cref"></a> finds all interpreters available in the context of the passed node and adds them to the list of combined interpreters.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid1389375883771217437" class="section">5.2 Interpreter Context</h2>
+        <p class="body">
+          Within all evaluators, an <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771217992" class="cref">IContext</a> is available through the <code class="code">context</code> expression. It allows access to the Environment and other information about the running interpreter. We may extend the context for our own purposes. However, the context also holds the internal state of an interpreter (which itself is stateless), so we need to pay attention if we alter existing functionality.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid1389375883771219085" class="section">5.3 Interpreter Environment</h2>
+        <p class="body">
+          The interpreter runtime maintains a hierarchical environment of type <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771219664" class="cref">IEnvironment</a> available through the <code class="code">env</code> expression. The environment can be used to implement scopes and stack frames:
+        </p>
+        <ul>
+          <li>
+            <code class="code">env</code> acts as a map of type <code class="code">(node&lt;&gt; -&gt; Object)</code>. If we put an object into the environment (see example <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771221271" class="cref">addToEnvironment</a>), it is stored in the current environment. If we get an object from the environment, the key is first searched in the current environment. If it cannot be found there, we traverse the parent environments until we either found the key or reached the root environment. This mimics hierarchical scopes.
+          </li>
+          <li>
+            <code class="code">env.push(«anchorNode», «initialEntries»)</code> and the corresponding <code class="code">env.pop(«anchorNode»)</code> (See example <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771222742" class="cref">complexEvaluator</a>) allows to create and destroy sub-environments, implementing stack frames. To improve error recovery, we should always enclose the <code class="code">push/pop</code> pair into a <code class="code">try ... finally</code> block. 
+          </li>
+        </ul>
+        <p class="body">
+          The specialized <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F1389375883771224054" class="cref">IPersistentEnvironment</a> interface follows the same semantics, but keeps all environments even after they have been popped. This allows to access all intermediate states encountered during <em class="emph">evaluation time</em>.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid1389375883771224770" class="section">5.4 Node Value Cache</h2>
+        <p class="body">
+          The IContext may contain a <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637458893" class="cref">INodeValueCache</a> of evaluated result per node. If we request the evaluation of a node that&apos;s contained in the cache, the cached result is returned and no evaluation occurs.
+        </p>
+        <p class="body">
+          The interpreter runtime tries to invalidate the cache on useful occations, like <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637461645" class="cref">OperationCallExpression</a> and Environment changes.
+        </p>
+        <p class="body">
+          The cache can be disabled for single evaluators via the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637619964" class="cref">ToggleCaching</a> intention or the inspector.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h1 id="sid1389375883771225463" class="section">6 Interpreter Usage</h1>
+      <p class="body">
+        If we just want to evaluate a node based on a category with reasonable defaults, we&apos;d choose  <span class="sectRef">Section <a href="Interpreter.html#sid6417131558970764485">Leveraging reasonable defaults with InterpreterEvaluationHelper</a></span>.
+      </p>
+      <p class="body">In order to execute an interpreter, we need to follow these basic steps:</p>
+      <ol>
+        <li>Aquire an IInterpreter</li>
+        <li>Create an IContext</li>
+        <li>Set the root interpreter</li>
+        <li>Evaluate a node</li>
+      </ol>
+      <p class="body">Each step is described in more detail below.</p>
+      <div>
+        <h2 id="sid6417131558970764485" class="section">6.1 Leveraging reasonable defaults with InterpreterEvaluationHelper</h2>
+        <p class="body">The first three readers of this section will get three free beers, each.</p>
+        <p class="body">
+          For no-thrills evaluation of a node based on an Interpreter Category, use <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970764698" class="cref">InterpreterEvaluationHelper</a>.
+        </p>
+        <p class="body">We call the constructor with the name of the requested Interpreter Category.</p>
+        <ul>
+          <li>
+            The method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970764766" class="cref">evaluate</a> will create a default context, find all Interpreters of the given Category, and evaluate the input without any further precautions.
+          </li>
+          <li>
+            The method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970767190" class="cref">evaluateIfStructurallySound</a> will first check if the input node and all descendants are structurally sound (i. e. no missing non-optional children, references, or invalid properties). If the input node is not sound, this method will return <code class="code">null</code>.
+          </li>
+          <li>
+            The method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970767250" class="cref">evaluateWithStructuralException</a> performs the same structural soundness check, but throws an <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970767266" class="cref">StructurallyUnsoundException</a> except of returning <code class="code">null</code>.
+          </li>
+          <li>
+            The method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970767652" class="cref">setContextProvider</a> provides a hook for customizing the Context for the evaluation. The method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970768168" class="cref">createContext</a> receives the root node asked to be evaluated, and a default Context. We may either alter the provided Context (e. g. by amending its Environment) and return it, or create a new Context and return this one. 
+          </li>
+          <li>
+            The static method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970767345" class="cref">getInterpreter</a> provides a shortcut for creating a <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F6417131558970767361" class="cref">CombinedInterpreter</a> of all Interpreters for a Category.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 id="sid2270780328636178963" class="section">6.2 Aquire an IInterpreter</h2>
+        <p class="body">
+          Fundamentally, we aquire an IInterpreter from the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636200634" class="cref">InterpreterRegistry</a> singleton. the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636200958" class="cref">getInterpreterExecutable</a> method returns the IInterpreter.
+        </p>
+        <p class="body">We provide several convenience classes supplementing the interpreter aquisition.</p>
+        <div>
+          <h3 id="sid2270780328636204863" class="section">6.2.1 Interpreter Finder</h3>
+          <p class="body">
+            The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636204476" class="cref">InterpreterFinder</a> finds Interpreter nodes (to be fed to the InterpreterRegistry) matching certain criteria.
+          </p>
+          <p class="body">
+            The method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636204953" class="cref">findAllVisibleInterpreters</a> looks up all Interpreter nodes visible from the context of the argument node.
+          </p>
+          <p class="body">
+            The method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636204991" class="cref">findVisibleInterpretersForCategory</a> acts similar, but filters the result by Interpreter Category.
+          </p>
+        </div>
+        <div>
+          <h3 id="sid2270780328636205047" class="section">6.2.2 Cached Interpreter Finder</h3>
+          <p class="body">
+            The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636205097" class="cref">CachedInterpreterFinder</a> singleton builds a cache of all globally available Interpreter nodes. The cache is <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636223991" class="cref">flushed</a> only on request, or if an <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636223977" class="cref">InterpreterExtensionPoint</a> is loaded or unloaded. The CachedInterpreterFinder provides methods similar to the InterpreterFinder (<a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636224014" class="cref">findAllInterpreters</a> and <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636224043" class="cref">findInterpretersForCategory</a>, respectively).
+          </p>
+        </div>
+        <div>
+          <h3 id="sid2270780328636228374" class="section">6.2.3 Combined Interpreter</h3>
+          <p class="body">
+            The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636230606" class="cref">CombinedInterpreter</a> takes care of combining several Interpreters, possibly related (see <span class="sectRef">Section <a href="Interpreter.html#sid1389375883771182434">Related Interpreters</a></span>, to one single IInterpreter containing the union of all Evaluators. This allows us to distribute Interpreter definitions over several languages, possibly close to the definition of the interpreted concept itself.
+          </p>
+          <p class="body">
+            The constructor <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636233402" class="cref">CombinedInterpreter</a> takes an arbitary number of IInterpreters to combine.
+          </p>
+          <p class="body">
+            The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636234148" class="cref"></a> takes one node as constructor parameter, feeds this node to <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636234157" class="cref">findAllVisibleInterpreters</a>, and initializes the CombinedInterpreter with the resulting IInterpreters.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2 id="sid2270780328636234778" class="section">6.3 Create an IContext</h2>
+        <p class="body">
+          Interpreters themselves are stateless. An instance of <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636237297" class="cref">IContext</a> holds the complete state, both internal to the interpreter framework and our own additions.
+        </p>
+        <p class="body">
+          The default implementation <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636237284" class="cref">ContextImpl</a> is suitable for most purposes. We may pass an IInterpreter as constructor parameter, which will be set as root interpreter (see <span class="sectRef">Section <a href="Interpreter.html#sid2270780328636237461">Set the root interpreter</a></span>).
+        </p>
+      </div>
+      <div>
+        <h2 id="sid2270780328636237461" class="section">6.4 Set the root interpreter</h2>
+        <p class="body">
+          We need to set the root interpreter for a context, because we can combine interpreters arbitrarily. We use the method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636237756" class="cref">setRootInterpreter</a> to do this.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid2270780328636237919" class="section">6.5 Evaluate a node</h2>
+        <p class="body">
+          As we have an IInterpreter, an IContext, and a root interpreter set, we can finally start the interpreter. We use the method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636238076" class="cref">evaluate</a> for this. The result of the method call will be the evaluated result.
+        </p>
+        <div>
+          <h3 id="sid2270780328636238123" class="section">6.5.1 Exceptions during Evaluation</h3>
+          <p class="body">The following exceptions might occur during evaluation. The exception messages contains a trace of the evaluated nodes.</p>
+          <ul>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636238598" class="cref">EvaluatorMissingException</a>: If evaluation is (directly or indirectly) requested for a node we don&apos;t have an evaluator for in the current interpreter.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636238624" class="cref">InvalidUpCastException</a>: The interpreter runtime tries to automatically handle primitive type boxing / unboxing issues. Ths exception occurs if we expect a subtype of <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636249493" class="cref">Number</a> (essentially a class equivalent of a primitive type), but get something else.
+            </li>
+            <li>
+              <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328636249534" class="cref">InterpreterRuntimeException</a>: All RuntimeExceptions inside an evaluator are wrapped in this exception. This way, we can add the evaluated node trace to the message.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 id="sid2270780328637494262" class="section">7 Interpreter Test</h1>
+      <p class="body">
+        The <a href="http://127.0.0.1:63320/node?ref=r%3A5cb76491-cdbe-4d53-958c-9017fcd0ccc6%28com.mbeddr.mpsutil.interpreter.test.behavior%29%2F7019451652828631502" class="cref">com.mbeddr.mpsutil.interpreter.test</a> language provides the basis for custom test languages for the Interpreted Language. An example for a custom test language would be <a href="http://127.0.0.1:63320/node?ref=r%3A561bd59c-83bb-4945-898d-c5392896f074%28com.mbeddr.core.cinterpreter.behavior%29%2F7019451652828661618" class="cref">com.mbeddr.core.cinterpreter</a>, examples for tests can be found at <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637669189" class="cref">ExampleTest</a>.
+      </p>
+      <p class="body">
+        The <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638207195" class="cref">AbstractInterpreterEvaluation</a> concept provides a NodeAnnotation that checks if the evaluation result of the node conforms to an expected value. Similarly, the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638207204" class="cref">AbstractInterpreterCondition</a> concept provides a NodeAnnotation that checks for the expected result of <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638207246" class="cref">isEvaluable</a>. If the expected result is not met, a typesystem error is flagged, which can be checked in a <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638207272" class="cref">NodesTestCase</a>.
+      </p>
+      <p class="body">In order to use these concepts, we need to create a sub-concept and implement the following behaviors:</p>
+      <ul>
+        <li>
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638222253" class="cref">getExpected</a>: Returns the <em class="emph">BaseLanguage</em> representation of the expected value. Usually, we implement this by calling <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638224183" class="cref">evaluate</a> on a child containing the expected value as node.
+        </li>
+        <li>
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638224234" class="cref">getNodeRendering</a>: Returns a text representation of the annotated node to be used in the error message.
+        </li>
+        <li>
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328638232788" class="cref">getInterpreter</a>: Returns an <code class="code">IInterpreter</code> suitable for interpreting the annotated node.
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h1 id="sid2270780328637496867" class="section">8 Conditional Interpreters</h1>
+      <p class="body">
+        An extended version of an Interpreter is a <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637497702" class="cref">ConditionalInterpreter</a>. It allows to define a <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637498912" class="cref">isEvaluable</a> method that decides if a node can be evaluated.
+      </p>
+      <div>
+        <h2 id="sid2270780328637639250" class="section">8.1 Definition Time Additions</h2>
+        <p class="body">
+          The <code class="code">isEvaluable()</code> operation can be added to any Evaluator inside a ConditionalInterpreter by using the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637621305" class="cref">addCondition</a> intention. If no <code class="code">isEvaluable()</code> operation is present, it&apos;s assumed to return <code class="code">true</code> if and only if all its children are evaluable.
+        </p>
+        <p class="body">
+          The <code class="code">isEvaluable()</code> operation can be implemented as single-line BaseLanguage expression or multi-line BaseLanguage statements. In addition to the expressions described in <span class="sectRef">Section <a href="Interpreter.html#sid1389375883771203295">Evaluator Implementation</a></span>, we can use the following expressions:
+        </p>
+        <ul>
+          <li>
+            <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637623770" class="cref">IsEvaluableConstraintExpression</a> (shown as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637625133" class="cref">isEvaluableConstraintExpression</a> <code class="code">#?«childReference»</code>) returns if the referenced child is evaluable by this interpreter.
+          </li>
+          <li>
+            <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637638936" class="cref">IsEvaluableExpression</a> (shown as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637638940" class="cref">isEvaluableExpression</a> <code class="code">#?(«expression»)</code>) returns if the result of the contained expression is evaluable by this interpreter. The contained expression must evaluate to <code class="code">node&lt;&gt;</code>.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 id="sid2270780328637639570" class="section">8.2 Compile Time Additions</h2>
+        <p class="body">
+          An ConditionalInterpreter implements <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637640018" class="cref">IConditionalInterpreter</a>, containing one additional method <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637640132" class="cref">isEvaluable</a>. It takes the same arguments as <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637640152" class="cref">evaluate</a> and returns whether this interpreter can evaluate the given node.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid2270780328637639745" class="section">8.3 Instantiation Time Additions</h2>
+        <p class="body">
+          We provide conditional variants of <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637652692" class="cref">CombinedInterpreter</a> and <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637652700" class="cref"></a>, named <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637652713" class="cref">CombinedConditionalInterpreter</a> and <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637652730" class="cref"></a>, respectively. They provide the same semantics, limited to Conditional Interpreters.
+        </p>
+      </div>
+      <div>
+        <h2 id="sid2270780328637639921" class="section">8.4 Evaluation Time Additions</h2>
+        <p class="body">
+          We aquire our Conditional Interpreter as described in <span class="sectRef">Section <a href="Interpreter.html#sid2270780328636178963">Aquire an IInterpreter</a></span> and need to cast it to the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637663101" class="cref">IConditionalInterpreter</a> interface. We might check the <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637663140" class="cref">isEvaluable</a> method result <em class="emph">before</em> calling <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637663183" class="cref">evaluate</a>, as it will not be called automatically.<br/>
+
+        </p>
+      </div>
+      <p class="body"></p>
+    </div>
+    <div>
+      <h1 id="sid2270780328637664687" class="section">9 Persistent Interpreters</h1>
+      <p class="body">
+        An <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637666922" class="cref">PersistentInterpreter</a> is a wrapper around an arbitrary IInterpreter that keeps all intermediate results for evaluated nodes. 
+      </p>
+      <p class="body">
+        In order to leverage this feature, we need to wrap our original <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667109" class="cref">IInterpreter</a> as a constructor parameter into a <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667118" class="cref">PersistentInterpreter</a>. Some of the exposed interfaces are also subclassed:
+      </p>
+      <ul>
+        <li>
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667692" class="cref">IPersistentContext</a> replaces <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667704" class="cref">IContext</a>, with <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667717" class="cref">PersistentContextImpl</a> as suitable default implementation.
+        </li>
+        <li>
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667758" class="cref">IPersistentEnvironment</a> replaces <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667768" class="cref">IEnvironment</a>
+          
+        </li>
+        <li>
+          <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667817" class="cref">IPersistentNodeValueCache</a> replaces <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637667976" class="cref">INodeValueCache</a>
+          
+        </li>
+      </ul>
+      <p class="body">
+        After a call to <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637668825" class="cref">evaluate</a>, we may retrieve the intermediate results from the passed <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637668841" class="cref">IPersistentContext</a>. They are stored per <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637669010" class="cref">IPersistentEnvironment</a> in the associated <a href="http://127.0.0.1:63320/node?ref=1a9b596c-db05-4f64-81b6-e2555cef7a58%2Fr%3A399aa3ec-92de-4fd2-80ea-027df4dde421%28com.mbeddr.mpsutil.interpreter.documentation%40transient5%2Fcom.mbeddr.mpsutil.interpreter.documentation.docs%4020_0%29%2F2270780328637669028" class="cref">IPersistentNodeValueCache</a>.
+      </p>
+    </div>
+  </body>
+</html>
