@@ -161,23 +161,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 						<p><emphasize_more2>Download</emphasize_more2>:</p>
 						<ul>
-							<li><strong>mbeddr 2017.2.0</strong> (built on 17.11.2017, based on <a href="https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+2017.2+Download+Page"> MPS 2017.2.2</a>) <emphasize_more>(NEW)</emphasize_more>
+							<li><strong>mbeddr 2018.2.0</strong> (built on 29.11.2018, based on <a href="https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+2018.2+Download+Page"> MPS 2018.2.6</a>) <emphasize_more>(NEW)</emphasize_more>
 								<ul>
 									<li>mbeddr-IDE (one-click installer):
 										<ul>
-											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-2-0/mbeddr-win_2017_2_0.exe">win</a>,
-												<a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-2-0/mbeddr-macos_2017_2_0.dmg">macos</a></li>
+											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2018-2-0/mbeddr-win_2018_2_0.exe">win</a></li>
 										</ul>
 									</li>
 									<li>mbeddr plugins:
 										<ul>
-											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-2-0/com.mbeddr.allInOne_2017_2_0.zip">all-plugins</a></li>
-											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2017-2-0/platform-distribution_2017_2_0.zip">mbeddr-platform-plugins</a></li>
+											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2018-2-0/com.mbeddr.allInOne_2018_2_0.zip">all-plugins</a></li>
+											<li><a href="https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2018-2-0/platform-distribution_2018_2_0.zip">mbeddr-platform-plugins</a></li>
 										</ul>
 									</li>
 									<li>github sources:
 										<ul>
-											<li><a href="https://github.com/mbeddr/mbeddr.core/tree/release/mbeddr_2017_2">here ...</a></li>
+											<li><a href="https://github.com/mbeddr/mbeddr.core/tree/mbeddr-2018-2-0">here ...</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -257,7 +256,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="span7">
 
 						<p>
-							Installing mbeddr from sources gives you total control over what you want to do with mbeddr. However this is the most complex installation process.
+							Installing mbeddr from sources gives you total control over what you want to do with mbeddr. 
 							We rather recommend working with the distribution or the mbeddr IDE, except if you have good reasons not to. The following list provides some of these <em>good reasons</em>:
 						</p>
 						<ul>
@@ -289,12 +288,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</li>
 							<li>
 								<p>
-									Second, you will need an Apache ant installation (see <a href="#RequiredToolsAndVersions">Required Tools and Versions</a>).
-									After the installation, please make sure the <strong>ant</strong> binary is in your path (see <a href="#ChangingPath">Adding Tools to the System Path</a>).
-								</p>
-							</li>
-							<li>
-								<p>
 									If you do not already have an MPS installation on your machine, please follow the installation guide in <a href="#MPS">JetBrains MPS and Java</a>.
 								</p>
 							</li>
@@ -306,31 +299,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</li>
 							<li>
 								<p>
-									After cloning the repository, you now have to build all languages shipped with mbeddr. For this task we provide a shell script named <strong>buildLanguages</strong>,
-									which is located inside the <strong>mbeddr.core/code/languages</strong> directory. Depending on your operating system, you either use the one with <strong>.bat</strong> (Windows) or
-									<strong>.sh</strong> (Linux/Mac) file extension. Before running the script, you first have to copy the <strong>build.properties.example</strong> into the same folder as the script and rename it to
-									<strong>build.properties</strong>. Next, open this file and	change the paths (<em>On Windows</em>, <strong>you have to use forward slashes as directory separators even on Windows!)</strong>
-									of the following properties:
+									After cloning the repository, you now have to build all languages shipped with mbeddr. For this task we provide  <strong>gradle</strong> support,
+									which is a .bat or shell script located inside the <strong>mbeddr.core</strong> (project root) directory. Depending on your operating system, you either use <strong>gradlew.bat</strong> (Windows) or
+									<strong>gradlew</strong> (Linux/Mac). Before running the script, you first have to copy the <strong>gradle.properties.example</strong> into the same folder and rename it to
+									<strong>gradle.properties</strong>. Next, open this file and change the paths (<em>On Windows</em>, <strong>you have to use forward slashes as directory separators even on Windows!)</strong>
+									of the following property:
 									<ul>
 										<li>
 								<p>
-									<strong>mps.home</strong>: points to the <strong>Contents</strong> folder of your MPS installation
-								</p>
-							</li>
-							<li>
-								<p>
-									<strong>mps.platform.caches</strong>: points to a folder, which is used by the build process to store temporary files
-								</p>
-							</li>
-							<li>
-								<p>
-									<strong>mbeddr.github.core.home</strong>: points to the mbeddr.core folder of your local mbeddr repository
+									<strong>mpsHomeDir</strong>: points to the <strong>Contents</strong> folder of your MPS installation
 								</p>
 							</li>
 						</ul>
 						</p>
 						<p>
-							You can now execute the <strong>buildLanguages</strong> script from within the <strong>mbeddr.core/code/languages</strong> folder. At the end of the build you should
+							You can now execute the <strong>gradle</strong> script with the argument <strong>build_mbeddr</strong> (e.g. for Windows "gradlew.bat build_mbeddr"). The script  downloads the appropriate libraries automatically. At the end of the build you should
 							get a message stating <strong>BUILD SUCCESSFUL</strong>. Depending on the performance of your machine, running the script takes between 20 and 45 minutes.
 						</p>
 						</li>
