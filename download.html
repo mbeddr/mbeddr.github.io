@@ -196,24 +196,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="span7">
 
 						<p>
-							With the mbeddr IDE you can use all languages provided by mbeddr and write applications with them. Installing the IDE is simple, as you just have to perform two tasks:
+							With the mbeddr IDE you can use all languages provided by mbeddr and write applications with them. Installing the IDE is simple, as you just have to run the installer.
 						</p>
-						<ul>
-							<li>
-								<p>
-									install a JDK (<a href="#RequiredToolsAndVersions">Required Tools and Versions</a> lists which version is required for your platform)
-									on your local machine and make sure it is available on the path (see <a href="#ChangingPath">Adding Tools to the System Path</a>).
-								</p>
-							</li>
-							<li>
-								<p>
-									download from the mbeddr GitHub page the mbeddr IDE that fits to your platform and unzip the downloaded ZIP file:
-									<a href="https://github.com/mbeddr/mbeddr.core/releases">github releases page</a>.
-								</p>
-							</li>
-						</ul>
-
-
 					</div>
 					<div class="span1">&nbsp;</div>
 				</div>
@@ -228,14 +212,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="span7">
 						<p>
 							In case you do not want to change mbeddr but still want to be able to extend it (so you'll need MPS' language engineering facilities),
-							we recommend installing the distribution. This just requires downloading a ZIP file and copying a bunch of plugins into your existing MPS installation.
+							we recommend installing the distribution. Furthermore, we do not provide installers for Linux or MacOS and thereby, mbeddr can be installed only "manually" using this method or compiled from sources as explained below. Installing the plugins distribution just requires downloading a ZIP file and copying a bunch of plugins into your existing MPS installation.
 							If you do not have an existing MPS installation on your machine, please follow the steps described in <a href="#MPS">JetBrains MPS and Java</a>.
 						</p>
 						<p>
-							To install the distribution, please download the distribution ZIP file from the mbeddr GitHub release page: <a href="https://github.com/mbeddr/mbeddr.core/releases">github releases page</a>.
+							To install the distribution, please download the distribution ZIP file ("all-plugins") from the mbeddr GitHub release page: <a href="https://github.com/mbeddr/mbeddr.core/releases">github releases page</a>.
 							This ZIP file contains the mbeddr plugins for MPS. After unzipping, please take all folders inside the <strong>plugins</strong> directory and copy them into the <strong>plugins</strong>
-							directory of your MPS installation .Note that there is also a <strong>plugin</strong> (without the <strong>s</strong>) directory under MPS.
-							So, for example, after copying, there should be a <strong>$MPS_DIR$/plugins/mbeddr.core</strong> directory.
+							directory of your MPS installation. Note that there is also a <strong>plugin</strong> (without the <strong>s</strong>) directory under MPS.
 						</p>
 
 						<p>
